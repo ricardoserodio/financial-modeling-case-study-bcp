@@ -1,0 +1,65 @@
+item,category,period,value,unit,source_document,source_type,source_section_or_page,reported_or_calculated,calculation_method,validation_status,notes
+Net interest income,Income Statement,2022A,,EUR million,Millennium bcp Annual Report 2022,Annual Report,,Reported,,Pending,To be extracted from official annual report
+Net interest income,Income Statement,2023A,,EUR million,Millennium bcp Annual Report 2023,Annual Report,,Reported,,Pending,To be extracted from official annual report
+Net interest income,Income Statement,2024A,,EUR million,Millennium bcp Annual Report 2024,Annual Report,,Reported,,Pending,To be extracted from official annual report
+Net interest income,Income Statement,2025A,,EUR million,Millennium bcp Annual Report 2025,Annual Report,,Reported,,Pending,To be extracted from official annual report
+Fees and commissions,Income Statement,2022A,,EUR million,Millennium bcp Annual Report 2022,Annual Report,,Reported,,Pending,To be extracted from official annual report
+Fees and commissions,Income Statement,2023A,,EUR million,Millennium bcp Annual Report 2023,Annual Report,,Reported,,Pending,To be extracted from official annual report
+Fees and commissions,Income Statement,2024A,,EUR million,Millennium bcp Annual Report 2024,Annual Report,,Reported,,Pending,To be extracted from official annual report
+Fees and commissions,Income Statement,2025A,,EUR million,Millennium bcp Annual Report 2025,Annual Report,,Reported,,Pending,To be extracted from official annual report
+Operating income,Income Statement,2022A,,EUR million,Millennium bcp Annual Report 2022,Annual Report,,Reported,,Pending,To be extracted from official annual report
+Operating income,Income Statement,2023A,,EUR million,Millennium bcp Annual Report 2023,Annual Report,,Reported,,Pending,To be extracted from official annual report
+Operating income,Income Statement,2024A,,EUR million,Millennium bcp Annual Report 2024,Annual Report,,Reported,,Pending,To be extracted from official annual report
+Operating income,Income Statement,2025A,,EUR million,Millennium bcp Annual Report 2025,Annual Report,,Reported,,Pending,To be extracted from official annual report
+Operating costs,Income Statement,2022A,,EUR million,Millennium bcp Annual Report 2022,Annual Report,,Reported,,Pending,To be extracted from official annual report
+Operating costs,Income Statement,2023A,,EUR million,Millennium bcp Annual Report 2023,Annual Report,,Reported,,Pending,To be extracted from official annual report
+Operating costs,Income Statement,2024A,,EUR million,Millennium bcp Annual Report 2024,Annual Report,,Reported,,Pending,To be extracted from official annual report
+Operating costs,Income Statement,2025A,,EUR million,Millennium bcp Annual Report 2025,Annual Report,,Reported,,Pending,To be extracted from official annual report
+Impairments and provisions,Income Statement,2022A,,EUR million,Millennium bcp Annual Report 2022,Annual Report,,Reported,,Pending,To be extracted from official annual report
+Impairments and provisions,Income Statement,2023A,,EUR million,Millennium bcp Annual Report 2023,Annual Report,,Reported,,Pending,To be extracted from official annual report
+Impairments and provisions,Income Statement,2024A,,EUR million,Millennium bcp Annual Report 2024,Annual Report,,Reported,,Pending,To be extracted from official annual report
+Impairments and provisions,Income Statement,2025A,,EUR million,Millennium bcp Annual Report 2025,Annual Report,,Reported,,Pending,To be extracted from official annual report
+Net income,Bottom Line,2022A,,EUR million,Millennium bcp Annual Report 2022,Annual Report,,Reported,,Pending,To be extracted from official annual report
+Net income,Bottom Line,2023A,,EUR million,Millennium bcp Annual Report 2023,Annual Report,,Reported,,Pending,To be extracted from official annual report
+Net income,Bottom Line,2024A,,EUR million,Millennium bcp Annual Report 2024,Annual Report,,Reported,,Pending,To be extracted from official annual report
+Net income,Bottom Line,2025A,,EUR million,Millennium bcp Annual Report 2025,Annual Report,,Reported,,Pending,To be extracted from official annual report
+Loans to customers,Balance Sheet,2022A,,EUR million,Millennium bcp Annual Report 2022,Annual Report,,Reported,,Pending,To be extracted from official annual report
+Loans to customers,Balance Sheet,2023A,,EUR million,Millennium bcp Annual Report 2023,Annual Report,,Reported,,Pending,To be extracted from official annual report
+Loans to customers,Balance Sheet,2024A,,EUR million,Millennium bcp Annual Report 2024,Annual Report,,Reported,,Pending,To be extracted from official annual report
+Loans to customers,Balance Sheet,2025A,,EUR million,Millennium bcp Annual Report 2025,Annual Report,,Reported,,Pending,To be extracted from official annual report
+Customer deposits,Balance Sheet,2022A,,EUR million,Millennium bcp Annual Report 2022,Annual Report,,Reported,,Pending,To be extracted from official annual report
+Customer deposits,Balance Sheet,2023A,,EUR million,Millennium bcp Annual Report 2023,Annual Report,,Reported,,Pending,To be extracted from official annual report
+Customer deposits,Balance Sheet,2024A,,EUR million,Millennium bcp Annual Report 2024,Annual Report,,Reported,,Pending,To be extracted from official annual report
+Customer deposits,Balance Sheet,2025A,,EUR million,Millennium bcp Annual Report 2025,Annual Report,,Reported,,Pending,To be extracted from official annual report
+Total assets,Balance Sheet,2022A,,EUR million,Millennium bcp Annual Report 2022,Annual Report,,Reported,,Pending,To be extracted from official annual report
+Total assets,Balance Sheet,2023A,,EUR million,Millennium bcp Annual Report 2023,Annual Report,,Reported,,Pending,To be extracted from official annual report
+Total assets,Balance Sheet,2024A,,EUR million,Millennium bcp Annual Report 2024,Annual Report,,Reported,,Pending,To be extracted from official annual report
+Total assets,Balance Sheet,2025A,,EUR million,Millennium bcp Annual Report 2025,Annual Report,,Reported,,Pending,To be extracted from official annual report
+Equity,Balance Sheet,2022A,,EUR million,Millennium bcp Annual Report 2022,Annual Report,,Reported,,Pending,To be extracted from official annual report
+Equity,Balance Sheet,2023A,,EUR million,Millennium bcp Annual Report 2023,Annual Report,,Reported,,Pending,To be extracted from official annual report
+Equity,Balance Sheet,2024A,,EUR million,Millennium bcp Annual Report 2024,Annual Report,,Reported,,Pending,To be extracted from official annual report
+Equity,Balance Sheet,2025A,,EUR million,Millennium bcp Annual Report 2025,Annual Report,,Reported,,Pending,To be extracted from official annual report
+ROE,Profitability Ratio,2022A,,%,Millennium bcp Annual Report 2022,Annual Report,,Reported or Calculated,,Pending,Use reported figure where available; otherwise calculate from net income and average equity
+ROE,Profitability Ratio,2023A,,%,Millennium bcp Annual Report 2023,Annual Report,,Reported or Calculated,,Pending,Use reported figure where available; otherwise calculate from net income and average equity
+ROE,Profitability Ratio,2024A,,%,Millennium bcp Annual Report 2024,Annual Report,,Reported or Calculated,,Pending,Use reported figure where available; otherwise calculate from net income and average equity
+ROE,Profitability Ratio,2025A,,%,Millennium bcp Annual Report 2025,Annual Report,,Reported or Calculated,,Pending,Use reported figure where available; otherwise calculate from net income and average equity
+ROA,Profitability Ratio,2022A,,%,Millennium bcp Annual Report 2022,Annual Report,,Calculated,Net income / average total assets,Pending,Prefer average total assets if available
+ROA,Profitability Ratio,2023A,,%,Millennium bcp Annual Report 2023,Annual Report,,Calculated,Net income / average total assets,Pending,Prefer average total assets if available
+ROA,Profitability Ratio,2024A,,%,Millennium bcp Annual Report 2024,Annual Report,,Calculated,Net income / average total assets,Pending,Prefer average total assets if available
+ROA,Profitability Ratio,2025A,,%,Millennium bcp Annual Report 2025,Annual Report,,Calculated,Net income / average total assets,Pending,Prefer average total assets if available
+Cost-to-income,Efficiency Ratio,2022A,,%,Millennium bcp Annual Report 2022,Annual Report,,Reported or Calculated,Operating costs / operating income,Pending,Check against reported ratio where available
+Cost-to-income,Efficiency Ratio,2023A,,%,Millennium bcp Annual Report 2023,Annual Report,,Reported or Calculated,Operating costs / operating income,Pending,Check against reported ratio where available
+Cost-to-income,Efficiency Ratio,2024A,,%,Millennium bcp Annual Report 2024,Annual Report,,Reported or Calculated,Operating costs / operating income,Pending,Check against reported ratio where available
+Cost-to-income,Efficiency Ratio,2025A,,%,Millennium bcp Annual Report 2025,Annual Report,,Reported or Calculated,Operating costs / operating income,Pending,Check against reported ratio where available
+CET1 ratio,Capital Ratio,2022A,,%,Millennium bcp Annual Report 2022,Annual Report,,Reported,,Pending,Use official reported regulatory ratio
+CET1 ratio,Capital Ratio,2023A,,%,Millennium bcp Annual Report 2023,Annual Report,,Reported,,Pending,Use official reported regulatory ratio
+CET1 ratio,Capital Ratio,2024A,,%,Millennium bcp Annual Report 2024,Annual Report,,Reported,,Pending,Use official reported regulatory ratio
+CET1 ratio,Capital Ratio,2025A,,%,Millennium bcp Annual Report 2025,Annual Report,,Reported,,Pending,Use official reported regulatory ratio
+NPL ratio,Asset Quality Ratio,2022A,,%,Millennium bcp Annual Report 2022,Annual Report,,Reported,,Pending,Use official reported figure where available
+NPL ratio,Asset Quality Ratio,2023A,,%,Millennium bcp Annual Report 2023,Annual Report,,Reported,,Pending,Use official reported figure where available
+NPL ratio,Asset Quality Ratio,2024A,,%,Millennium bcp Annual Report 2024,Annual Report,,Reported,,Pending,Use official reported figure where available
+NPL ratio,Asset Quality Ratio,2025A,,%,Millennium bcp Annual Report 2025,Annual Report,,Reported,,Pending,Use official reported figure where available
+Loan-to-deposit ratio,Liquidity Ratio,2022A,,%,Millennium bcp Annual Report 2022,Annual Report,,Calculated,Loans to customers / customer deposits,Pending,Ensure consistent gross/net loan definition
+Loan-to-deposit ratio,Liquidity Ratio,2023A,,%,Millennium bcp Annual Report 2023,Annual Report,,Calculated,Loans to customers / customer deposits,Pending,Ensure consistent gross/net loan definition
+Loan-to-deposit ratio,Liquidity Ratio,2024A,,%,Millennium bcp Annual Report 2024,Annual Report,,Calculated,Loans to customers / customer deposits,Pending,Ensure consistent gross/net loan definition
+Loan-to-deposit ratio,Liquidity Ratio,2025A,,%,Millennium bcp Annual Report 2025,Annual Report,,Calculated,Loans to customers / customer deposits,Pending,Ensure consistent gross/net loan definition

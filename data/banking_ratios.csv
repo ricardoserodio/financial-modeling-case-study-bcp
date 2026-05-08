@@ -1,0 +1,18 @@
+ratio,category,formula,2022A,2023A,2024A,2025A,unit,source_status,notes
+ROE,Profitability,Net income / average equity,,,,,%,Pending,Use reported ROE where available; otherwise calculate using average equity
+ROA,Profitability,Net income / average total assets,,,,,%,Pending,Prefer average total assets if available
+Cost-to-income,Efficiency,Operating costs / operating income,,,,,%,Pending,Check against reported cost-to-income ratio where available
+Net interest margin,Profitability / Revenue,Net interest income / average interest-earning assets,,,,,%,Pending,Use reported figure if available; otherwise calculate only if denominator is available
+Cost of risk,Asset Quality,Loan impairments / average loans to customers,,,,,%,Pending,Use official reported cost of risk where available
+NPL ratio,Asset Quality,Non-performing loans / total loans,,,,,%,Pending,Use official reported NPL or NPE ratio consistently
+NPL coverage ratio,Asset Quality,Impairment allowances / non-performing loans,,,,,%,Pending,Use reported coverage ratio where available
+Loan-to-deposit ratio,Liquidity,Loans to customers / customer deposits,,,,,%,Pending,Ensure loan and deposit definitions are consistent
+CET1 ratio,Capital,Common Equity Tier 1 capital / risk-weighted assets,,,,,%,Pending,Use official reported regulatory ratio
+Total capital ratio,Capital,Total capital / risk-weighted assets,,,,,%,Pending,Use official reported regulatory ratio if available
+Leverage ratio,Capital / Balance Sheet,Tier 1 capital / total exposure measure,,,,,%,Pending,Use official reported figure if available
+EPS,Per Share,Net income attributable to shareholders / average number of shares,,,,,EUR,Pending,Use reported EPS where available
+Book value per share,Per Share,Equity attributable to shareholders / number of shares,,,,,EUR,Pending,Ensure share count is consistent
+Price-to-book,Valuation,Market capitalisation / equity attributable to shareholders,,,,,x,Pending,Use dated public market data
+Price-to-earnings,Valuation,Market capitalisation / net income attributable to shareholders,,,,,x,Pending,Use dated public market data
+Dividend yield,Valuation / Capital Return,Dividend per share / share price,,,,,%,Pending,Use only if dividend data is available
+Payout ratio,Capital Return,Dividends paid / net income attributable to shareholders,,,,,%,Pending,Use only if applicable

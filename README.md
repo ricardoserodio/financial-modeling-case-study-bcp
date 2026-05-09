@@ -72,6 +72,9 @@ This project is intended to demonstrate practical skills in:
     │
     ├── README.md
     ├── RUN_PROJECT.md
+    ├── PROJECT_STATUS.md
+    ├── CHANGELOG.md
+    ├── ROADMAP.md
     ├── sources.md
     ├── company_overview.md
     ├── assumptions.md
@@ -115,6 +118,9 @@ This project is intended to demonstrate practical skills in:
 |---|---|
 | `README.md` | Main project overview and repository guide |
 | `RUN_PROJECT.md` | Instructions to run the project locally |
+| `PROJECT_STATUS.md` | Current project status, completed work and pending phases |
+| `CHANGELOG.md` | Project change history and planned updates |
+| `ROADMAP.md` | Planned development roadmap and future project phases |
 | `sources.md` | Public sources used in the project |
 | `company_overview.md` | Business overview of Millennium bcp |
 | `assumptions.md` | Forecast assumptions and modeling logic |
@@ -300,6 +306,47 @@ The review process focuses on:
 - No use of personal, confidential or internal information
 
 The review checklist is documented in `notes/model_review_checklist.md`.
+
+---
+
+## Project Status
+
+The project is currently in the structure, documentation and data preparation phase.
+
+Most financial data fields are intentionally marked as `Pending`.
+
+The next major phase is to extract historical financial figures from official public sources and enter them into the relevant data files.
+
+For a detailed status overview, see:
+
+    PROJECT_STATUS.md
+
+---
+
+## Roadmap
+
+The project will be developed in phases:
+
+1. Repository structure and documentation
+2. Historical financial data extraction
+3. Data validation and quality review
+4. Excel model generation and population
+5. Forecast and scenario analysis
+6. Valuation and sensitivity analysis
+7. Investment memo completion
+8. Final review and portfolio publication
+
+For the full roadmap, see:
+
+    ROADMAP.md
+
+---
+
+## Changelog
+
+Project changes and planned updates are documented in:
+
+    CHANGELOG.md
 
 ---
 

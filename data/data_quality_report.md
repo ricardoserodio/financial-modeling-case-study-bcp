@@ -174,13 +174,7 @@ Missing data should be classified as:
 
 ## 9. Forecast Assumption Review
 
-Forecast assumptions should be documented in:
-
-`assumptions.md`
-
-and structured in:
-
-`data/scenario_assumptions.csv`
+Forecast assumptions should be documented in `assumptions.md` and structured in `data/scenario_assumptions.csv`.
 
 Review checks:
 
@@ -231,9 +225,7 @@ Main bias risks:
 | Source bias | Relying on weak sources | Prioritise official sources |
 | AI output bias | Accepting generated content without review | Apply human review checklist |
 
-The human review checklist is documented in:
-
-`notes/model_review_checklist.md`
+The human review checklist is documented in `notes/model_review_checklist.md`.
 
 ---
 
@@ -253,5 +245,48 @@ The script checks:
 
 Expected command:
 
-```bash
-python data/validation_checks.py
+`python data/validation_checks.py`
+
+---
+
+## 13. Current Data Quality Status
+
+| Area | Status | Notes |
+|---|---|---|
+| Source mapping | Pending | Template created; values to be extracted |
+| Historical financials | Pending | Template created; values to be extracted |
+| Banking ratios | Pending | Template created; values to be extracted or calculated |
+| Forecast assumptions | Pending | Template created; assumptions to be completed |
+| Market data | Pending | Template created; valuation date to be selected |
+| Peer comparison | Pending | Template created; peers to be reviewed |
+| Human review | Pending | Checklist created |
+
+---
+
+## 14. Final Review Checklist
+
+Before finalising the model, confirm:
+
+- all key figures are mapped to public sources;
+- all units are consistent;
+- all periods are correct;
+- actual data and forecast data are separated;
+- reported and calculated figures are labelled;
+- formulas are documented;
+- missing data is explained;
+- market data is dated;
+- assumptions are documented;
+- no personal data is included;
+- no internal banking data is included;
+- no confidential information is included;
+- no investment recommendation language is used.
+
+---
+
+## Disclaimer
+
+This data quality report is part of an educational financial modeling case study.
+
+It uses only publicly available information and does not include personal data, internal banking information or confidential information.
+
+The project does not constitute investment advice, financial advice or a recommendation to buy, sell or hold any financial instrument.

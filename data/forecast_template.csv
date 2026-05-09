@@ -1,0 +1,22 @@
+metric,category,2025A,2026E,2027E,2028E,forecast_driver,scenario,unit,notes
+Net interest income,Income Statement,,,,,Net interest income growth,Base,EUR million,Forecast based on historical trend and public information
+Fees and commissions,Income Statement,,,,,Fees and commissions growth,Base,EUR million,Forecast based on historical trend and client activity assumptions
+Other operating income,Income Statement,,,,,Other operating income assumption,Base,EUR million,Use conservative assumptions for volatile income lines
+Operating income,Income Statement,,,,,Sum of revenue lines,Base,EUR million,Calculated from net interest income fees and other operating income
+Operating costs,Income Statement,,,,,Operating cost growth,Base,EUR million,Forecast based on cost growth and efficiency assumptions
+Impairments and provisions,Income Statement,,,,,Cost of risk assumption,Base,EUR million,Forecast based on credit risk and impairment assumptions
+Profit before tax,Income Statement,,,,,Operating profit after impairments,Base,EUR million,Calculated figure
+Net income,Income Statement,,,,,Net income margin / tax assumption,Base,EUR million,Forecast based on simplified profitability assumptions
+Loans to customers,Balance Sheet,,,,,Loan growth,Base,EUR million,Forecast based on loan book growth assumption
+Customer deposits,Balance Sheet,,,,,Deposit growth,Base,EUR million,Forecast based on customer deposit growth assumption
+Total assets,Balance Sheet,,,,,Asset growth,Base,EUR million,Forecast based on balance sheet growth assumption
+Equity,Balance Sheet,,,,,Retained earnings and dividend assumption,Base,EUR million,Forecast based on net income and payout assumptions
+ROE,Profitability Ratio,,,,,Net income / average equity,Base,%,Calculated ratio
+ROA,Profitability Ratio,,,,,Net income / average total assets,Base,%,Calculated ratio
+Cost-to-income,Efficiency Ratio,,,,,Operating costs / operating income,Base,%,Calculated ratio
+Cost of risk,Asset Quality Ratio,,,,,Impairments / average loans,Base,%,Calculated ratio or reported-style estimate
+Loan-to-deposit ratio,Liquidity Ratio,,,,,Loans to customers / customer deposits,Base,%,Calculated ratio
+CET1 ratio,Capital Ratio,,,,,Capital assumption,Base,%,Use conservative estimate where not officially available
+Price-to-book,Valuation Ratio,,,,,Market capitalisation / equity,Base,x,Use dated public market data
+Price-to-earnings,Valuation Ratio,,,,,Market capitalisation / net income,Base,x,Use dated public market data
+Dividend yield,Valuation Ratio,,,,,Dividend per share / share price,Base,%,Use only if dividend data is available

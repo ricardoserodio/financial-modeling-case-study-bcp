@@ -68,28 +68,43 @@ This project is intended to demonstrate practical skills in:
 
 ## Project Structure
 
-financial-modeling-case-study-bcp/
-│
-├── README.md
-├── sources.md
-├── company_overview.md
-├── assumptions.md
-├── ratio_analysis.md
-├── valuation_summary.md
-├── investment_memo.md
-├── disclaimer.md
-│
-├── model/
-│   ├── banking_model.xlsx
-│   └── sensitivity_analysis.xlsx
-│
-├── data/
-│   ├── historical_financials.csv
-│   ├── banking_ratios.csv
-│   └── source_mapping.csv
-│
-└── notes/
-    └── methodology_notes.md
+    financial-modeling-case-study-bcp/
+    │
+    ├── README.md
+    ├── sources.md
+    ├── company_overview.md
+    ├── assumptions.md
+    ├── ratio_analysis.md
+    ├── valuation_summary.md
+    ├── investment_memo.md
+    ├── disclaimer.md
+    ├── requirements.txt
+    │
+    ├── model/
+    │   ├── create_banking_model_template.py
+    │   ├── create_sensitivity_analysis_template.py
+    │   ├── model_structure.md
+    │   ├── sensitivity_analysis_structure.md
+    │   └── formula_reference.md
+    │
+    ├── data/
+    │   ├── historical_financials.csv
+    │   ├── banking_ratios.csv
+    │   ├── source_mapping.csv
+    │   ├── source_links.csv
+    │   ├── extraction_tracker.csv
+    │   ├── forecast_template.csv
+    │   ├── scenario_assumptions.csv
+    │   ├── market_data_template.csv
+    │   ├── peer_comparison_template.csv
+    │   ├── data_dictionary.md
+    │   ├── data_quality_report.md
+    │   ├── data_validation_rules.md
+    │   └── validation_checks.py
+    │
+    └── notes/
+        ├── data_extraction_plan.md
+        └── model_review_checklist.md
 
 ---
 
@@ -105,11 +120,48 @@ financial-modeling-case-study-bcp/
 | `valuation_summary.md` | Educational valuation overview using banking multiples |
 | `investment_memo.md` | Professional investment-style memo |
 | `disclaimer.md` | GDPR, public-source and no-investment-advice disclaimer |
-| `banking_model.xlsx` | Simplified bank financial model |
-| `sensitivity_analysis.xlsx` | Sensitivity analysis for key assumptions |
-| `historical_financials.csv` | Historical financial data based on public sources |
-| `banking_ratios.csv` | Key banking ratios used in the analysis |
-| `source_mapping.csv` | Source mapping and validation notes |
+| `requirements.txt` | Python dependencies used in the project |
+| `model/create_banking_model_template.py` | Python script to generate the banking model Excel template |
+| `model/create_sensitivity_analysis_template.py` | Python script to generate the sensitivity analysis Excel template |
+| `model/model_structure.md` | Documentation of the banking model structure |
+| `model/sensitivity_analysis_structure.md` | Documentation of the sensitivity analysis structure |
+| `model/formula_reference.md` | Reference document for the main formulas used in the model |
+| `data/historical_financials.csv` | Historical financial data template based on public sources |
+| `data/banking_ratios.csv` | Key banking ratios used in the analysis |
+| `data/source_mapping.csv` | Source mapping and validation notes |
+| `data/source_links.csv` | Official source links used for data extraction |
+| `data/extraction_tracker.csv` | Tracker for data extraction from annual reports |
+| `data/forecast_template.csv` | Forecast structure for the financial model |
+| `data/scenario_assumptions.csv` | Conservative, base and optimistic scenario assumptions |
+| `data/market_data_template.csv` | Market data template for valuation inputs |
+| `data/peer_comparison_template.csv` | Peer comparison template for listed European banks |
+| `data/data_dictionary.md` | Definitions of key data fields, metrics and ratios |
+| `data/data_quality_report.md` | Data quality review report |
+| `data/data_validation_rules.md` | Data validation rules for the project |
+| `data/validation_checks.py` | Python script for basic data quality checks |
+| `notes/data_extraction_plan.md` | Step-by-step data extraction plan |
+| `notes/model_review_checklist.md` | Human-in-the-loop review checklist |
+
+---
+
+## Excel Model Generation
+
+The Excel model files are generated using Python scripts located in the `model/` folder.
+
+To generate the banking model template:
+
+    python model/create_banking_model_template.py
+
+To generate the sensitivity analysis template:
+
+    python model/create_sensitivity_analysis_template.py
+
+These scripts create the following Excel files:
+
+    model/banking_model.xlsx
+    model/sensitivity_analysis.xlsx
+
+The generated Excel files are templates for educational analysis and should be completed using only public information.
 
 ---
 
@@ -197,6 +249,8 @@ This project uses only publicly available information, including:
 
 A detailed list of sources is provided in `sources.md`.
 
+Official source links used for the data extraction process are documented in `data/source_links.csv`.
+
 No full reports are copied into this repository. The project only references public sources and uses selected financial data for educational analysis.
 
 ---
@@ -215,7 +269,31 @@ The validation process includes:
 - Documenting assumptions used in forecasts
 - Avoiding unsupported conclusions
 
+The project includes a Python validation script:
+
+    python data/validation_checks.py
+
 This makes the project relevant not only for financial research roles, but also for financial data quality, data validation and AI finance evaluation work.
+
+---
+
+## Human-in-the-Loop Review
+
+The project includes a human-in-the-loop review approach to reduce analytical errors, source inconsistencies and unsupported conclusions.
+
+The review process focuses on:
+
+- Source traceability
+- Unit consistency
+- Period consistency
+- Formula accuracy
+- Ratio consistency
+- Scenario logic
+- Bias review
+- Neutral investment language
+- No use of personal, confidential or internal information
+
+The review checklist is documented in `notes/model_review_checklist.md`.
 
 ---
 

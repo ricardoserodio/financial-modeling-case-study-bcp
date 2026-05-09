@@ -216,3 +216,14 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Excel temporary files
+~$*.xlsx
+~$*.xlsm
+~$*.xls
+
+# Local output drafts
+outputs/
+exports/
+tmp/
+temp/

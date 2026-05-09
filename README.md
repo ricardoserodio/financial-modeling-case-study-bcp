@@ -71,6 +71,7 @@ This project is intended to demonstrate practical skills in:
     financial-modeling-case-study-bcp/
     │
     ├── README.md
+    ├── RUN_PROJECT.md
     ├── sources.md
     ├── company_overview.md
     ├── assumptions.md
@@ -113,6 +114,7 @@ This project is intended to demonstrate practical skills in:
 | File | Purpose |
 |---|---|
 | `README.md` | Main project overview and repository guide |
+| `RUN_PROJECT.md` | Instructions to run the project locally |
 | `sources.md` | Public sources used in the project |
 | `company_overview.md` | Business overview of Millennium bcp |
 | `assumptions.md` | Forecast assumptions and modeling logic |
@@ -145,6 +147,10 @@ This project is intended to demonstrate practical skills in:
 ---
 
 ## Excel Model Generation
+
+For local setup and execution instructions, see:
+
+    RUN_PROJECT.md
 
 The Excel model files are generated using Python scripts located in the `model/` folder.
 

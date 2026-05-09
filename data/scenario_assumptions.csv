@@ -1,0 +1,19 @@
+assumption,category,conservative,base,optimistic,unit,notes
+Net interest income growth,Revenue,,,,%,Annual growth assumption for net interest income
+Fees and commissions growth,Revenue,,,,%,Annual growth assumption for fees and commissions
+Other operating income growth,Revenue,,,,%,Use cautious assumptions due to potential volatility
+Operating cost growth,Costs,,,,%,Annual growth assumption for operating costs
+Cost-to-income target,Efficiency,,,,%,Target efficiency ratio by scenario
+Cost of risk,Asset Quality,,,,%,Credit risk assumption based on impairments and loan book
+Loan growth,Balance Sheet,,,,%,Annual customer loan growth assumption
+Deposit growth,Balance Sheet,,,,%,Annual customer deposit growth assumption
+Total asset growth,Balance Sheet,,,,%,Annual total asset growth assumption
+Equity growth,Capital,,,,%,Driven by retained earnings and dividends
+Dividend payout ratio,Capital Return,,,,%,Use only if supported by public information or scenario logic
+CET1 ratio assumption,Capital,,,,%,Use conservative estimate where forecast regulatory data is unavailable
+ROE assumption,Profitability,,,,%,Used for valuation sensitivity and scenario analysis
+ROA assumption,Profitability,,,,%,Used as profitability consistency check
+P/B multiple,Valuation,,,,x,Illustrative valuation multiple
+P/E multiple,Valuation,,,,x,Illustrative valuation multiple
+Cost of equity,Valuation,,,,%,Used only for educational valuation sensitivity
+Terminal growth,Valuation,,,,%,Use cautiously and only for illustrative purposes

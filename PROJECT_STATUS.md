@@ -1,516 +1,566 @@
-# Project Status
-
-This document summarises the current status of the **Financial Modeling Case Study – Millennium bcp / Portuguese Listed Bank** project.
-
-The project is now structured as a hybrid portfolio project combining:
-
-- Financial Modeling;
-- Banking Analytics;
-- SQL;
-- Power BI;
-- Financial Data Quality;
-- Source Validation;
-- Executive Reporting.
-
-The project is designed for educational, portfolio and professional development purposes only.
-
-It does not constitute investment advice.
-
----
+# Project Status – Financial Modeling Case Study: Millennium bcp
 
 ## Current Project Phase
 
-The project is currently in:
+**Phase 2 – Public Data Extraction, Validation and Initial Banking Analytics**
 
-    Phase 2 – Initial Public Data Extraction and Validation
+The project has completed the initial **2024A–2025A public data cycle**.
 
-The repository structure, documentation, SQL layer, Power BI planning layer, reports folder and data quality framework have been created.
+This means the project now includes:
 
-The first real public-data extraction for 2025A has also been completed.
+- reviewed 2025A public data;
+- reviewed 2024A public/reexpressed comparative data;
+- structured financial data;
+- structured banking ratios;
+- source mapping;
+- extraction tracking;
+- validation checks;
+- initial 2024A–2025A analytical commentary;
+- updated financial data quality documentation.
+
+The project is now ready to move into the next historical extraction phase:
+
+```text
+2023A and 2022A official annual report extraction
+```
+
+---
+
+## Project Objective
+
+This project is a professional portfolio case study focused on Millennium bcp / Banco Comercial Português as a listed Portuguese bank.
+
+The objective is to demonstrate a practical workflow combining:
+
+- financial statement analysis;
+- banking ratio analysis;
+- public financial data extraction;
+- financial data quality;
+- source validation;
+- SQL-ready structured datasets;
+- Power BI dashboard preparation;
+- financial modeling preparation;
+- human-in-the-loop analytical review.
+
+The project uses only public information and is intended for educational, analytical and professional portfolio purposes.
+
+It does not provide investment advice, financial advice, valuation advice, a price target or any buy/sell/hold recommendation.
+
+---
+
+## Current Timeline
+
+| Period | Status | Notes |
+|---|---:|---|
+| 2022A | Pending | To be extracted from official public annual report |
+| 2023A | Pending | To be extracted from official public annual report |
+| 2024A | Completed for initial scope | Official/reexpressed comparative public data extracted and validated |
+| 2025A | Completed for initial scope | Official public data extracted and validated |
+| 2026E | Pending | Forecast period, not yet activated |
+| 2027E | Pending | Forecast period, not yet activated |
 
 ---
 
 ## Completed Work
 
-The following components have been created or updated:
+### Project Structure
 
-- professional README;
-- project disclaimer;
+The project structure has been created and organised for:
+
+- data files;
+- reports;
+- SQL files;
+- Power BI documentation;
+- model templates;
 - methodology documentation;
-- public source documentation;
-- company overview;
-- forecast assumptions documentation;
-- banking ratio analysis structure;
-- valuation summary structure;
-- investment memo template;
-- data validation rules;
-- data dictionary;
-- source mapping template;
-- source links file;
-- historical financials template;
-- banking ratios dataset;
-- financial data dataset;
-- forecast assumptions template;
-- scenario analysis template;
-- market data template;
-- peer comparison template;
-- data extraction tracker;
-- Python validation checks script;
-- banking model Excel template generator;
-- sensitivity analysis Excel template generator;
-- formula reference documentation;
-- local project run instructions;
-- project status documentation;
-- changelog;
-- roadmap;
-- SQL schema;
-- SQL analytical queries;
-- SQL layer documentation;
-- Power BI dashboard documentation;
-- Power BI dashboard structure;
-- banking analytics report;
-- financial data quality report;
-- human-in-the-loop model review checklist.
+- source tracking;
+- validation checks.
+
+Completed structure includes:
+
+```text
+data/
+reports/
+sql/
+powerbi/
+model/
+notes/
+```
 
 ---
 
-## Initial 2025A Extraction Status
+## Completed Documentation
 
-The initial 2025A public-data extraction has been completed.
-
-The 2025A data has been added to:
-
-- `data/financial_data.csv`;
-- `data/banking_ratios.csv`;
-- `data/extraction_tracker.csv`;
-- `data/source_mapping.csv`.
-
-The initial extraction includes:
-
-- profitability metrics;
-- efficiency metrics;
-- asset quality metrics;
-- balance sheet metrics;
-- capital ratios;
-- liquidity ratios;
-- selected per-share indicators.
-
-Current validation status:
-
-    Reviewed
-
-The data has been added from public sources and reviewed at an initial level.
-
-Before final publication, the 2025A data should still be cross-checked against:
-
-- official annual report;
-- official investor presentation;
-- official key indicators pages;
-- source mapping file;
-- extraction tracker file.
-
----
-
-## Current Data Status
-
-The project currently includes:
-
-| Area | Status |
-|---|---|
-| Repository structure | Completed |
-| Documentation framework | Completed |
-| SQL layer | Initial structure completed |
-| Power BI layer | Initial structure completed |
-| Reports layer | Initial structure completed |
-| Data quality framework | Initial structure completed |
-| 2025A public data extraction | Completed |
-| 2025A banking ratios | Completed |
-| 2025A source mapping | Completed |
-| 2025A extraction tracker | Completed |
-| 2025A banking analytics commentary | Completed |
-| 2025A data quality commentary | Completed |
-| 2024A extraction | Pending |
-| 2023A extraction | Pending |
-| 2022A extraction | Pending |
-| Forecast assumptions | Pending |
-| Scenario analysis | Pending |
-| Market data | Pending |
-| Peer comparison | Pending |
-| Power BI dashboard build | Pending |
-
----
-
-## Validation Status
-
-The Python validation script has been executed using:
-
-    python data/validation_checks.py
-
-The script completed successfully.
-
-The current warnings relate to template files that are not yet fully populated:
-
-- `data/market_data_template.csv`;
-- `data/peer_comparison_template.csv`.
-
-These warnings are acceptable at the current stage because market data and peer comparison belong to later project phases.
-
-No blocking validation issue was identified for the initial 2025A banking analytics dataset.
-
----
-
-## Completed Reports
-
-The following reporting files have been updated with the initial 2025A work:
+The following documentation files have been created or updated:
 
 | File | Status |
-|---|---|
-| `reports/banking_analytics_report.md` | Initial 2025A commentary added |
-| `reports/data_quality_report.md` | Initial 2025A validation status added |
-
-The project now includes both:
-
-- analytical commentary;
-- data quality commentary.
-
-This strengthens the project as a banking analytics and financial data quality portfolio case study.
-
----
-
-## Pending Work
-
-The following tasks are still pending:
-
-- extract 2024A financial data from official public sources;
-- extract 2023A financial data from official public sources;
-- extract 2022A financial data from official public sources;
-- complete historical trend analysis for 2022A–2025A;
-- cross-check 2025A values against the official annual report;
-- confirm source references and pages or sections;
-- review labels such as customer deposits versus customer funds;
-- complete `data/historical_financials.csv`;
-- complete multi-year `data/financial_data.csv`;
-- complete multi-year `data/banking_ratios.csv`;
-- complete multi-year `data/source_mapping.csv`;
-- complete multi-year `data/extraction_tracker.csv`;
-- select a valuation date for market data;
-- complete `data/market_data_template.csv`;
-- review and refine peer group selection;
-- complete `data/peer_comparison_template.csv`;
-- run validation checks after each major data update;
-- generate the Excel model templates;
-- populate the Excel model;
-- define forecast assumptions for 2026E and 2027E;
-- complete scenario analysis;
-- build Power BI dashboard;
-- write final investment memo;
-- perform final human-in-the-loop review before publication.
+|---|---:|
+| `README.md` | Completed |
+| `RUN_PROJECT.md` | Completed |
+| `PROJECT_STATUS.md` | Active |
+| `CHANGELOG.md` | Active |
+| `ROADMAP.md` | Completed |
+| `disclaimer.md` | Completed |
+| `methodology.md` | Completed |
+| `sources.md` | Completed |
+| `company_overview.md` | Completed |
+| `assumptions.md` | Completed |
+| `ratio_analysis.md` | Completed |
+| `valuation_summary.md` | Completed |
+| `investment_memo.md` | Completed |
+| `reports/banking_analytics_report.md` | Updated |
+| `reports/data_quality_report.md` | Updated |
 
 ---
 
-## Planned Project Phases
+## Completed Data Files
 
-### Phase 1 – Repository Structure and Documentation
+The following data files are active:
 
-Status:
-
-    Completed
-
-Objective:
-
-Create a clean, professional and auditable project structure.
-
-Main outputs completed:
-
-- README;
-- disclaimer;
-- methodology;
-- source documentation;
-- data templates;
-- validation rules;
-- model documentation;
-- SQL structure;
-- Power BI structure;
-- reports structure;
-- local run instructions;
-- project status;
-- changelog;
-- roadmap.
+| File | Status | Notes |
+|---|---:|---|
+| `data/financial_data.csv` | Active | Contains reviewed 2024A and 2025A core financial data |
+| `data/banking_ratios.csv` | Active | Contains reviewed 2024A and 2025A banking ratios |
+| `data/source_mapping.csv` | Active | Contains reviewed 2024A and 2025A source mapping entries |
+| `data/extraction_tracker.csv` | Active | Tracks extraction progress and source validation |
+| `data/forecast_assumptions.csv` | Template | Forecast assumptions not yet activated |
+| `data/scenario_analysis.csv` | Template | Scenario outputs not yet activated |
+| `data/market_data_template.csv` | Template | Market data not yet activated |
+| `data/peer_comparison_template.csv` | Template | Peer comparison not yet activated |
+| `data/validation_checks.py` | Active | Validation script currently running |
 
 ---
 
-### Phase 2 – Initial Public Data Extraction
+## Completed 2025A Extraction
 
-Status:
+The initial 2025A public data extraction has been completed.
 
-    In progress
+Reviewed 2025A areas include:
 
-Objective:
-
-Extract historical financial data from official public sources.
-
-Current progress:
-
-- 2025A initial extraction completed;
-- 2024A pending;
-- 2023A pending;
-- 2022A pending.
-
-Main outputs:
-
-- completed `data/financial_data.csv`;
-- completed `data/banking_ratios.csv`;
-- completed `data/source_mapping.csv`;
-- completed `data/extraction_tracker.csv`.
-
----
-
-### Phase 3 – Historical Trend Analysis
-
-Status:
-
-    Pending
-
-Objective:
-
-Move from a single-year 2025A snapshot to a proper multi-year trend analysis.
-
-Main outputs:
-
-- 2022A–2025A profitability trend;
-- 2022A–2025A efficiency trend;
-- 2022A–2025A asset quality trend;
-- 2022A–2025A capital trend;
-- updated banking analytics report;
-- updated Power BI dashboard inputs.
+- net interest income;
+- operating income;
+- operating costs;
+- impairments and provisions;
+- net income;
+- customer loans;
+- customer funds / customer deposits;
+- total assets;
+- equity;
+- ROE;
+- ROA;
+- net interest margin;
+- cost-to-income ratio;
+- cost-to-income ratio excluding specific items;
+- cost of risk;
+- NPE ratio;
+- NPE coverage ratio;
+- restructured loans ratio;
+- loan-to-deposit ratio;
+- loan-to-balance-sheet-customer-resources ratio;
+- LCR;
+- NSFR;
+- CET1 phased-in ratio;
+- CET1 fully implemented ratio;
+- total capital fully implemented ratio;
+- EPS;
+- book value per share.
 
 ---
 
-### Phase 4 – Data Validation and Quality Review
+## Completed 2024A Extraction
 
-Status:
+The initial 2024A public/reexpressed comparative data extraction has been completed.
 
-    In progress
+Reviewed 2024A areas include:
 
-Objective:
-
-Validate financial data quality before using it in final analysis.
-
-Current progress:
-
-- initial validation script executed;
-- 2025A data reviewed;
-- market data and peer comparison warnings identified as non-blocking template issues.
-
-Main outputs:
-
-- validation script output;
-- reviewed source mapping;
-- unit consistency checks;
-- period consistency checks;
-- reported vs calculated figure review;
-- updated data quality report.
-
----
-
-### Phase 5 – SQL Analytics Layer
-
-Status:
-
-    Initial structure completed
-
-Objective:
-
-Structure public financial data into SQL tables and queries.
-
-Main outputs completed:
-
-- `sql/schema.sql`;
-- `sql/queries.sql`;
-- `sql/README.md`.
-
-Pending work:
-
-- load or replicate completed datasets into SQL tables;
-- test analytical queries;
-- use SQL outputs for Power BI preparation.
+- net interest income;
+- operating income;
+- operating costs;
+- operating costs excluding specific items;
+- net credit impairments;
+- other impairments and provisions;
+- net income;
+- customer loans;
+- customer funds;
+- balance sheet customer resources;
+- deposits and other customer resources;
+- total assets;
+- equity;
+- ROE;
+- ROA;
+- net interest margin;
+- cost-to-income ratio;
+- cost-to-income ratio excluding specific items;
+- cost of risk;
+- NPE ratio;
+- NPE coverage ratio;
+- restructured loans ratio;
+- loan-to-deposit ratio;
+- loan-to-balance-sheet-customer-resources ratio;
+- LCR;
+- NSFR;
+- CET1 phased-in ratio;
+- CET1 fully implemented ratio;
+- total capital fully implemented ratio;
+- EPS;
+- book value per share.
 
 ---
 
-### Phase 6 – Power BI Dashboard
+## Completed 2024A–2025A Data Cycle
 
-Status:
+The project has completed the first structured historical comparison cycle.
 
-    Planned
+| Component | Status |
+|---|---:|
+| 2025A financial data | Completed |
+| 2024A financial data | Completed |
+| 2025A banking ratios | Completed |
+| 2024A banking ratios | Completed |
+| 2025A source mapping | Completed |
+| 2024A source mapping | Completed |
+| 2025A extraction tracker | Completed |
+| 2024A extraction tracker | Completed |
+| 2024A–2025A banking analytics commentary | Completed |
+| 2024A–2025A data quality documentation | Completed |
 
-Objective:
+This creates the following workflow:
 
-Create an executive-style banking analytics dashboard.
+```text
+official public source
+→ extracted data
+→ structured CSV
+→ validation status
+→ source mapping
+→ analytical commentary
+→ data quality review
+→ GitHub portfolio documentation
+```
 
-Planned dashboard pages:
+---
+
+## Current Validation Status
+
+The validation script is active:
+
+```text
+data/validation_checks.py
+```
+
+The current expected validation output is:
+
+```text
+2 validation issue(s) found:
+
+1. market_data_template.csv: column 'category' has 17 missing values
+2. peer_comparison_template.csv: column 'business_type' has 10 missing values
+```
+
+These warnings are acceptable at this stage because both files are templates for future phases.
+
+They do not affect the reviewed 2024A–2025A data cycle.
+
+---
+
+## Known Data Quality Notes
+
+### Customer Deposits vs Customer Funds
+
+The main semantic review item is the distinction between:
+
+- customer deposits;
+- customer funds;
+- deposits and other customer resources;
+- balance sheet customer resources.
+
+Some dataset labels use “Customer deposits” for consistency, while the official source may refer to broader customer funds or customer resources.
+
+These entries are flagged as requiring review where necessary.
+
+### Reexpressed 2024A Figures
+
+Some 2024A values are treated as official/reexpressed comparative figures from the 2025 public source.
+
+These figures should be cross-checked against the 2024 annual report where appropriate before final use in a full investment-style memo.
+
+### Reported vs Calculated Values
+
+The project separates reported figures from calculated values.
+
+Valuation multiples such as P/E, P/B and dividend yield remain pending until a specific market data date is selected.
+
+---
+
+## Reports Updated
+
+### Banking Analytics Report
+
+`reports/banking_analytics_report.md` has been updated with:
+
+- 2025A findings;
+- 2024A–2025A comparison;
+- profitability analysis;
+- efficiency analysis;
+- asset quality analysis;
+- liquidity and funding analysis;
+- capital analysis;
+- per-share indicators;
+- SQL analytics angle;
+- Power BI dashboard angle;
+- human-in-the-loop review notes.
+
+### Data Quality Report
+
+`reports/data_quality_report.md` has been updated with:
+
+- 2024A–2025A data quality cycle status;
+- completed extraction status;
+- validation controls;
+- source mapping controls;
+- semantic review items;
+- SQL readiness;
+- Power BI readiness;
+- data quality risk register;
+- recommended validation enhancements;
+- portfolio positioning.
+
+---
+
+## SQL Status
+
+The SQL layer has been created.
+
+Completed files:
+
+| File | Status |
+|---|---:|
+| `sql/schema.sql` | Completed |
+| `sql/queries.sql` | Completed |
+| `sql/README.md` | Completed |
+
+The SQL layer supports:
+
+- reviewed vs pending analysis;
+- period comparison;
+- banking ratio analysis;
+- source validation checks;
+- data quality queries;
+- Power BI extract preparation.
+
+SQL execution is not yet active against a database. The structure is ready for future loading into SQLite, PostgreSQL or another analytical environment.
+
+---
+
+## Power BI Status
+
+The Power BI documentation layer has been created.
+
+Completed files:
+
+| File | Status |
+|---|---:|
+| `powerbi/README.md` | Completed |
+| `powerbi/dashboard_structure.md` | Completed |
+
+The Power BI dashboard is planned to include:
 
 - Executive Summary;
 - Profitability;
 - Efficiency;
 - Asset Quality;
-- Capital & Liquidity;
-- Forecast & Scenarios;
-- Data Quality.
+- Liquidity and Funding;
+- Capital;
+- Forecast and Scenario Analysis;
+- Data Quality Dashboard.
 
-Main outputs:
-
-- Power BI report file;
-- dashboard screenshots, if appropriate;
-- dashboard documentation;
-- updated Power BI README.
+No `.pbix` file has been created yet.
 
 ---
 
-### Phase 7 – Excel Model Generation and Population
+## Forecast and Valuation Status
 
-Status:
+Forecasting and valuation are not yet active.
 
-    Pending
+Pending areas include:
+
+- 2026E forecast assumptions;
+- 2027E forecast assumptions;
+- scenario outputs;
+- sensitivity analysis;
+- selected share price date;
+- market capitalisation;
+- P/E;
+- P/B;
+- dividend yield;
+- payout ratio;
+- peer comparison.
+
+Forecasts and valuation multiples should only be activated after:
+
+1. completing 2022A and 2023A historical extraction;
+2. validating metric definitions;
+3. selecting a market data date;
+4. documenting assumptions;
+5. separating historical data from estimates.
+
+---
+
+## Current GitHub Progress
+
+Recent completed Git milestones include:
+
+- adding the banking analytics, SQL and Power BI project structure;
+- adding 2025A public banking data;
+- adding 2024A official financial data;
+- adding 2024A official banking ratios;
+- adding 2024A official source mapping entries;
+- updating banking analytics commentary;
+- updating data quality documentation.
+
+The repository is being built through small, traceable commits.
+
+---
+
+## Current Project Strength
+
+The project currently demonstrates:
+
+- public financial data extraction;
+- banking ratio interpretation;
+- financial data quality controls;
+- source mapping;
+- validation scripting;
+- human-in-the-loop review;
+- SQL readiness;
+- Power BI readiness;
+- Git/GitHub workflow;
+- professional documentation;
+- portfolio-oriented financial research.
+
+This is now stronger than a simple financial model because it shows a complete workflow from data extraction to validation and analysis.
+
+---
+
+## Remaining Gaps
+
+The main remaining gaps are:
+
+| Area | Status |
+|---|---:|
+| 2023A extraction | Pending |
+| 2022A extraction | Pending |
+| market data | Pending |
+| peer comparison | Pending |
+| valuation multiples | Pending |
+| forecast model | Pending |
+| scenario analysis | Pending |
+| Power BI implementation | Pending |
+| SQL database execution | Pending |
+
+---
+
+## Immediate Next Step
+
+The recommended next step is:
+
+```text
+Extract and validate 2023A official public data.
+```
+
+This should include:
+
+1. identifying the correct official 2023 annual report source;
+2. extracting core financial metrics;
+3. updating `data/financial_data.csv`;
+4. updating `data/banking_ratios.csv`;
+5. updating `data/source_mapping.csv`;
+6. updating `data/extraction_tracker.csv`;
+7. running `data/validation_checks.py`;
+8. committing the changes to GitHub.
+
+After 2023A is completed, the same process should be repeated for 2022A.
+
+---
+
+## Recommended Next Phase
+
+### Phase 3 – Historical Data Completion
 
 Objective:
 
-Generate and populate the Excel banking model and sensitivity analysis files.
+```text
+Complete 2023A and 2022A extraction from official public annual reports.
+```
 
-Main outputs:
+Expected output:
 
-- `model/banking_model.xlsx`;
-- `model/sensitivity_analysis.xlsx`.
-
----
-
-### Phase 8 – Forecast and Scenario Analysis
-
-Status:
-
-    Pending
-
-Objective:
-
-Build simplified forecast scenarios for 2026E and 2027E based on public information and documented assumptions.
-
-Main outputs:
-
-- base scenario;
-- downside scenario;
-- upside scenario, if justified;
-- scenario comparison;
-- sensitivity tables.
+- complete 2022A–2025A historical dataset;
+- stronger trend analysis;
+- more credible forecast assumptions;
+- better Power BI dashboard readiness;
+- stronger financial research portfolio value.
 
 ---
 
-### Phase 9 – Valuation and Investment Memo
+## Professional Positioning Value
 
-Status:
+At the current stage, this project is already useful for demonstrating capability in:
 
-    Pending
+- Financial Research;
+- Banking Analytics;
+- Financial Data Quality;
+- Data Validation;
+- Reporting Analyst roles;
+- Investment Research Support;
+- Wealth Management Support;
+- AI Finance Evaluation;
+- AI Product Testing in Finance;
+- SQL-based financial analysis;
+- Power BI dashboard planning.
 
-Objective:
+The strongest current narrative is:
 
-Prepare an educational valuation summary and professional investment-style memo.
-
-Main outputs:
-
-- valuation summary;
-- investment memo;
-- final project review.
-
----
-
-### Phase 10 – Final Review and Portfolio Publication
-
-Status:
-
-    Pending
-
-Objective:
-
-Perform final quality review before presenting the project publicly.
-
-Main tasks:
-
-- review all documentation;
-- check all source references;
-- run validation script;
-- review Excel model outputs;
-- review SQL queries;
-- review Power BI dashboard;
-- review report language;
-- confirm no personal data is included;
-- confirm no confidential information is included;
-- confirm no investment recommendation is made;
-- update project status;
-- update changelog.
+```text
+Built a public-data banking analytics case study on Millennium bcp, including structured financial data extraction, banking ratio analysis, source mapping, data quality validation, SQL-ready datasets, Power BI dashboard planning and human-in-the-loop analytical review.
+```
 
 ---
 
-## Quality Control Principles
+## Current Status Summary
 
-The project follows these quality control principles:
-
-- use only public information;
-- map each key figure to a source;
-- separate reported figures from calculated figures;
-- separate historical actuals from forecasts;
-- document all assumptions;
-- date all market data;
-- avoid unsupported conclusions;
-- avoid investment advice language;
-- apply human review before publishing conclusions.
-
----
-
-## Important Restrictions
-
-This project must not include:
-
-- personal data;
-- client data;
-- employee data;
-- internal banking information;
-- confidential documents;
-- screenshots from internal systems;
-- non-public information;
-- investment recommendations.
-
----
-
-## Next Immediate Step
-
-The next immediate step is to continue historical data extraction.
-
-Recommended next period:
-
-    2024A
-
-Recommended files to update:
-
-- `data/extraction_tracker.csv`;
-- `data/financial_data.csv`;
-- `data/banking_ratios.csv`;
-- `data/source_mapping.csv`.
-
-Recommended workflow:
-
-1. Extract 2024A data from official public sources.
-2. Add values to the extraction tracker.
-3. Update the main financial dataset.
-4. Update banking ratios.
-5. Update source mapping.
-6. Run validation checks.
-7. Update reports.
-8. Commit the changes.
+| Area | Status |
+|---|---:|
+| Project setup | Completed |
+| README | Completed |
+| Methodology | Completed |
+| SQL structure | Completed |
+| Power BI structure | Completed |
+| 2025A extraction | Completed |
+| 2024A extraction | Completed |
+| 2024A–2025A comparison | Completed |
+| Source mapping | Completed for 2024A and 2025A |
+| Data quality report | Completed for 2024A and 2025A cycle |
+| Banking analytics report | Completed for 2024A and 2025A cycle |
+| Validation script | Active |
+| 2023A extraction | Pending |
+| 2022A extraction | Pending |
+| Forecasting | Pending |
+| Valuation | Pending |
+| Peer comparison | Pending |
+| Power BI build | Pending |
 
 ---
 
 ## Disclaimer
 
-This project is for educational and portfolio purposes only.
+This project is for educational, analytical and professional portfolio purposes only.
 
-It does not constitute investment advice, financial advice or a recommendation to buy, sell or hold any financial instrument.
+It uses only publicly available information.
 
-All analysis is based only on publicly available information.
+It does not use confidential information, internal banking data, client data or proprietary information.
+
+It does not provide investment advice, financial advice, valuation advice, a price target or a buy/sell/hold recommendation.
+
+All figures should be independently verified before any professional, academic or investment-related use.
+
+The analysis is descriptive, illustrative and subject to further validation.

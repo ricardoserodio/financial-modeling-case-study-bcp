@@ -55,3 +55,14 @@ Share price,Market Data,Valuation Date,Euronext,,,,data/market_data_template.csv
 Market capitalisation,Market Data,Valuation Date,Euronext,,,,data/market_data_template.csv,Pending,
 Number of shares,Market Data,2025A,Annual Report 2025,,,,data/market_data_template.csv,Pending,
 Dividend per share,Dividend Data,2025A,Annual Report 2025,,,,data/market_data_template.csv,Pending,
+Net income,Profitability,2025A,Millennium bcp Annual Results 2025 Fact Sheet,Profitability section,1018.6,EUR million,data/financial_data.csv,Reviewed,Group net income reported for 2025
+ROE,Profitability,2025A,Millennium bcp Strategic Objectives 2025-2028,Strategic objectives 2025 table,14.1,%,data/banking_ratios.csv,Reviewed,Reported ROE for 2025
+CET1 ratio,Capital,2025A,Millennium bcp Strategic Objectives 2025-2028,Strategic objectives 2025 table,15.9,%,data/banking_ratios.csv,Reviewed,Reported CET1 ratio for 2025
+Total capital ratio,Capital,2025A,Millennium bcp Annual Results 2025 Fact Sheet,Capital section,19.9,%,data/banking_ratios.csv,Reviewed,Reported total capital ratio for 2025
+Loans to customers,Balance Sheet,2025A,Millennium bcp Annual Results 2025 Fact Sheet,Business model section,62600,EUR million,data/financial_data.csv,Reviewed,Reported loans to customers of EUR 62.6 billion converted to EUR million
+Customer funds,Balance Sheet,2025A,Millennium bcp Annual Results 2025 Fact Sheet,Business model section,111800,EUR million,data/financial_data.csv,Reviewed,Reported customer funds of EUR 111.8 billion converted to EUR million
+Loan-to-deposit ratio,Liquidity,2025A,Millennium bcp Annual Results 2025 Fact Sheet,Business model section,68,%,data/banking_ratios.csv,Reviewed,Reported loan-to-deposit ratio for 2025
+LCR,Liquidity,2025A,Millennium bcp Annual Results 2025 Fact Sheet,Liquidity section,334,%,data/banking_ratios.csv,Reviewed,Reported liquidity coverage ratio for 2025
+NSFR,Liquidity,2025A,Millennium bcp Annual Results 2025 Fact Sheet,Liquidity section,180,%,data/banking_ratios.csv,Reviewed,Reported net stable funding ratio for 2025
+Cost of risk,Asset Quality,2025A,Millennium bcp Strategic Objectives 2025-2028,Strategic objectives 2025 table,32,bps,data/banking_ratios.csv,Reviewed,Reported group cost of risk for 2025
+Cost-to-income ratio,Efficiency,2025A,Millennium bcp Strategic Objectives 2025-2028,Strategic objectives 2025 table,37,%,data/banking_ratios.csv,Reviewed,Reported group cost-to-income ratio for 2025

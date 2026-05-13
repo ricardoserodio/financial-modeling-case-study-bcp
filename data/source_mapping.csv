@@ -63,3 +63,27 @@ Loan-to-deposit ratio,Liquidity Ratio,2022A,,%,Millennium bcp Annual Report 2022
 Loan-to-deposit ratio,Liquidity Ratio,2023A,,%,Millennium bcp Annual Report 2023,Annual Report,,Calculated,Loans to customers / customer deposits,Pending,Ensure consistent gross/net loan definition
 Loan-to-deposit ratio,Liquidity Ratio,2024A,,%,Millennium bcp Annual Report 2024,Annual Report,,Calculated,Loans to customers / customer deposits,Pending,Ensure consistent gross/net loan definition
 Loan-to-deposit ratio,Liquidity Ratio,2025A,,%,Millennium bcp Annual Report 2025,Annual Report,,Calculated,Loans to customers / customer deposits,Pending,Ensure consistent gross/net loan definition
+Net interest income,Profitability,2025A,2898.1,EUR million,Millennium bcp Key Indicators 2025,Official company source,Results section,Reported,,Reviewed,Reported margin financeira for 2025
+Operating income,Profitability,2025A,3815.2,EUR million,Millennium bcp Key Indicators 2025,Official company source,Results section,Reported,,Reviewed,Reported produto bancario for 2025
+Operating costs,Efficiency,2025A,1415.1,EUR million,Millennium bcp Key Indicators 2025,Official company source,Results section,Reported,,Reviewed,Reported operating costs for 2025
+Impairments and provisions,Asset Quality,2025A,199.5,EUR million,Millennium bcp Key Indicators 2025,Official company source,Results section,Reported,,Reviewed,Reported net credit impairments for 2025
+Net income,Profitability,2025A,1018.6,EUR million,Millennium bcp Key Indicators 2025,Official company source,Results section,Reported,,Reviewed,Reported net income for 2025
+Customer loans,Balance Sheet,2025A,61240,EUR million,Millennium bcp Key Indicators 2025,Official company source,Balance sheet section,Reported,,Reviewed,Reported net customer loans for 2025
+Customer deposits,Balance Sheet,2025A,111782,EUR million,Millennium bcp Key Indicators 2025,Official company source,Balance sheet section,Reported,,Reviewed,Reported total customer funds for 2025; metric label kept as Customer deposits for dataset consistency
+Total assets,Balance Sheet,2025A,109333,EUR million,Millennium bcp Key Indicators 2025,Official company source,Balance sheet section,Reported,,Reviewed,Reported total assets for 2025
+Equity,Capital,2025A,9061,EUR million,Millennium bcp Key Indicators 2025,Official company source,Balance sheet section,Reported,,Reviewed,Reported equity for 2025
+ROE,Profitability,2025A,14.1,%,Millennium bcp Key Indicators 2025,Official company source,Key ratios section,Reported,,Reviewed,Reported ROE for 2025
+ROA,Profitability,2025A,1.1,%,Millennium bcp Key Indicators 2025,Official company source,Key ratios section,Reported,,Reviewed,Reported ROA for 2025
+Net interest margin,Profitability,2025A,2.89,%,Millennium bcp Key Indicators 2025,Official company source,Key ratios section,Reported,,Reviewed,Reported taxa de margem financeira for 2025
+Cost-to-income ratio,Efficiency,2025A,37.1,%,Millennium bcp Key Indicators 2025,Official company source,Key ratios section,Reported,,Reviewed,Reported efficiency ratio for 2025
+Cost-to-income ratio excluding specific items,Efficiency,2025A,36.5,%,Millennium bcp Key Indicators 2025,Official company source,Key ratios section,Reported,,Reviewed,Reported efficiency ratio excluding specific items for 2025
+Cost of risk,Asset Quality,2025A,32,bps,Millennium bcp Key Indicators 2025,Official company source,Key ratios section,Reported,,Reviewed,Reported cost of risk for 2025
+NPE ratio,Asset Quality,2025A,2.4,%,Millennium bcp Key Indicators 2025,Official company source,Key ratios section,Reported,,Reviewed,Reported NPE ratio for 2025
+NPE coverage ratio,Asset Quality,2025A,90.9,%,Millennium bcp Key Indicators 2025,Official company source,Key ratios section,Reported,,Reviewed,Reported NPE coverage ratio for 2025
+Loan-to-deposit ratio,Liquidity,2025A,68.2,%,Millennium bcp Key Indicators 2025,Official company source,Key ratios section,Reported,,Reviewed,Reported customer loans to deposits and other customer resources for 2025
+LCR,Liquidity,2025A,334,%,Millennium bcp Key Indicators 2025,Official company source,Key ratios section,Reported,,Reviewed,Reported liquidity coverage ratio for 2025
+NSFR,Liquidity,2025A,180,%,Millennium bcp Key Indicators 2025,Official company source,Key ratios section,Reported,,Reviewed,Reported net stable funding ratio for 2025
+CET1 fully implemented ratio,Capital,2025A,15.9,%,Millennium bcp Key Indicators 2025,Official company source,Capital ratios section,Reported,,Reviewed,Reported CET1 fully implemented ratio for 2025
+Total capital fully implemented ratio,Capital,2025A,19.9,%,Millennium bcp Key Indicators 2025,Official company source,Capital ratios section,Reported,,Reviewed,Reported total capital fully implemented ratio for 2025
+EPS,Per Share,2025A,0.066,EUR,Millennium bcp Share Indicators 2025,Official company source,Share indicators section,Reported,,Reviewed,Reported adjusted EPS for 2025
+Book value per share,Per Share,2025A,0.528,EUR,Millennium bcp Share Indicators 2025,Official company source,Share indicators section,Reported,,Reviewed,Reported book value per share for 2025

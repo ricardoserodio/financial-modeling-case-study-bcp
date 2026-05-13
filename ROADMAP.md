@@ -305,3 +305,99 @@ This roadmap is part of an educational financial modeling case study.
 The project does not constitute investment advice, financial advice or a recommendation to buy, sell or hold any financial instrument.
 
 All analysis must be based only on publicly available information.
+
+## Roadmap Update ? After 2023A?2025A Historical Cycle
+
+### Completed
+
+The project has completed the initial reviewed historical data cycle for:
+
+- 2023A;
+- 2024A;
+- 2025A.
+
+This includes:
+
+- financial data extraction;
+- banking ratios;
+- source mapping;
+- extraction tracker updates;
+- banking analytics report update;
+- data quality report update;
+- project status update;
+- changelog update;
+- validation checks.
+
+### Current Position
+
+The project now has a stronger analytical base because it supports an initial three-year banking trend analysis.
+
+The current reviewed cycle supports analysis of:
+
+- profitability;
+- net interest income;
+- efficiency;
+- asset quality;
+- customer loans;
+- customer funds;
+- liquidity;
+- capital;
+- per-share indicators;
+- data quality status.
+
+### Next Phase
+
+The next recommended phase is:
+
+1. Extract 2022A official public financial data.
+2. Add 2022A banking ratios.
+3. Add 2022A source mapping entries.
+4. Update the extraction tracker for 2022A.
+5. Re-run validation checks.
+6. Update reports to cover 2022A?2025A.
+7. Add SQL query output examples.
+8. Start the Power BI dashboard build.
+9. Select a documented market data date.
+10. Add valuation multiples only after market data is validated.
+
+### Future Phases
+
+After the 2022A cycle, the project should move into:
+
+- SQL outputs;
+- Power BI dashboard;
+- valuation market data;
+- peer comparison;
+- forecast assumptions;
+- scenario analysis;
+- sensitivity analysis;
+- final investment memo.
+
+### Data Quality Priorities
+
+The following issues should remain visible:
+
+- customer deposits vs customer funds;
+- reexpressed comparative figures;
+- reported vs calculated ratios;
+- NPE vs NPL terminology;
+- phased-in vs fully implemented capital ratios;
+- valuation date sensitivity;
+- peer group definition;
+- forecast assumptions.
+
+### Portfolio Value
+
+This roadmap supports the project?s positioning as a professional portfolio case study combining:
+
+- banking experience;
+- public financial data analysis;
+- financial data quality;
+- source validation;
+- banking analytics;
+- SQL readiness;
+- Power BI readiness;
+- human-in-the-loop review;
+- responsible AI-assisted finance workflows.
+
+---

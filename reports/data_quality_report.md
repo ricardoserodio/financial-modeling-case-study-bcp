@@ -536,6 +536,129 @@ Power BI should clearly distinguish between:
 
 ---
 
+---
+
+## Completed 2022A?2025A Data Quality Cycle
+
+The project now includes a reviewed four-year historical data cycle covering **2022A, 2023A, 2024A and 2025A**.
+
+This expands the case study from an initial three-year trend analysis into a broader banking analytics and financial data quality workflow.
+
+The reviewed 2022A?2025A cycle includes:
+
+- financial statement and balance sheet data;
+- banking ratios;
+- source mapping;
+- extraction tracker updates;
+- validation status tracking;
+- data dictionary definitions;
+- banking analytics commentary;
+- human-in-the-loop review notes.
+
+### Completed Files
+
+| File | 2022A | 2023A | 2024A | 2025A | Notes |
+|---|---:|---:|---:|---:|---|
+| `data/financial_data.csv` | Completed | Completed | Completed | Completed | Core financial statement and balance sheet data |
+| `data/banking_ratios.csv` | Completed | Completed | Completed | Completed | Main banking ratios and per-share indicators |
+| `data/source_mapping.csv` | Completed | Completed | Completed | Completed | Source mapping and traceability |
+| `data/extraction_tracker.csv` | Completed | Completed | Completed | Completed | Extraction status and review notes |
+| `data/data_dictionary.md` | Updated | Updated | Updated | Updated | Metric definitions and interpretation notes |
+| `reports/banking_analytics_report.md` | Updated | Updated | Updated | Updated | Analytical commentary updated |
+
+### Current Data Quality Position
+
+The 2022A, 2023A, 2024A and 2025A periods are now suitable for initial historical trend analysis.
+
+This allows the project to analyse:
+
+- profitability recovery after 2022A;
+- net interest income development;
+- operating efficiency;
+- asset quality improvement;
+- customer loans and customer resources evolution;
+- liquidity and funding profile;
+- capital strength;
+- per-share indicators;
+- data quality and source traceability.
+
+### Items Requiring Continued Review
+
+The following items remain visible as human-in-the-loop review points:
+
+| Item | Status | Reason |
+|---|---:|---|
+| 2022A impairments and provisions | Needs Review | The value combines credit impairment and other impairments/provisions and should be reviewed against later-year definitions. |
+| Customer deposits vs customer funds | Needs Review | Banking disclosures may use similar terms with different scopes. |
+| Book value per share 2022A | Pending | Not yet added due to source consistency requirement. |
+| Valuation ratios | Pending | Market data date has not yet been selected and documented. |
+| Peer comparison | Pending | Peer group and comparison methodology are not yet defined. |
+| Reexpressed comparative figures | Review Required | Later reports may reexpress prior-year figures for comparability. |
+| Reported vs calculated ratios | Review Required | Calculated ratios may not fully match the bank's published methodology. |
+
+### Validation Status
+
+The validation script currently reports only template-stage warnings related to files that are not yet active for the core 2022A?2025A analysis:
+
+1. `market_data_template.csv`: missing `category` values.
+2. `peer_comparison_template.csv`: missing `business_type` values.
+
+These warnings are acceptable at this stage because market data and peer comparison remain future phases.
+
+### Data Quality Interpretation
+
+The project now demonstrates a more complete public-source financial data workflow:
+
+| Step | Status |
+|---|---:|
+| Public source identification | Completed |
+| 2022A financial data extraction | Completed |
+| 2022A banking ratios extraction | Completed |
+| 2023A?2025A historical data cycle | Completed |
+| Source mapping | Completed for 2022A?2025A |
+| Extraction tracking | Completed for 2022A?2025A |
+| Validation script execution | Active |
+| Data dictionary definitions | Updated |
+| Banking analytics reporting | Updated to 2022A?2025A |
+| Human-in-the-loop review | Active |
+| Market data | Pending |
+| Peer comparison | Pending |
+| Valuation | Pending |
+| Forecast assumptions | Pending |
+| Power BI dashboard build | Pending |
+
+### Power BI Readiness
+
+The project is now closer to Power BI readiness because the core historical dataset covers four annual periods.
+
+The most suitable first Power BI visuals are:
+
+| Dashboard Area | Suggested Visuals |
+|---|---|
+| Executive Overview | Net income, operating income, net interest income, total assets |
+| Profitability | ROE, ROA, net interest margin, EPS |
+| Efficiency | Cost-to-income ratio and adjusted cost-to-income ratio |
+| Asset Quality | Cost of risk, NPE ratio, NPE coverage ratio, restructured loans ratio |
+| Liquidity and Funding | Customer loans, customer funds, loan-to-deposit ratio, LCR, NSFR |
+| Capital | CET1 phased-in, CET1 fully implemented, total capital fully implemented |
+| Data Quality | Reviewed vs Needs Review vs Pending items |
+
+### Human-in-the-Loop Control
+
+The project should not treat the dataset as automatically final.
+
+Before final reporting, the following manual checks remain important:
+
+- confirm source terminology for customer deposits, customer funds and customer resources;
+- confirm whether 2022A impairments and provisions are directly comparable with later-year figures;
+- confirm whether any prior-year figures are reexpressed in later disclosures;
+- confirm whether ratios are reported or calculated;
+- confirm valuation date before adding market multiples;
+- confirm peer group methodology before adding peer comparison.
+
+This reinforces the project as a financial data quality and banking analytics case study, not only a financial modelling exercise.
+
+
 ## Completed 2023A?2025A Data Quality Cycle
 
 The project now includes a reviewed 2023A?2025A historical data cycle across the main analytical files.

@@ -66,3 +66,78 @@ LCR,Liquidity,2025A,Millennium bcp Annual Results 2025 Fact Sheet,Liquidity sect
 NSFR,Liquidity,2025A,Millennium bcp Annual Results 2025 Fact Sheet,Liquidity section,180,%,data/banking_ratios.csv,Reviewed,Reported net stable funding ratio for 2025
 Cost of risk,Asset Quality,2025A,Millennium bcp Strategic Objectives 2025-2028,Strategic objectives 2025 table,32,bps,data/banking_ratios.csv,Reviewed,Reported group cost of risk for 2025
 Cost-to-income ratio,Efficiency,2025A,Millennium bcp Strategic Objectives 2025-2028,Strategic objectives 2025 table,37,%,data/banking_ratios.csv,Reviewed,Reported group cost-to-income ratio for 2025
+Net interest income,Profitability,2024A,Millennium bcp Key Indicators 2025,Results section,2830.9,EUR million,data/financial_data.csv,Reviewed,Reported margin financeira for 2024
+Operating income,Profitability,2024A,Millennium bcp Key Indicators 2025,Results section,3573.5,EUR million,data/financial_data.csv,Reviewed,Reported produto bancario for 2024
+Operating costs,Efficiency,2024A,Millennium bcp Key Indicators 2025,Results section,1306.1,EUR million,data/financial_data.csv,Reviewed,Reported operating costs for 2024
+Operating costs excluding specific items,Efficiency,2024A,Millennium bcp Key Indicators 2025,Results section,1293.5,EUR million,data/financial_data.csv,Reviewed,Reported operating costs excluding specific items for 2024
+Net credit impairments,Asset Quality,2024A,Millennium bcp Key Indicators 2025,Results section,183.3,EUR million,data/financial_data.csv,Reviewed,Reported net credit impairments for 2024
+Other impairments and provisions,Asset Quality,2024A,Millennium bcp Key Indicators 2025,Results section,674.2,EUR million,data/financial_data.csv,Reviewed,Reported other impairments and provisions for 2024
+Net income,Profitability,2024A,Millennium bcp Key Indicators 2025,Results section,906.4,EUR million,data/financial_data.csv,Reviewed,Reported net income for 2024
+Total assets,Balance Sheet,2024A,Millennium bcp Key Indicators 2025,Balance sheet section,102144,EUR million,data/financial_data.csv,Reviewed,Reported total assets for 2024
+Equity,Capital,2024A,Millennium bcp Key Indicators 2025,Balance sheet section,8193,EUR million,data/financial_data.csv,Reviewed,Reported equity for 2024
+Customer loans,Balance Sheet,2024A,Millennium bcp Key Indicators 2025,Balance sheet section,56850,EUR million,data/financial_data.csv,Reviewed,Reported net customer loans for 2024
+Customer funds,Balance Sheet,2024A,Millennium bcp Key Indicators 2025,Balance sheet section,102938,EUR million,data/financial_data.csv,Reviewed,Reported total customer funds for 2024
+Balance sheet customer resources,Balance Sheet,2024A,Millennium bcp Key Indicators 2025,Balance sheet section,85334,EUR million,data/financial_data.csv,Reviewed,Reported balance sheet customer resources for 2024
+Deposits and other customer resources,Balance Sheet,2024A,Millennium bcp Key Indicators 2025,Balance sheet section,84042,EUR million,data/financial_data.csv,Reviewed,Reported deposits and other customer resources for 2024
+ROA,Profitability,2024A,Millennium bcp Key Indicators 2025,Profitability and efficiency section,1.0,%,data/banking_ratios.csv,Reviewed,Reported ROA for 2024
+ROE,Profitability,2024A,Millennium bcp Key Indicators 2025,Profitability and efficiency section,13.8,%,data/banking_ratios.csv,Reviewed,Reported ROE for 2024
+ROTE,Profitability,2024A,Millennium bcp Key Indicators 2025,Profitability and efficiency section,14.4,%,data/banking_ratios.csv,Reviewed,Reported ROTE for 2024
+Net interest margin,Profitability,2024A,Millennium bcp Key Indicators 2025,Profitability and efficiency section,3.04,%,data/banking_ratios.csv,Reviewed,Reported net interest margin for 2024
+Core cost-to-income ratio,Efficiency,2024A,Millennium bcp Key Indicators 2025,Profitability and efficiency section,35.5,%,data/banking_ratios.csv,Reviewed,Reported core efficiency ratio for 2024
+Cost-to-income ratio,Efficiency,2024A,Millennium bcp Key Indicators 2025,Profitability and efficiency section,36.5,%,data/banking_ratios.csv,Reviewed,Reported efficiency ratio for 2024
+Cost-to-income ratio excluding specific items,Efficiency,2024A,Millennium bcp Key Indicators 2025,Profitability and efficiency section,36.2,%,data/banking_ratios.csv,Reviewed,Reported efficiency ratio excluding specific items for 2024
+Portugal cost-to-income ratio excluding specific items,Efficiency,2024A,Millennium bcp Key Indicators 2025,Profitability and efficiency section,33.6,%,data/banking_ratios.csv,Reviewed,Reported Portugal efficiency ratio excluding specific items for 2024
+Staff costs to operating income,Efficiency,2024A,Millennium bcp Key Indicators 2025,Profitability and efficiency section,19.9,%,data/banking_ratios.csv,Reviewed,Reported staff costs to operating income ratio for 2024
+Cost of risk,Asset Quality,2024A,Millennium bcp Key Indicators 2025,Credit quality section,31,bps,data/banking_ratios.csv,Reviewed,Reported cost of risk for 2024
+NPE ratio,Asset Quality,2024A,Millennium bcp Key Indicators 2025,Credit quality section,3.1,%,data/banking_ratios.csv,Reviewed,Reported NPE ratio for 2024
+NPE coverage ratio,Asset Quality,2024A,Millennium bcp Key Indicators 2025,Credit quality section,82.2,%,data/banking_ratios.csv,Reviewed,Reported NPE coverage ratio for 2024
+Restructured loans ratio,Asset Quality,2024A,Millennium bcp Key Indicators 2025,Credit quality section,2.6,%,data/banking_ratios.csv,Reviewed,Reported restructured loans ratio for 2024
+Loan-to-deposit ratio,Liquidity,2024A,Millennium bcp Key Indicators 2025,Balance sheet section,67.6,%,data/banking_ratios.csv,Reviewed,Reported customer loans to deposits and other customer resources for 2024
+Loan-to-balance-sheet-customer-resources ratio,Liquidity,2024A,Millennium bcp Key Indicators 2025,Balance sheet section,66.6,%,data/banking_ratios.csv,Reviewed,Reported customer loans to balance sheet customer resources for 2024
+LCR,Liquidity,2024A,Millennium bcp Key Indicators 2025,Liquidity section,342,%,data/banking_ratios.csv,Reviewed,Reported liquidity coverage ratio for 2024
+NSFR,Liquidity,2024A,Millennium bcp Key Indicators 2025,Liquidity section,181,%,data/banking_ratios.csv,Reviewed,Reported net stable funding ratio for 2024
+CET1 phased-in ratio,Capital,2024A,Millennium bcp Key Indicators 2025,Capital section,16.4,%,data/banking_ratios.csv,Reviewed,Reported CET1 phased-in ratio for 2024
+CET1 fully implemented ratio,Capital,2024A,Millennium bcp Key Indicators 2025,Capital section,16.3,%,data/banking_ratios.csv,Reviewed,Reported CET1 fully implemented ratio for 2024
+Total capital fully implemented ratio,Capital,2024A,Millennium bcp Key Indicators 2025,Capital section,20.6,%,data/banking_ratios.csv,Reviewed,Reported total capital fully implemented ratio for 2024
+Adjusted EPS,Share Indicators,2024A,Millennium bcp Share Indicators 2025,Per-share values section,0.058,EUR,data/banking_ratios.csv,Reviewed,Reported adjusted EPS for 2024
+Book value per share,Share Indicators,2024A,Millennium bcp Share Indicators 2025,Per-share values section,0.469,EUR,data/banking_ratios.csv,Reviewed,Reported book value per share for 2024
+Net interest income,Profitability,2023A,Millennium bcp Annual Report 2024,Historical key indicators section,2826,EUR million,data/financial_data.csv,Reviewed,Reported margin financeira for 2023
+Operating income,Profitability,2023A,Millennium bcp Annual Report 2024,Historical key indicators section,3770,EUR million,data/financial_data.csv,Reviewed,Reported produto bancario for 2023
+Operating costs,Efficiency,2023A,Millennium bcp Annual Report 2024,Historical key indicators section,1163,EUR million,data/financial_data.csv,Reviewed,Reported operating costs for 2023
+Operating costs excluding specific items,Efficiency,2023A,Millennium bcp Annual Report 2024,Historical key indicators section,1147,EUR million,data/financial_data.csv,Reviewed,Reported operating costs excluding specific items for 2023
+Net credit impairments,Asset Quality,2023A,Millennium bcp Annual Report 2024,Credit risk indicators section,240,EUR million,data/financial_data.csv,Reviewed,Reported net credit impairment charges for 2023
+Impairments and provisions,Asset Quality,2023A,Millennium bcp Annual Report 2024,Historical key indicators section,1100,EUR million,data/financial_data.csv,Reviewed,Reported total impairments and provisions for 2023
+Net income,Profitability,2023A,Millennium bcp Annual Report 2024,Performance indicators section,856.1,EUR million,data/financial_data.csv,Reviewed,Reported consolidated net income for 2023
+Total assets,Balance Sheet,2023A,Millennium bcp Annual Report 2024,Historical key indicators section,94371,EUR million,data/financial_data.csv,Reviewed,Reported total assets for 2023
+Equity,Capital,2023A,Millennium bcp Annual Report 2024,Historical key indicators section,7290,EUR million,data/financial_data.csv,Reviewed,Reported equity for 2023
+Customer loans,Balance Sheet,2023A,Millennium bcp Annual Report 2024,Historical key indicators section,55218,EUR million,data/financial_data.csv,Reviewed,Reported net customer loans for 2023
+Customer funds,Balance Sheet,2023A,Millennium bcp Annual Report 2024,Historical key indicators section,95328,EUR million,data/financial_data.csv,Reviewed,Reported total customer funds for 2023
+Balance sheet customer resources,Balance Sheet,2023A,Millennium bcp Annual Report 2024,Historical key indicators section,79215,EUR million,data/financial_data.csv,Reviewed,Reported balance sheet customer resources for 2023
+Deposits and other customer resources,Balance Sheet,2023A,Millennium bcp Annual Report 2024,Historical key indicators section,77928,EUR million,data/financial_data.csv,Reviewed,Reported deposits and other customer resources for 2023
+ROE,Profitability,2023A,Millennium bcp Annual Report 2024,Performance indicators section,16.0,%,data/banking_ratios.csv,Needs Review,Reported ROE for 2023; cross-check with alternative disclosed ROE definitions before final use
+Cost-to-income ratio,Efficiency,2023A,Millennium bcp Annual Report 2024,Historical key indicators section,32.0,%,data/banking_ratios.csv,Reviewed,Reported cost-to-income ratio for 2023
+Cost-to-income ratio excluding specific items,Efficiency,2023A,Millennium bcp Annual Report 2024,Efficiency ratio section,31.6,%,data/banking_ratios.csv,Reviewed,Reported efficiency ratio excluding specific items for 2023
+Cost of risk,Asset Quality,2023A,Millennium bcp Annual Report 2024,Credit risk indicators section,42,bps,data/banking_ratios.csv,Reviewed,Reported cost of risk for 2023
+NPE ratio,Asset Quality,2023A,Millennium bcp Annual Report 2024,Credit risk indicators section,3.4,%,data/banking_ratios.csv,Reviewed,Reported NPE ratio for 2023
+Loan-to-deposit ratio,Liquidity,2023A,Millennium bcp Annual Report 2024,Historical key indicators section,71,%,data/banking_ratios.csv,Reviewed,Reported customer loans to deposits and other customer resources for 2023
+CET1 fully implemented ratio,Capital,2023A,Millennium bcp Annual Report 2024,Capital indicators section,15.4,%,data/banking_ratios.csv,Reviewed,Reported CET1 fully implemented ratio for 2023
+Net interest income,Profitability,2022A,Millennium bcp Annual Report 2024,Historical key indicators section,2150,EUR million,data/financial_data.csv,Reviewed,Reported margin financeira for 2022
+Operating income,Profitability,2022A,Millennium bcp Annual Report 2024,Historical key indicators section,2857,EUR million,data/financial_data.csv,Reviewed,Reported produto bancario for 2022
+Operating costs,Efficiency,2022A,Millennium bcp Annual Report 2024,Historical key indicators section,1073,EUR million,data/financial_data.csv,Reviewed,Reported operating costs for 2022
+Operating costs excluding specific items,Efficiency,2022A,Millennium bcp Annual Report 2024,Historical key indicators section,1057,EUR million,data/financial_data.csv,Reviewed,Reported operating costs excluding specific items for 2022
+Net credit impairments,Asset Quality,2022A,Millennium bcp Annual Report 2024,Credit risk indicators section,301,EUR million,data/financial_data.csv,Reviewed,Reported net credit impairment charges for 2022
+Impairments and provisions,Asset Quality,2022A,Millennium bcp Annual Report 2024,Historical key indicators section,1056,EUR million,data/financial_data.csv,Reviewed,Reported total impairments and provisions for 2022
+Net income,Profitability,2022A,Millennium bcp Annual Report 2024,Performance indicators section,197.4,EUR million,data/financial_data.csv,Reviewed,Reported consolidated net income for 2022
+Total assets,Balance Sheet,2022A,Millennium bcp Annual Report 2024,Historical key indicators section,89868,EUR million,data/financial_data.csv,Reviewed,Reported total assets for 2022
+Equity,Capital,2022A,Millennium bcp Annual Report 2024,Historical key indicators section,5928,EUR million,data/financial_data.csv,Reviewed,Reported equity for 2022
+Customer loans,Balance Sheet,2022A,Millennium bcp Annual Report 2024,Historical key indicators section,56198,EUR million,data/financial_data.csv,Reviewed,Reported net customer loans for 2022
+Customer funds,Balance Sheet,2022A,Millennium bcp Annual Report 2024,Historical key indicators section,92808,EUR million,data/financial_data.csv,Reviewed,Reported total customer funds for 2022
+Balance sheet customer resources,Balance Sheet,2022A,Millennium bcp Annual Report 2024,Historical key indicators section,77250,EUR million,data/financial_data.csv,Reviewed,Reported balance sheet customer resources for 2022
+Deposits and other customer resources,Balance Sheet,2022A,Millennium bcp Annual Report 2024,Historical key indicators section,75907,EUR million,data/financial_data.csv,Reviewed,Reported deposits and other customer resources for 2022
+ROE,Profitability,2022A,Millennium bcp Annual Report 2024,Performance indicators section,4.02,%,data/banking_ratios.csv,Needs Review,Reported ROE for 2022; cross-check with alternative disclosed ROE definitions before final use
+Cost-to-income ratio,Efficiency,2022A,Millennium bcp Annual Report 2024,Historical key indicators section,38.0,%,data/banking_ratios.csv,Reviewed,Reported cost-to-income ratio for 2022
+Cost-to-income ratio excluding specific items,Efficiency,2022A,Millennium bcp Annual Report 2024,Efficiency ratio section,37.0,%,data/banking_ratios.csv,Reviewed,Reported efficiency ratio excluding specific items for 2022
+Cost of risk,Asset Quality,2022A,Millennium bcp Annual Report 2024,Credit risk indicators section,52,bps,data/banking_ratios.csv,Reviewed,Reported cost of risk for 2022
+NPE ratio,Asset Quality,2022A,Millennium bcp Annual Report 2024,Credit risk indicators section,3.8,%,data/banking_ratios.csv,Needs Review,Reported NPE ratio for 2022; cross-check final disclosed ratio before final use
+Loan-to-deposit ratio,Liquidity,2022A,Millennium bcp Annual Report 2024,Historical key indicators section,74,%,data/banking_ratios.csv,Reviewed,Reported customer loans to deposits and other customer resources for 2022
+CET1 fully implemented ratio,Capital,2022A,Millennium bcp Annual Report 2024,Capital indicators section,12.5,%,data/banking_ratios.csv,Needs Review,Reported CET1 ratio for 2022 to be cross-checked before final use

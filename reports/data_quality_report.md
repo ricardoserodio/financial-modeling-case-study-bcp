@@ -534,6 +534,89 @@ Power BI should clearly distinguish between:
 
 ---
 
+---
+
+## Completed 2023A?2025A Data Quality Cycle
+
+The project now includes a reviewed 2023A?2025A historical data cycle across the main analytical files.
+
+This represents an important improvement because the case study now moves from a two-year comparison to a three-year historical trend.
+
+The reviewed 2023A?2025A cycle includes:
+
+- financial statement and balance sheet data;
+- banking ratios;
+- source mapping;
+- extraction tracker updates;
+- validation status tracking;
+- human-in-the-loop review notes;
+- banking analytics commentary.
+
+### Completed Files
+
+| File | 2023A | 2024A | 2025A | Notes |
+|---|---:|---:|---:|---|
+| `data/financial_data.csv` | Completed | Completed | Completed | Core financial statement and balance sheet data |
+| `data/banking_ratios.csv` | Completed | Completed | Completed | Banking ratios and per-share indicators |
+| `data/source_mapping.csv` | Completed | Completed | Completed | Source mapping and traceability |
+| `data/extraction_tracker.csv` | Completed | Completed | Completed | Extraction status and review notes |
+| `reports/banking_analytics_report.md` | Completed | Completed | Completed | Analytical commentary updated |
+
+### Current Data Quality Position
+
+The 2023A, 2024A and 2025A periods are now suitable for initial historical trend analysis.
+
+The following areas remain subject to continued review:
+
+- customer deposits vs customer funds terminology;
+- reexpressed comparative figures;
+- reported vs calculated ratio definitions;
+- NPE vs NPL terminology;
+- phased-in vs fully implemented capital ratios;
+- market data date selection;
+- valuation multiples;
+- peer comparison assumptions.
+
+### Important Note on 2023A and 2024A
+
+Some 2023A and 2024A figures are based on official public reexpressed comparative figures.
+
+This should remain clearly documented because reexpressed figures may differ from originally published figures due to changes in reporting presentation, methodology or comparability adjustments.
+
+This is not a weakness of the project. It is a realistic financial data quality issue and should remain visible in the documentation.
+
+### Validation Status
+
+The validation script currently reports only template-stage warnings related to files that are not yet active for the core 2023A?2025A analysis:
+
+1. `market_data_template.csv`: missing `category` values.
+2. `peer_comparison_template.csv`: missing `business_type` values.
+
+These warnings are acceptable at this stage because market data and peer comparison are future phases.
+
+### Data Quality Interpretation
+
+The project now demonstrates a complete initial workflow:
+
+| Step | Status |
+|---|---:|
+| Public source identification | Completed |
+| Data extraction | Completed for 2023A?2025A |
+| CSV structuring | Completed |
+| Banking ratio dataset | Completed for 2023A?2025A |
+| Source mapping | Completed |
+| Extraction tracking | Completed |
+| Validation script execution | Active |
+| Analytical reporting | Updated |
+| Human-in-the-loop review | Active |
+| 2022A extraction | Pending |
+| Market data | Pending |
+| Peer comparison | Pending |
+| Valuation | Pending |
+
+This strengthens the project for Financial Data Quality, Banking Analytics, Reporting Analyst, Financial Research and AI Finance Evaluation positioning.
+
+
 ## Current Data Quality Status Summary
 
 | Area | Status |

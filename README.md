@@ -66,6 +66,27 @@ This project is intended to demonstrate practical skills in:
 
 ---
 
+## Metric Definitions, Interpretation and Data Quality
+
+This project separates raw data, metric definitions, analytical interpretation and data quality controls.
+
+This structure makes the case study easier to review, validate, visualise in Power BI and explain in a professional context.
+
+| Area | File |
+|---|---|
+| Metric and ratio definitions | `data/data_dictionary.md` |
+| Banking trend interpretation | `reports/banking_analytics_report.md` |
+| Data quality notes and validation limits | `reports/data_quality_report.md` |
+| SQL structure and query planning | `sql/` |
+| Power BI dashboard planning | `powerbi/` |
+
+The data dictionary explains the main banking metrics and ratios used in the project, including profitability, efficiency, asset quality, liquidity, capital and valuation indicators.
+
+The banking analytics report provides trend commentary, while the data quality report documents source validation, terminology issues, reexpressed figures and human-in-the-loop review items.
+
+This separation is intentional: the README gives the project overview, while the supporting files provide the technical and analytical detail.
+
+
 ## Project Structure
 
     financial-modeling-case-study-bcp/

@@ -497,6 +497,140 @@ The dashboard should clearly separate:
 
 ---
 
+---
+
+## Initial 2023A?2025A Trend Analysis
+
+This section extends the analysis from a two-year comparison to an initial three-year historical trend covering 2023A, 2024A and 2025A.
+
+The objective is to provide a broader view of Millennium bcp's reported profitability, efficiency, asset quality, liquidity, capital and per-share indicators using structured public data.
+
+This analysis remains descriptive, educational and portfolio-oriented. It does not provide investment advice, a valuation opinion, a price target or a buy/sell/hold recommendation.
+
+### Profitability Trend
+
+| Metric | 2023A | 2024A | 2025A | Unit |
+|---|---:|---:|---:|---|
+| Net income | 856.0 | 906.4 | 1,018.6 | EUR million |
+| ROE | 15.1 | 13.8 | 14.1 | % |
+| ROA | 1.0 | 1.0 | 1.1 | % |
+
+Initial interpretation:
+
+- Net income increased across the period, from EUR 856.0 million in 2023A to EUR 1,018.6 million in 2025A.
+- ROE remained at a double-digit level throughout the period.
+- ROA was stable in 2023A and 2024A, then improved slightly in 2025A.
+- The profitability trend appears resilient, although ROE should be reviewed together with equity growth, capital ratios and balance sheet development.
+
+### Revenue and Efficiency Trend
+
+| Metric | 2023A | 2024A | 2025A | Unit |
+|---|---:|---:|---:|---|
+| Net interest income | 2,825.7 | 2,830.9 | 2,898.1 | EUR million |
+| Net interest margin | 3.17 | 3.04 | 2.89 | % |
+| Operating income | 3,769.7 | 3,573.5 | 3,815.2 | EUR million |
+| Operating costs | 1,162.6 | 1,306.1 | 1,415.1 | EUR million |
+| Cost-to-income ratio | 30.8 | 36.5 | 37.1 | % |
+
+Initial interpretation:
+
+- Net interest income increased slightly between 2023A and 2025A.
+- Net interest margin declined over the same period, suggesting potential margin compression.
+- Operating income declined in 2024A before recovering in 2025A.
+- Operating costs increased across the period.
+- The cost-to-income ratio increased from 30.8% in 2023A to 37.1% in 2025A, which should be monitored in later analysis.
+
+### Asset Quality Trend
+
+| Metric | 2023A | 2024A | 2025A | Unit |
+|---|---:|---:|---:|---|
+| Cost of risk | 42 | 31 | 32 | bps |
+| NPE ratio | 3.5 | 3.1 | 2.4 | % |
+| NPE coverage ratio | 77.6 | 82.2 | 90.9 | % |
+| Restructured loans ratio | 3.3 | 2.6 | 1.8 | % |
+
+Initial interpretation:
+
+- NPE ratio improved from 3.5% in 2023A to 2.4% in 2025A.
+- NPE coverage improved from 77.6% to 90.9%.
+- Restructured loans ratio decreased across the period.
+- Cost of risk decreased from 2023A and remained broadly stable between 2024A and 2025A.
+- Overall, reported asset quality indicators improved across the analysed period.
+
+### Liquidity and Funding Trend
+
+| Metric | 2023A | 2024A | 2025A | Unit |
+|---|---:|---:|---:|---|
+| Customer loans | 55,218 | 56,850 | 61,240 | EUR million |
+| Customer funds | 95,328 | 102,938 | 111,782 | EUR million |
+| Loan-to-deposit ratio | 69.2 | 67.6 | 68.2 | % |
+| LCR | 317 | 342 | 334 | % |
+| NSFR | 177 | 181 | 180 | % |
+
+Initial interpretation:
+
+- Customer loans increased across the period.
+- Customer funds also increased across the period.
+- Loan-to-deposit ratio remained broadly stable.
+- LCR and NSFR remained significantly above 100%.
+- The liquidity and funding position appears strong based on the reviewed public data, but funding definitions require continued semantic review.
+
+### Capital Trend
+
+| Metric | 2023A | 2024A | 2025A | Unit |
+|---|---:|---:|---:|---|
+| CET1 phased-in ratio | 15.2 | 16.4 | 16.1 | % |
+| CET1 fully implemented ratio | 15.2 | 16.3 | 15.9 | % |
+| Total capital fully implemented ratio | 19.6 | 20.6 | 19.9 | % |
+
+Initial interpretation:
+
+- Capital ratios remained robust across the analysed period.
+- CET1 ratios improved from 2023A to 2024A and then declined slightly in 2025A.
+- Total capital fully implemented ratio followed a similar pattern.
+- A final interpretation should consider risk-weighted assets, capital distributions, regulatory requirements and management targets.
+
+### Per-Share Indicators
+
+| Metric | 2023A | 2024A | 2025A | Unit |
+|---|---:|---:|---:|---|
+| EPS | 0.056 | 0.058 | 0.066 | EUR |
+| Book value per share | 0.412 | 0.469 | 0.528 | EUR |
+
+Initial interpretation:
+
+- EPS increased across the period.
+- Book value per share also increased across the period.
+- These indicators support the broader profitability and equity progression observed in the dataset.
+- Valuation multiples remain pending until market data is added and validated.
+
+### Initial 2023A?2025A Summary
+
+| Area | Initial Finding |
+|---|---|
+| Profitability | Net income increased across the period |
+| ROE / ROA | ROE remained double-digit; ROA improved slightly in 2025A |
+| Net interest income | Increased slightly despite declining margin |
+| Efficiency | Cost-to-income ratio increased and should be monitored |
+| Asset quality | NPE ratio improved and coverage increased |
+| Funding | Customer loans and customer funds increased |
+| Liquidity | LCR and NSFR remained very strong |
+| Capital | CET1 and total capital ratios remained robust |
+| Per-share indicators | EPS and book value per share increased |
+
+### Human-in-the-Loop Review Notes
+
+The following points require continued analyst review:
+
+- confirm whether all 2023A and 2024A values are based on reexpressed comparative figures;
+- distinguish clearly between customer deposits, customer funds and customer resources;
+- avoid overinterpreting profitability trends without reviewing the interest rate environment;
+- cross-check NPE and NPL terminology before final reporting;
+- keep valuation analysis separate from descriptive banking performance analysis;
+- document any calculated ratios separately from reported ratios;
+- maintain the disclaimer that this is not investment advice.
+
+
 ## Data Quality Review
 
 Data quality is a central component of this project.

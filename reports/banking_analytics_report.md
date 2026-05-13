@@ -1,6 +1,6 @@
 # Banking Analytics Report
 
-This report summarises the planned banking analytics analysis for the **Financial Modeling Case Study – Millennium bcp / Portuguese Listed Bank** project.
+This report summarises the banking analytics analysis for the **Financial Modeling Case Study – Millennium bcp / Portuguese Listed Bank** project.
 
 The project uses only publicly available information and is designed for educational, portfolio and professional development purposes.
 
@@ -55,28 +55,38 @@ The report clearly separates:
 
 ## 3. Executive Summary
 
-This section will summarise the most important findings once the dataset is completed.
+This section summarises the most important findings based on the current stage of the project.
 
-Planned focus areas:
-
-- profitability trend;
-- net interest income trend;
-- fees and commissions trend;
-- cost-to-income evolution;
-- ROE and ROA evolution;
-- asset quality indicators;
-- CET1 ratio and capital position;
-- customer loans and customer deposits;
-- forecast and scenario highlights;
-- data quality status.
+The first completed public-data extraction focuses on 2025A. The remaining historical periods, 2022A, 2023A and 2024A, are still pending extraction and validation.
 
 Current status:
 
-    Pending data extraction and validation
+    Initial 2025A public-data extraction completed
+    Historical trend analysis pending
+    Forecast assumptions pending
+    Scenario analysis pending
 
-Example neutral wording:
+### Initial 2025A Findings
 
-    Based on the completed public-source dataset, this section will summarise the main banking analytics trends observed across profitability, efficiency, asset quality and capital indicators. Any interpretation will be limited to publicly available data and should be read together with the data quality review.
+Based on public information from Millennium bcp, the bank reported net income of EUR 1,018.6 million in 2025A. The reported ROE was 14.1% and the reported ROA was 1.1%.
+
+These figures indicate a strong profitability year based on the available public data. However, interpretation should remain cautious until the full historical trend for 2022A, 2023A and 2024A is completed and reviewed.
+
+From an efficiency perspective, Millennium bcp reported operating income of EUR 3,815.2 million and operating costs of EUR 1,415.1 million in 2025A. The reported efficiency ratio was 37.1%, while the efficiency ratio excluding specific items was 36.5%.
+
+These metrics suggest a relatively efficient cost structure in the analysed period, but the interpretation should consider the broader operating environment, interest rate context, inflation, business mix and any specific items disclosed by the bank.
+
+From an asset quality perspective, the bank reported net credit impairments of EUR 199.5 million, cost of risk of 32 basis points, NPE ratio of 2.4% and NPE coverage ratio of 90.9% in 2025A.
+
+These indicators provide an initial view of credit risk and asset quality, but final interpretation requires comparison with previous years and review of the annual report disclosures.
+
+From a capital and liquidity perspective, Millennium bcp reported a CET1 fully implemented ratio of 15.9%, total capital fully implemented ratio of 19.9%, LCR of 334% and NSFR of 180% in 2025A.
+
+These figures provide an initial view of the bank's reported capital and liquidity position. However, final interpretation should be based on a multi-year trend and source validation review.
+
+The 2025A dataset has been added to the project as an initial public-data extraction. The values are currently classified as reviewed and should be further validated against the annual report, investor presentation and source mapping files before being used in final conclusions.
+
+This section is descriptive and educational. It does not constitute investment advice, financial advice or a recommendation to buy, sell or hold any financial instrument.
 
 ---
 
@@ -84,7 +94,7 @@ Example neutral wording:
 
 ### Metrics Reviewed
 
-This section will analyse:
+This section analyses:
 
 - net income;
 - net interest income;
@@ -105,6 +115,21 @@ ROE measures profitability relative to shareholder equity.
 
 ROA measures profitability relative to total assets.
 
+### 2025A Initial Observations
+
+For 2025A, Millennium bcp reported:
+
+| Metric | 2025A |
+|---|---:|
+| Net income | EUR 1,018.6 million |
+| Net interest income | EUR 2,898.1 million |
+| Operating income | EUR 3,815.2 million |
+| ROE | 14.1% |
+| ROA | 1.1% |
+| Net interest margin | 2.89% |
+
+The 2025A data provides a first profitability snapshot. Net income, ROE and ROA will become more meaningful after completing the historical comparison for 2022A, 2023A and 2024A.
+
 ### Analytical Questions
 
 - Did net income improve or deteriorate across the analysed period?
@@ -113,9 +138,11 @@ ROA measures profitability relative to total assets.
 - Was ROA consistent with the net income trend?
 - Were profitability improvements supported by recurring income?
 
-### Commentary Placeholder
+### Current Commentary
 
-    Profitability commentary will be completed after historical data extraction and validation.
+The 2025A profitability indicators show strong reported profitability based on public data. However, the analysis is not yet complete because the historical trend still needs to be populated and validated.
+
+A professional interpretation should compare 2025A with previous years and consider the interest rate environment, revenue mix, cost base, impairments and capital levels.
 
 ---
 
@@ -123,7 +150,7 @@ ROA measures profitability relative to total assets.
 
 ### Metrics Reviewed
 
-This section will analyse:
+This section analyses:
 
 - operating income;
 - operating costs;
@@ -139,6 +166,19 @@ The cost-to-income ratio shows how much cost is required to generate income.
 
 A lower cost-to-income ratio usually indicates better operating efficiency, but interpretation should consider context such as inflation, restructuring costs, investment in technology, business growth and one-off items.
 
+### 2025A Initial Observations
+
+For 2025A, Millennium bcp reported:
+
+| Metric | 2025A |
+|---|---:|
+| Operating income | EUR 3,815.2 million |
+| Operating costs | EUR 1,415.1 million |
+| Cost-to-income ratio | 37.1% |
+| Cost-to-income ratio excluding specific items | 36.5% |
+
+The 2025A efficiency indicators suggest a relatively efficient operating profile based on the available public data.
+
 ### Analytical Questions
 
 - Did operating costs increase or decrease?
@@ -147,9 +187,9 @@ A lower cost-to-income ratio usually indicates better operating efficiency, but 
 - Were efficiency gains consistent or temporary?
 - Were there any one-off effects that may distort interpretation?
 
-### Commentary Placeholder
+### Current Commentary
 
-    Efficiency commentary will be completed after historical data extraction and validation.
+The reported 2025A cost-to-income ratio provides a useful efficiency indicator. However, final interpretation requires a multi-year view and review of any specific items or one-off effects disclosed by the bank.
 
 ---
 
@@ -157,7 +197,7 @@ A lower cost-to-income ratio usually indicates better operating efficiency, but 
 
 ### Metrics Reviewed
 
-This section will analyse:
+This section analyses:
 
 - NPL ratio;
 - NPE ratio, where available;
@@ -174,23 +214,38 @@ Banks lend money and therefore face credit risk.
 
 If borrowers experience financial difficulty, non-performing loans and impairments may increase, affecting profitability and capital.
 
-NPL ratio helps assess the proportion of problematic loans.
+NPL or NPE ratios help assess the proportion of problematic exposures.
 
 Cost of risk shows the cost of credit losses relative to the loan book.
 
 Impairments and provisions indicate expected or recognised credit losses.
 
+### 2025A Initial Observations
+
+For 2025A, Millennium bcp reported:
+
+| Metric | 2025A |
+|---|---:|
+| Net credit impairments | EUR 199.5 million |
+| Cost of risk | 32 bps |
+| NPE ratio | 2.4% |
+| NPE coverage ratio | 90.9% |
+| Restructured loans ratio | 1.8% |
+| Customer loans | EUR 61,240 million |
+
+These indicators provide an initial view of credit risk and asset quality for 2025A.
+
 ### Analytical Questions
 
-- Did the NPL ratio improve or deteriorate?
+- Did the NPE ratio improve or deteriorate?
 - Did cost of risk increase or decrease?
 - Were impairments aligned with the loan book evolution?
 - Was loan growth accompanied by stable asset quality?
 - Were asset quality trends consistent across periods?
 
-### Commentary Placeholder
+### Current Commentary
 
-    Asset quality commentary will be completed after historical data extraction and validation.
+The 2025A asset quality data should be interpreted cautiously until prior-year data is added. A single year can provide a snapshot, but trend analysis is required to assess whether asset quality is improving, stable or deteriorating.
 
 ---
 
@@ -198,12 +253,14 @@ Impairments and provisions indicate expected or recognised credit losses.
 
 ### Metrics Reviewed
 
-This section will analyse:
+This section analyses:
 
 - CET1 ratio;
-- total capital ratio, where available;
+- total capital ratio;
+- LCR;
+- NSFR;
 - customer loans;
-- customer deposits;
+- customer deposits or customer funds;
 - loan-to-deposit ratio;
 - equity;
 - total assets.
@@ -214,22 +271,44 @@ Capital is critical in banking because it represents the bank's ability to absor
 
 CET1 is a key measure of high-quality regulatory capital.
 
-Customer deposits are important because they represent a stable funding source.
+Customer deposits and customer funds are important because they represent the bank's funding base.
 
 The loan-to-deposit ratio helps assess the relationship between lending activity and customer funding.
+
+Liquidity ratios such as LCR and NSFR help assess liquidity resilience and funding stability.
+
+### 2025A Initial Observations
+
+For 2025A, Millennium bcp reported:
+
+| Metric | 2025A |
+|---|---:|
+| CET1 fully implemented ratio | 15.9% |
+| Total capital fully implemented ratio | 19.9% |
+| LCR | 334% |
+| NSFR | 180% |
+| Loan-to-deposit ratio | 68.2% |
+| Customer loans | EUR 61,240 million |
+| Customer funds | EUR 111,782 million |
+| Total assets | EUR 109,333 million |
+| Equity | EUR 9,061 million |
+
+The reported 2025A capital and liquidity indicators provide an initial view of balance sheet resilience and funding structure.
 
 ### Analytical Questions
 
 - Was the CET1 ratio stable across the analysed period?
 - Did customer loans increase or decrease?
-- Did customer deposits increase or decrease?
-- Was lending growth supported by deposit growth?
+- Did customer deposits or customer funds increase or decrease?
+- Was lending growth supported by customer funding?
 - Did the loan-to-deposit ratio remain within a reasonable range?
 - Was the capital position resilient based on public data?
 
-### Commentary Placeholder
+### Current Commentary
 
-    Capital and liquidity commentary will be completed after historical data extraction and validation.
+The reported CET1 and total capital ratios indicate the bank's capital position at year-end 2025A based on public data. Liquidity indicators such as LCR and NSFR provide additional context on short-term and stable funding resilience.
+
+Final interpretation should be based on a multi-year trend and comparison with regulatory context, management commentary and annual report disclosures.
 
 ---
 
@@ -265,7 +344,7 @@ This section may include forecast analysis of:
 - cost of risk;
 - CET1 ratio;
 - customer loans;
-- customer deposits.
+- customer deposits or customer funds.
 
 ### Interpretation Principles
 
@@ -275,9 +354,15 @@ The forecast should not be presented as a prediction.
 
 Scenario outputs should be used to understand sensitivity to assumptions, not to make investment recommendations.
 
-### Commentary Placeholder
+### Current Status
 
-    Forecast and scenario commentary will be completed after forecast assumptions are defined and reviewed.
+Forecast and scenario commentary will be completed after:
+
+- 2022A–2025A historical data is fully extracted;
+- key historical trends are reviewed;
+- assumptions for 2026E and 2027E are documented;
+- scenario outputs are calculated;
+- data quality checks are completed.
 
 ---
 
@@ -295,6 +380,16 @@ SQL can help answer questions such as:
 - which KPIs should feed the Power BI dashboard?
 
 This supports a repeatable analytical workflow rather than relying only on manual spreadsheet review.
+
+The current SQL layer is designed to support:
+
+- profitability trend queries;
+- efficiency analysis;
+- asset quality analysis;
+- capital analysis;
+- source validation checks;
+- actual vs forecast classification;
+- Power BI dashboard preparation.
 
 ---
 
@@ -316,6 +411,10 @@ The dashboard should transform financial data into clear, visual and interpretab
 
 It should be suitable for a professional portfolio and understandable by both finance and non-technical stakeholders.
 
+The 2025A data currently available can support initial KPI cards and the first version of dashboard planning.
+
+However, the Power BI dashboard should only be finalised after the historical period 2022A–2025A is completed.
+
 ---
 
 ## 11. Financial Data Quality Summary
@@ -336,7 +435,14 @@ Data quality checks include:
 - source coverage;
 - human review status.
 
-The analysis should not be finalised until the main data points have been reviewed.
+The current 2025A data has been added to:
+
+- `data/financial_data.csv`;
+- `data/banking_ratios.csv`;
+- `data/extraction_tracker.csv`;
+- `data/source_mapping.csv`.
+
+These files provide the initial link between public financial data, structured datasets, source mapping and validation status.
 
 ---
 
@@ -394,14 +500,24 @@ Preferred wording:
 
 Current status:
 
-    Draft structure created
+    Initial 2025A analysis added
+
+Completed work:
+
+- initial 2025A public financial data extraction;
+- initial 2025A banking ratios extraction;
+- source mapping update;
+- extraction tracker update;
+- Python validation check completed;
+- initial 2025A banking analytics commentary added.
 
 Pending work:
 
-- extract historical financial data;
-- validate source mapping;
-- complete financial datasets;
-- calculate banking ratios;
+- extract 2022A financial data;
+- extract 2023A financial data;
+- extract 2024A financial data;
+- validate annual report references;
+- complete historical trend analysis;
 - define forecast assumptions;
 - complete scenario analysis;
 - create SQL outputs;

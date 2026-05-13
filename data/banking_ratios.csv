@@ -1,22 +1,22 @@
 ratio,category,formula,2022A,2023A,2024A,2025A,unit,source_status,notes
-ROE,Profitability,Net income / Average equity,,,,14.1,%,Reviewed,Reported ROE for 2025 from Millennium bcp Key Indicators
-ROA,Profitability,Net income / Average total assets,,,,1.1,%,Reviewed,Reported ROA for 2025 from Millennium bcp Key Indicators
-Net interest margin,Profitability,Net interest income / Average interest-earning assets,,,,2.89,%,Reviewed,Reported taxa de margem financeira for 2025 from Millennium bcp Key Indicators
-Cost-to-income ratio,Efficiency,Operating costs / Operating income,,,,37.1,%,Reviewed,Reported efficiency ratio for 2025 from Millennium bcp Key Indicators
-Cost-to-income ratio excluding specific items,Efficiency,Operating costs excluding specific items / Operating income,,,,36.5,%,Reviewed,Reported efficiency ratio excluding specific items for 2025 from Millennium bcp Key Indicators
-Cost of risk,Asset Quality,Credit impairments net of recoveries / Customer loans,,,,32,bps,Reviewed,Reported cost of risk for 2025 from Millennium bcp Key Indicators
-NPE ratio,Asset Quality,Non-performing exposures / Customer loans,,,,2.4,%,Reviewed,Reported NPE ratio for 2025 from Millennium bcp Key Indicators
-NPE coverage ratio,Asset Quality,Credit impairments / Non-performing exposures,,,,90.9,%,Reviewed,Reported NPE coverage ratio for 2025 from Millennium bcp Key Indicators
-Restructured loans ratio,Asset Quality,Restructured loans / Customer loans,,,,1.8,%,Reviewed,Reported restructured loans ratio for 2025 from Millennium bcp Key Indicators
-Loan-to-deposit ratio,Liquidity,Customer loans / Deposits and other customer resources,,,,68.2,%,Reviewed,Reported customer loans to deposits and other customer resources for 2025 from Millennium bcp Key Indicators
-Loan-to-balance-sheet-customer-resources ratio,Liquidity,Customer loans / Balance sheet customer resources,,,,67.1,%,Reviewed,Reported customer loans to balance sheet customer resources for 2025 from Millennium bcp Key Indicators
-LCR,Liquidity,Liquidity coverage ratio,,,,334,%,Reviewed,Reported LCR for 2025 from Millennium bcp Key Indicators
-NSFR,Liquidity,Net stable funding ratio,,,,180,%,Reviewed,Reported NSFR for 2025 from Millennium bcp Key Indicators
-CET1 phased-in ratio,Capital,Common Equity Tier 1 phased-in ratio,,,,16.1,%,Reviewed,Reported CET1 phased-in ratio for 2025 from Millennium bcp Key Indicators
-CET1 fully implemented ratio,Capital,Common Equity Tier 1 fully implemented ratio,,,,15.9,%,Reviewed,Reported CET1 fully implemented ratio for 2025 from Millennium bcp Key Indicators
-Total capital fully implemented ratio,Capital,Total capital fully implemented ratio,,,,19.9,%,Reviewed,Reported total capital fully implemented ratio for 2025 from Millennium bcp Key Indicators
-EPS,Per Share,Net income attributable to shareholders / Number of shares,,,,0.066,EUR,Reviewed,Reported adjusted EPS for 2025 from Millennium bcp Share Indicators
-Book value per share,Per Share,Equity attributable to shareholders / Number of shares,,,,0.528,EUR,Reviewed,Reported book value per share for 2025 from Millennium bcp Share Indicators
+ROE,Profitability,Net income / Average equity,,,13.8,14.1,%,Reviewed,Reported 2024 ratio from Millennium bcp Official Key Indicators 2025 using reexpressed comparative figures
+ROA,Profitability,Net income / Average total assets,,,1.0,1.1,%,Reviewed,Reported 2024 ratio from Millennium bcp Official Key Indicators 2025 using reexpressed comparative figures
+Net interest margin,Profitability,Net interest income / Average interest-earning assets,,,3.04,2.89,%,Reviewed,Reported 2024 ratio from Millennium bcp Official Key Indicators 2025 using reexpressed comparative figures
+Cost-to-income ratio,Efficiency,Operating costs / Operating income,,,36.5,37.1,%,Reviewed,Reported 2024 ratio from Millennium bcp Official Key Indicators 2025 using reexpressed comparative figures
+Cost-to-income ratio excluding specific items,Efficiency,Operating costs excluding specific items / Operating income,,,36.2,36.5,%,Reviewed,Reported 2024 ratio from Millennium bcp Official Key Indicators 2025 using reexpressed comparative figures
+Cost of risk,Asset Quality,Credit impairments net of recoveries / Customer loans,,,31.0,32.0,bps,Reviewed,Reported 2024 ratio from Millennium bcp Official Key Indicators 2025 using reexpressed comparative figures
+NPE ratio,Asset Quality,Non-performing exposures / Customer loans,,,3.1,2.4,%,Reviewed,Reported 2024 ratio from Millennium bcp Official Key Indicators 2025 using reexpressed comparative figures
+NPE coverage ratio,Asset Quality,Credit impairments / Non-performing exposures,,,82.2,90.9,%,Reviewed,Reported 2024 ratio from Millennium bcp Official Key Indicators 2025 using reexpressed comparative figures
+Restructured loans ratio,Asset Quality,Restructured loans / Customer loans,,,2.6,1.8,%,Reviewed,Reported 2024 ratio from Millennium bcp Official Key Indicators 2025 using reexpressed comparative figures
+Loan-to-deposit ratio,Liquidity,Customer loans / Deposits and other customer resources,,,67.6,68.2,%,Reviewed,Reported 2024 ratio from Millennium bcp Official Key Indicators 2025 using reexpressed comparative figures
+Loan-to-balance-sheet-customer-resources ratio,Liquidity,Customer loans / Balance sheet customer resources,,,66.6,67.1,%,Reviewed,Reported 2024 ratio from Millennium bcp Official Key Indicators 2025 using reexpressed comparative figures
+LCR,Liquidity,Liquidity coverage ratio,,,342.0,334.0,%,Reviewed,Reported 2024 ratio from Millennium bcp Official Key Indicators 2025 using reexpressed comparative figures
+NSFR,Liquidity,Net stable funding ratio,,,181.0,180.0,%,Reviewed,Reported 2024 ratio from Millennium bcp Official Key Indicators 2025 using reexpressed comparative figures
+CET1 phased-in ratio,Capital,Common Equity Tier 1 phased-in ratio,,,16.4,16.1,%,Reviewed,Reported 2024 ratio from Millennium bcp Official Key Indicators 2025 using reexpressed comparative figures
+CET1 fully implemented ratio,Capital,Common Equity Tier 1 fully implemented ratio,,,16.3,15.9,%,Reviewed,Reported 2024 ratio from Millennium bcp Official Key Indicators 2025 using reexpressed comparative figures
+Total capital fully implemented ratio,Capital,Total capital fully implemented ratio,,,20.6,19.9,%,Reviewed,Reported 2024 ratio from Millennium bcp Official Key Indicators 2025 using reexpressed comparative figures
+EPS,Per Share,Net income attributable to shareholders / Number of shares,,,0.058,0.066,EUR,Reviewed,Reported 2024 per-share indicator from Millennium bcp Official Share Indicators 2025
+Book value per share,Per Share,Equity attributable to shareholders / Number of shares,,,0.469,0.528,EUR,Reviewed,Reported 2024 per-share indicator from Millennium bcp Official Share Indicators 2025
 Price-to-book,Valuation,Share price / Book value per share,,,,,x,Pending,To be calculated after selecting market data date
 Price-to-earnings,Valuation,Share price / EPS,,,,,x,Pending,To be calculated after selecting market data date
 Dividend yield,Valuation,Dividend per share / Share price,,,,,%,Pending,To be calculated after selecting market data date

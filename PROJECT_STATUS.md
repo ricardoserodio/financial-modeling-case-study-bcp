@@ -1,18 +1,19 @@
 # Project Status ? Financial Modeling Case Study: Millennium bcp / Portuguese Listed Bank
 
-## Current Project Status ? 2023A?2025A Historical Cycle Completed
+## Current Project Status ? 2022A?2025A Historical Cycle Completed
 
-The project has now completed an initial reviewed historical data cycle covering **2023A, 2024A and 2025A**.
+The project has now completed an initial reviewed historical data cycle covering **2022A, 2023A, 2024A and 2025A**.
 
-This means the project has moved from a template/documentation stage into a structured banking analytics case study using public financial data.
+This means the case study now includes a four-year public-source banking analytics dataset, with structured financial data, banking ratios, source traceability, extraction tracking, data quality notes and analytical reporting.
 
 The current project includes:
 
 - public financial data extraction;
-- structured financial statement data;
+- structured financial statement and balance sheet data;
 - banking ratios;
 - source mapping;
 - extraction tracking;
+- data dictionary definitions;
 - data validation checks;
 - banking analytics reporting;
 - data quality documentation;
@@ -24,7 +25,7 @@ The current project includes:
 
 ## Completed Work
 
-### 2025A
+### 2022A
 
 | Component | Status |
 |---|---:|
@@ -34,17 +35,7 @@ The current project includes:
 | Extraction tracker | Completed |
 | Banking analytics commentary | Completed |
 | Data quality documentation | Completed |
-
-### 2024A
-
-| Component | Status |
-|---|---:|
-| Financial data | Completed |
-| Banking ratios | Completed |
-| Source mapping | Completed |
-| Extraction tracker | Completed |
-| Banking analytics commentary | Completed |
-| Data quality documentation | Completed |
+| Data dictionary support | Completed |
 
 ### 2023A
 
@@ -56,12 +47,37 @@ The current project includes:
 | Extraction tracker | Completed |
 | Banking analytics commentary | Completed |
 | Data quality documentation | Completed |
+| Data dictionary support | Completed |
+
+### 2024A
+
+| Component | Status |
+|---|---:|
+| Financial data | Completed |
+| Banking ratios | Completed |
+| Source mapping | Completed |
+| Extraction tracker | Completed |
+| Banking analytics commentary | Completed |
+| Data quality documentation | Completed |
+| Data dictionary support | Completed |
+
+### 2025A
+
+| Component | Status |
+|---|---:|
+| Financial data | Completed |
+| Banking ratios | Completed |
+| Source mapping | Completed |
+| Extraction tracker | Completed |
+| Banking analytics commentary | Completed |
+| Data quality documentation | Completed |
+| Data dictionary support | Completed |
 
 ---
 
 ## Current Analytical Coverage
 
-The project currently supports initial trend analysis for:
+The project currently supports trend analysis for:
 
 - profitability;
 - net interest income;
@@ -70,15 +86,18 @@ The project currently supports initial trend analysis for:
 - efficiency;
 - asset quality;
 - customer loans;
-- customer funds;
+- customer deposits / customer funds;
 - liquidity;
+- funding;
 - capital;
-- per-share indicators.
+- per-share indicators;
+- data quality status.
 
 The main historical trend currently available is:
 
 | Period | Status |
 |---|---:|
+| 2022A | Reviewed |
 | 2023A | Reviewed |
 | 2024A | Reviewed |
 | 2025A | Reviewed |
@@ -96,22 +115,23 @@ The current expected validation output contains only two template-stage warnings
 
 These warnings are acceptable at the current stage because market data and peer comparison are future phases.
 
-No critical validation issue is currently blocking the 2023A?2025A historical analysis.
+No critical validation issue is currently blocking the 2022A?2025A historical analysis.
 
 ---
 
 ## Main Data Quality Notes
 
-The main data quality issue currently documented is the distinction between:
+The main data quality items currently documented are:
 
-- customer deposits;
-- customer funds;
-- balance sheet customer resources;
-- deposits and other customer resources.
+- customer deposits vs customer funds terminology;
+- customer funds vs balance sheet customer resources terminology;
+- 2022A impairments and provisions definition consistency;
+- 2022A book value per share still pending;
+- reexpressed comparative figures where applicable;
+- reported vs calculated ratio definitions;
+- phased-in vs fully implemented capital ratios.
 
-This is intentionally tracked as a semantic review item because banking disclosures may use similar but not identical terminology.
-
-The project also documents the use of reexpressed comparative figures where applicable.
+These items remain visible as human-in-the-loop review points.
 
 ---
 
@@ -119,12 +139,13 @@ The project also documents the use of reexpressed comparative figures where appl
 
 | File | Status |
 |---|---:|
-| `data/financial_data.csv` | Updated |
-| `data/banking_ratios.csv` | Updated |
-| `data/source_mapping.csv` | Updated |
-| `data/extraction_tracker.csv` | Updated |
-| `reports/banking_analytics_report.md` | Updated |
-| `reports/data_quality_report.md` | Updated |
+| `data/financial_data.csv` | Updated for 2022A?2025A |
+| `data/banking_ratios.csv` | Updated for 2022A?2025A |
+| `data/source_mapping.csv` | Updated for 2022A?2025A |
+| `data/extraction_tracker.csv` | Updated for 2022A?2025A |
+| `data/data_dictionary.md` | Updated with banking ratio definitions |
+| `reports/banking_analytics_report.md` | Updated for 2022A?2025A |
+| `reports/data_quality_report.md` | Updated for 2022A?2025A |
 | `sql/schema.sql` | Created |
 | `sql/queries.sql` | Created |
 | `powerbi/README.md` | Created |
@@ -138,7 +159,7 @@ The following areas remain pending:
 
 | Area | Status |
 |---|---:|
-| 2022A extraction | Pending |
+| 2022A book value per share | Pending |
 | Market data | Pending |
 | Peer comparison | Pending |
 | Valuation multiples | Pending |
@@ -156,14 +177,32 @@ The next recommended phase is:
 
 1. Update `CHANGELOG.md`.
 2. Update `ROADMAP.md`.
-3. Start 2022A official public data extraction.
-4. Expand source mapping to 2022A.
-5. Add 2022A banking ratios.
-6. Re-run validation checks.
-7. Update reports to cover 2022A?2025A.
-8. Begin SQL query outputs.
-9. Begin Power BI dashboard build.
-10. Add valuation market data only after selecting a documented valuation date.
+3. Prepare Power BI dataset notes.
+4. Prepare Power BI measures plan.
+5. Add SQL output examples.
+6. Start Power BI dashboard build.
+7. Select a documented market data date.
+8. Add valuation multiples only after market data is validated.
+9. Define peer comparison methodology.
+10. Update final reports and investment memo once valuation and peer comparison are complete.
+
+---
+
+## Power BI Readiness
+
+The project is now suitable for a first Power BI dashboard because the core dataset includes four annual periods.
+
+Recommended first dashboard pages:
+
+| Page | Purpose |
+|---|---|
+| Executive Overview | High-level financial and banking metrics |
+| Profitability | ROE, ROA, net interest margin, net income and EPS |
+| Efficiency | Cost-to-income ratio and operating cost trend |
+| Asset Quality | NPE ratio, NPE coverage, cost of risk and restructured loans |
+| Liquidity & Funding | Customer loans, customer funds, LCR and NSFR |
+| Capital | CET1 and total capital ratios |
+| Data Quality | Reviewed, Needs Review and Pending items |
 
 ---
 

@@ -1,5 +1,42 @@
 # Changelog
 
+## 2023A?2025A Historical Data Cycle Completed
+
+### Added
+
+- Added reviewed 2023A official public financial data.
+- Added reviewed 2023A official banking ratios.
+- Added 2023A source mapping entries.
+- Updated 2023A extraction tracker entries.
+- Added 2023A?2025A trend analysis to the banking analytics report.
+- Updated the data quality report to reflect the 2023A?2025A completed cycle.
+- Updated project status to reflect completion of the initial three-year historical analysis cycle.
+
+### Changed
+
+- Expanded the project from a 2024A?2025A comparison to an initial 2023A?2025A historical trend analysis.
+- Strengthened the project positioning around banking analytics, financial data quality, source validation, SQL readiness and Power BI readiness.
+- Improved documentation of reexpressed comparative figures and human-in-the-loop review requirements.
+
+### Data Quality Notes
+
+- Validation checks currently report only template-stage warnings related to future market data and peer comparison files.
+- Customer deposits vs customer funds remains documented as a semantic review item.
+- 2022A remains pending and should be extracted from official public sources in the next phase.
+
+### Current Status
+
+- 2025A: completed for initial scope.
+- 2024A: completed for initial scope.
+- 2023A: completed for initial scope.
+- 2022A: pending.
+- Market data: pending.
+- Peer comparison: pending.
+- Valuation: pending.
+- Power BI dashboard build: pending.
+
+---
+
 All notable changes to this project will be documented in this file.
 
 This project is a financial modeling case study on **Millennium bcp / Banco Comercial Português**, created for educational, portfolio and professional development purposes.

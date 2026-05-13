@@ -401,3 +401,150 @@ This roadmap supports the project?s positioning as a professional portfolio case
 - responsible AI-assisted finance workflows.
 
 ---
+
+## Roadmap Update ? After 2022A?2025A Historical Cycle
+
+### Completed
+
+The project has completed the reviewed historical data cycle for:
+
+- 2022A;
+- 2023A;
+- 2024A;
+- 2025A.
+
+This includes:
+
+- financial data extraction;
+- banking ratios;
+- source mapping;
+- extraction tracker updates;
+- data dictionary definitions;
+- banking analytics report update;
+- data quality report update;
+- project status update;
+- changelog update;
+- validation checks.
+
+### Current Position
+
+The project now has a stronger analytical base because it supports a four-year banking trend analysis.
+
+The current reviewed cycle supports analysis of:
+
+- profitability;
+- net interest income;
+- operating efficiency;
+- asset quality;
+- customer loans;
+- customer funds;
+- liquidity;
+- capital;
+- per-share indicators;
+- data quality status.
+
+### Next Phase ? Power BI and SQL Outputs
+
+The next recommended phase is:
+
+1. Prepare Power BI dataset notes.
+2. Prepare Power BI measures plan.
+3. Create Power BI dashboard structure using the CSV files.
+4. Add SQL output examples based on the completed dataset.
+5. Document the refresh workflow from CSV to Power BI.
+6. Create a first dashboard focused on Executive Overview, Banking Ratios and Data Quality.
+7. Add screenshots only after the dashboard is stable and clean.
+8. Update README with Power BI dashboard status once created.
+
+### Power BI Dashboard Pages
+
+Recommended first dashboard pages:
+
+| Page | Purpose |
+|---|---|
+| Executive Overview | High-level financial and banking indicators |
+| Profitability | ROE, ROA, net interest margin, net income and EPS |
+| Efficiency | Cost-to-income ratio and operating cost trend |
+| Asset Quality | NPE ratio, NPE coverage, cost of risk and restructured loans |
+| Liquidity & Funding | Customer loans, customer funds, loan-to-deposit ratio, LCR and NSFR |
+| Capital | CET1 and total capital ratios |
+| Data Quality | Reviewed, Needs Review and Pending items |
+
+### SQL Output Priorities
+
+Recommended first SQL outputs:
+
+| Query Area | Purpose |
+|---|---|
+| Financial trend by metric | Show 2022A?2025A historical evolution |
+| Ratio trend by category | Analyse profitability, efficiency, asset quality, liquidity and capital |
+| Reviewed vs Needs Review | Show data quality status |
+| Source coverage | Show which figures are mapped to official sources |
+| Pending items | Identify gaps before valuation and dashboard publication |
+
+### Future Phases
+
+After Power BI and SQL outputs, the project should move into:
+
+- market data selection;
+- valuation date documentation;
+- price-to-book and price-to-earnings ratios;
+- peer comparison;
+- forecast assumptions;
+- scenario analysis;
+- sensitivity analysis;
+- final investment memo.
+
+### AURA Integration ? Future Private Workflow
+
+AURA can later support this project as a private workflow assistant.
+
+Potential future AURA module:
+
+`AURA / Wisestrike Command Center ? BCP Case Study Monitor`
+
+Possible functions:
+
+- detect CSV changes;
+- run validation checks;
+- interpret acceptable warnings;
+- check Git status;
+- generate Power BI refresh notes;
+- create Power BI readiness checklist;
+- flag human-in-the-loop review items;
+- suggest commit messages;
+- summarise latest project updates.
+
+This should remain a private productivity workflow, separate from the public BCP case study repository.
+
+### Data Quality Priorities
+
+The following issues should remain visible:
+
+- customer deposits vs customer funds;
+- customer funds vs balance sheet customer resources;
+- 2022A impairments and provisions consistency;
+- 2022A book value per share pending;
+- reported vs calculated ratios;
+- reexpressed comparative figures;
+- NPE vs NPL terminology;
+- phased-in vs fully implemented capital ratios;
+- valuation date sensitivity;
+- peer group definition;
+- forecast assumptions.
+
+### Portfolio Value
+
+This roadmap supports the project?s positioning as a professional portfolio case study combining:
+
+- banking experience;
+- public financial data analysis;
+- financial data quality;
+- source validation;
+- banking analytics;
+- SQL readiness;
+- Power BI readiness;
+- human-in-the-loop review;
+- responsible AI-assisted finance workflows.
+
+---

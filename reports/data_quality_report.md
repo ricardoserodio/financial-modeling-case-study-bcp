@@ -1,570 +1,707 @@
-# Financial Data Quality Report
+# Financial Data Quality Report – Millennium bcp Case Study
 
-This report documents the financial data quality approach used in the **Financial Modeling Case Study – Millennium bcp / Portuguese Listed Bank** project.
+## Purpose of This Report
 
-The project uses only publicly available information and is designed for educational, portfolio and professional development purposes.
+This report documents the financial data quality process used in the **Financial Modeling Case Study – Millennium bcp / Portuguese Listed Bank** project.
 
-It does not constitute investment advice.
+The objective is to demonstrate a structured approach to:
 
----
+- financial data validation;
+- source mapping;
+- public source traceability;
+- banking metric consistency;
+- reported vs calculated value separation;
+- validation status tracking;
+- human-in-the-loop review;
+- SQL and Power BI readiness.
 
-## 1. Report Purpose
+This report is part of a professional portfolio project focused on banking analytics, financial modeling, financial data quality and public-data research.
 
-The purpose of this report is to document the quality, completeness, reliability and validation status of the financial data used in the project.
-
-The report supports the project's financial data quality layer by reviewing:
-
-- source validation;
-- missing values;
-- required fields;
-- period consistency;
-- unit consistency;
-- duplicate records;
-- reported vs calculated classification;
-- actual vs forecast classification;
-- public-source traceability;
-- unusual value detection;
-- basic reconciliation checks;
-- human-in-the-loop review status.
-
-This report should be updated as the dataset is completed and validated.
+It does not provide investment advice, financial advice, a valuation recommendation or a buy/sell/hold recommendation.
 
 ---
 
-## 2. Why Data Quality Matters
+## Data Quality Philosophy
 
-Financial analysis depends on reliable data.
+Financial analysis is only as reliable as the quality of the underlying data.
 
-In banking analytics, small data issues can lead to incorrect conclusions about profitability, capital, asset quality or efficiency.
+For this reason, the project treats data quality as a core analytical layer rather than an afterthought.
 
-For example:
+The main principles are:
 
-- a value in EUR may be confused with EUR million;
-- a reported figure may be mixed with a calculated figure;
-- an annual value may be compared with an interim value;
-- a forecast may be incorrectly presented as historical actual data;
-- a ratio may be calculated using inconsistent denominators;
-- a source may be missing or incomplete.
-
-For this reason, data quality is treated as a core part of the project, not as an afterthought.
-
----
-
-## 3. Data Sources Reviewed
-
-The project uses only public sources.
-
-Preferred source hierarchy:
-
-1. Millennium bcp annual reports
-2. Millennium bcp investor presentations
-3. Millennium bcp official investor relations materials
-4. Euronext market data
-5. CMVM public disclosures
-6. Banco de Portugal public information
-7. ECB and EBA public materials
-8. Other reputable public financial sources, when needed
-
-Official company reports and investor materials are preferred for historical financial data.
-
-Market data should always include the market data date because prices and valuation multiples change over time.
+1. Every material metric should be traceable to a public source.
+2. Reported figures should be separated from calculated figures.
+3. Actual historical data should be separated from forecast data.
+4. Values requiring interpretation should be flagged.
+5. Semantic issues should be documented.
+6. Manual review should be part of the analytical workflow.
+7. No confidential, internal or client data should be used.
+8. Public-source validation should be explicit and reproducible.
+9. Source documents should be documented before analytical conclusions are made.
+10. Forecasts, scenarios and valuation multiples should remain clearly separated from historical reported data.
 
 ---
 
-## 4. Main Data Files Reviewed
+## Why Data Quality Matters in Banking Analysis
 
-The data quality review covers the following files:
+Banking analysis depends heavily on accurate definitions, consistent metric treatment and reliable source traceability.
 
-| File | Purpose |
+A small inconsistency in the treatment of a banking metric can materially affect interpretation.
+
+Examples include:
+
+- customer deposits vs customer funds;
+- customer loans vs net customer loans;
+- NPE ratio vs NPL ratio;
+- phased-in capital ratios vs fully implemented capital ratios;
+- reported ratios vs internally calculated ratios;
+- reexpressed comparative figures vs original annual report figures;
+- point-in-time market data vs full-year financial performance.
+
+For this reason, this project treats financial data quality as a professional control layer.
+
+The goal is not only to collect data, but to understand whether each figure is:
+
+- properly sourced;
+- correctly labelled;
+- consistently classified;
+- traceable;
+- reviewed;
+- ready for analytics;
+- appropriate for reporting.
+
+---
+
+## Project Data Files Reviewed
+
+The current data quality review covers the following files:
+
+| File | Purpose | Current Status |
+|---|---|---:|
+| `data/financial_data.csv` | Core financial statement and balance sheet metrics | Active |
+| `data/banking_ratios.csv` | Banking ratios and per-share indicators | Active |
+| `data/source_mapping.csv` | Source traceability and validation mapping | Active |
+| `data/extraction_tracker.csv` | Extraction progress and review tracking | Active |
+| `data/forecast_assumptions.csv` | Forecast assumption template | Template |
+| `data/scenario_analysis.csv` | Scenario output template | Template |
+| `data/market_data_template.csv` | Market data template for valuation | Template |
+| `data/peer_comparison_template.csv` | Peer comparison template | Template |
+| `data/validation_checks.py` | Data validation script | Active |
+
+---
+
+## Period Coverage
+
+The project currently uses the following period convention:
+
+| Period | Meaning | Current Status |
+|---|---|---:|
+| 2022A | Historical actual | Pending extraction |
+| 2023A | Historical actual | Pending extraction |
+| 2024A | Historical actual / reexpressed comparative figures | Reviewed for initial scope |
+| 2025A | Historical actual | Reviewed for initial scope |
+| 2026E | Forecast estimate | Pending |
+| 2027E | Forecast estimate | Pending |
+
+The current reviewed data quality scope focuses on **2024A and 2025A**.
+
+2022A and 2023A remain pending until they are extracted and validated from official public annual reports.
+
+---
+
+## Current Extraction Status
+
+### 2025A
+
+The 2025A extraction has been completed for the initial scope.
+
+Reviewed 2025A areas include:
+
+- profitability metrics;
+- operating income and costs;
+- asset quality indicators;
+- balance sheet metrics;
+- liquidity ratios;
+- capital ratios;
+- per-share indicators;
+- source mapping.
+
+### 2024A
+
+The 2024A extraction has been completed for the initial scope using official/reexpressed comparative figures from public Millennium bcp sources.
+
+Reviewed 2024A areas include:
+
+- profitability metrics;
+- operating income and costs;
+- operating costs excluding specific items;
+- credit impairments;
+- other impairments and provisions;
+- net income;
+- customer loans;
+- customer funds;
+- balance sheet customer resources;
+- deposits and other customer resources;
+- total assets;
+- equity;
+- banking ratios;
+- liquidity indicators;
+- capital ratios;
+- per-share indicators;
+- source mapping.
+
+### 2023A and 2022A
+
+The 2023A and 2022A periods remain pending.
+
+These periods should only be marked as reviewed after extraction from official public annual reports and after source mapping has been completed.
+
+Until then, the project should avoid treating 2023A and 2022A as validated historical data.
+
+---
+
+## Completed 2024A–2025A Data Quality Cycle
+
+The initial 2024A–2025A data quality cycle is now complete across the main project files.
+
+| File | 2024A Status | 2025A Status | Notes |
+|---|---:|---:|---|
+| `data/extraction_tracker.csv` | Completed | Completed | Tracks extraction progress and source validation |
+| `data/financial_data.csv` | Completed | Completed | Contains core financial statement and balance sheet data |
+| `data/banking_ratios.csv` | Completed | Completed | Contains reviewed banking ratios and per-share indicators |
+| `data/source_mapping.csv` | Completed | Completed | Links each metric to public source documentation |
+
+This creates a complete initial workflow:
+
+```text
+official public source
+→ extracted metric
+→ structured CSV
+→ validation status
+→ source mapping
+→ analytical report
+→ human review notes
+```
+
+This workflow is important because it demonstrates that the project is not just a manual financial model, but a controlled banking analytics process.
+
+---
+
+## Validation Status Categories
+
+The project uses the following validation status categories:
+
+| Status | Meaning |
 |---|---|
-| `data/financial_data.csv` | Main structured financial dataset |
-| `data/historical_financials.csv` | Historical financial data |
-| `data/banking_ratios.csv` | Banking ratio dataset |
-| `data/source_mapping.csv` | Source traceability and validation status |
-| `data/extraction_tracker.csv` | Extraction tracking from public reports |
-| `data/forecast_assumptions.csv` | Forecast assumptions |
-| `data/scenario_analysis.csv` | Scenario outputs |
-| `data/market_data_template.csv` | Market data inputs |
-| `data/peer_comparison_template.csv` | Peer comparison inputs |
+| Reviewed | Value has been extracted from a public source and reviewed for the current project scope |
+| Needs Review | Value is available but requires semantic, definitional or analytical review |
+| Pending | Value has not yet been extracted or validated |
+| Estimated | Value relates to forecast or scenario assumptions |
+| Calculated | Value is derived from other data points and requires formula validation |
+
+These categories help separate values that are ready for analysis from values that still require review.
 
 ---
 
-## 5. Period Convention Review
+## Source Mapping Controls
 
-The project uses the following main periods:
+The source mapping process tracks:
 
-    2022A | 2023A | 2024A | 2025A | 2026E | 2027E
-
-Where:
-
-| Period | Meaning | Data Type |
-|---|---|---|
-| `2022A` | Published historical data | Actual |
-| `2023A` | Published historical data | Actual |
-| `2024A` | Published historical data | Actual |
-| `2025A` | Published historical data | Actual |
-| `2026E` | Forecast / estimate | Forecast |
-| `2027E` | Forecast / estimate | Forecast |
-
-Validation requirement:
-
-    Historical actual data and forecast estimates must never be mixed without clear labelling.
-
----
-
-## 6. Required Field Checks
-
-Each dataset should include required fields that make the data understandable and traceable.
-
-Recommended required fields include:
-
-- metric or data item;
+- metric name;
 - category;
 - period;
 - value;
 - unit;
 - source document;
 - source type;
-- reported or calculated classification;
-- actual or forecast classification;
+- source section or page;
+- whether the value is reported or calculated;
+- calculation method where applicable;
 - validation status;
-- notes.
+- review notes.
 
-If a required field is missing, the item should be classified as:
+This allows each material value to be traced back to a public source.
 
-    Needs Review
+The current source mapping layer includes reviewed entries for 2024A and 2025A.
 
-or:
-
-    Pending
+Source mapping also supports future SQL and Power BI analysis because validation status, source type and period coverage can be queried directly.
 
 ---
 
-## 7. Source Validation Checks
+## Reported vs Calculated Values
 
-Each key figure should be mapped to a public source.
+A key data quality control is the distinction between:
 
-Source validation checks include:
-
-- source document is identified;
-- source type is identified;
-- source section, table or page is recorded where possible;
-- value can be traced back to the public document;
-- source date or reporting period is clear;
-- source is appropriate for the metric;
-- secondary sources are not used when official sources are available.
-
-Suggested validation statuses:
-
-| Status | Meaning |
+| Type | Meaning |
 |---|---|
-| `Pending` | Data still needs review |
-| `Reviewed` | Data has been manually reviewed |
-| `Validated` | Data has been traced to a public source |
-| `Needs Review` | Data has an issue or requires manual checking |
-| `Not Available` | Data is not available from public sources |
-| `Calculated` | Data is calculated from other validated figures |
+| Reported | Figure is directly reported by the company or public source |
+| Calculated | Figure is derived using a formula |
+| Estimated | Figure is based on forecast assumptions |
+| Pending | Figure is not yet validated |
+
+This distinction is important because reported values and calculated values carry different validation risks.
+
+For example:
+
+- net income may be directly reported;
+- ROE may be reported or calculated depending on the source;
+- P/E and P/B require a selected market data date;
+- forecast figures require explicit assumptions;
+- valuation multiples require both financial data and market data;
+- scenario outputs require documented assumptions and clear model logic.
+
+The project should not mix reported data, calculated ratios and forecast estimates without clear labelling.
 
 ---
 
-## 8. Missing Values Review
+## Key Semantic Review Item
 
-Missing values should be reviewed before analysis.
+### Customer Deposits vs Customer Funds
 
-Potential causes of missing values:
+The main semantic issue currently flagged is the distinction between:
 
-- the metric is not reported;
-- the source has not been reviewed yet;
-- the metric is not applicable;
-- the value needs to be calculated;
-- the dataset is still in preparation.
+- customer deposits;
+- deposits and other customer resources;
+- balance sheet customer resources;
+- customer funds.
 
-Missing values are acceptable during the data preparation phase, but they should be clearly identified before analysis or dashboarding.
+Some source values refer to **customer funds** or **customer resources**, not strictly customer deposits.
 
-Recommended action:
+For dataset consistency, the project currently keeps a “Customer deposits” metric in some files, but relevant entries are flagged as **Needs Review** where the source definition may differ from the metric label.
 
-    Missing values should not be silently ignored.
+This is important because incorrect classification could affect liquidity ratio interpretation, especially loan-to-deposit and related funding ratios.
 
----
-
-## 9. Unit Consistency Review
-
-Banking data may be reported in different units.
-
-Examples:
-
-- EUR;
-- EUR million;
-- EUR billion;
-- percentage;
-- basis points;
-- number of shares;
-- ratio.
-
-Validation checks:
-
-- confirm the unit for each value;
-- avoid mixing EUR and EUR million;
-- avoid mixing percentage and decimal format;
-- document whether ratios are shown as percentages;
-- confirm market data units separately.
-
-Example issue:
-
-    1,000 EUR million is not the same as 1,000 EUR.
-
-This type of error can materially distort analysis.
+This is a good example of human-in-the-loop review because the issue is not simply technical. It requires understanding banking terminology and the way the bank reports customer resources.
 
 ---
 
-## 10. Reported vs Calculated Figures
+## Metric Definition Controls
 
-The project should distinguish between:
+The project should maintain clear definitions for the main banking metric categories.
 
-| Classification | Meaning |
-|---|---|
-| `Reported` | Figure is directly disclosed in a public source |
-| `Calculated` | Figure is calculated from other figures |
-| `Estimated` | Figure is based on a forecast or assumption |
+### Profitability
 
-Examples:
+Relevant metrics include:
 
-- Net income may be reported.
-- ROE may be reported or calculated.
-- Price-to-book may be calculated using market data and book value.
-- 2026E net income is an estimate.
+- net income;
+- ROE;
+- ROA;
+- net interest margin;
+- EPS;
+- book value per share.
 
-This distinction is important for transparency and professional credibility.
+Data quality risk:
 
----
+- profitability ratios may be reported or calculated differently depending on denominator definitions;
+- average equity and average assets may not be available in simplified datasets;
+- EPS may be adjusted or unadjusted depending on the source.
 
-## 11. Actual vs Forecast Classification
+### Efficiency
 
-The project must clearly distinguish actual historical data from forecast estimates.
+Relevant metrics include:
 
-Actual periods:
+- operating income;
+- operating costs;
+- cost-to-income ratio;
+- cost-to-income ratio excluding specific items.
 
-    2022A | 2023A | 2024A | 2025A
+Data quality risk:
 
-Forecast periods:
+- specific items may not be treated consistently across periods;
+- cost-to-income may be reported by the bank or calculated internally;
+- inflation, restructuring and one-off effects may distort comparisons.
 
-    2026E | 2027E
+### Asset Quality
 
-Validation rule:
+Relevant metrics include:
 
-    Forecast values should never be presented as published historical results.
+- cost of risk;
+- NPE ratio;
+- NPE coverage ratio;
+- restructured loans ratio;
+- impairments and provisions.
 
-Forecast values should include documented assumptions and scenario classification.
+Data quality risk:
 
----
+- NPE and NPL terminology may differ;
+- impairment definitions may vary by source;
+- coverage ratios may depend on the treatment of collateral or provisions.
 
-## 12. Duplicate Checks
+### Liquidity and Funding
 
-Duplicate records can distort analysis and dashboard outputs.
+Relevant metrics include:
 
-Duplicate checks should review whether the same metric appears multiple times for the same:
+- loan-to-deposit ratio;
+- loan-to-balance-sheet-customer-resources ratio;
+- LCR;
+- NSFR;
+- customer funds;
+- deposits and other customer resources.
 
-- bank;
-- period;
-- metric;
-- category;
-- scenario;
-- source.
+Data quality risk:
 
-If duplicates are intentional, they should be explained in the notes field.
+- deposits, customer resources and customer funds are not always identical;
+- regulatory liquidity metrics should not be compared casually with commercial funding ratios;
+- denominator definitions affect interpretation.
 
-If duplicates are accidental, they should be corrected before analysis.
+### Capital
 
----
+Relevant metrics include:
 
-## 13. Unusual Value Checks
+- CET1 phased-in ratio;
+- CET1 fully implemented ratio;
+- total capital fully implemented ratio;
+- equity.
 
-Unusual values should be flagged for review.
+Data quality risk:
 
-Examples of unusual values:
-
-- negative values where not expected;
-- very large year-on-year changes;
-- ratios outside reasonable banking ranges;
-- missing units;
-- percentages entered as whole numbers when decimals were expected;
-- market data without a date;
-- forecast values that differ materially from historical trends without explanation.
-
-Unusual values are not automatically wrong, but they require review and explanation.
-
----
-
-## 14. Basic Reconciliation Checks
-
-Simple reconciliation checks help identify potential errors.
-
-Examples:
-
-- operating income should be consistent with its components;
-- cost-to-income should be consistent with operating costs and operating income;
-- ROE should be consistent with net income and equity;
-- ROA should be consistent with net income and total assets;
-- loan-to-deposit ratio should be consistent with customer loans and customer deposits;
-- price-to-book should be consistent with market capitalisation and book value;
-- price-to-earnings should be consistent with market capitalisation and net income.
-
-These checks are simplified and educational, but they help improve analytical reliability.
+- phased-in and fully implemented ratios must not be mixed;
+- capital ratios depend on risk-weighted assets;
+- capital movements may reflect distributions, regulatory adjustments and business growth.
 
 ---
 
-## 15. SQL Data Quality Checks
+## Current Validation Script Result
 
-The SQL layer can support data quality review by identifying:
+The project validation script currently identifies two known issues:
 
-- missing values;
-- pending validation items;
-- incomplete source references;
-- duplicate records;
-- actual vs forecast classification;
-- reported vs calculated classification;
-- validation status counts.
+```text
+1. market_data_template.csv: column 'category' has missing values
+2. peer_comparison_template.csv: column 'business_type' has missing values
+```
 
-Example analytical use:
+These warnings are acceptable at this stage because both files are templates for future project phases.
 
-    Count how many data points are Validated, Pending or Needs Review.
-
-This type of query can feed the Power BI Data Quality page.
+They do not affect the reviewed 2024A–2025A financial data cycle.
 
 ---
 
-## 16. Power BI Data Quality Page
+## Known Template-Stage Warnings
 
-The Power BI dashboard should include a dedicated Data Quality page.
+| File | Warning | Current Treatment |
+|---|---|---|
+| `market_data_template.csv` | Missing category values | Acceptable because valuation market data has not yet been activated |
+| `peer_comparison_template.csv` | Missing business_type values | Acceptable because peer comparison has not yet been activated |
 
-Suggested visuals:
+These warnings should be resolved when the project enters the valuation and peer comparison phase.
 
-- validation status count;
-- missing values count;
+---
+
+## Data Quality Checks Currently Applied
+
+The current validation approach includes checks for:
+
+- missing values in active data files;
+- invalid validation status values;
+- unexpected periods;
+- source mapping completeness;
+- basic CSV column consistency;
+- template-stage missing fields;
+- reviewed vs pending status;
+- semantic review flags.
+
+Future versions may include additional checks for:
+
+- duplicate metric-period combinations;
+- inconsistent units;
+- unusual year-on-year movements;
+- calculated ratio reconciliation;
+- market data date validation;
+- peer comparison consistency;
+- forecast assumption completeness.
+
+---
+
+## 2024A–2025A Data Quality Observations
+
+### Positive Observations
+
+The reviewed 2024A–2025A cycle demonstrates:
+
+- consistent period labelling;
+- clear separation between actual and forecast periods;
+- documented source mapping;
+- reviewed validation status for core metrics;
+- human review flags for semantic issues;
+- clean Git-tracked workflow;
+- successful validation script execution;
+- analytical commentary linked to structured data;
+- an initial bridge between financial modeling and data quality;
+- a structure that can support SQL and Power BI outputs.
+
+### Items Requiring Continued Review
+
+The following areas require continued human review:
+
+- customer deposits vs customer funds classification;
+- NPE vs NPL terminology;
+- ratio definition consistency;
+- phased-in vs fully implemented capital ratios;
+- annual report cross-checks for 2022A and 2023A;
+- treatment of reexpressed 2024A comparative figures;
+- future valuation date selection;
+- peer group definition;
+- dividend data treatment;
+- calculation of valuation multiples;
+- scenario assumption documentation.
+
+---
+
+## Human-in-the-Loop Review
+
+Human-in-the-loop review is necessary because financial data quality is not only technical.
+
+Some checks require professional judgment, especially when:
+
+- terminology differs between sources;
+- line items are reclassified;
+- ratios are reported under different definitions;
+- comparative figures are reexpressed;
+- a metric label may not fully match the source definition;
+- market data is date-sensitive;
+- analytical conclusions could be overinterpreted.
+
+This project intentionally avoids fully automated financial conclusions.
+
+The role of the analyst is to review, challenge and document assumptions before using the data in reports, dashboards or valuation work.
+
+In the context of AI finance or AI-assisted financial analysis, this is particularly relevant because an automated system could easily overinterpret incomplete, inconsistent or semantically ambiguous data.
+
+---
+
+## SQL Readiness
+
+The structured files are suitable for SQL-based analysis.
+
+Potential SQL data quality checks include:
+
+- count reviewed vs pending metrics by period;
+- identify missing values in active periods;
+- list metrics flagged as Needs Review;
+- compare 2024A and 2025A values;
+- identify metrics without source documents;
+- separate reported from calculated values;
+- prepare Power BI extract tables;
+- identify metrics available for trend analysis;
+- identify periods with incomplete source coverage;
+- identify categories with the highest number of pending values.
+
+This supports the project’s positioning as both a financial modeling case study and a banking analytics project.
+
+Example SQL-style analytical questions:
+
+- Which financial metrics are reviewed for both 2024A and 2025A?
+- Which metrics improved between 2024A and 2025A?
+- Which metrics still require semantic review?
+- Which source documents support each reviewed metric?
+- Which categories are ready for Power BI reporting?
+- Which data files still contain template-stage warnings?
+
+---
+
+## Power BI Readiness
+
+The data quality layer can support a Power BI dashboard page showing:
+
+- number of reviewed metrics;
+- number of pending metrics;
+- number of metrics requiring review;
+- source coverage by period;
+- validation status by file;
+- reviewed data by category;
+- template warnings;
+- data quality checklist status.
+
+Suggested visuals include:
+
+- KPI cards;
+- validation status bar charts;
+- period coverage matrix;
 - source coverage table;
-- reported vs calculated classification;
-- actual vs forecast classification;
-- data quality scorecard;
-- items requiring review table.
+- conditional formatting for Reviewed, Pending and Needs Review;
+- data quality notes table;
+- trend readiness indicators;
+- data completeness matrix.
 
-This helps show that the project values both analysis and data reliability.
+Power BI should clearly distinguish between:
 
----
-
-## 17. Human-in-the-Loop Review
-
-Human review is required before publishing analytical conclusions.
-
-The review should check:
-
-- source traceability;
-- values copied correctly;
-- units are correct;
-- ratios are correctly interpreted;
-- assumptions are documented;
-- forecasts are clearly labelled;
-- scenario outputs are reasonable;
-- commentary avoids investment advice;
-- no personal, internal or confidential information is included.
-
-This is especially important if AI-assisted drafting or analysis support is used.
+- reviewed actual data;
+- pending actual data;
+- forecast data;
+- template data;
+- values requiring semantic review;
+- calculated valuation metrics.
 
 ---
 
-## 18. Current Data Quality Status
-
-Current status:
-
-    Initial 2025A data extraction completed
-    Initial source mapping completed
-    Initial extraction tracker updated
-    Initial banking ratios updated
-    Python validation check executed
-    Historical trend completion pending
-    Market data pending
-    Peer comparison pending
-    Forecast assumptions pending
-    Scenario analysis pending
-
-Most values for 2022A, 2023A and 2024A remain marked as:
-
-    Pending
-
-until official public-source extraction and review are completed.
-
-### Initial 2025A Data Quality Status
-
-The project now includes an initial 2025A public-data extraction for Millennium bcp.
-
-The 2025A data has been added to the following files:
-
-- `data/financial_data.csv`;
-- `data/banking_ratios.csv`;
-- `data/extraction_tracker.csv`;
-- `data/source_mapping.csv`.
-
-The initial 2025A extraction covers:
-
-- profitability metrics;
-- efficiency metrics;
-- asset quality metrics;
-- balance sheet metrics;
-- capital ratios;
-- liquidity ratios;
-- selected per-share indicators.
-
-The current validation status for the initial 2025A data is:
-
-    Reviewed
-
-This means that the values have been added from public sources and checked at a first review level.
-
-Before final publication, the data should still be cross-checked against:
-
-- the official annual report;
-- official investor presentations;
-- official key indicators pages;
-- source mapping records;
-- extraction tracker records.
-
-The current Python validation check has been executed. The validation script completed successfully and identified only template-related issues in files that are not yet fully populated:
-
-- `data/market_data_template.csv`;
-- `data/peer_comparison_template.csv`.
-
-These issues are acceptable at the current stage because market data and peer comparison are planned for a later phase.
-
-The key 2025A files used for the initial banking analytics analysis did not generate blocking validation issues.
-
-Current interpretation:
-
-    Initial 2025A data structure is usable for preliminary analysis.
-    Final conclusions should wait until 2022A, 2023A and 2024A are extracted and validated.
-    Market data and peer comparison remain pending.
-    Forecast assumptions remain pending.
-
----
-
-## 19. Initial 2025A Validation Summary
-
-The initial 2025A data extraction includes the following types of values:
+## Current Data Quality Status Summary
 
 | Area | Status |
-|---|---|
-| Profitability metrics | Reviewed |
-| Efficiency metrics | Reviewed |
-| Asset quality metrics | Reviewed |
-| Balance sheet metrics | Reviewed |
-| Capital ratios | Reviewed |
-| Liquidity ratios | Reviewed |
-| Per-share indicators | Reviewed |
+|---|---:|
+| 2025A financial data | Completed |
+| 2024A financial data | Completed |
+| 2025A banking ratios | Completed |
+| 2024A banking ratios | Completed |
+| 2025A source mapping | Completed |
+| 2024A source mapping | Completed |
+| 2025A extraction tracker | Completed |
+| 2024A extraction tracker | Completed |
+| Validation script | Active |
+| Known validation warnings | Template-stage only |
+| 2023A extraction | Pending |
+| 2022A extraction | Pending |
 | Market data | Pending |
 | Peer comparison | Pending |
 | Forecast assumptions | Pending |
-| Scenario outputs | Pending |
-
-The 2025A values are currently suitable for preliminary banking analytics commentary, but not yet for final investment-style conclusions.
-
-The main reason is that a single year does not provide enough historical context.
-
-The next data quality priority is to complete the historical series for:
-
-    2022A | 2023A | 2024A
-
-Once these periods are completed, the project can move from a 2025A snapshot to a proper historical trend analysis.
+| Valuation multiples | Pending |
 
 ---
 
-## 20. Current Validation Script Result
+## Data Quality Risk Register
 
-The validation script has been executed using:
-
-    python data/validation_checks.py
-
-The script completed successfully.
-
-The current warnings relate to templates that are not yet fully populated:
-
-- `data/market_data_template.csv`;
-- `data/peer_comparison_template.csv`.
-
-These warnings do not block the current project phase because those files belong to later stages of the roadmap.
-
-Current interpretation:
-
-    No blocking validation issue was identified for the initial 2025A banking analytics dataset.
-
-Further validation will be required after adding 2022A, 2023A and 2024A data.
+| Risk | Description | Mitigation |
+|---|---|---|
+| Source misclassification | A value may be assigned to an incorrect metric label | Use source mapping and review notes |
+| Semantic inconsistency | Customer funds, deposits and resources may be confused | Flag as Needs Review |
+| Ratio definition mismatch | Ratios may differ depending on reported or calculated basis | Track reported/calculated status |
+| Reexpressed figures | 2024A figures may be comparative/reexpressed figures from 2025 source | Document notes clearly |
+| Missing historical data | 2022A and 2023A are not yet complete | Keep Pending until validated |
+| Overinterpretation | Single-year movement may be treated as a trend | Require multi-year review |
+| Valuation date sensitivity | Market multiples depend on selected share price date | Delay valuation until date is documented |
+| Template warnings | Future template files contain blanks | Keep warnings documented until activation |
+| Forecast assumption risk | Forecasts may be interpreted as predictions | Label all forecasts as illustrative |
+| Peer comparison risk | Inappropriate peer group may distort interpretation | Define peer criteria before comparison |
 
 ---
 
-## 21. Data Quality Checklist
+## Data Quality Control Checklist
 
-Before finalising the project, check:
-
-- all key metrics have a source;
-- all values have a unit;
-- all periods are correctly labelled;
-- actual and forecast data are separated;
-- reported and calculated figures are classified;
-- missing values are explained;
-- unusual values are reviewed;
-- ratios are formula-checked;
-- assumptions are documented;
-- SQL queries run correctly;
-- Power BI visuals use the correct fields;
-- commentary is neutral and factual;
-- no investment recommendation is included.
-
----
-
-## 22. Next Data Quality Priorities
-
-The next data quality priorities are:
-
-1. Complete 2024A extraction.
-2. Complete 2023A extraction.
-3. Complete 2022A extraction.
-4. Cross-check 2025A values against the annual report.
-5. Confirm source references and pages or sections.
-6. Review labels such as customer deposits versus customer funds.
-7. Validate reported versus calculated ratio classifications.
-8. Select a market data date for valuation ratios.
-9. Complete market data inputs.
-10. Complete peer comparison inputs.
-11. Re-run validation checks after each major update.
-
-The most important next step is to move from a single-year 2025A snapshot to a multi-year historical dataset.
+| Control | Current Status |
+|---|---:|
+| Public source used | Completed for 2024A and 2025A initial scope |
+| Source mapping created | Completed for 2024A and 2025A initial scope |
+| Validation status assigned | Completed |
+| Reported vs calculated distinction | Active |
+| Forecast vs actual separation | Active |
+| Semantic review flags | Active |
+| Git version control used | Active |
+| Validation script executed | Active |
+| Known warnings documented | Active |
+| Human-in-the-loop review notes included | Active |
+| SQL readiness considered | Active |
+| Power BI readiness considered | Active |
+| 2022A and 2023A annual reports validated | Pending |
+| Market data date selected | Pending |
+| Valuation multiples calculated | Pending |
 
 ---
 
-## 23. Professional Relevance
+## Recommended Validation Enhancements
 
-This data quality report supports the project’s relevance for roles such as:
+Future improvements to `data/validation_checks.py` may include:
+
+1. Duplicate metric-period checks.
+2. Unit consistency checks.
+3. Validation status allowed-value checks.
+4. Missing source document checks for reviewed values.
+5. Missing source section checks for reviewed values.
+6. Unexpected period checks.
+7. Reported vs calculated consistency checks.
+8. Ratio sanity checks.
+9. Year-on-year movement flags.
+10. Forecast assumption completeness checks.
+11. Market data date checks.
+12. Peer group completeness checks.
+
+These enhancements would make the project stronger for financial data quality and data validation roles.
+
+---
+
+## Next Data Quality Priorities
+
+Recommended next steps:
+
+1. Extract 2023A official financial data.
+2. Extract 2022A official financial data.
+3. Add 2023A and 2022A banking ratios.
+4. Expand source mapping for 2023A and 2022A.
+5. Cross-check 2024A reexpressed values with the 2024 annual report where appropriate.
+6. Resolve customer deposits vs customer funds terminology.
+7. Add duplicate metric-period validation.
+8. Add unit consistency validation.
+9. Add calculated ratio reconciliation.
+10. Prepare a Power BI data quality dashboard.
+11. Activate market data only after choosing a specific valuation date.
+12. Activate peer comparison only after defining a clear peer group.
+
+---
+
+## Professional Relevance
+
+This data quality report demonstrates skills relevant to:
 
 - Financial Data Quality Analyst;
 - Data Validation Analyst;
-- Financial Data Analyst;
-- Reporting Analyst – Banking;
-- Banking Analytics Analyst;
-- AI Finance Evaluator;
-- Risk Operations Analyst;
-- Financial Operations Analyst;
-- Business Operations Analyst;
-- Program Operations Analyst.
+- Banking Analytics;
+- Reporting Analyst;
+- Financial Research;
+- Investment Research Support;
+- AI Finance Evaluation;
+- AI Product Testing in Finance;
+- Risk and Controls;
+- SQL-based financial analysis;
+- Power BI reporting.
 
-It demonstrates the ability to treat financial analysis as a controlled, documented and auditable workflow.
+The project demonstrates the ability to:
+
+- structure financial data;
+- validate public-source information;
+- document data lineage;
+- track review status;
+- identify semantic data issues;
+- prepare datasets for analytics;
+- apply professional judgment to financial information;
+- avoid unsupported conclusions.
+
+This is particularly relevant for roles that require a bridge between finance, data quality, reporting and responsible AI-assisted analysis.
 
 ---
 
-## 24. Disclaimer
+## Portfolio Positioning
 
-This report is part of an educational portfolio project.
+This report supports the broader portfolio narrative:
 
-It uses only publicly available information.
+```text
+Banking experience
++ financial data quality
++ public-source validation
++ banking analytics
++ SQL readiness
++ Power BI readiness
++ human-in-the-loop review
+```
 
-It does not contain personal data, client data, employee data, internal banking information or confidential information.
+The report can be referenced in CV or LinkedIn as evidence of practical work in:
 
-It does not constitute investment advice, financial advice or a recommendation to buy, sell or hold any financial instrument.
+- financial data validation;
+- source mapping;
+- banking metric interpretation;
+- data quality controls;
+- structured analytics workflows;
+- public-data financial research.
 
-All analysis, forecasts, scenarios and data quality checks are illustrative and should be interpreted with caution.
+---
+
+## Disclaimer
+
+This report is for educational, analytical and professional portfolio purposes only.
+
+It uses only publicly available information and manually structured project datasets.
+
+It does not use confidential information, internal banking data, client data or proprietary information.
+
+It does not provide investment advice, financial advice, valuation advice, a price target or a buy/sell/hold recommendation.
+
+All figures should be independently verified before any professional, academic or investment-related use.
+
+The analysis is descriptive, illustrative and subject to further validation.

@@ -1,5 +1,5 @@
 item,category,period,value,unit,source_document,source_type,source_section_or_page,reported_or_calculated,calculation_method,validation_status,notes
-Net interest income,Income Statement,2022A,,EUR million,Millennium bcp Annual Report 2022,Annual Report,,Reported,,Pending,To be extracted from official annual report
+Net interest income,Income statement,2022A,2149.8,EUR million,Millennium bcp Official FY2022 Results Press Release,Official public source,Summary of indicators / Results,Reported,,Reviewed,Reported as margem financeira.
 Net interest income,Income Statement,2023A,,EUR million,Millennium bcp Annual Report 2023,Annual Report,,Reported,,Pending,To be extracted from official annual report
 Net interest income,Income Statement,2024A,,EUR million,Millennium bcp Annual Report 2024,Annual Report,,Reported,,Pending,To be extracted from official annual report
 Net interest income,Income Statement,2025A,,EUR million,Millennium bcp Annual Report 2025,Annual Report,,Reported,,Pending,To be extracted from official annual report
@@ -7,19 +7,19 @@ Fees and commissions,Income Statement,2022A,,EUR million,Millennium bcp Annual R
 Fees and commissions,Income Statement,2023A,,EUR million,Millennium bcp Annual Report 2023,Annual Report,,Reported,,Pending,To be extracted from official annual report
 Fees and commissions,Income Statement,2024A,,EUR million,Millennium bcp Annual Report 2024,Annual Report,,Reported,,Pending,To be extracted from official annual report
 Fees and commissions,Income Statement,2025A,,EUR million,Millennium bcp Annual Report 2025,Annual Report,,Reported,,Pending,To be extracted from official annual report
-Operating income,Income Statement,2022A,,EUR million,Millennium bcp Annual Report 2022,Annual Report,,Reported,,Pending,To be extracted from official annual report
+Operating income,Income statement,2022A,2867.5,EUR million,Millennium bcp Official FY2022 Results Press Release,Official public source,Summary of indicators / Results,Reported,,Reviewed,Reported as produto banc?rio.
 Operating income,Income Statement,2023A,,EUR million,Millennium bcp Annual Report 2023,Annual Report,,Reported,,Pending,To be extracted from official annual report
 Operating income,Income Statement,2024A,,EUR million,Millennium bcp Annual Report 2024,Annual Report,,Reported,,Pending,To be extracted from official annual report
 Operating income,Income Statement,2025A,,EUR million,Millennium bcp Annual Report 2025,Annual Report,,Reported,,Pending,To be extracted from official annual report
-Operating costs,Income Statement,2022A,,EUR million,Millennium bcp Annual Report 2022,Annual Report,,Reported,,Pending,To be extracted from official annual report
+Operating costs,Income statement,2022A,1073.0,EUR million,Millennium bcp Official FY2022 Results Press Release,Official public source,Summary of indicators / Results,Reported,,Reviewed,Reported as custos operacionais.
 Operating costs,Income Statement,2023A,,EUR million,Millennium bcp Annual Report 2023,Annual Report,,Reported,,Pending,To be extracted from official annual report
 Operating costs,Income Statement,2024A,,EUR million,Millennium bcp Annual Report 2024,Annual Report,,Reported,,Pending,To be extracted from official annual report
 Operating costs,Income Statement,2025A,,EUR million,Millennium bcp Annual Report 2025,Annual Report,,Reported,,Pending,To be extracted from official annual report
-Impairments and provisions,Income Statement,2022A,,EUR million,Millennium bcp Annual Report 2022,Annual Report,,Reported,,Pending,To be extracted from official annual report
+Impairments and provisions,Income statement,2022A,1056.2,EUR million,Millennium bcp Official FY2022 Results Press Release,Official public source,Summary of indicators / Results,Calculated,Credit impairment 300.6 + other impairments and provisions 755.6,Needs Review,Needs consistency review against later-year definitions.
 Impairments and provisions,Income Statement,2023A,,EUR million,Millennium bcp Annual Report 2023,Annual Report,,Reported,,Pending,To be extracted from official annual report
 Impairments and provisions,Income Statement,2024A,,EUR million,Millennium bcp Annual Report 2024,Annual Report,,Reported,,Pending,To be extracted from official annual report
 Impairments and provisions,Income Statement,2025A,,EUR million,Millennium bcp Annual Report 2025,Annual Report,,Reported,,Pending,To be extracted from official annual report
-Net income,Bottom Line,2022A,,EUR million,Millennium bcp Annual Report 2022,Annual Report,,Reported,,Pending,To be extracted from official annual report
+Net income,Income statement,2022A,207.5,EUR million,Millennium bcp Official FY2022 Results Press Release,Official public source,Summary of indicators / Results,Reported,,Reviewed,Reported as resultado l?quido.
 Net income,Bottom Line,2023A,,EUR million,Millennium bcp Annual Report 2023,Annual Report,,Reported,,Pending,To be extracted from official annual report
 Net income,Bottom Line,2024A,,EUR million,Millennium bcp Annual Report 2024,Annual Report,,Reported,,Pending,To be extracted from official annual report
 Net income,Bottom Line,2025A,,EUR million,Millennium bcp Annual Report 2025,Annual Report,,Reported,,Pending,To be extracted from official annual report
@@ -27,23 +27,23 @@ Loans to customers,Balance Sheet,2022A,,EUR million,Millennium bcp Annual Report
 Loans to customers,Balance Sheet,2023A,,EUR million,Millennium bcp Annual Report 2023,Annual Report,,Reported,,Pending,To be extracted from official annual report
 Loans to customers,Balance Sheet,2024A,,EUR million,Millennium bcp Annual Report 2024,Annual Report,,Reported,,Pending,To be extracted from official annual report
 Loans to customers,Balance Sheet,2025A,,EUR million,Millennium bcp Annual Report 2025,Annual Report,,Reported,,Pending,To be extracted from official annual report
-Customer deposits,Balance Sheet,2022A,,EUR million,Millennium bcp Annual Report 2022,Annual Report,,Reported,,Pending,To be extracted from official annual report
+Customer deposits,Balance sheet,2022A,75907.0,EUR million,Millennium bcp Official FY2022 Results Press Release,Official public source,Summary of indicators / Balance sheet,Reported,,Needs Review,Reported as deposits and other customer resources. Keep semantic review against customer funds and balance sheet customer resources.
 Customer deposits,Balance Sheet,2023A,,EUR million,Millennium bcp Annual Report 2023,Annual Report,,Reported,,Pending,To be extracted from official annual report
 Customer deposits,Balance Sheet,2024A,,EUR million,Millennium bcp Annual Report 2024,Annual Report,,Reported,,Pending,To be extracted from official annual report
 Customer deposits,Balance Sheet,2025A,,EUR million,Millennium bcp Annual Report 2025,Annual Report,,Reported,,Pending,To be extracted from official annual report
-Total assets,Balance Sheet,2022A,,EUR million,Millennium bcp Annual Report 2022,Annual Report,,Reported,,Pending,To be extracted from official annual report
+Total assets,Balance sheet,2022A,89861.0,EUR million,Millennium bcp Official FY2022 Results Press Release,Official public source,Summary of indicators / Balance sheet,Reported,,Reviewed,Reported as ativo total.
 Total assets,Balance Sheet,2023A,,EUR million,Millennium bcp Annual Report 2023,Annual Report,,Reported,,Pending,To be extracted from official annual report
 Total assets,Balance Sheet,2024A,,EUR million,Millennium bcp Annual Report 2024,Annual Report,,Reported,,Pending,To be extracted from official annual report
 Total assets,Balance Sheet,2025A,,EUR million,Millennium bcp Annual Report 2025,Annual Report,,Reported,,Pending,To be extracted from official annual report
-Equity,Balance Sheet,2022A,,EUR million,Millennium bcp Annual Report 2022,Annual Report,,Reported,,Pending,To be extracted from official annual report
+Equity,Balance sheet,2022A,5921.0,EUR million,Millennium bcp Official FY2022 Results Press Release,Official public source,Summary of indicators / Balance sheet,Reported,,Reviewed,Reported as situa??o l?quida.
 Equity,Balance Sheet,2023A,,EUR million,Millennium bcp Annual Report 2023,Annual Report,,Reported,,Pending,To be extracted from official annual report
 Equity,Balance Sheet,2024A,,EUR million,Millennium bcp Annual Report 2024,Annual Report,,Reported,,Pending,To be extracted from official annual report
 Equity,Balance Sheet,2025A,,EUR million,Millennium bcp Annual Report 2025,Annual Report,,Reported,,Pending,To be extracted from official annual report
-ROE,Profitability Ratio,2022A,,%,Millennium bcp Annual Report 2022,Annual Report,,Reported or Calculated,,Pending,Use reported figure where available; otherwise calculate from net income and average equity
+ROE,Profitability ratio,2022A,4.0,%,Millennium bcp Official FY2022 Results Press Release,Official public source,Summary of indicators / Ratios,Reported,,Reviewed,Reported as return on equity.
 ROE,Profitability Ratio,2023A,,%,Millennium bcp Annual Report 2023,Annual Report,,Reported or Calculated,,Pending,Use reported figure where available; otherwise calculate from net income and average equity
 ROE,Profitability Ratio,2024A,,%,Millennium bcp Annual Report 2024,Annual Report,,Reported or Calculated,,Pending,Use reported figure where available; otherwise calculate from net income and average equity
 ROE,Profitability Ratio,2025A,,%,Millennium bcp Annual Report 2025,Annual Report,,Reported or Calculated,,Pending,Use reported figure where available; otherwise calculate from net income and average equity
-ROA,Profitability Ratio,2022A,,%,Millennium bcp Annual Report 2022,Annual Report,,Calculated,Net income / average total assets,Pending,Prefer average total assets if available
+ROA,Profitability ratio,2022A,0.1,%,Millennium bcp Official FY2022 Results Press Release,Official public source,Summary of indicators / Ratios,Reported,,Reviewed,Reported as return on assets.
 ROA,Profitability Ratio,2023A,,%,Millennium bcp Annual Report 2023,Annual Report,,Calculated,Net income / average total assets,Pending,Prefer average total assets if available
 ROA,Profitability Ratio,2024A,,%,Millennium bcp Annual Report 2024,Annual Report,,Calculated,Net income / average total assets,Pending,Prefer average total assets if available
 ROA,Profitability Ratio,2025A,,%,Millennium bcp Annual Report 2025,Annual Report,,Calculated,Net income / average total assets,Pending,Prefer average total assets if available
@@ -59,7 +59,7 @@ NPL ratio,Asset Quality Ratio,2022A,,%,Millennium bcp Annual Report 2022,Annual 
 NPL ratio,Asset Quality Ratio,2023A,,%,Millennium bcp Annual Report 2023,Annual Report,,Reported,,Pending,Use official reported figure where available
 NPL ratio,Asset Quality Ratio,2024A,,%,Millennium bcp Annual Report 2024,Annual Report,,Reported,,Pending,Use official reported figure where available
 NPL ratio,Asset Quality Ratio,2025A,,%,Millennium bcp Annual Report 2025,Annual Report,,Reported,,Pending,Use official reported figure where available
-Loan-to-deposit ratio,Liquidity Ratio,2022A,,%,Millennium bcp Annual Report 2022,Annual Report,,Calculated,Loans to customers / customer deposits,Pending,Ensure consistent gross/net loan definition
+Loan-to-deposit ratio,Liquidity and funding ratio,2022A,74.0,%,Millennium bcp Official FY2022 Results Press Release,Official public source,Summary of indicators / Ratios,Reported,,Reviewed,Reported as customer loans net / deposits and other customer resources.
 Loan-to-deposit ratio,Liquidity Ratio,2023A,,%,Millennium bcp Annual Report 2023,Annual Report,,Calculated,Loans to customers / customer deposits,Pending,Ensure consistent gross/net loan definition
 Loan-to-deposit ratio,Liquidity Ratio,2024A,,%,Millennium bcp Annual Report 2024,Annual Report,,Calculated,Loans to customers / customer deposits,Pending,Ensure consistent gross/net loan definition
 Loan-to-deposit ratio,Liquidity Ratio,2025A,,%,Millennium bcp Annual Report 2025,Annual Report,,Calculated,Loans to customers / customer deposits,Pending,Ensure consistent gross/net loan definition
@@ -147,3 +147,18 @@ CET1 fully implemented ratio,Capital,2023A,15.2,%,Millennium bcp Official FY2024
 Total capital fully implemented ratio,Capital,2023A,19.6,%,Millennium bcp Official FY2024 Results,Official company source,Capital ratios / 2023 reexpressed comparative figures,Reported,,Reviewed,Reported total capital fully implemented ratio for 2023 using reexpressed comparative figures
 EPS,Per Share,2023A,0.056,EUR,Millennium bcp Official FY2024 Results,Official company source,Share indicators / 2023 reexpressed comparative figures,Reported,,Reviewed,Reported EPS for 2023 using official public source
 Book value per share,Per Share,2023A,0.412,EUR,Millennium bcp Official FY2024 Results,Official company source,Share indicators / 2023 reexpressed comparative figures,Reported,,Reviewed,Reported book value per share for 2023 using official public source
+Customer loans,Balance sheet,2022A,56198.0,EUR million,Millennium bcp Official FY2022 Results Press Release,Official public source,Summary of indicators / Balance sheet,Reported,,Reviewed,Reported as cr?dito a clientes l?quido.
+Net interest margin,Profitability ratio,2022A,2.46,%,Millennium bcp Official FY2022 Results Press Release,Official public source,Summary of indicators / Ratios,Reported,,Reviewed,Reported as taxa de margem financeira.
+Cost-to-income ratio,Efficiency ratio,2022A,37.4,%,Millennium bcp Official FY2022 Results Press Release,Official public source,Summary of indicators / Ratios,Reported,,Reviewed,Reported as r?cio de efici?ncia.
+Cost-to-income ratio excluding specific items,Efficiency ratio,2022A,36.8,%,Millennium bcp Official FY2022 Results Press Release,Official public source,Summary of indicators / Ratios,Reported,,Needs Review,Keep consistency review against later-year definition.
+Cost of risk,Asset quality ratio,2022A,52.0,bps,Millennium bcp Official FY2022 Results Press Release,Official public source,Summary of indicators / Ratios,Reported,,Reviewed,Reported as custo do risco.
+NPE ratio,Asset quality ratio,2022A,3.8,%,Millennium bcp Official FY2022 Results Press Release,Official public source,Summary of indicators / Ratios,Reported,,Reviewed,Reported as Non-Performing Exposures / customer loans.
+NPE coverage ratio,Asset quality ratio,2022A,68.3,%,Millennium bcp Official FY2022 Results Press Release,Official public source,Summary of indicators / Ratios,Reported,,Reviewed,Reported as credit impairment balance / NPE.
+Restructured loans ratio,Asset quality ratio,2022A,3.2,%,Millennium bcp Official FY2022 Results Press Release,Official public source,Summary of indicators / Ratios,Reported,,Reviewed,Reported as restructured loans / customer loans.
+Loan-to-balance-sheet-customer-resources ratio,Liquidity and funding ratio,2022A,72.7,%,Millennium bcp Official FY2022 Results Press Release,Official public source,Summary of indicators / Ratios,Reported,,Reviewed,Reported as customer loans net / balance sheet customer resources.
+LCR,Liquidity and funding ratio,2022A,212.0,%,Millennium bcp Official FY2022 Results Press Release,Official public source,Summary of indicators / Ratios,Reported,,Reviewed,Reported as Liquidity Coverage Ratio.
+NSFR,Liquidity and funding ratio,2022A,154.0,%,Millennium bcp Official FY2022 Results Press Release,Official public source,Summary of indicators / Ratios,Reported,,Reviewed,Reported as Net Stable Funding Ratio.
+CET1 phased-in ratio,Capital ratio,2022A,12.6,%,Millennium bcp Official FY2022 Results Press Release,Official public source,Summary of indicators / Ratios,Reported,,Reviewed,Reported as common equity tier I phased-in ratio.
+CET1 fully implemented ratio,Capital ratio,2022A,12.5,%,Millennium bcp Official FY2022 Results Press Release,Official public source,Summary of indicators / Ratios,Reported,,Reviewed,Reported as common equity tier I fully implemented ratio.
+Total capital fully implemented ratio,Capital ratio,2022A,16.8,%,Millennium bcp Official FY2022 Results Press Release,Official public source,Summary of indicators / Ratios,Reported,,Reviewed,Reported as total fully implemented capital ratio.
+EPS,Per-share indicator,2022A,0.011,EUR,Millennium bcp Official FY2022 Results Press Release,Official public source,Summary of indicators / Per-share indicators,Reported,,Reviewed,Reported as basic earnings per share in euros.

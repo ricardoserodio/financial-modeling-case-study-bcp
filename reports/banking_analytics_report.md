@@ -499,6 +499,131 @@ The dashboard should clearly separate:
 
 ---
 
+---
+
+## Expanded 2022A?2025A Banking Trend Analysis
+
+The project now includes a four-year reviewed historical cycle covering **2022A, 2023A, 2024A and 2025A**.
+
+This expands the case study from an initial three-year trend analysis into a broader banking analytics view.
+
+The 2022A period is especially useful because it provides context for the subsequent improvement in profitability, asset quality, liquidity and capital indicators.
+
+### Profitability Trend
+
+| Metric | 2022A | 2023A | 2024A | 2025A | Unit |
+|---|---:|---:|---:|---:|---|
+| Net income | 207.5 | 856.0 | 906.4 | 1,018.6 | EUR million |
+| ROE | 4.0 | 15.1 | 13.8 | 14.1 | % |
+| ROA | 0.1 | 1.0 | 1.0 | 1.1 | % |
+| Net interest margin | 2.46 | 3.17 | 3.04 | 2.89 | % |
+| EPS | 0.011 | 0.056 | 0.058 | 0.066 | EUR |
+
+The profitability profile shows a significant improvement from 2022A to 2023A.
+
+Net income increased from EUR 207.5 million in 2022A to EUR 856.0 million in 2023A, followed by further improvement in 2024A and 2025A.
+
+ROE also increased materially from 4.0% in 2022A to 15.1% in 2023A, before stabilising around the mid-teens in 2024A and 2025A.
+
+This suggests that 2022A was a lower-profitability base year, while 2023A?2025A represent a stronger profitability period.
+
+### Revenue and Efficiency Trend
+
+| Metric | 2022A | 2023A | 2024A | 2025A | Unit |
+|---|---:|---:|---:|---:|---|
+| Net interest income | 2,149.8 | 2,825.7 | 2,830.9 | 2,898.1 | EUR million |
+| Operating income | 2,867.5 | 3,769.7 | 3,573.5 | 3,815.2 | EUR million |
+| Operating costs | 1,073.0 | 1,162.6 | 1,306.1 | 1,415.1 | EUR million |
+| Cost-to-income ratio | 37.4 | 30.8 | 36.5 | 37.1 | % |
+| Cost-to-income ratio excluding specific items | 36.8 | 30.2 | 36.2 | 36.5 | % |
+
+Net interest income increased strongly from 2022A to 2023A and remained high through 2025A.
+
+The cost-to-income ratio improved sharply in 2023A, before returning to levels closer to 2022A in 2024A and 2025A.
+
+This indicates that the 2023A efficiency performance should be interpreted carefully and reviewed alongside operating income composition, cost base growth and possible specific items.
+
+### Asset Quality Trend
+
+| Metric | 2022A | 2023A | 2024A | 2025A | Unit |
+|---|---:|---:|---:|---:|---|
+| Cost of risk | 52 | 42 | 31 | 32 | bps |
+| NPE ratio | 3.8 | 3.5 | 3.1 | 2.4 | % |
+| NPE coverage ratio | 68.3 | 77.6 | 82.2 | 90.9 | % |
+| Restructured loans ratio | 3.2 | 3.3 | 2.6 | 1.8 | % |
+
+Asset quality indicators show a favourable trend between 2022A and 2025A.
+
+The NPE ratio declined from 3.8% in 2022A to 2.4% in 2025A.
+
+The NPE coverage ratio increased from 68.3% in 2022A to 90.9% in 2025A.
+
+This combination suggests improving asset quality and stronger impairment coverage, subject to consistency of definitions across reporting periods.
+
+### Liquidity and Funding Trend
+
+| Metric | 2022A | 2023A | 2024A | 2025A | Unit |
+|---|---:|---:|---:|---:|---|
+| Customer loans | 56,198 | 55,218 | 56,850 | 61,240 | EUR million |
+| Customer deposits / customer funds | 75,907 | 95,328 | 102,938 | 111,782 | EUR million |
+| Loan-to-deposit ratio | 74.0 | 69.2 | 67.6 | 68.2 | % |
+| Loan-to-balance-sheet-customer-resources ratio | 72.7 | 67.8 | 66.6 | 67.1 | % |
+| LCR | 212 | 317 | 342 | 334 | % |
+| NSFR | 154 | 177 | 181 | 180 | % |
+
+Liquidity and funding indicators improved materially from 2022A to 2025A.
+
+The loan-to-deposit ratio declined from 74.0% in 2022A to 68.2% in 2025A.
+
+The LCR increased from 212% in 2022A to 334% in 2025A, while the NSFR increased from 154% to 180%.
+
+This supports a stronger liquidity and funding profile over the period, although customer deposits vs customer funds terminology remains a review item.
+
+### Capital Trend
+
+| Metric | 2022A | 2023A | 2024A | 2025A | Unit |
+|---|---:|---:|---:|---:|---|
+| CET1 phased-in ratio | 12.6 | 15.2 | 16.4 | 16.1 | % |
+| CET1 fully implemented ratio | 12.5 | 15.2 | 16.3 | 15.9 | % |
+| Total capital fully implemented ratio | 16.8 | 19.6 | 20.6 | 19.9 | % |
+
+Capital ratios improved strongly from 2022A to 2024A and remained robust in 2025A.
+
+The CET1 fully implemented ratio increased from 12.5% in 2022A to 15.9% in 2025A.
+
+The total capital fully implemented ratio increased from 16.8% to 19.9% over the same period.
+
+This supports the view that the bank strengthened its capital position during the historical period under review.
+
+### Initial 2022A?2025A Analytical Summary
+
+The 2022A?2025A trend shows:
+
+- stronger profitability after 2022A;
+- materially higher net income from 2023A onward;
+- sustained net interest income growth;
+- improving asset quality indicators;
+- higher NPE coverage;
+- stronger liquidity and funding ratios;
+- improved capital ratios;
+- continued need for terminology and definition review.
+
+### Human-in-the-Loop Review Notes
+
+The following points should remain visible in the project documentation:
+
+| Review Area | Reason |
+|---|---|
+| 2022A impairments and provisions | The figure combines credit impairment and other impairments/provisions and should be reviewed against later-year definitions. |
+| Customer deposits vs customer funds | Banking disclosures use similar terms with different scopes. |
+| Reexpressed comparative figures | Later reports may reexpress prior-year figures for comparability. |
+| Reported vs calculated values | Calculated items may not fully match the bank's internal published methodology. |
+| Capital ratios | Phased-in and fully implemented ratios should not be mixed. |
+| Valuation ratios | Remain pending until market data and valuation date are selected. |
+
+This four-year view strengthens the project as a banking analytics and financial data quality case study.
+
+
 ## Initial 2023A?2025A Trend Analysis
 
 This section extends the analysis from a two-year comparison to an initial three-year historical trend covering 2023A, 2024A and 2025A.

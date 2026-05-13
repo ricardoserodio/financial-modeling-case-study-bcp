@@ -1,5 +1,5 @@
 bank_name,period,metric,category,value,unit,data_type,source_document,source_section_or_page,reported_or_calculated,validation_status,notes
-Millennium bcp,2022A,Net interest income,Profitability,,EUR million,Actual,,,Reported,Pending,To be extracted from official public annual report
+Millennium bcp,2022A,Net interest income,Income statement,2149.8,EUR million,actual,Millennium bcp Official FY2022 Results Press Release,Summary of indicators / Results,Reported,Reviewed,Reported as margem financeira.
 Millennium bcp,2023A,Net interest income,Profitability,2825.7,EUR million,Actual,Millennium bcp Official FY2024 Results,2024 results summary / 2023 reexpressed comparative figures,Reported,Reviewed,Reported net interest income for 2023 using reexpressed comparative figures from official FY2024 public source
 Millennium bcp,2024A,Net interest income,Profitability,2830.9,EUR million,Actual,Millennium bcp Official Key Indicators 2025,Results section,Reported,Reviewed,Reported margin financeira for 2024 using reexpressed comparative figures
 Millennium bcp,2025A,Net interest income,Profitability,2898.1,EUR million,Actual,Millennium bcp Key Indicators 2025,Results section,Reported,Reviewed,Reported margin financeira for 2025
@@ -11,49 +11,49 @@ Millennium bcp,2024A,Fees and commissions,Profitability,,EUR million,Actual,,,Re
 Millennium bcp,2025A,Fees and commissions,Profitability,,EUR million,Actual,Millennium bcp Key Indicators 2025,Results section,Reported,Pending,To be extracted or cross-checked from official public source
 Millennium bcp,2026E,Fees and commissions,Profitability,,EUR million,Forecast,,,Estimated,Pending,To be estimated based on documented assumptions
 Millennium bcp,2027E,Fees and commissions,Profitability,,EUR million,Forecast,,,Estimated,Pending,To be estimated based on documented assumptions
-Millennium bcp,2022A,Operating income,Profitability,,EUR million,Actual,,,Reported,Pending,To be extracted from official public annual report
+Millennium bcp,2022A,Operating income,Income statement,2867.5,EUR million,actual,Millennium bcp Official FY2022 Results Press Release,Summary of indicators / Results,Reported,Reviewed,Reported as produto banc?rio.
 Millennium bcp,2023A,Operating income,Profitability,3769.7,EUR million,Actual,Millennium bcp Official FY2024 Results,2024 results summary / 2023 reexpressed comparative figures,Reported,Reviewed,Reported operating income for 2023 using reexpressed comparative figures from official FY2024 public source
 Millennium bcp,2024A,Operating income,Profitability,3573.5,EUR million,Actual,Millennium bcp Official Key Indicators 2025,Results section,Reported,Reviewed,Reported produto bancario for 2024 using reexpressed comparative figures
 Millennium bcp,2025A,Operating income,Profitability,3815.2,EUR million,Actual,Millennium bcp Key Indicators 2025,Results section,Reported,Reviewed,Reported produto bancario for 2025
 Millennium bcp,2026E,Operating income,Profitability,,EUR million,Forecast,,,Estimated,Pending,To be estimated based on documented assumptions
 Millennium bcp,2027E,Operating income,Profitability,,EUR million,Forecast,,,Estimated,Pending,To be estimated based on documented assumptions
-Millennium bcp,2022A,Operating costs,Efficiency,,EUR million,Actual,,,Reported,Pending,To be extracted from official public annual report
+Millennium bcp,2022A,Operating costs,Income statement,1073.0,EUR million,actual,Millennium bcp Official FY2022 Results Press Release,Summary of indicators / Results,Reported,Reviewed,Reported as custos operacionais.
 Millennium bcp,2023A,Operating costs,Efficiency,1162.6,EUR million,Actual,Millennium bcp Official FY2024 Results,2024 results summary / 2023 reexpressed comparative figures,Reported,Reviewed,Reported operating costs for 2023 using reexpressed comparative figures from official FY2024 public source
 Millennium bcp,2024A,Operating costs,Efficiency,1306.1,EUR million,Actual,Millennium bcp Official Key Indicators 2025,Results section,Reported,Reviewed,Reported operating costs for 2024 using reexpressed comparative figures
 Millennium bcp,2025A,Operating costs,Efficiency,1415.1,EUR million,Actual,Millennium bcp Key Indicators 2025,Results section,Reported,Reviewed,Reported operating costs for 2025
 Millennium bcp,2026E,Operating costs,Efficiency,,EUR million,Forecast,,,Estimated,Pending,To be estimated based on documented assumptions
 Millennium bcp,2027E,Operating costs,Efficiency,,EUR million,Forecast,,,Estimated,Pending,To be estimated based on documented assumptions
-Millennium bcp,2022A,Impairments and provisions,Asset Quality,,EUR million,Actual,,,Reported,Pending,To be extracted from official public annual report
+Millennium bcp,2022A,Impairments and provisions,Income statement,1056.2,EUR million,actual,Millennium bcp Official FY2022 Results Press Release,Summary of indicators / Results,Calculated,Needs Review,Calculated as credit impairment of 300.6 plus other impairments and provisions of 755.6. Needs consistency review against later-year definitions.
 Millennium bcp,2023A,Impairments and provisions,Asset Quality,240.0,EUR million,Actual,Millennium bcp Official FY2024 Results,2024 results summary / 2023 reexpressed comparative figures,Reported,Reviewed,Reported loan impairment charges net of recoveries for 2023 using reexpressed comparative figures
 Millennium bcp,2024A,Impairments and provisions,Asset Quality,183.3,EUR million,Actual,Millennium bcp Official Key Indicators 2025,Results section,Reported,Reviewed,Reported net credit impairments for 2024 using reexpressed comparative figures
 Millennium bcp,2025A,Impairments and provisions,Asset Quality,199.5,EUR million,Actual,Millennium bcp Key Indicators 2025,Results section,Reported,Reviewed,Reported net credit impairments for 2025
 Millennium bcp,2026E,Impairments and provisions,Asset Quality,,EUR million,Forecast,,,Estimated,Pending,To be estimated based on documented assumptions
 Millennium bcp,2027E,Impairments and provisions,Asset Quality,,EUR million,Forecast,,,Estimated,Pending,To be estimated based on documented assumptions
-Millennium bcp,2022A,Net income,Profitability,,EUR million,Actual,,,Reported,Pending,To be extracted from official public annual report
+Millennium bcp,2022A,Net income,Income statement,207.5,EUR million,actual,Millennium bcp Official FY2022 Results Press Release,Summary of indicators / Results,Reported,Reviewed,Reported as resultado l?quido.
 Millennium bcp,2023A,Net income,Profitability,856.0,EUR million,Actual,Millennium bcp Official FY2024 Results,2024 results summary / 2023 reexpressed comparative figures,Reported,Reviewed,Reported net income attributable to shareholders for 2023 using reexpressed comparative figures
 Millennium bcp,2024A,Net income,Profitability,906.4,EUR million,Actual,Millennium bcp Official Key Indicators 2025,Results section,Reported,Reviewed,Reported net income for 2024 using reexpressed comparative figures
 Millennium bcp,2025A,Net income,Profitability,1018.6,EUR million,Actual,Millennium bcp Key Indicators 2025,Results section,Reported,Reviewed,Reported net income for 2025
 Millennium bcp,2026E,Net income,Profitability,,EUR million,Forecast,,,Estimated,Pending,To be estimated based on documented assumptions
 Millennium bcp,2027E,Net income,Profitability,,EUR million,Forecast,,,Estimated,Pending,To be estimated based on documented assumptions
-Millennium bcp,2022A,Customer loans,Balance Sheet,,EUR million,Actual,,,Reported,Pending,To be extracted from official public annual report
+Millennium bcp,2022A,Customer loans,Balance sheet,56198.0,EUR million,actual,Millennium bcp Official FY2022 Results Press Release,Summary of indicators / Balance sheet,Reported,Reviewed,Reported as cr?dito a clientes l?quido.
 Millennium bcp,2023A,Customer loans,Balance Sheet,55218.0,EUR million,Actual,Millennium bcp Official FY2024 Results,2024 results summary / 2023 reexpressed comparative figures,Reported,Reviewed,Reported net customer loans for 2023 using reexpressed comparative figures
 Millennium bcp,2024A,Customer loans,Balance Sheet,56850.0,EUR million,Actual,Millennium bcp Official Key Indicators 2025,Balance sheet section,Reported,Reviewed,Reported net customer loans for 2024 using reexpressed comparative figures
 Millennium bcp,2025A,Customer loans,Balance Sheet,61240.0,EUR million,Actual,Millennium bcp Key Indicators 2025,Balance sheet section,Reported,Reviewed,Reported net customer loans for 2025
 Millennium bcp,2026E,Customer loans,Balance Sheet,,EUR million,Forecast,,,Estimated,Pending,To be estimated based on documented assumptions
 Millennium bcp,2027E,Customer loans,Balance Sheet,,EUR million,Forecast,,,Estimated,Pending,To be estimated based on documented assumptions
-Millennium bcp,2022A,Customer deposits,Balance Sheet,,EUR million,Actual,,,Reported,Pending,To be extracted from official public annual report
+Millennium bcp,2022A,Customer deposits,Balance sheet,75907.0,EUR million,actual,Millennium bcp Official FY2022 Results Press Release,Summary of indicators / Balance sheet,Reported,Needs Review,Reported as deposits and other customer resources. Keep semantic review against customer funds and balance sheet customer resources.
 Millennium bcp,2023A,Customer deposits,Balance Sheet,95328.0,EUR million,Actual,Millennium bcp Official FY2024 Results,2024 results summary / 2023 reexpressed comparative figures,Reported,Needs Review,Reported total customer funds for 2023; metric label should be reviewed because customer funds are not necessarily the same as customer deposits
 Millennium bcp,2024A,Customer deposits,Balance Sheet,102938.0,EUR million,Actual,Millennium bcp Official Key Indicators 2025,Balance sheet section,Reported,Needs Review,Reported total customer funds for 2024; metric label should be reviewed because customer funds are not necessarily the same as customer deposits
 Millennium bcp,2025A,Customer deposits,Balance Sheet,111782.0,EUR million,Actual,Millennium bcp Key Indicators 2025,Balance sheet section,Reported,Reviewed,Reported total customer funds for 2025; metric label kept as Customer deposits for current dataset consistency
 Millennium bcp,2026E,Customer deposits,Balance Sheet,,EUR million,Forecast,,,Estimated,Pending,To be estimated based on documented assumptions
 Millennium bcp,2027E,Customer deposits,Balance Sheet,,EUR million,Forecast,,,Estimated,Pending,To be estimated based on documented assumptions
-Millennium bcp,2022A,Total assets,Balance Sheet,,EUR million,Actual,,,Reported,Pending,To be extracted from official public annual report
+Millennium bcp,2022A,Total assets,Balance sheet,89861.0,EUR million,actual,Millennium bcp Official FY2022 Results Press Release,Summary of indicators / Balance sheet,Reported,Reviewed,Reported as ativo total.
 Millennium bcp,2023A,Total assets,Balance Sheet,94371.0,EUR million,Actual,Millennium bcp Official FY2024 Results,2024 results summary / 2023 reexpressed comparative figures,Reported,Reviewed,Reported total assets for 2023 using reexpressed comparative figures
 Millennium bcp,2024A,Total assets,Balance Sheet,102144.0,EUR million,Actual,Millennium bcp Official Key Indicators 2025,Balance sheet section,Reported,Reviewed,Reported total assets for 2024 using reexpressed comparative figures
 Millennium bcp,2025A,Total assets,Balance Sheet,109333.0,EUR million,Actual,Millennium bcp Key Indicators 2025,Balance sheet section,Reported,Reviewed,Reported total assets for 2025
 Millennium bcp,2026E,Total assets,Balance Sheet,,EUR million,Forecast,,,Estimated,Pending,To be estimated based on documented assumptions
 Millennium bcp,2027E,Total assets,Balance Sheet,,EUR million,Forecast,,,Estimated,Pending,To be estimated based on documented assumptions
-Millennium bcp,2022A,Equity,Capital,,EUR million,Actual,,,Reported,Pending,To be extracted from official public annual report
+Millennium bcp,2022A,Equity,Balance sheet,5921.0,EUR million,actual,Millennium bcp Official FY2022 Results Press Release,Summary of indicators / Balance sheet,Reported,Reviewed,Reported as situa??o l?quida.
 Millennium bcp,2023A,Equity,Capital,7290.0,EUR million,Actual,Millennium bcp Official FY2024 Results,2024 results summary / 2023 reexpressed comparative figures,Reported,Reviewed,Reported equity for 2023 using reexpressed comparative figures
 Millennium bcp,2024A,Equity,Capital,8193.0,EUR million,Actual,Millennium bcp Official Key Indicators 2025,Balance sheet section,Reported,Reviewed,Reported equity for 2024 using reexpressed comparative figures
 Millennium bcp,2025A,Equity,Capital,9061.0,EUR million,Actual,Millennium bcp Key Indicators 2025,Balance sheet section,Reported,Reviewed,Reported equity for 2025

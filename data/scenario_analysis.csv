@@ -1,0 +1,61 @@
+bank_name,period,scenario,metric,category,value,unit,assumption_reference,validation_status,notes
+Millennium bcp,2026E,Base,Net interest income,Profitability,,EUR million,Net interest income growth,Pending,To be calculated after base forecast assumptions are completed
+Millennium bcp,2027E,Base,Net interest income,Profitability,,EUR million,Net interest income growth,Pending,To be calculated after base forecast assumptions are completed
+Millennium bcp,2026E,Base,Fees and commissions,Profitability,,EUR million,Fees and commissions growth,Pending,To be calculated after base forecast assumptions are completed
+Millennium bcp,2027E,Base,Fees and commissions,Profitability,,EUR million,Fees and commissions growth,Pending,To be calculated after base forecast assumptions are completed
+Millennium bcp,2026E,Base,Operating income,Profitability,,EUR million,Operating income growth,Pending,To be calculated after base forecast assumptions are completed
+Millennium bcp,2027E,Base,Operating income,Profitability,,EUR million,Operating income growth,Pending,To be calculated after base forecast assumptions are completed
+Millennium bcp,2026E,Base,Operating costs,Efficiency,,EUR million,Operating cost growth,Pending,To be calculated after base forecast assumptions are completed
+Millennium bcp,2027E,Base,Operating costs,Efficiency,,EUR million,Operating cost growth,Pending,To be calculated after base forecast assumptions are completed
+Millennium bcp,2026E,Base,Impairments and provisions,Asset Quality,,EUR million,Cost of risk,Pending,To be calculated after base forecast assumptions are completed
+Millennium bcp,2027E,Base,Impairments and provisions,Asset Quality,,EUR million,Cost of risk,Pending,To be calculated after base forecast assumptions are completed
+Millennium bcp,2026E,Base,Net income,Profitability,,EUR million,Net income forecast logic,Pending,To be calculated after revenue cost and risk assumptions are completed
+Millennium bcp,2027E,Base,Net income,Profitability,,EUR million,Net income forecast logic,Pending,To be calculated after revenue cost and risk assumptions are completed
+Millennium bcp,2026E,Base,ROE,Profitability,,%,ROE forecast logic,Pending,To be calculated after net income and equity assumptions are completed
+Millennium bcp,2027E,Base,ROE,Profitability,,%,ROE forecast logic,Pending,To be calculated after net income and equity assumptions are completed
+Millennium bcp,2026E,Base,ROA,Profitability,,%,ROA forecast logic,Pending,To be calculated after net income and total assets assumptions are completed
+Millennium bcp,2027E,Base,ROA,Profitability,,%,ROA forecast logic,Pending,To be calculated after net income and total assets assumptions are completed
+Millennium bcp,2026E,Base,Cost-to-income ratio,Efficiency,,%,Cost-to-income forecast logic,Pending,To be calculated from operating costs and operating income
+Millennium bcp,2027E,Base,Cost-to-income ratio,Efficiency,,%,Cost-to-income forecast logic,Pending,To be calculated from operating costs and operating income
+Millennium bcp,2026E,Base,NPL ratio,Asset Quality,,%,NPL ratio assumption,Pending,To be calculated or estimated after historical asset quality review
+Millennium bcp,2027E,Base,NPL ratio,Asset Quality,,%,NPL ratio assumption,Pending,To be calculated or estimated after historical asset quality review
+Millennium bcp,2026E,Base,Cost of risk,Asset Quality,,bps,Cost of risk assumption,Pending,To be calculated or estimated after historical asset quality review
+Millennium bcp,2027E,Base,Cost of risk,Asset Quality,,bps,Cost of risk assumption,Pending,To be calculated or estimated after historical asset quality review
+Millennium bcp,2026E,Base,Customer loans,Balance Sheet,,EUR million,Customer loans growth,Pending,To be calculated after balance sheet forecast assumptions are completed
+Millennium bcp,2027E,Base,Customer loans,Balance Sheet,,EUR million,Customer loans growth,Pending,To be calculated after balance sheet forecast assumptions are completed
+Millennium bcp,2026E,Base,Customer deposits,Balance Sheet,,EUR million,Customer deposits growth,Pending,To be calculated after balance sheet forecast assumptions are completed
+Millennium bcp,2027E,Base,Customer deposits,Balance Sheet,,EUR million,Customer deposits growth,Pending,To be calculated after balance sheet forecast assumptions are completed
+Millennium bcp,2026E,Base,CET1 ratio,Capital,,%,CET1 ratio assumption,Pending,To be estimated after historical capital review
+Millennium bcp,2027E,Base,CET1 ratio,Capital,,%,CET1 ratio assumption,Pending,To be estimated after historical capital review
+Millennium bcp,2026E,Downside,Net interest income,Profitability,,EUR million,Downside net interest income growth,Pending,To be calculated after downside assumptions are completed
+Millennium bcp,2027E,Downside,Net interest income,Profitability,,EUR million,Downside net interest income growth,Pending,To be calculated after downside assumptions are completed
+Millennium bcp,2026E,Downside,Operating income,Profitability,,EUR million,Downside operating income logic,Pending,To be calculated after downside assumptions are completed
+Millennium bcp,2027E,Downside,Operating income,Profitability,,EUR million,Downside operating income logic,Pending,To be calculated after downside assumptions are completed
+Millennium bcp,2026E,Downside,Operating costs,Efficiency,,EUR million,Downside operating cost growth,Pending,To be calculated after downside assumptions are completed
+Millennium bcp,2027E,Downside,Operating costs,Efficiency,,EUR million,Downside operating cost growth,Pending,To be calculated after downside assumptions are completed
+Millennium bcp,2026E,Downside,Net income,Profitability,,EUR million,Downside net income forecast logic,Pending,To be calculated after downside assumptions are completed
+Millennium bcp,2027E,Downside,Net income,Profitability,,EUR million,Downside net income forecast logic,Pending,To be calculated after downside assumptions are completed
+Millennium bcp,2026E,Downside,ROE,Profitability,,%,Downside ROE forecast logic,Pending,To be calculated after downside net income and equity assumptions
+Millennium bcp,2027E,Downside,ROE,Profitability,,%,Downside ROE forecast logic,Pending,To be calculated after downside net income and equity assumptions
+Millennium bcp,2026E,Downside,Cost-to-income ratio,Efficiency,,%,Downside cost-to-income logic,Pending,To be calculated from downside operating costs and income
+Millennium bcp,2027E,Downside,Cost-to-income ratio,Efficiency,,%,Downside cost-to-income logic,Pending,To be calculated from downside operating costs and income
+Millennium bcp,2026E,Downside,Cost of risk,Asset Quality,,bps,Downside cost of risk assumption,Pending,To be estimated after historical asset quality review
+Millennium bcp,2027E,Downside,Cost of risk,Asset Quality,,bps,Downside cost of risk assumption,Pending,To be estimated after historical asset quality review
+Millennium bcp,2026E,Downside,CET1 ratio,Capital,,%,Downside CET1 ratio assumption,Pending,To be estimated after historical capital review
+Millennium bcp,2027E,Downside,CET1 ratio,Capital,,%,Downside CET1 ratio assumption,Pending,To be estimated after historical capital review
+Millennium bcp,2026E,Upside,Net interest income,Profitability,,EUR million,Upside net interest income growth,Pending,To be calculated only if upside assumptions are justified
+Millennium bcp,2027E,Upside,Net interest income,Profitability,,EUR million,Upside net interest income growth,Pending,To be calculated only if upside assumptions are justified
+Millennium bcp,2026E,Upside,Operating income,Profitability,,EUR million,Upside operating income logic,Pending,To be calculated only if upside assumptions are justified
+Millennium bcp,2027E,Upside,Operating income,Profitability,,EUR million,Upside operating income logic,Pending,To be calculated only if upside assumptions are justified
+Millennium bcp,2026E,Upside,Operating costs,Efficiency,,EUR million,Upside operating cost growth,Pending,To be calculated only if upside assumptions are justified
+Millennium bcp,2027E,Upside,Operating costs,Efficiency,,EUR million,Upside operating cost growth,Pending,To be calculated only if upside assumptions are justified
+Millennium bcp,2026E,Upside,Net income,Profitability,,EUR million,Upside net income forecast logic,Pending,To be calculated only if upside assumptions are justified
+Millennium bcp,2027E,Upside,Net income,Profitability,,EUR million,Upside net income forecast logic,Pending,To be calculated only if upside assumptions are justified
+Millennium bcp,2026E,Upside,ROE,Profitability,,%,Upside ROE forecast logic,Pending,To be calculated only if upside assumptions are justified
+Millennium bcp,2027E,Upside,ROE,Profitability,,%,Upside ROE forecast logic,Pending,To be calculated only if upside assumptions are justified
+Millennium bcp,2026E,Upside,Cost-to-income ratio,Efficiency,,%,Upside cost-to-income logic,Pending,To be calculated from upside operating costs and income
+Millennium bcp,2027E,Upside,Cost-to-income ratio,Efficiency,,%,Upside cost-to-income logic,Pending,To be calculated from upside operating costs and income
+Millennium bcp,2026E,Upside,Cost of risk,Asset Quality,,bps,Upside cost of risk assumption,Pending,To be estimated only if upside assumptions are justified
+Millennium bcp,2027E,Upside,Cost of risk,Asset Quality,,bps,Upside cost of risk assumption,Pending,To be estimated only if upside assumptions are justified
+Millennium bcp,2026E,Upside,CET1 ratio,Capital,,%,Upside CET1 ratio assumption,Pending,To be estimated only if upside assumptions are justified
+Millennium bcp,2027E,Upside,CET1 ratio,Capital,,%,Upside CET1 ratio assumption,Pending,To be estimated only if upside assumptions are justified

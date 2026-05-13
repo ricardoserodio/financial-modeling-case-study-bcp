@@ -1,0 +1,37 @@
+assumption_name,category,period,scenario,value,unit,assumption_logic,source_basis,validation_status,notes
+Net interest income growth,Profitability,2026E,Base,,%,Based on historical trend and interest rate environment,Historical public financial data and management commentary,Pending,To be completed after historical data extraction
+Net interest income growth,Profitability,2027E,Base,,%,Based on historical trend and normalised interest rate assumptions,Historical public financial data and management commentary,Pending,To be completed after historical data extraction
+Fees and commissions growth,Profitability,2026E,Base,,%,Based on recurring fee income trend,Historical public financial data,Pending,To be completed after historical data extraction
+Fees and commissions growth,Profitability,2027E,Base,,%,Based on recurring fee income trend,Historical public financial data,Pending,To be completed after historical data extraction
+Operating income growth,Profitability,2026E,Base,,%,Based on net interest income fees and other operating income trend,Historical public financial data,Pending,To be completed after historical data extraction
+Operating income growth,Profitability,2027E,Base,,%,Based on net interest income fees and other operating income trend,Historical public financial data,Pending,To be completed after historical data extraction
+Operating cost growth,Efficiency,2026E,Base,,%,Based on cost base trend inflation and operating discipline,Historical public financial data,Pending,To be completed after historical data extraction
+Operating cost growth,Efficiency,2027E,Base,,%,Based on cost base trend inflation and operating discipline,Historical public financial data,Pending,To be completed after historical data extraction
+Cost-to-income ratio,Efficiency,2026E,Base,,%,Based on projected operating income and operating costs,Calculated from forecast assumptions,Pending,To be calculated after forecast completion
+Cost-to-income ratio,Efficiency,2027E,Base,,%,Based on projected operating income and operating costs,Calculated from forecast assumptions,Pending,To be calculated after forecast completion
+Cost of risk,Asset Quality,2026E,Base,,bps,Based on historical cost of risk and asset quality trend,Historical public financial data,Pending,To be completed after historical data extraction
+Cost of risk,Asset Quality,2027E,Base,,bps,Based on historical cost of risk and asset quality trend,Historical public financial data,Pending,To be completed after historical data extraction
+NPL ratio,Asset Quality,2026E,Base,,%,Based on historical NPL ratio trend and prudent asset quality assumption,Historical public financial data,Pending,To be completed after historical data extraction
+NPL ratio,Asset Quality,2027E,Base,,%,Based on historical NPL ratio trend and prudent asset quality assumption,Historical public financial data,Pending,To be completed after historical data extraction
+Customer loans growth,Balance Sheet,2026E,Base,,%,Based on historical loan book evolution and prudent growth assumption,Historical public financial data,Pending,To be completed after historical data extraction
+Customer loans growth,Balance Sheet,2027E,Base,,%,Based on historical loan book evolution and prudent growth assumption,Historical public financial data,Pending,To be completed after historical data extraction
+Customer deposits growth,Balance Sheet,2026E,Base,,%,Based on historical customer deposit evolution and funding base stability,Historical public financial data,Pending,To be completed after historical data extraction
+Customer deposits growth,Balance Sheet,2027E,Base,,%,Based on historical customer deposit evolution and funding base stability,Historical public financial data,Pending,To be completed after historical data extraction
+CET1 ratio,Capital,2026E,Base,,%,Based on historical capital position and simplified capital assumption,Historical public financial data,Pending,To be completed after historical data extraction
+CET1 ratio,Capital,2027E,Base,,%,Based on historical capital position and simplified capital assumption,Historical public financial data,Pending,To be completed after historical data extraction
+ROE,Profitability,2026E,Base,,%,Based on forecast net income and equity assumptions,Calculated from forecast assumptions,Pending,To be calculated after forecast completion
+ROE,Profitability,2027E,Base,,%,Based on forecast net income and equity assumptions,Calculated from forecast assumptions,Pending,To be calculated after forecast completion
+ROA,Profitability,2026E,Base,,%,Based on forecast net income and total assets assumptions,Calculated from forecast assumptions,Pending,To be calculated after forecast completion
+ROA,Profitability,2027E,Base,,%,Based on forecast net income and total assets assumptions,Calculated from forecast assumptions,Pending,To be calculated after forecast completion
+Net interest income growth,Profitability,2026E,Downside,,%,More prudent assumption with weaker income development,Historical trend adjusted for downside scenario,Pending,To be completed after base case
+Net interest income growth,Profitability,2027E,Downside,,%,More prudent assumption with weaker income development,Historical trend adjusted for downside scenario,Pending,To be completed after base case
+Operating cost growth,Efficiency,2026E,Downside,,%,More prudent assumption with stronger cost pressure,Historical trend adjusted for downside scenario,Pending,To be completed after base case
+Operating cost growth,Efficiency,2027E,Downside,,%,More prudent assumption with stronger cost pressure,Historical trend adjusted for downside scenario,Pending,To be completed after base case
+Cost of risk,Asset Quality,2026E,Downside,,bps,More prudent assumption with higher credit risk cost,Historical trend adjusted for downside scenario,Pending,To be completed after base case
+Cost of risk,Asset Quality,2027E,Downside,,bps,More prudent assumption with higher credit risk cost,Historical trend adjusted for downside scenario,Pending,To be completed after base case
+Net interest income growth,Profitability,2026E,Upside,,%,More optimistic assumption with stronger income development,Historical trend adjusted for upside scenario,Pending,To be completed only if justified
+Net interest income growth,Profitability,2027E,Upside,,%,More optimistic assumption with stronger income development,Historical trend adjusted for upside scenario,Pending,To be completed only if justified
+Operating cost growth,Efficiency,2026E,Upside,,%,More optimistic assumption with stronger operating leverage,Historical trend adjusted for upside scenario,Pending,To be completed only if justified
+Operating cost growth,Efficiency,2027E,Upside,,%,More optimistic assumption with stronger operating leverage,Historical trend adjusted for upside scenario,Pending,To be completed only if justified
+Cost of risk,Asset Quality,2026E,Upside,,bps,More optimistic assumption with stable or lower credit risk cost,Historical trend adjusted for upside scenario,Pending,To be completed only if justified
+Cost of risk,Asset Quality,2027E,Upside,,bps,More optimistic assumption with stable or lower credit risk cost,Historical trend adjusted for upside scenario,Pending,To be completed only if justified

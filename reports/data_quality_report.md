@@ -375,22 +375,130 @@ This is especially important if AI-assisted drafting or analysis support is used
 
 Current status:
 
-    Data structure created
-    Data extraction pending
-    Source validation pending
-    Ratio validation pending
-    Forecast validation pending
-    Dashboard validation pending
+    Initial 2025A data extraction completed
+    Initial source mapping completed
+    Initial extraction tracker updated
+    Initial banking ratios updated
+    Python validation check executed
+    Historical trend completion pending
+    Market data pending
+    Peer comparison pending
+    Forecast assumptions pending
+    Scenario analysis pending
 
-Most values are expected to remain marked as:
+Most values for 2022A, 2023A and 2024A remain marked as:
 
     Pending
 
 until official public-source extraction and review are completed.
 
+### Initial 2025A Data Quality Status
+
+The project now includes an initial 2025A public-data extraction for Millennium bcp.
+
+The 2025A data has been added to the following files:
+
+- `data/financial_data.csv`;
+- `data/banking_ratios.csv`;
+- `data/extraction_tracker.csv`;
+- `data/source_mapping.csv`.
+
+The initial 2025A extraction covers:
+
+- profitability metrics;
+- efficiency metrics;
+- asset quality metrics;
+- balance sheet metrics;
+- capital ratios;
+- liquidity ratios;
+- selected per-share indicators.
+
+The current validation status for the initial 2025A data is:
+
+    Reviewed
+
+This means that the values have been added from public sources and checked at a first review level.
+
+Before final publication, the data should still be cross-checked against:
+
+- the official annual report;
+- official investor presentations;
+- official key indicators pages;
+- source mapping records;
+- extraction tracker records.
+
+The current Python validation check has been executed. The validation script completed successfully and identified only template-related issues in files that are not yet fully populated:
+
+- `data/market_data_template.csv`;
+- `data/peer_comparison_template.csv`.
+
+These issues are acceptable at the current stage because market data and peer comparison are planned for a later phase.
+
+The key 2025A files used for the initial banking analytics analysis did not generate blocking validation issues.
+
+Current interpretation:
+
+    Initial 2025A data structure is usable for preliminary analysis.
+    Final conclusions should wait until 2022A, 2023A and 2024A are extracted and validated.
+    Market data and peer comparison remain pending.
+    Forecast assumptions remain pending.
+
 ---
 
-## 19. Data Quality Checklist
+## 19. Initial 2025A Validation Summary
+
+The initial 2025A data extraction includes the following types of values:
+
+| Area | Status |
+|---|---|
+| Profitability metrics | Reviewed |
+| Efficiency metrics | Reviewed |
+| Asset quality metrics | Reviewed |
+| Balance sheet metrics | Reviewed |
+| Capital ratios | Reviewed |
+| Liquidity ratios | Reviewed |
+| Per-share indicators | Reviewed |
+| Market data | Pending |
+| Peer comparison | Pending |
+| Forecast assumptions | Pending |
+| Scenario outputs | Pending |
+
+The 2025A values are currently suitable for preliminary banking analytics commentary, but not yet for final investment-style conclusions.
+
+The main reason is that a single year does not provide enough historical context.
+
+The next data quality priority is to complete the historical series for:
+
+    2022A | 2023A | 2024A
+
+Once these periods are completed, the project can move from a 2025A snapshot to a proper historical trend analysis.
+
+---
+
+## 20. Current Validation Script Result
+
+The validation script has been executed using:
+
+    python data/validation_checks.py
+
+The script completed successfully.
+
+The current warnings relate to templates that are not yet fully populated:
+
+- `data/market_data_template.csv`;
+- `data/peer_comparison_template.csv`.
+
+These warnings do not block the current project phase because those files belong to later stages of the roadmap.
+
+Current interpretation:
+
+    No blocking validation issue was identified for the initial 2025A banking analytics dataset.
+
+Further validation will be required after adding 2022A, 2023A and 2024A data.
+
+---
+
+## 21. Data Quality Checklist
 
 Before finalising the project, check:
 
@@ -410,7 +518,27 @@ Before finalising the project, check:
 
 ---
 
-## 20. Professional Relevance
+## 22. Next Data Quality Priorities
+
+The next data quality priorities are:
+
+1. Complete 2024A extraction.
+2. Complete 2023A extraction.
+3. Complete 2022A extraction.
+4. Cross-check 2025A values against the annual report.
+5. Confirm source references and pages or sections.
+6. Review labels such as customer deposits versus customer funds.
+7. Validate reported versus calculated ratio classifications.
+8. Select a market data date for valuation ratios.
+9. Complete market data inputs.
+10. Complete peer comparison inputs.
+11. Re-run validation checks after each major update.
+
+The most important next step is to move from a single-year 2025A snapshot to a multi-year historical dataset.
+
+---
+
+## 23. Professional Relevance
 
 This data quality report supports the project’s relevance for roles such as:
 
@@ -429,7 +557,7 @@ It demonstrates the ability to treat financial analysis as a controlled, documen
 
 ---
 
-## 21. Disclaimer
+## 24. Disclaimer
 
 This report is part of an educational portfolio project.
 

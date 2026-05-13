@@ -189,3 +189,107 @@ All data used in the project should follow these principles:
 This data dictionary is part of an educational financial modeling case study.
 
 It does not constitute investment advice, financial advice or a recommendation to buy, sell or hold any financial instrument.
+
+## Banking Ratio Definitions and Interpretation
+
+This section explains the main banking ratios used in the Millennium bcp case study.
+
+The purpose is to make the dataset easier to understand, review, visualise in Power BI and explain in a professional portfolio or interview context.
+
+### Profitability Ratios
+
+| Ratio | Definition | Interpretation |
+|---|---|---|
+| ROE | Return on Equity. Net income divided by average shareholders' equity. | Measures profitability generated for shareholders. Higher values usually indicate stronger profitability, but should be reviewed together with risk, capital position and one-off effects. |
+| ROA | Return on Assets. Net income divided by average total assets. | Measures how efficiently the bank generates profit from its asset base. For banks, ROA is usually lower than in non-financial companies because banking balance sheets are asset-heavy. |
+| Net interest margin | Net interest income divided by average interest-earning assets. | Measures the profitability of the bank's core lending and funding activity. It is influenced by interest rates, deposit costs, loan yields, asset mix and funding structure. |
+| EPS | Earnings per share. Net income attributable to shareholders divided by the number of shares. | Indicates profit generated per share. It is useful for equity analysis but should not be interpreted alone without considering capital, dilution, dividends and valuation multiples. |
+| Book value per share | Shareholders' equity divided by the number of shares. | Indicates the accounting equity value per share. For banks, it is often used together with price-to-book valuation. |
+
+### Efficiency Ratios
+
+| Ratio | Definition | Interpretation |
+|---|---|---|
+| Cost-to-income ratio | Operating costs divided by operating income. | Measures operating efficiency. Lower values usually suggest better cost discipline, but interpretation depends on investment cycles, restructuring costs and business mix. |
+| Cost-to-income ratio excluding specific items | Cost-to-income ratio adjusted for selected non-recurring or specific items. | Useful for analysing underlying efficiency, but requires careful review of what the bank classifies as specific items. |
+
+### Asset Quality Ratios
+
+| Ratio | Definition | Interpretation |
+|---|---|---|
+| Cost of risk | Loan impairment charges divided by customer loans, usually expressed in basis points. | Measures the credit impairment burden of the loan book. Lower values may suggest improving asset quality, but should be reviewed together with the economic cycle and provisioning policy. |
+| NPE ratio | Non-performing exposures divided by total relevant exposures or customer loans, depending on the bank's disclosure. | Measures the share of problematic exposures. Lower values usually suggest stronger asset quality. Definition consistency should be reviewed across periods. |
+| NPE coverage ratio | Credit impairment balance divided by non-performing exposures. | Measures the extent to which problematic exposures are covered by impairment allowances. Higher coverage may indicate more conservative provisioning, but also depends on collateral and portfolio mix. |
+| Restructured loans ratio | Restructured loans divided by customer loans. | Indicates the share of loans whose contractual terms have been modified, often due to borrower difficulty or risk management actions. It is a useful early-warning asset quality indicator. |
+
+### Liquidity and Funding Ratios
+
+| Ratio | Definition | Interpretation |
+|---|---|---|
+| Loan-to-deposit ratio | Customer loans divided by deposits and other customer resources. | Measures how much of customer funding is used to finance customer loans. Lower values may suggest stronger liquidity, while very high values may indicate greater funding dependence. |
+| Loan-to-balance-sheet-customer-resources ratio | Customer loans divided by balance sheet customer resources. | Similar to loan-to-deposit, but based on the bank's disclosed balance sheet customer resources definition. Terminology must be checked carefully. |
+| LCR | Liquidity Coverage Ratio. High-quality liquid assets divided by expected net cash outflows over a stress period. | Measures short-term liquidity resilience. Values above regulatory minimums indicate stronger short-term liquidity coverage. |
+| NSFR | Net Stable Funding Ratio. Available stable funding divided by required stable funding. | Measures medium-term funding stability. Values above regulatory minimums suggest a more stable funding structure. |
+
+### Capital Ratios
+
+| Ratio | Definition | Interpretation |
+|---|---|---|
+| CET1 phased-in ratio | Common Equity Tier 1 capital divided by risk-weighted assets, applying transitional regulatory rules. | Measures core capital strength under transitional rules. It is important for regulatory analysis and banking resilience assessment. |
+| CET1 fully implemented ratio | Common Equity Tier 1 capital divided by risk-weighted assets, assuming full implementation of regulatory rules. | Provides a stricter view of capital strength without transitional relief. Often useful for comparability. |
+| Total capital fully implemented ratio | Total regulatory capital divided by risk-weighted assets under fully implemented rules. | Measures the broader capital base, including CET1 and eligible additional capital instruments. |
+
+### Valuation Ratios
+
+| Ratio | Definition | Interpretation |
+|---|---|---|
+| Price-to-book | Market capitalisation divided by shareholders' equity, or share price divided by book value per share. | Common bank valuation multiple. Values below or above 1.0x may reflect market expectations about profitability, asset quality, capital strength and risk. |
+| Price-to-earnings | Share price divided by earnings per share. | Measures how much investors pay for each unit of earnings. It should be interpreted carefully for banks because earnings may be cyclical or affected by one-off items. |
+| Dividend yield | Dividend per share divided by share price. | Measures cash return to shareholders through dividends. It depends on dividend policy, profitability, capital requirements and market price. |
+| Payout ratio | Dividends divided by net income. | Measures the share of earnings distributed to shareholders. For banks, payout must be reviewed together with capital requirements and regulatory expectations. |
+
+### Data Quality Interpretation Notes
+
+The ratios in this project should be interpreted with the following controls:
+
+- use official public sources only;
+- distinguish reported ratios from calculated ratios;
+- preserve the bank's original terminology where relevant;
+- review customer deposits, customer funds and customer resources definitions carefully;
+- distinguish phased-in and fully implemented capital ratios;
+- document reexpressed comparative figures when used;
+- avoid investment recommendations or price targets;
+- treat valuation ratios as pending until the market data date is selected and documented.
+
+### Power BI Relevance
+
+These definitions support the future Power BI dashboard by making each visual easier to interpret.
+
+Recommended Power BI groupings:
+
+| Dashboard Area | Suggested Ratios |
+|---|---|
+| Profitability | ROE, ROA, Net interest margin, EPS |
+| Efficiency | Cost-to-income ratio, Cost-to-income excluding specific items |
+| Asset Quality | Cost of risk, NPE ratio, NPE coverage ratio, Restructured loans ratio |
+| Liquidity and Funding | Loan-to-deposit ratio, Loan-to-balance-sheet-customer-resources ratio, LCR, NSFR |
+| Capital | CET1 phased-in ratio, CET1 fully implemented ratio, Total capital fully implemented ratio |
+| Valuation | Price-to-book, Price-to-earnings, Dividend yield, Payout ratio |
+
+### Human-in-the-Loop Review
+
+The following items should remain subject to human review before final reporting:
+
+| Review Item | Reason |
+|---|---|
+| Customer deposits vs customer funds | Banking disclosures may use similar terms with different scopes. |
+| NPE vs NPL terminology | Different reports may use exposure-based or loan-based definitions. |
+| Reported vs calculated ratios | Calculated ratios may not match the bank's published methodology exactly. |
+| Reexpressed figures | Comparative figures may be restated or reexpressed in later reports. |
+| Capital ratio basis | Phased-in and fully implemented ratios must not be mixed. |
+| Market valuation date | Valuation multiples depend on the selected share price date. |
+
+This reinforces the project?s positioning as a financial data quality and banking analytics case study, not only a financial modelling exercise.
+
+---
+

@@ -1,431 +1,448 @@
-# Financial Modeling Case Study – Millennium bcp / Portuguese Listed Bank
+﻿# Financial Modeling Case Study – Millennium bcp / Portuguese Listed Bank
 
 ## Project Overview
 
-This project is a professional portfolio case study focused on the financial analysis and simplified financial modeling of **Millennium bcp / Banco Comercial Português**, a Portuguese listed bank.
+This project is a public-source financial modeling and banking analytics case study focused on a Portuguese listed bank, using Millennium bcp as the case study reference.
 
-The objective is to demonstrate practical skills in banking analysis, financial modeling, valuation logic, public-source data validation and investment research writing.
+The objective is to demonstrate a structured analytical workflow combining:
 
-This project is designed for educational, GitHub, CV and LinkedIn portfolio purposes.
-
----
-
-## Why Millennium bcp?
-
-Millennium bcp was selected because it is a Portuguese listed bank with publicly available financial information, including annual reports, investor presentations and market disclosures.
-
-The bank is suitable for this case study because it allows analysis of:
-
-- Banking profitability
-- Net interest income
-- Fees and commissions
-- Operating efficiency
-- Asset quality
-- Capital ratios
-- Loans and customer deposits
-- Banking valuation multiples
-- Scenario and sensitivity analysis
-
-As a listed bank, Millennium bcp is more appropriate for an equity research and financial modeling case study than non-listed banks with limited public market data.
-
----
-
-## Project Objectives
-
-The main objectives of this project are to:
-
-- Build a simplified bank financial model using public information
-- Analyse historical financial performance
-- Review key banking ratios
-- Create a 3-year forecast with clear assumptions
-- Perform a basic valuation using banking-relevant multiples
-- Test scenarios and sensitivities
-- Document source validation and data quality checks
-- Produce a professional investment-style memo
-- Demonstrate applied financial modeling skills for finance, banking analytics and AI finance evaluation roles
-
----
-
-## Skills Demonstrated
-
-This project is intended to demonstrate practical skills in:
-
-- Financial modeling
-- Banking analysis
 - Financial statement analysis
-- Equity research basics
-- Valuation multiples
+- Banking ratio analysis
+- Forecast assumptions
 - Scenario analysis
-- Sensitivity analysis
-- Source validation
+- Power BI dashboarding
+- SQL analytical queries
+- Data quality review
+- AI-assisted, human-reviewed documentation and validation workflow
+
+This project is designed for educational, portfolio and professional development purposes only.
+
+It does not constitute financial advice, investment advice, valuation advice, credit advice, legal advice or a recommendation to buy, sell or hold any financial instrument.
+
+---
+
+## Professional Positioning
+
+This case study supports a professional portfolio narrative focused on:
+
+- Banking analytics
 - Financial data quality
-- Public-source data validation
-- Investment memo writing
-- Professional communication
-- GitHub portfolio presentation
+- Financial modeling
+- Business intelligence
+- SQL-based analytical workflows
+- Power BI reporting
+- Responsible AI-assisted finance workflows
+- Human-in-the-loop review and validation
+
+The project is intended to be recruiter-friendly and relevant for roles in:
+
+- Banking Analytics
+- Financial Data Quality
+- Financial Research
+- Risk Operations
+- Credit / Banking Operations
+- Business Intelligence
+- Finance Transformation
+- AI-assisted finance workflows
 
 ---
 
-## Metric Definitions, Interpretation and Data Quality
+## Project Scope
 
-This project separates raw data, metric definitions, analytical interpretation and data quality controls.
+The project covers historical data and forecast outputs across the following periods:
 
-This structure makes the case study easier to review, validate, visualise in Power BI and explain in a professional context.
+`2022A | 2023A | 2024A | 2025A | 2026E | 2027E | 2028E`
 
-| Area | File |
-|---|---|
-| Metric and ratio definitions | `data/data_dictionary.md` |
-| Banking trend interpretation | `reports/banking_analytics_report.md` |
-| Data quality notes and validation limits | `reports/data_quality_report.md` |
-| SQL structure and query planning | `sql/` |
-| Power BI dashboard planning | `powerbi/` |
+Historical periods are based on structured public-source data.
 
-The data dictionary explains the main banking metrics and ratios used in the project, including profitability, efficiency, asset quality, liquidity, capital and valuation indicators.
-
-The banking analytics report provides trend commentary, while the data quality report documents source validation, terminology issues, reexpressed figures and human-in-the-loop review items.
-
-This separation is intentional: the README gives the project overview, while the supporting files provide the technical and analytical detail.
-
-
-## Project Structure
-
-    financial-modeling-case-study-bcp/
-    │
-    ├── README.md
-    ├── RUN_PROJECT.md
-    ├── PROJECT_STATUS.md
-    ├── CHANGELOG.md
-    ├── ROADMAP.md
-    ├── sources.md
-    ├── company_overview.md
-    ├── assumptions.md
-    ├── ratio_analysis.md
-    ├── valuation_summary.md
-    ├── investment_memo.md
-    ├── disclaimer.md
-    ├── requirements.txt
-    │
-    ├── model/
-    │   ├── create_banking_model_template.py
-    │   ├── create_sensitivity_analysis_template.py
-    │   ├── model_structure.md
-    │   ├── sensitivity_analysis_structure.md
-    │   └── formula_reference.md
-    │
-    ├── data/
-    │   ├── historical_financials.csv
-    │   ├── banking_ratios.csv
-    │   ├── source_mapping.csv
-    │   ├── source_links.csv
-    │   ├── extraction_tracker.csv
-    │   ├── forecast_template.csv
-    │   ├── scenario_assumptions.csv
-    │   ├── market_data_template.csv
-    │   ├── peer_comparison_template.csv
-    │   ├── data_dictionary.md
-    │   ├── data_quality_report.md
-    │   ├── data_validation_rules.md
-    │   └── validation_checks.py
-    │
-    └── notes/
-        ├── data_extraction_plan.md
-        └── model_review_checklist.md
+Forecast periods are scenario-based educational estimates and are marked as requiring human review.
 
 ---
 
-## Main Project Files
+## Main Components
 
-| File | Purpose |
-|---|---|
-| `README.md` | Main project overview and repository guide |
-| `RUN_PROJECT.md` | Instructions to run the project locally |
-| `PROJECT_STATUS.md` | Current project status, completed work and pending phases |
-| `CHANGELOG.md` | Project change history and planned updates |
-| `ROADMAP.md` | Planned development roadmap and future project phases |
-| `sources.md` | Public sources used in the project |
-| `company_overview.md` | Business overview of Millennium bcp |
-| `assumptions.md` | Forecast assumptions and modeling logic |
-| `ratio_analysis.md` | Analysis of key banking ratios |
-| `valuation_summary.md` | Educational valuation overview using banking multiples |
-| `investment_memo.md` | Professional investment-style memo |
-| `disclaimer.md` | GDPR, public-source and no-investment-advice disclaimer |
-| `requirements.txt` | Python dependencies used in the project |
-| `model/create_banking_model_template.py` | Python script to generate the banking model Excel template |
-| `model/create_sensitivity_analysis_template.py` | Python script to generate the sensitivity analysis Excel template |
-| `model/model_structure.md` | Documentation of the banking model structure |
-| `model/sensitivity_analysis_structure.md` | Documentation of the sensitivity analysis structure |
-| `model/formula_reference.md` | Reference document for the main formulas used in the model |
-| `data/historical_financials.csv` | Historical financial data template based on public sources |
-| `data/banking_ratios.csv` | Key banking ratios used in the analysis |
-| `data/source_mapping.csv` | Source mapping and validation notes |
-| `data/source_links.csv` | Official source links used for data extraction |
-| `data/extraction_tracker.csv` | Tracker for data extraction from annual reports |
-| `data/forecast_template.csv` | Forecast structure for the financial model |
-| `data/scenario_assumptions.csv` | Conservative, base and optimistic scenario assumptions |
-| `data/market_data_template.csv` | Market data template for valuation inputs |
-| `data/peer_comparison_template.csv` | Peer comparison template for listed European banks |
-| `data/data_dictionary.md` | Definitions of key data fields, metrics and ratios |
-| `data/data_quality_report.md` | Data quality review report |
-| `data/data_validation_rules.md` | Data validation rules for the project |
-| `data/validation_checks.py` | Python script for basic data quality checks |
-| `notes/data_extraction_plan.md` | Step-by-step data extraction plan |
-| `notes/model_review_checklist.md` | Human-in-the-loop review checklist |
+### 1. Historical Financial Dataset
 
----
-
-## Excel Model Generation
-
-For local setup and execution instructions, see:
-
-    RUN_PROJECT.md
-
-The Excel model files are generated using Python scripts located in the `model/` folder.
-
-To generate the banking model template:
-
-    python model/create_banking_model_template.py
-
-To generate the sensitivity analysis template:
-
-    python model/create_sensitivity_analysis_template.py
-
-These scripts create the following Excel files:
-
-    model/banking_model.xlsx
-    model/sensitivity_analysis.xlsx
-
-The generated Excel files are templates for educational analysis and should be completed using only public information.
-
----
-
-## Methodology
-
-The case study follows a simplified financial research process:
-
-1. Collect public financial information from annual reports, investor presentations and market disclosures.
-2. Map key financial statement items relevant to banking analysis.
-3. Build a historical financial dataset.
-4. Calculate and review key banking ratios.
-5. Define explicit forecast assumptions.
-6. Build a simplified 3-year forecast.
-7. Analyse base, conservative and optimistic scenarios.
-8. Perform valuation using simple banking-relevant multiples.
-9. Review sensitivities to key assumptions.
-10. Document limitations, source reliability and data validation checks.
-
-This project does not aim to replicate a full professional sell-side equity research model. It is a structured educational case study designed to demonstrate practical analytical capability.
-
----
-
-## Key Analysis Areas
-
-The project focuses on the following areas:
-
-### Profitability
+The historical financial dataset includes selected banking financial statement metrics such as:
 
 - Net interest income
-- Fees and commissions
 - Operating income
 - Operating costs
-- Net income
-- Return on equity
-- Return on assets
-
-### Efficiency
-
-- Cost-to-income ratio
-- Operating cost trends
-- Revenue mix
-
-### Asset Quality
-
 - Impairments and provisions
-- Non-performing loan ratio
-- Cost of risk, where available
-
-### Balance Sheet
-
-- Loans to customers
+- Net income
+- Customer loans
 - Customer deposits
 - Total assets
 - Equity
+
+Main file:
+
+`data/financial_data.csv`
+
+---
+
+### 2. Banking Ratio Dataset
+
+The banking ratio dataset includes selected ratios across profitability, efficiency, asset quality, liquidity, capital, per share and valuation categories.
+
+Examples include:
+
+- ROE
+- ROA
+- Net interest margin
+- Cost-to-income ratio
+- Cost of risk
+- NPE ratio
 - Loan-to-deposit ratio
+- LCR
+- NSFR
+- CET1 ratios
+- EPS
+- Book value per share
+- Valuation ratios where available
 
-### Capital
+Main file:
 
-- CET1 ratio
-- Capital adequacy
-- Equity base evolution
-
-### Valuation
-
-- Price-to-book
-- Price-to-earnings
-- Dividend yield, if applicable
-- Scenario-based valuation logic
-- Sensitivity to ROE, cost of equity and growth assumptions
+`data/banking_ratios.csv`
 
 ---
 
-## Data Sources
+### 3. Power BI Dashboard
 
-This project uses only publicly available information, including:
+The Power BI dashboard provides a visual analytical view of the banking dataset.
 
-- Annual reports
-- Consolidated financial statements
-- Investor presentations
-- Market disclosures
-- Public investor relations materials
-- Public market data
-- Euronext information
-- Other reputable public financial sources
+Dashboard pages include:
 
-A detailed list of sources is provided in `sources.md`.
+- Executive Overview
+- Liquidity & Funding
+- Asset Quality
+- Profitability
+- Efficiency
+- Capital
+- Data Quality
 
-Official source links used for the data extraction process are documented in `data/source_links.csv`.
+Main file:
 
-No full reports are copied into this repository. The project only references public sources and uses selected financial data for educational analysis.
+`powerbi/millennium_bcp_banking_dashboard_v1_clean.pbix`
 
----
-
-## Data Validation Approach
-
-Because this project is also intended to demonstrate financial data quality awareness, the model includes a basic source validation approach.
-
-The validation process includes:
-
-- Mapping each key figure to a public source
-- Checking consistency between reported figures and calculated ratios
-- Reviewing units, currencies and reporting periods
-- Identifying missing data or unavailable ratios
-- Separating reported figures from own calculations
-- Documenting assumptions used in forecasts
-- Avoiding unsupported conclusions
-
-The project includes a Python validation script:
-
-    python data/validation_checks.py
-
-This makes the project relevant not only for financial research roles, but also for financial data quality, data validation and AI finance evaluation work.
+The dashboard is intended as a portfolio-grade business intelligence deliverable and not as an investment recommendation tool.
 
 ---
 
-## Human-in-the-Loop Review
+### 4. Forecast Assumptions
 
-The project includes a human-in-the-loop review approach to reduce analytical errors, source inconsistencies and unsupported conclusions.
+The forecast assumptions are structured across three scenarios:
 
-The review process focuses on:
+- Base
+- Optimistic
+- Conservative
 
-- Source traceability
-- Unit consistency
-- Period consistency
-- Formula accuracy
-- Ratio consistency
+Main file:
+
+`data/forecast_assumptions.csv`
+
+Forecast assumptions include:
+
+- Net interest income growth
+- Other operating income growth
+- Operating costs growth
+- Cost of risk
+- Customer loans growth
+- Customer deposits growth
+- CET1 ratio assumption
+
+All assumptions are educational estimates and are marked as requiring review.
+
+---
+
+### 5. Forecast Financials
+
+The forecast financials are generated from 2025A actuals and scenario-based assumptions.
+
+Main files:
+
+- `scripts/build_forecast_financials.py`
+- `data/forecast_financials.csv`
+
+The forecast model estimates:
+
+- Net interest income
+- Other operating income
+- Operating income
+- Operating costs
+- Pre-provision operating profit
+- Impairments and provisions
+- Net income
+- Customer loans
+- Customer deposits
+- Total assets
+- Equity
+- CET1 ratio assumption
+
+---
+
+### 6. Forecast Ratios
+
+Forecast ratios are generated from forecast financials and scenario assumptions.
+
+Main files:
+
+- `scripts/build_forecast_ratios.py`
+- `data/forecast_ratios.csv`
+
+Forecast ratios include:
+
+- ROE
+- ROA
+- Cost-to-income ratio
+- Loan-to-deposit ratio
+- Cost of risk
+- CET1 ratio assumption
+
+For 2025A, reported ratios from the banking ratio dataset are used where available.
+
+For 2026E–2028E, ratios are calculated from forecast outputs or taken directly from forecast assumptions.
+
+---
+
+### 7. Scenario Analysis
+
+The scenario analysis compares Base, Optimistic and Conservative cases across key financial and ratio metrics.
+
+Main files:
+
+- `scripts/build_scenario_analysis.py`
+- `data/scenario_analysis.csv`
+
+The scenario analysis includes:
+
+- Scenario value
+- Base case value
+- Variance vs Base
+- Variance vs Base percentage
 - Scenario logic
-- Bias review
-- Neutral investment language
-- No use of personal, confidential or internal information
-
-The review checklist is documented in `notes/model_review_checklist.md`.
-
----
-
-## Project Status
-
-The project is currently in the structure, documentation and data preparation phase.
-
-Most financial data fields are intentionally marked as `Pending`.
-
-The next major phase is to extract historical financial figures from official public sources and enter them into the relevant data files.
-
-For a detailed status overview, see:
-
-    PROJECT_STATUS.md
+- Main driver
+- Risk level
+- Interpretation
+- Validation status
 
 ---
 
-## Roadmap
+### 8. SQL Analytics Layer
 
-The project will be developed in phases:
+The SQL layer demonstrates how the project datasets can be queried in an analytical workflow.
 
-1. Repository structure and documentation
-2. Historical financial data extraction
-3. Data validation and quality review
-4. Excel model generation and population
-5. Forecast and scenario analysis
-6. Valuation and sensitivity analysis
-7. Investment memo completion
-8. Final review and portfolio publication
+SQL files:
 
-For the full roadmap, see:
+- `sql/create_tables.sql`
+- `sql/banking_ratio_queries.sql`
+- `sql/data_quality_queries.sql`
+- `sql/forecast_queries.sql`
+- `sql/README.md`
 
-    ROADMAP.md
+The SQL layer covers:
 
----
-
-## Changelog
-
-Project changes and planned updates are documented in:
-
-    CHANGELOG.md
+- Table creation
+- Historical banking ratio queries
+- Data quality review queries
+- Forecast review queries
+- Scenario analysis queries
+- Human review outputs
 
 ---
 
-## Relevance for Target Roles
+### 9. Data Quality and Source Review
 
-This project is designed to support applications for roles such as:
+The project includes a data quality workflow covering:
 
-- Financial Research Analyst
-- Investment Research Analyst
-- AI Finance Evaluator
-- AI Product Tester – Finance
-- Banking Analyst
-- Banking Analytics Analyst
-- Financial Data Analyst
-- Financial Data Quality Analyst
-- Data Validation Analyst
-- Reporting Analyst – Banking
-- Wealth Management / Private Banking Support
+- Validation status
+- Source mapping
+- Extraction tracking
+- Missing values
+- Pending items
+- Reviewed vs To Review classification
 
-The project demonstrates the ability to combine real banking experience with financial analysis, structured modeling, data validation and professional written communication.
+Main files:
+
+- `data/source_mapping.csv`
+- `data/extraction_tracker.csv`
+- `data/validation_checks.py`
+- `docs/project_review_checklist.md`
+
+Validation can be run with:
+
+`python data/validation_checks.py`
+
+Known template warnings may exist for placeholder files and should be reviewed in context.
+
+---
+
+## Methodology Documentation
+
+The forecast methodology is documented in:
+
+`docs/forecast_methodology.md`
+
+The methodology explains:
+
+- Forecast scope
+- Base year treatment
+- Revenue forecast logic
+- Cost forecast logic
+- Risk cost forecast logic
+- Balance sheet forecast logic
+- Net income bridge
+- Ratio forecast logic
+- Scenario analysis
+- Limitations
+- Final review requirements
+
+---
+
+## Project Structure
+
+```text
+financial-modeling-case-study-bcp/
+│
+├── data/
+│   ├── financial_data.csv
+│   ├── banking_ratios.csv
+│   ├── source_mapping.csv
+│   ├── extraction_tracker.csv
+│   ├── forecast_assumptions.csv
+│   ├── forecast_financials.csv
+│   ├── forecast_ratios.csv
+│   ├── scenario_analysis.csv
+│   └── validation_checks.py
+│
+├── docs/
+│   ├── forecast_methodology.md
+│   └── project_review_checklist.md
+│
+├── powerbi/
+│   └── millennium_bcp_banking_dashboard_v1_clean.pbix
+│
+├── scripts/
+│   ├── build_forecast_financials.py
+│   ├── build_forecast_ratios.py
+│   └── build_scenario_analysis.py
+│
+├── sql/
+│   ├── create_tables.sql
+│   ├── banking_ratio_queries.sql
+│   ├── data_quality_queries.sql
+│   ├── forecast_queries.sql
+│   └── README.md
+│
+└── README.md
+```
+
+---
+
+## How to Run the Forecast Workflow
+
+### 1. Validate existing data
+
+`python data/validation_checks.py`
+
+### 2. Build forecast financials
+
+`python scripts/build_forecast_financials.py`
+
+### 3. Build forecast ratios
+
+`python scripts/build_forecast_ratios.py`
+
+### 4. Build scenario analysis
+
+`python scripts/build_scenario_analysis.py`
+
+### 5. Re-run validation
+
+`python data/validation_checks.py`
+
+---
+
+## AI-Assisted, Human-Reviewed Workflow
+
+This project follows an AI-assisted, human-reviewed workflow.
+
+AI tools may be used to support:
+
+- Documentation structure
+- Analytical framing
+- Code generation
+- Consistency checks
+- Data quality review
+- Drafting of methodology notes
+
+However, all financial figures, assumptions, interpretations and final outputs require human review by the author before publication.
+
+Forecast outputs are marked as:
+
+`To Review`
+
+Historical reviewed figures are marked as:
+
+`Reviewed`
 
 ---
 
 ## Limitations
 
-This project has important limitations:
+This project has several limitations:
 
+- It is based only on publicly available information.
 - It is a simplified educational model.
-- It does not represent a full institutional equity research model.
-- Forecasts are based on simplified assumptions.
-- Valuation outputs are illustrative and not investment recommendations.
-- Public data availability may limit the depth of the analysis.
-- Market prices and valuation multiples may change over time.
-- The project does not include confidential, internal or non-public information.
+- It does not replicate internal bank forecasting methodology.
+- It does not model all regulatory capital movements.
+- It does not model risk-weighted assets in detail.
+- It does not model full dividend, buyback or OCI impacts.
+- It does not provide valuation advice.
+- It does not provide investment recommendations.
+- It should not be interpreted as an official forecast.
 
 ---
 
 ## Disclaimer
 
-This project is for educational and portfolio purposes only and does not constitute investment advice.
+This project is for educational, analytical and portfolio purposes only.
 
-This project uses only publicly available information from annual reports, investor presentations, market disclosures and other public sources. No client data, employee data, internal banking information or confidential information is used.
+It does not constitute:
 
-The analysis, assumptions, scenarios and valuation outputs are illustrative and should not be interpreted as a recommendation to buy, sell or hold any financial instrument.
+- Financial advice
+- Investment advice
+- Valuation advice
+- Credit advice
+- Legal advice
+- A recommendation to buy, sell or hold any financial instrument
 
-This project is independent from my current and previous employers and does not reflect the views, data, systems, clients, processes or internal information of any financial institution.
+All forecast figures are scenario-based estimates and should be interpreted as analytical modelling outputs, not as official projections.
+
+The author is not affiliated with Millennium bcp for the purpose of this project. The project uses public information only.
+
+---
+
+## Suggested CV Description
+
+Built a financial modeling case study on a listed Portuguese bank, including financial statement analysis, banking ratio analysis, forecast assumptions, valuation-aware scenario analysis, Power BI dashboarding, SQL analytical queries and source validation using only publicly available information.
+
+---
+
+## Suggested LinkedIn / Portfolio Description
+
+Public-source banking analytics case study combining financial modeling, Power BI, SQL, scenario analysis and an AI-assisted, human-reviewed data quality workflow.
 
 ---
 
 ## Author
 
-**Ricardo Serôdio**
+Ricardo Serôdio
 
-Banking professional with experience in wealth management, investment advisory, retail banking operations, credit, AML/CFT, KYC/CDD, MiFID II, financial products and client relationship management.
+Professional portfolio:
 
-Portfolio project by Ricardo Serôdio.
+`https://ricardoserodio.com`
 
-Related project:
+GitHub:
 
-- [Portugal Term Deposit Comparator](https://github.com/ricardoserodio/portugal-term-deposit-comparator)
-- [Online App](https://pt-deposit-comparator.streamlit.app)
+`https://github.com/ricardoserodio`

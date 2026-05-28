@@ -4,7 +4,7 @@
 
 This folder contains SQL scripts for the Financial Modeling Case Study – Millennium bcp / Portuguese Listed Bank project.
 
-The SQL layer is designed to demonstrate how structured banking data, ratio analysis, data quality checks, forecast assumptions and scenario analysis outputs can be queried in an analytical workflow.
+The SQL layer demonstrates how structured banking datasets can be loaded into a local SQLite database and queried in an analytical workflow.
 
 This is a portfolio and educational component. It is not intended to represent an official bank database, production data model or investment recommendation tool.
 
@@ -15,11 +15,28 @@ This is a portfolio and educational component. It is not intended to represent a
 | `create_tables.sql` | Defines analytical tables mirroring the project CSV datasets. |
 | `banking_ratio_queries.sql` | Provides example queries for historical banking ratio analysis. |
 | `data_quality_queries.sql` | Provides validation, missing value and source traceability queries. |
-| `forecast_queries.sql` | Provides forecast, scenario and sensitivity-style analytical queries. |
+| `forecast_queries.sql` | Provides forecast, scenario and analytical review queries. |
 
-## Covered Datasets
+## Related Python Scripts
 
-The SQL schema covers the following project datasets:
+| Script | Purpose |
+|---|---|
+| `scripts/load_sqlite_database.py` | Loads the structured CSV datasets into a local SQLite database. |
+| `scripts/run_sql_analysis.py` | Executes analytical SQL queries against the SQLite database and exports CSV outputs. |
+
+## Local SQLite Workflow
+
+The SQL workflow uses a local SQLite database:
+
+`data/bcp_case_study.sqlite`
+
+This database is generated locally and is excluded from GitHub through `.gitignore`.
+
+To create or refresh the local SQLite database, run:
+
+`python scripts/load_sqlite_database.py`
+
+This loads the following CSV datasets into SQL tables:
 
 - `financial_data.csv`
 - `banking_ratios.csv`
@@ -29,6 +46,27 @@ The SQL schema covers the following project datasets:
 - `forecast_financials.csv`
 - `forecast_ratios.csv`
 - `scenario_analysis.csv`
+
+## Running SQL Analysis
+
+To execute analytical SQL queries and export review outputs, run:
+
+`python scripts/run_sql_analysis.py`
+
+The script generates CSV outputs in:
+
+`outputs/sql_analysis/`
+
+Example outputs include:
+
+- `table_row_counts.csv`
+- `banking_ratios_2025_snapshot.csv`
+- `forecast_net_income_by_scenario.csv`
+- `forecast_roe_by_scenario.csv`
+- `scenario_net_income_variance.csv`
+- `forecast_outputs_requiring_review.csv`
+
+These outputs demonstrate that SQL queries were executed against structured banking datasets.
 
 ## Analytical Areas
 
@@ -48,6 +86,7 @@ The SQL layer supports analysis of:
 - Forecast ratios
 - Scenario analysis
 - Data quality review
+- Human review workflow
 
 ## Data Quality Workflow
 
@@ -73,6 +112,20 @@ The forecast SQL queries are designed to review:
 - Risk level and scenario interpretation
 
 Forecast outputs are marked as `To Review` until manually reviewed.
+
+## Professional Relevance
+
+This SQL layer demonstrates the ability to:
+
+- Load structured financial datasets into a relational database
+- Query banking ratios and forecast outputs
+- Review data quality through SQL
+- Export analytical outputs for review
+- Build a reproducible finance analytics workflow
+
+Suggested CV wording:
+
+`Loaded structured banking datasets into SQLite and executed SQL analytics queries for banking ratio analysis, forecast review and data quality checks.`
 
 ## AI-Assisted, Human-Reviewed Workflow
 

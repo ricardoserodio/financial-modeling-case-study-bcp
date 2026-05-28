@@ -227,3 +227,7 @@ outputs/
 exports/
 tmp/
 temp/
+
+# Local SQLite databases
+*.sqlite
+*.db

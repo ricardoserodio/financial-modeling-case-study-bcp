@@ -296,18 +296,6 @@ Before promoting the project publicly, the following should be reviewed:
 - GitHub file structure
 - CV / LinkedIn project description alignment
 
-
-## Recent Analytical Cleanup
-
-The project now includes updated analytical documents replacing earlier placeholder sections:
-
-- `ratio_analysis.md` now includes reviewed historical banking ratios for 2022A–2025A, based on the structured dataset in `data/banking_ratios.csv`.
-- `valuation_summary.md` now provides a responsible banking valuation framework and intentionally excludes market multiples until dated market data is selected and validated.
-- Temporary backup files were removed after validation.
-- The Power BI v3 polished dashboard file has been prepared as the current polished dashboard version.
-
-This update improves the project’s readiness as a public banking analytics portfolio case study by reducing placeholder content and strengthening data quality discipline.
-
 ## Recent Analytical Cleanup
 
 The project now includes updated analytical documents replacing earlier placeholder sections:
@@ -319,13 +307,3 @@ The project now includes updated analytical documents replacing earlier placehol
 
 This update improves the project’s readiness as a public banking analytics portfolio case study by reducing placeholder content and strengthening data quality discipline.
 
-## Recent Analytical Cleanup
-
-The project now includes updated analytical documents replacing earlier placeholder sections:
-
-- `ratio_analysis.md` now includes reviewed historical banking ratios for 2022A–2025A, based on the structured dataset in `data/banking_ratios.csv`.
-- `valuation_summary.md` now provides a responsible banking valuation framework and intentionally excludes market multiples until dated market data is selected and validated.
-- Temporary backup files were removed after validation.
-- `powerbi/millennium_bcp_banking_dashboard_v3_polished.pbix` is now included as the polished Power BI dashboard version.
-
-This update improves the project’s readiness as a public banking analytics portfolio case study by reducing placeholder content and strengthening data quality discipline.

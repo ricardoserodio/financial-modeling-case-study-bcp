@@ -351,6 +351,22 @@ This case study demonstrates practical skills relevant to:
 
 The project is designed to be clear, recruiter-friendly and aligned with roles in financial data quality, banking analytics, financial research, risk operations, business intelligence and finance transformation.
 
+## Source Validation Summary
+
+The project uses a structured source validation approach to support traceability and data quality review.
+
+| Area | File / Layer | Validation Role |
+|---|---|---|
+| Historical financial data | `data/financial_data.csv` | Stores structured public-source financial statement metrics |
+| Historical banking ratios | `data/banking_ratios.csv` | Stores reviewed banking ratios for 2022A–2025A |
+| Source traceability | `data/source_mapping.csv` | Maps metrics to public-source documents and validation status |
+| Forecast outputs | Python-generated CSV files | Produces scenario-based estimates for 2026E–2028E |
+| SQL analytics | `sql/` | Demonstrates analytical querying and data quality checks |
+| Power BI dashboard | `powerbi/` | Provides visual reporting and scenario analysis |
+| Human review | Documentation and validation notes | Required before professional or public promotional use |
+
+This workflow supports transparency, reproducibility and responsible analytical communication.
+
 ## 20. Disclaimer
 
 This report is for educational, analytical and portfolio purposes only.

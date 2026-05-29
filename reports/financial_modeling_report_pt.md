@@ -351,6 +351,22 @@ Este estudo de caso demonstra competências práticas relevantes para:
 
 O projecto foi desenhado para ser claro, adequado a recrutadores e alinhado com funções em financial data quality, banking analytics, financial research, risk operations, business intelligence e finance transformation.
 
+## Sumário de Validação de Fontes
+
+O projecto utiliza uma abordagem estruturada de validação de fontes para apoiar rastreabilidade e revisão da qualidade dos dados.
+
+| Área | Ficheiro / Camada | Função de Validação |
+|---|---|---|
+| Dados financeiros históricos | `data/financial_data.csv` | Armazena métricas financeiras estruturadas com base em fontes públicas |
+| Rácios bancários históricos | `data/banking_ratios.csv` | Armazena rácios bancários revistos para 2022A–2025A |
+| Rastreabilidade de fontes | `data/source_mapping.csv` | Mapeia métricas para documentos públicos e estado de validação |
+| Outputs forecast | CSVs gerados por Python | Produz estimativas por cenário para 2026E–2028E |
+| Analytics em SQL | `sql/` | Demonstra queries analíticas e controlos de qualidade dos dados |
+| Dashboard Power BI | `powerbi/` | Fornece reporting visual e análise de cenários |
+| Revisão humana | Documentação e notas de validação | Requerida antes de utilização profissional ou promoção pública |
+
+Este workflow apoia transparência, reprodutibilidade e comunicação analítica responsável.
+
 ## 20. Disclaimer
 
 Este relatório destina-se exclusivamente a fins educativos, analíticos e de portefólio.

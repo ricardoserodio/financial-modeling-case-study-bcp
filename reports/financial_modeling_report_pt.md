@@ -86,6 +86,32 @@ As principais categorias de rácios incluem:
 
 Para 2025A, são usados rácios reportados sempre que disponíveis. Isto evita sobrestimar a precisão quando cálculos simplificados podem não replicar totalmente metodologias de reporte de gestão, definições regulatórias ou metodologias com saldos médios.
 
+### Glossário de Rácios Bancários – Métricas Principais Utilizadas
+
+A tabela seguinte resume os principais rácios bancários utilizados neste relatório. As fórmulas apresentadas são fórmulas analíticas simplificadas e podem não replicar integralmente os cálculos oficiais, regulatórios ou internos de uma instituição bancária.
+
+| Rácio | Fórmula Simplificada | Significado |
+|---|---|---|
+| ROE | Resultado Líquido / Capital Próprio Médio | Mede a rentabilidade face à base de capital próprio. |
+| ROA | Resultado Líquido / Activo Total Médio | Mede a rentabilidade face ao activo total do banco. |
+| Margem Financeira / NIM | Margem Financeira / Activos Remunerados Médios | Mede a margem de intermediação financeira face aos activos geradores de juros. |
+| Cost-to-Income | Custos Operacionais / Produto Bancário | Mede a eficiência operacional. Um rácio mais baixo tende a indicar maior eficiência. |
+| Custo do Risco | Imparidades de Crédito / Crédito a Clientes Médio | Mede o custo das imparidades face à carteira de crédito. Normalmente expresso em pontos base. |
+| Rácio NPE | Exposições Não Produtivas / Exposições Totais | Mede a proporção de exposições classificadas como não produtivas. |
+| Loan-to-Deposit | Crédito a Clientes / Depósitos de Clientes | Mede a relação entre crédito concedido e depósitos de clientes. |
+| LCR | Activos Líquidos de Elevada Qualidade / Saídas Líquidas a 30 dias | Mede a resiliência de liquidez de curto prazo em cenário de stress. |
+| NSFR | Financiamento Estável Disponível / Financiamento Estável Necessário | Mede a estabilidade da estrutura de financiamento num horizonte de um ano. |
+| CET1 Ratio | Capital CET1 / Activos Ponderados pelo Risco | Mede o capital regulatório de maior qualidade face aos activos ponderados pelo risco. |
+| Total Capital Ratio | Fundos Próprios Totais / Activos Ponderados pelo Risco | Mede o capital regulatório total face aos activos ponderados pelo risco. |
+| EPS | Resultado Líquido Atribuível aos Accionistas / Número Médio de Acções | Mede o resultado atribuível a cada acção ordinária. |
+| Valor Contabilístico por Acção | Capital Próprio Atribuível / Número de Acções | Mede o valor contabilístico por acção. |
+| Price-to-Book | Capitalização Bolsista / Valor Contabilístico do Capital Próprio | Compara o valor de mercado com o valor contabilístico. |
+| Price-to-Earnings | Preço da Acção / Resultado por Acção | Compara o preço da acção com o resultado por acção. |
+
+Para uma explicação mais detalhada de cada rácio, incluindo notas de interpretação e limitações, consultar:
+
+`docs/banking_ratio_glossary.md`
+
 ## 7. Metodologia de Forecast
 
 O forecast é construído a partir dos valores reais de 2025A e de pressupostos por cenário.
@@ -307,3 +333,4 @@ Não constitui aconselhamento financeiro, aconselhamento de investimento, aconse
 Todos os valores forecast são estimativas baseadas em cenários e devem ser interpretados como outputs de modelação analítica, não como projecções oficiais.
 
 O autor não está afiliado ao Millennium bcp para efeitos deste projecto. O projecto utiliza apenas informação pública.
+

@@ -86,6 +86,32 @@ Key ratio categories include:
 
 For 2025A, reported ratios are used where available. This avoids overstating precision where simplified calculations may not fully replicate management reporting, regulatory definitions or average balance methodologies.
 
+### Banking Ratio Glossary – Key Metrics Used
+
+The following table summarises the main banking ratios used in this report. These formulas are simplified analytical formulas and may not fully replicate official bank reporting, regulatory calculations or internal methodologies.
+
+| Ratio | Simplified Formula | Meaning |
+|---|---|---|
+| ROE | Net Income / Average Equity | Measures profitability relative to the equity base. |
+| ROA | Net Income / Average Total Assets | Measures profitability relative to the bank's asset base. |
+| Net Interest Margin | Net Interest Income / Average Interest-Earning Assets | Measures the bank's interest spread relative to earning assets. |
+| Cost-to-Income Ratio | Operating Costs / Operating Income | Measures operating efficiency. A lower ratio generally indicates better efficiency. |
+| Cost of Risk | Loan Impairments / Average Customer Loans | Measures credit impairment charges relative to the loan book. Usually expressed in basis points. |
+| NPE Ratio | Non-Performing Exposures / Total Exposures | Measures the proportion of exposures classified as non-performing. |
+| Loan-to-Deposit Ratio | Customer Loans / Customer Deposits | Measures the relationship between customer lending and customer deposits. |
+| LCR | High Quality Liquid Assets / 30-Day Net Cash Outflows | Measures short-term liquidity resilience under stress. |
+| NSFR | Available Stable Funding / Required Stable Funding | Measures the stability of the funding profile over a one-year horizon. |
+| CET1 Ratio | CET1 Capital / Risk-Weighted Assets | Measures the bank's highest-quality regulatory capital relative to risk-weighted assets. |
+| Total Capital Ratio | Total Own Funds / Risk-Weighted Assets | Measures total regulatory capital relative to risk-weighted assets. |
+| EPS | Net Income Attributable to Shareholders / Weighted Average Shares | Measures earnings attributable to each ordinary share. |
+| Book Value per Share | Equity Attributable to Shareholders / Shares Outstanding | Measures accounting equity value per share. |
+| Price-to-Book | Market Capitalisation / Book Value of Equity | Compares market value with accounting book value. |
+| Price-to-Earnings | Share Price / Earnings per Share | Compares share price with earnings per share. |
+
+For a more detailed explanation of each ratio, including interpretation notes and limitations, see:
+
+`docs/banking_ratio_glossary.md`
+
 ## 7. Forecast Methodology
 
 The forecast is built from 2025A actuals and scenario-based assumptions.
@@ -307,3 +333,4 @@ It does not constitute financial advice, investment advice, valuation advice, cr
 All forecast figures are scenario-based estimates and should be interpreted as analytical modelling outputs, not as official projections.
 
 The author is not affiliated with Millennium bcp for the purpose of this project. The project uses public information only.
+

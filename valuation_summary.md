@@ -1,342 +1,292 @@
-# Valuation Summary
+﻿# Valuation Summary – Millennium bcp / Portuguese Listed Bank
 
-This file documents the simplified valuation approach used in the financial modeling case study on **Millennium bcp / Banco Comercial Português**.
+## 1. Purpose
 
-The valuation is for educational and portfolio purposes only. It does not constitute investment advice, financial advice or a recommendation to buy, sell or hold any financial instrument.
+This document presents the valuation framework used in the Financial Modeling Case Study – Millennium bcp / Portuguese Listed Bank project.
 
----
+The purpose of this file is to explain how valuation could be approached in an educational banking analysis context, while avoiding unsupported market claims, target prices or investment recommendations.
 
-## Purpose of the Valuation
+This document is part of a public portfolio project focused on:
 
-The purpose of this valuation summary is to demonstrate basic banking valuation logic using public information and simplified assumptions.
+- Banking analytics
+- Financial modeling
+- Financial data quality
+- Scenario analysis
+- SQL and Power BI reporting
+- Human-reviewed analytical workflows
 
-The valuation aims to show:
-
-- how listed banks can be analysed using market multiples;
-- why book value and profitability are important in bank valuation;
-- how valuation can be linked to ROE, cost of equity and growth assumptions;
-- how different scenarios can produce different illustrative outcomes;
-- how sensitivity analysis can reduce overconfidence in a single valuation output.
-
-This valuation is not intended to produce an official target price or investment recommendation.
+This is not an investment recommendation.
 
 ---
 
-## Valuation Approach
+## 2. Important Disclaimer
 
-Banks are usually valued differently from industrial companies.
+This document is for educational, analytical and portfolio purposes only.
 
-For this project, the valuation focuses mainly on:
+It does not constitute:
 
-| Method | Relevance |
-|---|---|
-| Price-to-Book | Commonly used for banks because book value is central to banking valuation |
-| Price-to-Earnings | Useful for comparing market value with earnings generation |
-| Dividend Yield | Relevant if dividend data is available and capital distribution is part of the analysis |
-| Peer Comparison | Useful for contextualising valuation multiples |
-| Sensitivity Analysis | Useful for testing how assumptions affect valuation outputs |
+- Financial advice
+- Investment advice
+- Valuation advice
+- A target price
+- A recommendation to buy, sell or hold any financial instrument
+- Official research
+- Official projections from Millennium bcp
 
-The valuation is intentionally simple and educational.
+The author is not affiliated with Millennium bcp for the purpose of this project.
 
----
-
-## Key Valuation Principles
-
-The valuation follows these principles:
-
-- Use only public market data.
-- Use dated market data when calculating valuation multiples.
-- Clearly separate historical figures from forecast assumptions.
-- Use ranges and scenarios instead of a single definitive value.
-- Avoid investment recommendation language.
-- Clearly disclose limitations.
-- Link valuation logic to banking fundamentals.
-- Review all outputs through the model review checklist.
+All valuation logic, assumptions and outputs require human review before any professional use.
 
 ---
 
-## Market Data Inputs
+## 3. Scope of the Current Version
 
-The valuation may require the following market data inputs:
+This version includes:
 
-| Input | Description | Source Status |
+- A banking valuation framework
+- The rationale for using P/B and P/E in bank analysis
+- A conservative approach to market data validation
+- Scenario logic for future valuation work
+- Clear limitations and data quality notes
+
+This version does not include final calculated market multiples because dated market data has not yet been selected and validated.
+
+The following valuation metrics are therefore not calculated in this version:
+
+- Price-to-book
+- Price-to-earnings
+- Dividend yield
+- Market capitalisation-based valuation
+- Peer multiple comparison
+- Implied valuation range
+
+These metrics can be added in a future version after selecting a specific market data date and documenting the exact source.
+
+---
+
+## 4. Why Valuation Requires Additional Validation
+
+Unlike historical banking ratios, valuation multiples depend on market data that changes over time.
+
+For example:
+
+- Share price changes daily
+- Market capitalisation changes with share price and number of shares
+- P/E depends on both share price and earnings per share
+- P/B depends on both share price and book value per share
+- Dividend yield depends on share price and dividend per share
+- Peer multiples depend on selected comparable banks and the observation date
+
+Because of this, valuation metrics should not be presented without a clear date and source.
+
+---
+
+## 5. Market Data Inputs Required
+
+Before calculating valuation multiples, the following inputs should be collected and validated.
+
+| Input | Description | Current Status |
 |---|---|---|
-| Share price | Public market price at a selected date | Pending |
-| Market capitalisation | Equity market value at a selected date | Pending |
-| Number of shares | Shares outstanding or weighted average shares | Pending |
-| Dividend per share | Reported dividend per share, if available | Pending |
-| Peer valuation multiples | Public data from comparable banks, if used | Pending |
-
-All market data inputs should be dated and sourced.
-
-Possible sources include:
-
-- Euronext Lisbon;
-- official company disclosures;
-- public financial data providers;
-- annual reports;
-- investor presentations.
+| Share price | Public market price at a selected date | Not included in current version |
+| Market capitalisation | Equity market value at a selected date | Not included in current version |
+| Number of shares | Shares outstanding or weighted average shares | Not included in current version |
+| Earnings per share | Reported EPS from public-source data | Available in structured ratio dataset |
+| Book value per share | Reported book value per share from public-source data | Available from 2023A onward in structured ratio dataset |
+| Dividend per share | Reported or declared dividend per share | To be validated |
+| Peer valuation multiples | Public data from comparable banks, if used | Not included in current version |
 
 ---
 
-## Accounting and Financial Inputs
+## 6. Available Per-Share Inputs
 
-The valuation may use the following financial inputs from the model:
+The structured dataset `data/banking_ratios.csv` includes selected per-share indicators.
 
-| Input | Description |
-|---|---|
-| Net income | Consolidated net income or net income attributable to shareholders |
-| Equity | Total equity or equity attributable to shareholders |
-| Book value per share | Equity attributable to shareholders divided by number of shares |
-| Earnings per share | Net income attributable to shareholders divided by average number of shares |
-| ROE | Net income divided by average equity |
-| CET1 ratio | Official regulatory capital ratio |
-| Dividend payout | Dividends paid divided by net income, if applicable |
+| Metric | 2022A | 2023A | 2024A | 2025A | Unit | Status |
+|---|---:|---:|---:|---:|---|---|
+| EPS | 0.011 | 0.056 | 0.058 | 0.066 | EUR | Reviewed |
+| Book value per share | n/a | 0.412 | 0.469 | 0.528 | EUR | Reviewed |
 
-Definitions should remain consistent across the model.
+These figures can support future valuation calculations once a dated share price is selected.
 
 ---
 
-## Price-to-Book Valuation
+## 7. Banking Valuation Methods Considered
 
-Price-to-book is one of the most relevant valuation multiples for banks.
+### 7.1 Price-to-Book Ratio
+
+Price-to-book is commonly used in bank valuation because banks are balance-sheet intensive institutions.
 
 Formula:
 
-P/B = Market capitalisation / Equity attributable to shareholders
-
-or:
-
-P/B = Share price / Book value per share
+`P/B = Share price / Book value per share`
 
 Interpretation:
 
-- A bank with stronger sustainable ROE may trade at a higher P/B multiple.
-- A bank with weaker profitability, higher risk or lower capital quality may trade at a lower P/B multiple.
-- P/B should be analysed together with ROE, asset quality and capital ratios.
-- P/B should not be interpreted in isolation.
+- A higher P/B may suggest stronger expected profitability, asset quality, capital generation or franchise value.
+- A lower P/B may suggest weaker profitability, higher perceived risk, lower expected returns or market scepticism.
+- P/B should be interpreted together with ROE and cost of equity.
 
-Review points:
-
-- Use consistent equity definitions.
-- Use dated market data.
-- Check whether equity includes minority interests.
-- Avoid using P/B as a standalone investment conclusion.
+In banking analysis, P/B is often linked to the relationship between ROE and cost of equity.
 
 ---
 
-## Price-to-Earnings Valuation
+### 7.2 Price-to-Earnings Ratio
 
-Price-to-earnings compares market value with earnings.
+Price-to-earnings compares market price with earnings per share.
 
 Formula:
 
-P/E = Market capitalisation / Net income attributable to shareholders
-
-or:
-
-P/E = Share price / Earnings per share
+`P/E = Share price / Earnings per share`
 
 Interpretation:
 
-- A lower P/E may indicate a lower market valuation relative to earnings, but it may also reflect higher perceived risk.
-- A higher P/E may reflect stronger expected earnings quality, growth or lower risk.
-- For banks, earnings may be influenced by interest rates, provisions, credit cycles and one-off items.
-- P/E should be reviewed together with ROE, capital ratios and asset quality.
+- A higher P/E may suggest stronger expected earnings growth, lower perceived risk or higher investor confidence.
+- A lower P/E may suggest lower growth expectations, earnings quality concerns or higher perceived risk.
+- P/E can be distorted by one-off earnings, impairments, restructuring costs or exceptional tax impacts.
 
-Review points:
-
-- Use earnings attributable to shareholders where available.
-- Check whether earnings include exceptional or non-recurring items.
-- Use a consistent market data date.
-- Avoid over-reliance on a single-year P/E.
+For banks, P/E should be reviewed together with earnings quality, capital strength, asset quality and interest rate sensitivity.
 
 ---
 
-## Dividend Yield
+### 7.3 Dividend Yield
 
-Dividend yield may be included if dividend data is available.
+Dividend yield compares dividend per share with market price.
 
 Formula:
 
-Dividend yield = Dividend per share / Share price
+`Dividend yield = Dividend per share / Share price`
 
 Interpretation:
 
-- Dividend yield indicates the cash return from dividends relative to share price.
-- For banks, dividend capacity depends on profitability, capital requirements, regulatory expectations and management policy.
-- Historical dividend yield does not guarantee future dividends.
+- A higher dividend yield may be attractive from an income perspective.
+- However, dividend yield must be assessed together with payout ratio, capital requirements, profitability sustainability and regulatory constraints.
+- A high dividend yield can also reflect a lower share price or higher perceived risk.
 
-Review points:
-
-- Use reported dividends.
-- Use dated share price data.
-- Separate historical dividend yield from forecast dividend yield.
-- Avoid presenting dividends as guaranteed.
+Dividend yield is not calculated in this version until dividend data and share price data are both validated.
 
 ---
 
-## Peer Comparison
+## 8. Illustrative Scenario Framework
 
-A simple peer comparison may be included if relevant.
+The project includes forecast scenarios for educational purposes:
 
-Potential peer categories:
+- Conservative
+- Base
+- Optimistic
 
-| Peer Type | Description |
-|---|---|
-| Portuguese listed banks | Direct domestic comparison where available |
-| Iberian banks | Banks in Portugal and Spain |
-| European commercial banks | Broader listed bank comparison |
+These scenarios are useful for understanding how different assumptions may affect future profitability, efficiency, credit risk and capital metrics.
 
-Possible peer metrics:
+However, this version does not convert those scenarios into an implied share price or valuation range.
 
-- P/B;
-- P/E;
-- ROE;
-- CET1 ratio;
-- cost-to-income;
-- NPL / NPE ratio;
-- dividend yield.
-
-Peer comparison limitations:
-
-- Different banks have different geographies.
-- Accounting definitions may differ.
-- Capital positions may differ.
-- Asset quality may differ.
-- Business models may differ.
-- Market data changes over time.
-
-Peer comparison should be used only as context, not as a definitive valuation conclusion.
-
----
-
-## Scenario-Based Valuation
-
-The valuation should include three simplified scenarios:
-
-| Scenario | Description |
-|---|---|
-| Conservative | Lower profitability, weaker efficiency, higher cost of risk or lower valuation multiple |
-| Base | Moderate continuation of current trends and balanced valuation assumptions |
-| Optimistic | Stronger profitability, better efficiency, lower cost of risk or higher valuation multiple |
-
-The scenario analysis should explain how assumptions affect valuation outputs.
-
-No scenario should be presented as the expected or guaranteed outcome.
-
----
-
-## Sensitivity Analysis
-
-Sensitivity analysis helps test how valuation changes when key assumptions change.
-
-Variables that may be tested include:
-
-| Variable | Reason for Sensitivity |
-|---|---|
-| ROE | Key driver of bank valuation |
-| Cost of equity | Important input for equity valuation logic |
-| Earnings growth | Affects earnings-based valuation |
-| Cost-to-income ratio | Affects profitability |
-| Cost of risk | Affects net income and asset quality |
-| P/B multiple | Direct impact on book-value-based valuation |
-| P/E multiple | Direct impact on earnings-based valuation |
-| Dividend payout | Affects dividend yield and capital retention |
-
-Sensitivity outputs should be shown as ranges, not as precise predictions.
-
----
-
-## Valuation Output Structure
-
-The final valuation summary should use a structure similar to this:
-
-| Scenario | Key Assumptions | Implied Valuation Logic | Comment |
+| Scenario | Description | Valuation Output | Comment |
 |---|---|---|---|
-| Conservative | Lower profitability and/or lower multiple | Pending | Educational scenario only |
-| Base | Balanced assumptions | Pending | Educational scenario only |
-| Optimistic | Stronger profitability and/or higher multiple | Pending | Educational scenario only |
-
-The final output should avoid presenting a single definitive value as the answer.
+| Conservative | Lower profitability and/or lower valuation multiple | Not calculated in current version | Educational scenario only |
+| Base | Balanced assumptions | Not calculated in current version | Educational scenario only |
+| Optimistic | Stronger profitability and/or higher valuation multiple | Not calculated in current version | Educational scenario only |
 
 ---
 
-## Language Guidelines
+## 9. Why No Target Price Is Included
 
-Avoid wording such as:
+This project intentionally does not include a target price.
 
-- buy;
-- sell;
-- hold;
-- target price;
-- fair value recommendation;
-- guaranteed upside;
-- investment opportunity;
-- the stock is cheap;
-- the stock is expensive;
-- investors should.
+Reasons:
 
-Preferred wording:
+- The project is educational and portfolio-oriented.
+- Market prices change over time.
+- Valuation outputs require dated market data.
+- Peer selection can materially influence valuation ranges.
+- Assumptions require professional judgement and human review.
+- The project should not be interpreted as investment research or investment advice.
 
-- illustrative valuation range;
-- educational valuation exercise;
-- scenario-based analysis;
-- based on simplified assumptions;
-- subject to limitations;
-- not investment advice;
-- public-source valuation logic;
-- sensitivity-based approach.
+Instead, the project focuses on showing a robust analytical workflow.
 
 ---
 
-## Data Quality and Validation Checks
+## 10. Future Valuation Extension
 
-Before finalising the valuation, check:
+A future version may include a dated valuation snapshot.
 
-- Is the share price dated?
-- Is market capitalisation sourced?
-- Is equity consistent with the model?
-- Is net income consistent with the model?
-- Are per-share figures calculated correctly?
-- Are reported and calculated figures separated?
-- Are market data and accounting data from compatible dates?
-- Are peer multiples sourced and dated?
-- Are valuation assumptions documented?
-- Is the conclusion free from investment recommendation language?
+That extension should include:
 
----
+1. Selected valuation date
+2. Share price source
+3. Number of shares source
+4. EPS and book value per share source
+5. Calculated P/E
+6. Calculated P/B
+7. Dividend yield, if validated
+8. Peer group selection
+9. Peer multiple table
+10. Sensitivity table
+11. Clear disclaimer
 
-## Limitations
+Suggested future structure:
 
-This valuation has several limitations:
-
-- It is simplified and educational.
-- It does not represent a professional sell-side or buy-side valuation.
-- It does not produce an official target price.
-- It does not include a full cost of equity derivation.
-- It may rely on simplified market multiples.
-- Peer comparisons may not be fully comparable.
-- Market data may change after the selected date.
-- Forecast assumptions are illustrative.
-- The analysis excludes internal, confidential or non-public information.
+| Metric | Value | Source | Date | Status |
+|---|---:|---|---|---|
+| Share price | To be added | To be added | To be added | To be validated |
+| EPS | Available in structured dataset | data/banking_ratios.csv | 2025A | Reviewed |
+| Book value per share | Available in structured dataset | data/banking_ratios.csv | 2025A | Reviewed |
+| P/E | To be calculated | Based on share price and EPS | To be added | To be validated |
+| P/B | To be calculated | Based on share price and BVPS | To be added | To be validated |
 
 ---
 
-## Conclusion
+## 11. Data Quality Notes
 
-The valuation section is designed to demonstrate the ability to connect banking fundamentals, profitability, capital, asset quality and market valuation logic.
+Valuation work should follow the same data quality principles used across the project:
 
-The final conclusion should be analytical and cautious.
-
-It should explain what the valuation exercise shows under different assumptions, without making any investment recommendation.
+- Use public sources only.
+- Document the exact source.
+- Document the observation date.
+- Separate reported figures from calculated figures.
+- Avoid unsupported precision.
+- Do not present assumptions as facts.
+- Do not imply an investment recommendation.
+- Use human review before publishing final conclusions.
 
 ---
 
-## Disclaimer
+## 12. Portfolio Relevance
 
-This valuation summary is part of an educational financial modeling case study.
+This valuation summary demonstrates:
 
-It uses only publicly available information and does not include personal data, internal banking information or confidential information.
+- Awareness of banking valuation methods
+- Understanding of market data limitations
+- Ability to separate historical reported ratios from market-based valuation metrics
+- Conservative analytical judgement
+- Data quality discipline
+- Responsible communication in a regulated financial context
 
-The analysis does not constitute investment advice, financial advice or a recommendation to buy, sell or hold any financial instrument.
+This is relevant for roles in:
+
+- Banking Analytics
+- Financial Data Quality
+- Finance Transformation
+- Investment Support
+- Financial Research Support
+- Risk and Regulatory Reporting
+- Power BI / SQL Finance Analytics
+
+---
+
+## 13. Conclusion
+
+The current version provides a responsible valuation framework without presenting unsupported market multiples or target prices.
+
+The next valid step would be to create a dated valuation snapshot using validated public market data.
+
+Until then, valuation multiples remain excluded from the current version to preserve analytical integrity and avoid misleading conclusions.
+
+---
+
+## 14. Disclaimer
+
+This document is for educational, analytical and portfolio purposes only.
+
+It does not constitute financial advice, investment advice, valuation advice, legal advice or a recommendation to buy, sell or hold any financial instrument.
+
+The author is not affiliated with Millennium bcp for the purpose of this project.
+
+All figures, assumptions, interpretations and potential future valuation outputs require human review before publication or professional use.

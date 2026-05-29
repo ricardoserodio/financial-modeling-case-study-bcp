@@ -109,9 +109,14 @@ Main file:
 
 ### 3. Power BI Dashboard
 
-The Power BI dashboard provides a visual analytical view of the banking dataset.
+The project includes Power BI dashboard files designed as portfolio-grade business intelligence deliverables.
 
-Dashboard pages include:
+Power BI files:
+
+- `powerbi/millennium_bcp_banking_dashboard_v1_clean.pbix`
+- `powerbi/millennium_bcp_banking_dashboard_v2.pbix`
+
+The first version covers the historical banking dataset with pages such as:
 
 - Executive Overview
 - Liquidity & Funding
@@ -121,9 +126,29 @@ Dashboard pages include:
 - Capital
 - Data Quality
 
-Main file:
+The v2 dashboard adds a dedicated Forecast & Scenarios page, including:
 
-`powerbi/millennium_bcp_banking_dashboard_v1_clean.pbix`
+- Forecast Net Income by Scenario
+- ROE by Scenario
+- Cost-to-Income by Scenario
+- Cost of Risk by Scenario
+- CET1 Ratio by Scenario
+- Scenario slicer
+- Period slicer
+- Forecast disclaimer
+
+The v2 dashboard also includes simple model dimension tables:
+
+- DimScenario
+- DimPeriod
+
+These dimensions support scenario and period filtering across forecast visuals.
+
+Supporting Power BI documentation:
+
+- `powerbi/powerbi_v2_improvement_plan.md`
+- `powerbi/dax_measures_v2.md`
+- `powerbi/dashboard_v2_notes.md`
 
 The dashboard is intended as a portfolio-grade business intelligence deliverable and not as an investment recommendation tool.
 
@@ -446,37 +471,4 @@ Professional portfolio:
 GitHub:
 
 `https://github.com/ricardoserodio`
-## Power BI Dashboard v2 Update
 
-The project includes a Power BI dashboard v2 with a dedicated Forecast & Scenarios page.
-
-The Forecast & Scenarios page includes:
-
-- Forecast Net Income by Scenario
-- ROE by Scenario
-- Cost-to-Income by Scenario
-- Cost of Risk by Scenario
-- CET1 Ratio by Scenario
-- Scenario slicer
-- Period slicer
-- Forecast disclaimer
-
-The v2 dashboard also includes simple model dimension tables:
-
-- DimScenario
-- DimPeriod
-
-These dimensions support scenario and period filtering across forecast visuals.
-
-Power BI files:
-
-- `powerbi/millennium_bcp_banking_dashboard_v1_clean.pbix`
-- `powerbi/millennium_bcp_banking_dashboard_v2.pbix`
-
-Supporting Power BI documentation:
-
-- `powerbi/powerbi_v2_improvement_plan.md`
-- `powerbi/dax_measures_v2.md`
-- `powerbi/dashboard_v2_notes.md`
-
-Forecast figures shown in the dashboard are educational scenario-based estimates. They are not official projections, investment advice or financial recommendations.

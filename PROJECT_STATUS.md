@@ -247,3 +247,52 @@ It does not use confidential information, internal banking data, employer data, 
 It does not provide investment advice, financial advice, valuation advice, a price target or a buy/sell/hold recommendation.
 
 All figures should be independently verified before any professional, academic or investment-related use.
+
+---
+
+## Latest Project Update — Power BI v2 and SQL Workflow
+
+The project now includes an improved Power BI dashboard v2 and a SQL analytics workflow.
+
+### Completed
+
+- Built forecast financial outputs
+- Built forecast ratio outputs
+- Built scenario analysis outputs
+- Added SQLite database loading workflow
+- Added SQL analysis runner
+- Added SQL queries for banking ratios, forecast review and data quality checks
+- Added Power BI dashboard v2 draft
+- Added Forecast & Scenarios page in Power BI
+- Added scenario and period slicers using DimScenario and DimPeriod
+- Added forecast disclaimer to the dashboard
+- Added Power BI v2 documentation notes
+
+### Current Status
+
+The project is now a portfolio-ready banking analytics case study draft.
+
+It combines:
+
+- Public-source financial analysis
+- Banking ratio analysis
+- Forecast assumptions
+- Scenario analysis
+- SQL analytics workflow
+- Power BI dashboarding
+- Data quality review
+- Human-reviewed AI-assisted workflow
+
+### Final Review Needed Before Publication
+
+Before promoting the project publicly, the following should be reviewed:
+
+- README consistency
+- Power BI visual formatting
+- Forecast methodology wording
+- Disclaimer visibility
+- Source mapping completeness
+- SQL output review
+- GitHub file structure
+- CV / LinkedIn project description alignment
+

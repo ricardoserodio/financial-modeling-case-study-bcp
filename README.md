@@ -325,6 +325,31 @@ The methodology explains:
 
 ---
 
+## Executive Reports
+
+The project includes two executive-style Markdown reports:
+
+- `reports/financial_modeling_report_en.md`
+- `reports/financial_modeling_report_pt.md`
+
+The reports include:
+
+- Cover / front matter
+- Executive summary
+- Project objective
+- Scope of analysis
+- Historical financial analysis
+- Banking ratio analysis
+- Banking ratio glossary summary
+- Forecast methodology
+- Scenario analysis
+- Power BI dashboard summary
+- SQL analytics workflow
+- Data quality and human review notes
+- Limitations and disclaimer
+
+The reports are designed as portfolio-ready analytical deliverables and complement the README, Power BI dashboard, SQL workflow and data quality documentation.
+
 ## Project Structure
 
 ```text
@@ -472,5 +497,4 @@ Professional portfolio:
 GitHub:
 
 `https://github.com/ricardoserodio`
-
 

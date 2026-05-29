@@ -1,506 +1,251 @@
-# Ratio Analysis
+﻿# Ratio Analysis – Millennium bcp / Portuguese Listed Bank
 
-This file documents the key banking ratios used in the financial modeling case study on **Millennium bcp / Banco Comercial Português**.
+## 1. Purpose
 
-The purpose of this analysis is to review profitability, efficiency, asset quality, liquidity, capital and valuation indicators using only publicly available information.
+This document presents a structured ratio analysis for the Financial Modeling Case Study – Millennium bcp / Portuguese Listed Bank project.
 
-This analysis is for educational and portfolio purposes only and does not constitute investment advice.
+The objective is to analyse selected historical banking ratios using public-source structured data and to explain the main profitability, efficiency, asset quality, liquidity, capital and per-share indicators used in the case study.
 
----
+This analysis is for educational, portfolio and professional development purposes only.
 
-## Model Period
-
-The ratio analysis follows the same period structure as the financial model:
-
-| Period | Type | Description |
-|---|---|---|
-| 2022A | Actual | Reported historical year |
-| 2023A | Actual | Reported historical year |
-| 2024A | Actual | Reported historical year |
-| 2025A | Actual | Reported historical year |
-| 2026E | Estimate | Forecast year |
-| 2027E | Estimate | Forecast year |
-| 2028E | Estimate | Forecast year |
-
-Historical ratios should be based on official public sources or calculated from reported financial statements.
-
-Forecast ratios should be clearly marked as estimates.
+It does not constitute financial advice, investment advice, valuation advice, credit advice, legal advice or a recommendation to buy, sell or hold any financial instrument.
 
 ---
 
-## Ratio Categories
+## 2. Data Source and Review Status
 
-The analysis is organised into the following categories:
+The ratio analysis is based on the structured dataset:
 
-| Category | Purpose |
-|---|---|
-| Profitability | Measures the bank’s ability to generate earnings |
-| Efficiency | Measures cost discipline and operating efficiency |
-| Asset Quality | Measures credit risk and loan book quality |
-| Liquidity / Funding | Measures funding structure and balance sheet stability |
-| Capital | Measures regulatory capital strength |
-| Valuation | Measures market valuation relative to earnings and book value |
+`data/banking_ratios.csv`
 
----
+The dataset includes selected reported ratios for:
 
-## 1. Profitability Ratios
+`2022A | 2023A | 2024A | 2025A`
 
-### Return on Equity
+Where available, the ratios are based on public-source reported figures from Millennium bcp official public materials and are marked as reviewed in the structured dataset.
 
-Return on Equity measures the bank’s ability to generate profit relative to its equity base.
+Some valuation-related metrics remain excluded from this version until dated market data is selected and validated.
 
-Formula:
+For detailed definitions and interpretation notes, see:
 
-ROE = Net income / Average equity
-
-Interpretation:
-
-- Higher ROE generally indicates stronger profitability.
-- ROE should be assessed together with capital strength and risk profile.
-- For banks, ROE is one of the most important profitability indicators.
-
-Review points:
-
-- Check whether the bank reports ROE directly.
-- If calculated manually, use average equity where possible.
-- Confirm whether net income refers to consolidated net income or net income attributable to shareholders.
-- Compare ROE across several years instead of relying on a single year.
+`docs/banking_ratio_glossary.md`
 
 ---
 
-### Return on Assets
+## 3. Historical Banking Ratio Summary
 
-Return on Assets measures how efficiently the bank generates profit from its asset base.
-
-Formula:
-
-ROA = Net income / Average total assets
-
-Interpretation:
-
-- ROA is usually lower for banks than for non-financial companies due to the large asset base.
-- A stable or improving ROA may indicate better profitability or asset efficiency.
-- ROA should be analysed together with leverage and capital ratios.
-
-Review points:
-
-- Use average total assets where available.
-- Confirm that the numerator and denominator are from the same reporting perimeter.
-- Avoid comparing bank ROA directly with non-financial companies.
+| Ratio | Category | 2022A | 2023A | 2024A | 2025A | Unit | Status |
+|---|---|---:|---:|---:|---:|---|---|
+| ROE | Profitability | 4.0 | 15.1 | 13.8 | 14.1 | % | Reviewed |
+| ROA | Profitability | 0.1 | 1.0 | 1.0 | 1.1 | % | Reviewed |
+| Net interest margin | Profitability | 2.46 | 3.17 | 3.04 | 2.89 | % | Reviewed |
+| Cost-to-income ratio | Efficiency | 37.4 | 30.8 | 36.5 | 37.1 | % | Reviewed |
+| Cost-to-income ratio excluding specific items | Efficiency | 36.8 | 30.2 | 36.2 | 36.5 | % | Reviewed |
+| Cost of risk | Asset Quality | 52.0 | 42.0 | 31.0 | 32.0 | bps | Reviewed |
+| NPE ratio | Asset Quality | 3.8 | 3.5 | 3.1 | 2.4 | % | Reviewed |
+| NPE coverage ratio | Asset Quality | 68.3 | 77.6 | 82.2 | 90.9 | % | Reviewed |
+| Restructured loans ratio | Asset Quality | 3.2 | 3.3 | 2.6 | 1.8 | % | Reviewed |
+| Loan-to-deposit ratio | Liquidity | 74.0 | 69.2 | 67.6 | 68.2 | % | Reviewed |
+| Loan-to-balance-sheet-customer-resources ratio | Liquidity | 72.7 | 67.8 | 66.6 | 67.1 | % | Reviewed |
+| LCR | Liquidity | 212.0 | 317.0 | 342.0 | 334.0 | % | Reviewed |
+| NSFR | Liquidity | 154.0 | 177.0 | 181.0 | 180.0 | % | Reviewed |
+| CET1 phased-in ratio | Capital | 12.6 | 15.2 | 16.4 | 16.1 | % | Reviewed |
+| CET1 fully implemented ratio | Capital | 12.5 | 15.2 | 16.3 | 15.9 | % | Reviewed |
+| Total capital fully implemented ratio | Capital | 16.8 | 19.6 | 20.6 | 19.9 | % | Reviewed |
+| EPS | Per Share | 0.011 | 0.056 | 0.058 | 0.066 | EUR | Reviewed |
+| Book value per share | Per Share | n/a | 0.412 | 0.469 | 0.528 | EUR | Reviewed |
 
 ---
+
+## 4. Profitability Analysis
+
+### ROE
+
+ROE increased materially from 4.0% in 2022A to 15.1% in 2023A, before remaining at a double-digit level in 2024A and 2025A.
+
+This suggests a significant improvement in profitability relative to equity after 2022, although ROE should always be interpreted together with capital strength, asset quality and business cycle conditions.
+
+### ROA
+
+ROA improved from 0.1% in 2022A to 1.0% in 2023A and 2024A, reaching 1.1% in 2025A.
+
+For a banking institution, this indicates improved profitability relative to the asset base, although the metric should be reviewed alongside balance sheet size, risk-weighted assets, funding mix and interest rate conditions.
 
 ### Net Interest Margin
 
-Net Interest Margin measures the profitability of the bank’s interest-earning assets.
+Net interest margin increased from 2.46% in 2022A to 3.17% in 2023A, before declining to 3.04% in 2024A and 2.89% in 2025A.
 
-Formula:
-
-Net interest margin = Net interest income / Average interest-earning assets
-
-Interpretation:
-
-- Higher net interest margin may reflect stronger asset yields, lower funding costs or a favourable interest rate environment.
-- Net interest margin can be affected by interest rate changes, deposit pricing, loan mix and funding costs.
-- For banks, this is a key driver of profitability.
-
-Review points:
-
-- Use reported net interest margin where available.
-- If calculating manually, ensure the denominator is available and correctly defined.
-- Avoid calculating NIM using total assets if interest-earning assets are not available, unless clearly disclosed as an approximation.
+This pattern may reflect the impact of the interest rate cycle, deposit repricing, loan pricing dynamics and balance sheet mix. The decline after 2023A is analytically relevant because banks can experience margin pressure when funding costs rise or when rates normalise.
 
 ---
 
-## 2. Efficiency Ratios
+## 5. Efficiency Analysis
 
 ### Cost-to-Income Ratio
 
-The cost-to-income ratio measures operating efficiency.
+The cost-to-income ratio improved from 37.4% in 2022A to 30.8% in 2023A, before increasing to 36.5% in 2024A and 37.1% in 2025A.
 
-Formula:
+A lower cost-to-income ratio generally indicates stronger operating efficiency. The 2023A figure suggests a particularly efficient year, while the later increase may reflect cost growth, revenue mix changes or normalisation after a stronger operating environment.
 
-Cost-to-income = Operating costs / Operating income
+### Cost-to-Income Ratio Excluding Specific Items
 
-Interpretation:
+The cost-to-income ratio excluding specific items follows a similar pattern:
 
-- A lower cost-to-income ratio generally indicates better operating efficiency.
-- A higher ratio may suggest cost pressure or weaker revenue generation.
-- The ratio should be reviewed over time to identify efficiency trends.
+- 36.8% in 2022A
+- 30.2% in 2023A
+- 36.2% in 2024A
+- 36.5% in 2025A
 
-Review points:
-
-- Confirm the definition of operating income used by the bank.
-- Confirm whether operating costs include or exclude specific non-recurring items.
-- Compare calculated values with reported figures where available.
-- Avoid treating one-off improvements as structural efficiency gains without support.
+This version can be useful to assess recurring efficiency trends, but the exact definition should be reviewed against official reporting methodology.
 
 ---
 
-## 3. Asset Quality Ratios
-
-### NPL / NPE Ratio
-
-The non-performing loan or non-performing exposure ratio measures the proportion of problematic credit exposures.
-
-Formula:
-
-NPL ratio = Non-performing loans / Total loans
-
-or, where reported:
-
-NPE ratio = Non-performing exposures / Total exposures
-
-Interpretation:
-
-- A lower ratio generally indicates better asset quality.
-- A higher ratio may suggest credit risk pressure.
-- Trends are more important than a single year figure.
-
-Review points:
-
-- Use the official reported ratio where available.
-- Be consistent between NPL and NPE terminology.
-- Avoid mixing gross loans, net loans and exposure definitions.
-- Check whether the bank reports the ratio under EBA definitions.
-
----
-
-### NPL Coverage Ratio
-
-The NPL coverage ratio measures the level of impairments or provisions relative to non-performing loans or exposures.
-
-Formula:
-
-NPL coverage ratio = Impairment allowances / Non-performing loans
-
-Interpretation:
-
-- A higher coverage ratio may indicate a stronger provision buffer.
-- A lower ratio may require further analysis of collateral, guarantees and risk profile.
-- This ratio should be analysed together with NPL/NPE trends.
-
-Review points:
-
-- Use official reported figures where available.
-- Check whether collateral is included in the reported coverage metric.
-- Avoid comparing coverage ratios without checking definitions.
-
----
+## 6. Asset Quality and Credit Risk Analysis
 
 ### Cost of Risk
 
-Cost of risk measures credit impairment charges relative to the loan book.
+Cost of risk decreased from 52 bps in 2022A to 42 bps in 2023A, 31 bps in 2024A and 32 bps in 2025A.
 
-Formula:
+This indicates an improvement in credit impairment intensity over the period, with 2025A remaining close to the 2024A level. Cost of risk should be interpreted together with macroeconomic conditions, loan book composition, NPE formation and provisioning policy.
 
-Cost of risk = Loan impairments / Average loans to customers
+### NPE Ratio
 
-Interpretation:
+The NPE ratio decreased steadily from 3.8% in 2022A to 2.4% in 2025A.
 
-- Higher cost of risk generally indicates higher credit losses or more conservative provisioning.
-- Lower cost of risk may reflect better credit quality, favourable macro conditions or lower provisioning needs.
-- For banks, cost of risk is an important driver of profitability.
+This is a positive asset quality trend, suggesting a lower proportion of non-performing exposures relative to the relevant exposure base.
 
-Review points:
+### NPE Coverage Ratio
 
-- Use reported cost of risk where available.
-- Confirm whether impairments refer only to loan impairments or total impairments and provisions.
-- Use average loans where possible.
-- Be careful with signs, as impairments may be presented as negative income statement items.
+The NPE coverage ratio increased from 68.3% in 2022A to 90.9% in 2025A.
+
+A higher coverage ratio may indicate a stronger provisioning buffer against non-performing exposures, although it should be assessed together with collateral values, NPE mix, write-offs and recovery assumptions.
+
+### Restructured Loans Ratio
+
+The restructured loans ratio decreased from 3.2% in 2022A to 1.8% in 2025A.
+
+This supports the broader asset quality improvement narrative, although definitions and perimeter should be reviewed against official reporting.
 
 ---
 
-## 4. Liquidity and Funding Ratios
+## 7. Liquidity and Funding Analysis
 
 ### Loan-to-Deposit Ratio
 
-The loan-to-deposit ratio measures the relationship between customer loans and customer deposits.
+The loan-to-deposit ratio decreased from 74.0% in 2022A to 67.6% in 2024A, before increasing slightly to 68.2% in 2025A.
 
-Formula:
+This suggests a balance sheet that remains strongly deposit-funded, with customer deposits and customer resources continuing to support the loan book.
 
-Loan-to-deposit ratio = Loans to customers / Customer deposits
+### LCR
 
-Interpretation:
+LCR increased from 212% in 2022A to 342% in 2024A, before decreasing slightly to 334% in 2025A.
 
-- A lower ratio may indicate a stronger deposit-funded balance sheet.
-- A very high ratio may indicate greater reliance on wholesale or alternative funding.
-- The ratio should be analysed together with liquidity, funding mix and deposit stability.
+The ratio remains high across the period, indicating strong short-term liquidity resilience under the regulatory LCR framework.
 
-Review points:
+### NSFR
 
-- Confirm whether loans are gross or net of impairments.
-- Use customer deposits consistently across years.
-- Avoid mixing consolidated and segment-level figures.
-- Compare the ratio over time rather than in isolation.
+NSFR increased from 154% in 2022A to 181% in 2024A, remaining broadly stable at 180% in 2025A.
+
+This indicates a stable funding profile over a one-year horizon under the regulatory NSFR framework.
 
 ---
 
-## 5. Capital Ratios
+## 8. Capital Analysis
 
-### CET1 Ratio
+### CET1 Phased-In Ratio
 
-The Common Equity Tier 1 ratio measures a bank’s core regulatory capital relative to risk-weighted assets.
+The CET1 phased-in ratio increased from 12.6% in 2022A to 16.4% in 2024A, before decreasing slightly to 16.1% in 2025A.
 
-Formula:
+This indicates a stronger capital position compared with 2022A, despite the slight decline in 2025A.
 
-CET1 ratio = Common Equity Tier 1 capital / Risk-weighted assets
+### CET1 Fully Implemented Ratio
 
-Interpretation:
+The CET1 fully implemented ratio increased from 12.5% in 2022A to 16.3% in 2024A, before decreasing slightly to 15.9% in 2025A.
 
-- A higher CET1 ratio indicates stronger regulatory capital strength.
-- CET1 is a key ratio for bank solvency and resilience.
-- The ratio should be reviewed against regulatory requirements and management targets.
+This remains a key indicator of regulatory capital strength and should be analysed together with profitability, risk-weighted assets, asset quality and shareholder distribution policy.
 
-Review points:
+### Total Capital Fully Implemented Ratio
 
-- Use the official reported CET1 ratio.
-- Do not recalculate CET1 unless all regulatory inputs are available.
-- Check whether the ratio is reported on a phased-in or fully loaded basis.
-- Document the basis used.
+The total capital fully implemented ratio increased from 16.8% in 2022A to 20.6% in 2024A, before decreasing to 19.9% in 2025A.
+
+This suggests a stronger total regulatory capital base compared with 2022A.
 
 ---
 
-### Total Capital Ratio
-
-The total capital ratio measures total regulatory capital relative to risk-weighted assets.
-
-Formula:
-
-Total capital ratio = Total capital / Risk-weighted assets
-
-Interpretation:
-
-- This ratio provides a broader view of regulatory capital beyond CET1.
-- It should be considered together with CET1, leverage and risk-weighted assets.
-- Higher capital ratios generally indicate stronger loss-absorbing capacity.
-
-Review points:
-
-- Use official reported regulatory figures.
-- Check the reporting basis and definitions.
-- Avoid mixing capital definitions across years.
-
----
-
-### Leverage Ratio
-
-The leverage ratio measures Tier 1 capital relative to total exposure.
-
-Formula:
-
-Leverage ratio = Tier 1 capital / Total exposure measure
-
-Interpretation:
-
-- The leverage ratio is a non-risk-weighted capital measure.
-- It complements risk-weighted capital ratios such as CET1.
-- It helps assess balance sheet leverage.
-
-Review points:
-
-- Use official reported figures where available.
-- Avoid calculating manually unless the exposure measure is clearly available.
-
----
-
-## 6. Per Share and Valuation Ratios
+## 9. Per Share Metrics
 
 ### Earnings per Share
 
-Earnings per share measures profit attributable to each share.
+EPS increased from EUR 0.011 in 2022A to EUR 0.056 in 2023A, EUR 0.058 in 2024A and EUR 0.066 in 2025A.
 
-Formula:
-
-EPS = Net income attributable to shareholders / Average number of shares
-
-Interpretation:
-
-- EPS is useful for valuation and market analysis.
-- EPS growth can reflect earnings growth, share count changes or both.
-- For banks, EPS should be analysed together with book value per share and capital ratios.
-
-Review points:
-
-- Use reported EPS where available.
-- Confirm whether basic or diluted EPS is used.
-- Use consistent share count definitions.
-
----
+This reflects an improvement in earnings attributable to ordinary shareholders over the period.
 
 ### Book Value per Share
 
-Book value per share measures accounting equity attributable to each share.
+Book value per share increased from EUR 0.412 in 2023A to EUR 0.469 in 2024A and EUR 0.528 in 2025A.
 
-Formula:
-
-Book value per share = Equity attributable to shareholders / Number of shares
-
-Interpretation:
-
-- Book value per share is especially relevant for banks.
-- It is commonly used in price-to-book valuation.
-- Changes may reflect retained earnings, dividends, capital changes or valuation reserves.
-
-Review points:
-
-- Use equity attributable to shareholders where available.
-- Confirm the share count used.
-- Avoid mixing total equity with equity attributable to shareholders if both are reported separately.
+The 2022A value is not included in the current structured dataset and should not be inferred without validation.
 
 ---
 
-### Price-to-Book
+## 10. Valuation Metrics
 
-Price-to-book compares market value with accounting book value.
+The structured dataset includes placeholders for valuation metrics such as:
 
-Formula:
+- Price-to-book
+- Price-to-earnings
+- Dividend yield
+- Payout ratio
 
-P/B = Market capitalisation / Equity attributable to shareholders
+These metrics are not included in the current version of this ratio analysis because they require dated and validated market data, including share price, market capitalisation and dividend data.
 
-or:
-
-P/B = Share price / Book value per share
-
-Interpretation:
-
-- P/B is widely used in bank valuation.
-- A bank with higher sustainable ROE may justify a higher P/B multiple.
-- P/B should be analysed together with profitability, asset quality and capital strength.
-
-Review points:
-
-- Use dated market data.
-- Use consistent market capitalisation and equity figures.
-- Avoid presenting P/B output as a recommendation.
-- Treat valuation as illustrative and educational.
+To avoid overstating precision, valuation metrics should only be added after selecting a specific market data date and documenting the source.
 
 ---
 
-### Price-to-Earnings
+## 11. Key Analytical Takeaways
 
-Price-to-earnings compares market value with net income.
+The historical ratio analysis suggests:
 
-Formula:
-
-P/E = Market capitalisation / Net income attributable to shareholders
-
-or:
-
-P/E = Share price / Earnings per share
-
-Interpretation:
-
-- P/E indicates how the market values the bank relative to earnings.
-- It can be affected by earnings cyclicality, interest rates, provisions and market sentiment.
-- P/E should be analysed with caution for banks because earnings can be affected by credit cycles and one-off items.
-
-Review points:
-
-- Use dated market data.
-- Check whether earnings include exceptional items.
-- Avoid using a single-year P/E without context.
-- Compare with peers only if definitions are consistent.
+- Profitability improved significantly after 2022A, with ROE and ROA remaining materially stronger in 2023A–2025A.
+- Net interest margin peaked in 2023A and declined in 2024A–2025A, which is relevant for forecast assumptions.
+- Efficiency improved strongly in 2023A but normalised in 2024A and 2025A.
+- Asset quality improved, supported by a declining NPE ratio and stronger NPE coverage.
+- Liquidity ratios remained strong, with high LCR and NSFR levels.
+- Capital ratios improved materially versus 2022A, despite a slight reduction in 2025A.
+- Per-share metrics improved over the analysed period.
 
 ---
 
-### Dividend Yield
+## 12. Data Quality and Interpretation Notes
 
-Dividend yield measures dividends relative to share price.
+The figures in this document are based on structured public-source data stored in:
 
-Formula:
+`data/banking_ratios.csv`
 
-Dividend yield = Dividend per share / Share price
+Important interpretation notes:
 
-Interpretation:
-
-- Dividend yield is relevant for investors focused on income.
-- It depends on dividend policy, profitability, capital requirements and market price.
-- Dividend yield should not be interpreted as guaranteed future income.
-
-Review points:
-
-- Use reported dividends where available.
-- Use dated share price data.
-- Clearly distinguish historical dividend yield from forecast dividend yield.
-- Avoid presenting dividends as guaranteed.
+- Some banking ratios are reported ratios and may not be fully reproducible from simplified public datasets.
+- Official bank ratios may use average balances, regulatory definitions or internal classifications.
+- Valuation ratios are excluded until dated market data is selected and validated.
+- Historical figures marked as reviewed should still be subject to final human review before public promotion.
+- Forecast and valuation outputs should not be interpreted as official projections or investment recommendations.
 
 ---
 
-### Payout Ratio
+## 13. Disclaimer
 
-The payout ratio measures the proportion of earnings distributed as dividends.
+This document is for educational, analytical and portfolio purposes only.
 
-Formula:
+It does not constitute:
 
-Payout ratio = Dividends paid / Net income attributable to shareholders
+- Financial advice
+- Investment advice
+- Valuation advice
+- Credit advice
+- Legal advice
+- A recommendation to buy, sell or hold any financial instrument
 
-Interpretation:
+The author is not affiliated with Millennium bcp for the purpose of this project.
 
-- A higher payout ratio means a greater share of earnings is distributed.
-- A lower payout ratio may indicate greater earnings retention.
-- For banks, payout must be considered together with capital requirements and regulatory expectations.
-
-Review points:
-
-- Use actual dividends paid or declared, depending on the analysis.
-- Clearly state the basis used.
-- Avoid assuming future payout without public support or clear scenario logic.
-
----
-
-## Ratio Analysis Table
-
-The final ratio analysis should be summarised in a table similar to the structure below:
-
-| Ratio | 2022A | 2023A | 2024A | 2025A | Trend | Comment |
-|---|---:|---:|---:|---:|---|---|
-| ROE | Pending | Pending | Pending | Pending | Pending | To be completed after data extraction |
-| ROA | Pending | Pending | Pending | Pending | Pending | To be completed after data extraction |
-| Cost-to-income | Pending | Pending | Pending | Pending | Pending | To be completed after data extraction |
-| NPL / NPE ratio | Pending | Pending | Pending | Pending | Pending | To be completed after data extraction |
-| Cost of risk | Pending | Pending | Pending | Pending | Pending | To be completed after data extraction |
-| Loan-to-deposit ratio | Pending | Pending | Pending | Pending | Pending | To be completed after data extraction |
-| CET1 ratio | Pending | Pending | Pending | Pending | Pending | To be completed after data extraction |
-| P/B | Pending | Pending | Pending | Pending | Pending | To be completed after market data extraction |
-| P/E | Pending | Pending | Pending | Pending | Pending | To be completed after market data extraction |
-
----
-
-## Interpretation Guidelines
-
-The ratio analysis should follow these interpretation principles:
-
-- Analyse trends over time instead of isolated values.
-- Separate reported ratios from calculated ratios.
-- Explain any material difference between reported and calculated figures.
-- Avoid unsupported positive or negative conclusions.
-- Avoid investment recommendation language.
-- Use cautious wording when interpreting valuation multiples.
-- Link ratio movements to business drivers where supported by public information.
-- Clearly document assumptions and limitations.
-
----
-
-## Data Quality Considerations
-
-The following data quality checks should be applied:
-
-- Confirm source document and reporting year.
-- Confirm whether values are in EUR, EUR thousand or EUR million.
-- Confirm whether ratios are expressed as percentages or decimals.
-- Confirm whether figures are consolidated Group figures.
-- Confirm whether balance sheet ratios use year-end or average balances.
-- Check consistency between annual report, earnings presentation and financial statements.
-- Document missing data.
-- Document own calculations.
-
----
-
-## Disclaimer
-
-This ratio analysis is part of an educational financial modeling case study.
-
-It uses only publicly available information and does not include personal data, internal banking information or confidential information.
-
-The analysis does not constitute investment advice, financial advice or a recommendation to buy, sell or hold any financial instrument.
+All figures, ratios, interpretations and assumptions require human review before publication or professional use.

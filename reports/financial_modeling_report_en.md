@@ -1,4 +1,4 @@
-﻿# Financial Modeling Case Study  
+# Financial Modeling Case Study  
 ## Millennium bcp / Portuguese Listed Bank
 
 **Public-Source Banking Analytics, Forecasting and Data Quality Review**
@@ -26,7 +26,6 @@ It does not constitute financial advice, investment advice, valuation advice, cr
 All forecast figures are scenario-based estimates and should be interpreted as analytical modelling outputs, not as official projections.
 
 ---
-# Financial Modeling Report – Millennium bcp / Portuguese Listed Bank
 
 ## 1. Executive Summary
 
@@ -63,7 +62,7 @@ The project covers the following periods:
 
 Historical periods are based on structured public-source information.
 
-Forecast periods are educational scenario-based estimates and are marked as requiring review.
+Forecast periods are educational scenario-based estimates and require final human review before professional or public promotional use.
 
 ## 4. Data Sources and Structure
 
@@ -166,7 +165,7 @@ Forecast assumptions include:
 - Customer deposits growth
 - CET1 ratio assumption
 
-Forecast outputs are generated using Python scripts and are marked as `To Review`.
+Forecast outputs are generated using Python scripts and require final human review before professional or public promotional use.
 
 ## 8. Base Year Treatment
 
@@ -186,7 +185,7 @@ The model forecasts:
 - Other operating income
 - Operating income
 
-Fees and commissions are not forecast directly because the value is currently marked as pending in the dataset.
+Fees and commissions are not forecast directly in the current version because this line item has not yet been fully validated across all historical periods.
 
 Instead, the model uses:
 
@@ -305,7 +304,7 @@ The project includes a data quality workflow covering:
 - Source mapping
 - Extraction tracking
 - Missing values
-- Reviewed vs To Review classification
+- Reviewed vs human-review-required classification
 - Forecast output review
 - Final publication checklist
 
@@ -313,7 +312,7 @@ Validation can be run with:
 
 `python data/validation_checks.py`
 
-Forecast outputs are marked as `To Review` until manually reviewed.
+Forecast outputs require final human review before professional or public promotional use.
 
 ## 17. AI-Assisted, Human-Reviewed Workflow
 

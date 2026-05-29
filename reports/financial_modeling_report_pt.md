@@ -1,4 +1,4 @@
-﻿# Caso de Estudo de Modelização Financeira  
+# Caso de Estudo de Modelização Financeira  
 ## Millennium bcp / Banco Português Cotado
 
 **Análise Bancária com Dados Públicos, Forecast por Cenários, Power BI, SQL e Revisão de Qualidade de Dados**
@@ -26,7 +26,6 @@ Não constitui aconselhamento financeiro, recomendação de investimento, avalia
 Todos os valores forecast são estimativas por cenário e devem ser interpretados como outputs analíticos de modelização, não como projecções oficiais.
 
 ---
-# Relatório de Modelação Financeira – Millennium bcp / Banco Cotado Português
 
 ## 1. Sumário Executivo
 
@@ -63,7 +62,7 @@ O projecto cobre os seguintes períodos:
 
 Os períodos históricos são baseados em informação pública estruturada.
 
-Os períodos forecast são estimativas educativas baseadas em cenários e estão marcados como requerendo revisão.
+Os períodos forecast são estimativas educativas baseadas em cenários e requerem revisão humana final antes de utilização profissional ou promoção pública.
 
 ## 4. Fontes de Dados e Estrutura
 
@@ -166,7 +165,7 @@ Os pressupostos de forecast incluem:
 - Crescimento dos depósitos de clientes
 - Pressuposto de rácio CET1
 
-Os outputs forecast são gerados através de scripts Python e estão marcados como `To Review`.
+Os outputs forecast são gerados através de scripts Python e requerem revisão humana final antes de utilização profissional ou promoção pública.
 
 ## 8. Tratamento do Ano Base
 
@@ -305,7 +304,7 @@ O projecto inclui um fluxo de qualidade dos dados que cobre:
 - Mapeamento de fontes
 - Tracking de extracção
 - Valores em falta
-- Classificação Reviewed vs To Review
+- Classificação Reviewed vs requer revisão humana
 - Revisão de outputs forecast
 - Checklist final de publicação
 
@@ -313,7 +312,7 @@ A validação pode ser executada com:
 
 `python data/validation_checks.py`
 
-Os outputs forecast permanecem marcados como `To Review` até serem revistos manualmente.
+Os outputs forecast requerem revisão humana final antes de utilização profissional ou promoção pública.
 
 ## 17. Workflow Assistido por IA e Revisto por Humanos
 

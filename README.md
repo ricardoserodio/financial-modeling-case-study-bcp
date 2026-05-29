@@ -293,6 +293,7 @@ Main files:
 - `data/extraction_tracker.csv`
 - `data/validation_checks.py`
 - `docs/project_review_checklist.md`
+- `docs/banking_ratio_glossary.md`
 
 Validation can be run with:
 
@@ -471,4 +472,5 @@ Professional portfolio:
 GitHub:
 
 `https://github.com/ricardoserodio`
+
 

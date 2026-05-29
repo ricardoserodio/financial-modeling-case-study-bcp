@@ -1,4 +1,32 @@
-﻿# Relatório de Modelação Financeira – Millennium bcp / Banco Cotado Português
+﻿# Caso de Estudo de Modelização Financeira  
+## Millennium bcp / Banco Português Cotado
+
+**Análise Bancária com Dados Públicos, Forecast por Cenários, Power BI, SQL e Revisão de Qualidade de Dados**
+
+Preparado por: **Ricardo Serôdio**  
+Portefólio: `https://ricardoserodio.com`  
+GitHub: `https://github.com/ricardoserodio`  
+
+---
+
+## Âmbito do Relatório
+
+Este relatório apresenta um caso de estudo público de modelização financeira e análise bancária, utilizando o Millennium bcp como referência de análise.
+
+O projecto combina análise de demonstrações financeiras, rácios bancários, pressupostos de forecast por cenários, dashboard em Power BI, queries SQL analíticas, revisão de qualidade de dados e um workflow assistido por IA com revisão humana.
+
+---
+
+## Disclaimer Importante
+
+Este relatório é apenas para fins educativos, de portefólio e desenvolvimento profissional.
+
+Não constitui aconselhamento financeiro, recomendação de investimento, avaliação financeira, aconselhamento de crédito, aconselhamento legal ou recomendação de compra, venda ou detenção de qualquer instrumento financeiro.
+
+Todos os valores forecast são estimativas por cenário e devem ser interpretados como outputs analíticos de modelização, não como projecções oficiais.
+
+---
+# Relatório de Modelação Financeira – Millennium bcp / Banco Cotado Português
 
 ## 1. Sumário Executivo
 
@@ -333,4 +361,5 @@ Não constitui aconselhamento financeiro, aconselhamento de investimento, aconse
 Todos os valores forecast são estimativas baseadas em cenários e devem ser interpretados como outputs de modelação analítica, não como projecções oficiais.
 
 O autor não está afiliado ao Millennium bcp para efeitos deste projecto. O projecto utiliza apenas informação pública.
+
 

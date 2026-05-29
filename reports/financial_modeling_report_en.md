@@ -1,4 +1,32 @@
-﻿# Financial Modeling Report – Millennium bcp / Portuguese Listed Bank
+﻿# Financial Modeling Case Study  
+## Millennium bcp / Portuguese Listed Bank
+
+**Public-Source Banking Analytics, Forecasting and Data Quality Review**
+
+Prepared by: **Ricardo Serôdio**  
+Portfolio: `https://ricardoserodio.com`  
+GitHub: `https://github.com/ricardoserodio`  
+
+---
+
+## Report Scope
+
+This report presents a public-source financial modeling and banking analytics case study focused on a Portuguese listed bank, using Millennium bcp as the case study reference.
+
+The project combines financial statement analysis, banking ratio analysis, scenario-based forecast assumptions, Power BI dashboarding, SQL analytical queries, data quality review and an AI-assisted, human-reviewed validation workflow.
+
+---
+
+## Important Disclaimer
+
+This report is for educational, portfolio and professional development purposes only.
+
+It does not constitute financial advice, investment advice, valuation advice, credit advice, legal advice or a recommendation to buy, sell or hold any financial instrument.
+
+All forecast figures are scenario-based estimates and should be interpreted as analytical modelling outputs, not as official projections.
+
+---
+# Financial Modeling Report – Millennium bcp / Portuguese Listed Bank
 
 ## 1. Executive Summary
 
@@ -333,4 +361,5 @@ It does not constitute financial advice, investment advice, valuation advice, cr
 All forecast figures are scenario-based estimates and should be interpreted as analytical modelling outputs, not as official projections.
 
 The author is not affiliated with Millennium bcp for the purpose of this project. The project uses public information only.
+
 

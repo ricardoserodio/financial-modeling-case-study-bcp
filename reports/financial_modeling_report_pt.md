@@ -64,7 +64,7 @@ O projecto cobre os seguintes períodos:
 
 Os períodos históricos são baseados em informação pública estruturada.
 
-Os períodos forecast são estimativas educativas baseadas em cenários e requerem revisão humana final antes de utilização profissional ou promoção pública.
+Os períodos forecast são estimativas educativas baseadas em cenários e requerem revisão humana final antes de promoção pública. Estes outputs não se destinam a decisões de investimento, crédito, regulatórias ou outras decisões de negócio.
 
 ## 4. Fontes de Dados e Estrutura
 
@@ -167,7 +167,7 @@ Os pressupostos de forecast incluem:
 - Crescimento dos depósitos de clientes
 - Pressuposto de rácio CET1
 
-Os outputs forecast são gerados através de scripts Python e requerem revisão humana final antes de utilização profissional ou promoção pública.
+Os outputs forecast são gerados através de scripts Python e requerem revisão humana final antes de promoção pública. Estes outputs não se destinam a decisões de investimento, crédito, regulatórias ou outras decisões de negócio.
 
 ## 8. Tratamento do Ano Base
 
@@ -314,7 +314,7 @@ A validação pode ser executada com:
 
 `python data/validation_checks.py`
 
-Os outputs forecast requerem revisão humana final antes de utilização profissional ou promoção pública.
+Os outputs forecast requerem revisão humana final antes de promoção pública. Estes outputs não se destinam a decisões de investimento, crédito, regulatórias ou outras decisões de negócio.
 
 ## 17. Workflow Assistido por IA e Revisto por Humanos
 
@@ -365,7 +365,7 @@ O projecto utiliza uma abordagem estruturada de validação de fontes para apoia
 | Outputs forecast | CSVs gerados por Python | Produz estimativas por cenário para 2026E–2028E |
 | Analytics em SQL | `sql/` | Demonstra queries analíticas e controlos de qualidade dos dados |
 | Dashboard Power BI | `powerbi/` | Fornece reporting visual e análise de cenários |
-| Revisão humana | Documentação e notas de validação | Requerida antes de utilização profissional ou promoção pública |
+| Revisão humana | Documentação e notas de validação | Requerida antes de promoção pública. Estes outputs não se destinam a decisões de investimento, crédito, regulatórias ou outras decisões de negócio. |
 
 Este workflow apoia transparência, reprodutibilidade e comunicação analítica responsável.
 

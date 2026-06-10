@@ -64,7 +64,7 @@ The project covers the following periods:
 
 Historical periods are based on structured public-source information.
 
-Forecast periods are educational scenario-based estimates and require final human review before professional or public promotional use.
+Forecast periods are educational scenario-based estimates and require final human review before public promotional use. These outputs are not intended for investment, credit, regulatory or other decision-making use.
 
 ## 4. Data Sources and Structure
 
@@ -167,7 +167,7 @@ Forecast assumptions include:
 - Customer deposits growth
 - CET1 ratio assumption
 
-Forecast outputs are generated using Python scripts and require final human review before professional or public promotional use.
+Forecast outputs are generated using Python scripts and require final human review before public promotional use. These outputs are not intended for investment, credit, regulatory or other decision-making use.
 
 ## 8. Base Year Treatment
 
@@ -314,7 +314,7 @@ Validation can be run with:
 
 `python data/validation_checks.py`
 
-Forecast outputs require final human review before professional or public promotional use.
+Forecast outputs require final human review before public promotional use. These outputs are not intended for investment, credit, regulatory or other decision-making use.
 
 ## 17. AI-Assisted, Human-Reviewed Workflow
 
@@ -365,7 +365,7 @@ The project uses a structured source validation approach to support traceability
 | Forecast outputs | Python-generated CSV files | Produces scenario-based estimates for 2026E–2028E |
 | SQL analytics | `sql/` | Demonstrates analytical querying and data quality checks |
 | Power BI dashboard | `powerbi/` | Provides visual reporting and scenario analysis |
-| Human review | Documentation and validation notes | Required before professional or public promotional use |
+| Human review | Documentation and validation notes | Required before public promotional use. These outputs are not intended for investment, credit, regulatory or other decision-making use. |
 
 This workflow supports transparency, reproducibility and responsible analytical communication.
 

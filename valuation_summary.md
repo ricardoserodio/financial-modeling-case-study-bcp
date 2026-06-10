@@ -2,7 +2,7 @@
 
 ## 1. Purpose
 
-This document presents the valuation framework used in the Financial Modeling Case Study – Millennium bcp / Portuguese Listed Bank project.
+This document presents an educational valuation framework for the Financial Modeling Case Study – Millennium bcp / Portuguese Listed Bank project.
 
 The purpose of this file is to explain how valuation could be approached in an educational banking analysis context, while avoiding unsupported market claims, target prices or investment recommendations.
 
@@ -35,7 +35,7 @@ It does not constitute:
 
 The author is not affiliated with Millennium bcp for the purpose of this project.
 
-All valuation logic, assumptions and outputs require human review before any professional use.
+All valuation logic, assumptions and potential future outputs require human review before any professional use.
 
 ---
 
@@ -203,9 +203,9 @@ Instead, the project focuses on showing a robust analytical workflow.
 
 ---
 
-## 10. Future Valuation Extension
+## 10. Optional Future Valuation Extension
 
-A future version may include a dated valuation snapshot.
+An optional future version may include a dated valuation snapshot after the required market data has been selected and validated.
 
 That extension should include:
 
@@ -275,7 +275,7 @@ This is relevant for roles in:
 
 The current version provides a responsible valuation framework without presenting unsupported market multiples or target prices.
 
-The next valid step would be to create a dated valuation snapshot using validated public market data.
+An optional future step would be to create a dated valuation snapshot using validated public market data.
 
 Until then, valuation multiples remain excluded from the current version to preserve analytical integrity and avoid misleading conclusions.
 

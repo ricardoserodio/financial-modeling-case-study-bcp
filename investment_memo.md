@@ -1,9 +1,9 @@
-# Investment Memo
+# Analytical Case Study Memo
 
 ## Millennium bcp / Banco Comercial Português  
 ### Educational Financial Modeling Case Study
 
-This memo summarises the key findings, analytical structure and valuation logic of the financial modeling case study on **Millennium bcp / Banco Comercial Português**.
+This memo summarises the analytical structure, key areas reviewed and educational valuation framework of the financial modeling case study on **Millennium bcp / Banco Comercial Português**.
 
 This document is for educational and portfolio purposes only and does not constitute investment advice.
 
@@ -23,11 +23,11 @@ The case study focuses on:
 - asset quality;
 - capital strength;
 - loans and customer deposits;
-- valuation multiples;
+- an educational valuation framework;
 - scenario analysis;
 - source validation and financial data quality.
 
-The objective is not to produce an investment recommendation, but to demonstrate practical financial modeling, banking analysis, valuation logic and public-source data validation.
+The objective is not to produce an investment recommendation or completed market valuation, but to demonstrate practical financial modeling, banking analysis, valuation framework design and public-source data validation.
 
 ---
 
@@ -174,9 +174,9 @@ The CET1 ratio should be based on official reported figures rather than manually
 
 ## 8. Valuation Overview
 
-The valuation approach is simple, educational and based on banking-relevant multiples.
+The current valuation component is an educational framework for considering banking-relevant multiples. It does not include completed valuation multiples, a peer comparison, an implied valuation range or a target price.
 
-The analysis may include:
+Optional future valuation work may include:
 
 - price-to-book;
 - price-to-earnings;
@@ -185,9 +185,11 @@ The analysis may include:
 - scenario-based valuation;
 - sensitivity analysis.
 
+These components should only be added after the required dated market data and sources have been selected, documented and validated.
+
 For banks, price-to-book is particularly relevant because book value and return on equity are central to valuation logic.
 
-The valuation should be presented as an illustrative exercise rather than a recommendation.
+Any future valuation work should be presented as an illustrative educational exercise rather than a recommendation.
 
 The project must avoid language such as:
 
@@ -216,12 +218,12 @@ The model uses three simplified scenarios:
 | Scenario | Description |
 |---|---|
 | Conservative | Lower profitability, weaker revenue growth, higher cost pressure or higher cost of risk |
-| Base | Moderate continuation of current trends based on public information |
+| Base | Central illustrative case based on balanced simplified assumptions |
 | Optimistic | Stronger profitability, better efficiency, lower cost of risk or stronger revenue growth |
 
-The purpose of the scenario analysis is to test how different assumptions affect the financial model and valuation outputs.
+The purpose of the scenario analysis is to test how different assumptions affect the financial model and could inform an optional future valuation framework.
 
-No scenario should be presented as the expected or guaranteed outcome.
+No scenario is presented as expected, preferred, recommended or guaranteed.
 
 ---
 
@@ -241,7 +243,7 @@ The main risks considered in the analysis include:
 - international exposure risk;
 - changes in investor sentiment.
 
-These risks may affect profitability, capital, asset quality, valuation multiples and investor perception.
+These risks may affect profitability, capital, asset quality and any optional future valuation analysis.
 
 ---
 
@@ -272,7 +274,7 @@ The project combines:
 - public-source financial data;
 - banking-specific modeling logic;
 - ratio analysis;
-- valuation multiples;
+- an educational valuation framework;
 - scenario analysis;
 - data validation;
 - human review controls.
@@ -289,4 +291,4 @@ This document is part of an educational financial modeling case study.
 
 It uses only publicly available information and does not include personal data, internal banking information or confidential information.
 
-The analysis, assumptions, scenarios and valuation outputs are illustrative and should not be interpreted as investment advice, financial advice or a recommendation to buy, sell or hold any financial instrument.
+The analysis, assumptions, scenarios and any potential future valuation outputs are illustrative and should not be interpreted as investment advice, financial advice or a recommendation to buy, sell or hold any financial instrument.

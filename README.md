@@ -2,24 +2,33 @@
 
 ## Project Overview
 
-This project is a public-source financial modeling and banking analytics case study focused on a Portuguese listed bank, using Millennium bcp as the case study reference.
+This case study addresses a practical banking analytics problem: transforming dispersed public financial disclosures into structured, traceable datasets and reusable analytical outputs for historical performance review, banking ratio analysis, scenario modelling and data quality control.
 
 **Status:** Portfolio case study under final validation.
 
-The objective is to demonstrate a structured analytical workflow combining:
+Using Millennium bcp as the case study reference, the project combines public-source financial statement analysis, banking-specific ratios, illustrative forecast scenarios, source validation and review controls. The work is implemented across Python, SQL and Power BI, with supporting documentation in English and Portuguese.
 
-- Financial statement analysis
-- Banking ratio analysis
-- Forecast assumptions
-- Scenario analysis
-- Power BI dashboarding
-- SQL analytical queries
-- Data quality review
-- AI-assisted, human-reviewed documentation and validation workflow
+The delivered outputs include structured datasets, forecast and scenario files, analytical reports, a Power BI dashboard, SQL queries, validation documentation and an educational valuation framework. Together, they demonstrate skills in banking analytics, financial data quality, financial modelling, business intelligence, finance operations and analytical communication.
 
-This project is designed for educational, portfolio and professional development purposes only.
+An AI-assisted, human-reviewed workflow is used as a supporting governance and quality-control element. Financial figures, assumptions, interpretations and outputs remain subject to human validation.
 
-It does not constitute financial advice, investment advice, valuation advice, credit advice, legal advice or a recommendation to buy, sell or hold any financial instrument.
+Forecasts are illustrative, scenario-based analytical estimates and are not official projections. This project is for educational, analytical and portfolio purposes only.
+
+---
+
+## Key Deliverables
+
+| Deliverable | File / Location | Purpose | Status |
+|---|---|---|---|
+| Executive report – English | [reports/financial_modeling_report_en.md](reports/financial_modeling_report_en.md) | Summarises the financial analysis, forecast methodology, scenarios and data quality workflow | Under final validation |
+| Executive report – Portuguese | [reports/financial_modeling_report_pt.md](reports/financial_modeling_report_pt.md) | Portuguese version of the analytical report | Under final validation |
+| Analytical case study memo | [investment_memo.md](investment_memo.md) | Presents the analytical structure, key areas reviewed and educational valuation framework | Under final validation |
+| Valuation framework | [valuation_summary.md](valuation_summary.md) | Documents an educational banking valuation framework without completed market valuation outputs | Framework complete; future extensions optional |
+| Forecast methodology | [docs/forecast_methodology.md](docs/forecast_methodology.md) | Documents forecast logic, assumptions, scenario design and limitations | Available for review |
+| Dataset publication scope | [docs/dataset_publication_scope.md](docs/dataset_publication_scope.md) | Distinguishes core analytical datasets from templates and optional extensions | Available for review |
+| Publication audit | [docs/final_publication_audit.md](docs/final_publication_audit.md) | Tracks final validation and public-positioning controls | In progress |
+| Power BI documentation | [powerbi/README.md](powerbi/README.md) | Describes dashboard structure, data model and reporting workflow | Dashboard available; final validation in progress |
+| SQL analytics documentation | [sql/README.md](sql/README.md) | Explains the SQL schema, analytical queries and data quality checks | Available |
 
 ---
 

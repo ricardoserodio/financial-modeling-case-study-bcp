@@ -13,6 +13,8 @@ GitHub: `https://github.com/ricardoserodio`
 
 Este relatório apresenta um caso de estudo público de modelização financeira e análise bancária, utilizando o Millennium bcp como referência de análise.
 
+**Estado:** Caso de estudo de portefólio em validação final.
+
 O projecto combina análise de demonstrações financeiras, rácios bancários, pressupostos de forecast por cenários, dashboard em Power BI, queries SQL analíticas, revisão de qualidade de dados e um workflow assistido por IA com revisão humana.
 
 ---

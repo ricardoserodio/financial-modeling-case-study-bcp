@@ -1,5 +1,7 @@
 # Project Status ? Financial Modeling Case Study: Millennium bcp / Portuguese Listed Bank
 
+**Public status:** Portfolio case study under final validation.
+
 ## Current Project Status ? 2022A?2025A Historical Cycle Completed
 
 The project has now completed an initial reviewed historical data cycle covering **2022A, 2023A, 2024A and 2025A**.
@@ -270,7 +272,7 @@ The project now includes an improved Power BI dashboard v2 and a SQL analytics w
 
 ### Current Status
 
-The project is now a portfolio-ready banking analytics case study draft.
+The project is a portfolio case study under final validation.
 
 It combines:
 

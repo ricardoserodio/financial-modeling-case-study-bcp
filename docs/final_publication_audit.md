@@ -1,7 +1,7 @@
 ﻿# Final Publication Audit
 
 Project: Financial Modeling Case Study – Millennium bcp / Portuguese Listed Bank  
-Status: Final publication audit  
+Status: Portfolio case study under final validation.  
 Purpose: GitHub, LinkedIn, CV and international recruiter review  
 
 ## 1. Publication Readiness Summary
@@ -85,8 +85,8 @@ It should not be presented as:
 
 ## 6. Final Status
 
-Current status: Not yet fully publication-ready.  
-Main blocker: final source, ratio, valuation and publication consistency review.  
+Current status: Portfolio case study under final validation.  
+Current focus: final source, ratio, valuation and publication consistency review.  
 Forecast horizon decision: 2026E–2028E retained.  
-Estimated readiness after final audit: strong GitHub / LinkedIn / recruiter-ready project.
+Positioning: recruiter-facing banking analytics case study with final validation controls in progress.
 

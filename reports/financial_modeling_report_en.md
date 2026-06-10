@@ -13,6 +13,8 @@ GitHub: `https://github.com/ricardoserodio`
 
 This report presents a public-source financial modeling and banking analytics case study focused on a Portuguese listed bank, using Millennium bcp as the case study reference.
 
+**Status:** Portfolio case study under final validation.
+
 The project combines financial statement analysis, banking ratio analysis, scenario-based forecast assumptions, Power BI dashboarding, SQL analytical queries, data quality review and an AI-assisted, human-reviewed validation workflow.
 
 ---

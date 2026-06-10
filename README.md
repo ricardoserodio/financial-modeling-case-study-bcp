@@ -4,6 +4,8 @@
 
 This project is a public-source financial modeling and banking analytics case study focused on a Portuguese listed bank, using Millennium bcp as the case study reference.
 
+**Status:** Portfolio case study under final validation.
+
 The objective is to demonstrate a structured analytical workflow combining:
 
 - Financial statement analysis
@@ -348,7 +350,7 @@ The reports include:
 - Data quality and human review notes
 - Limitations and disclaimer
 
-The reports are designed as portfolio-ready analytical deliverables and complement the README, Power BI dashboard, SQL workflow and data quality documentation.
+The reports are designed as recruiter-facing analytical deliverables under final validation and complement the README, Power BI dashboard, SQL workflow and data quality documentation.
 
 ## Project Structure
 
@@ -500,7 +502,7 @@ GitHub:
 
 ## Dataset Publication Scope
 
-The publication-ready analytical datasets are defined in:
+The core analytical datasets included in the final validation scope are defined in:
 
 `docs/dataset_publication_scope.md`
 

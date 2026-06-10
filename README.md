@@ -21,7 +21,9 @@ Forecasts are illustrative, scenario-based analytical estimates and are not offi
 | Deliverable | File / Location | Purpose | Status |
 |---|---|---|---|
 | Executive report – English | [reports/financial_modeling_report_en.md](reports/financial_modeling_report_en.md) | Summarises the financial analysis, forecast methodology, scenarios and data quality workflow | Under final validation |
+| Final PDF report – English | [reports/ricardo_serodio_bcp_banking_analytics_case_study_en.pdf](reports/ricardo_serodio_bcp_banking_analytics_case_study_en.pdf) | Recruiter-facing PDF export of the English analytical report | Under final validation |
 | Executive report – Portuguese | [reports/financial_modeling_report_pt.md](reports/financial_modeling_report_pt.md) | Portuguese version of the analytical report | Under final validation |
+| Final PDF report – Portuguese | [reports/ricardo_serodio_bcp_banking_analytics_case_study_pt.pdf](reports/ricardo_serodio_bcp_banking_analytics_case_study_pt.pdf) | Recruiter-facing PDF export of the Portuguese analytical report | Under final validation |
 | Analytical case study memo | [investment_memo.md](investment_memo.md) | Presents the analytical structure, key areas reviewed and educational valuation framework | Under final validation |
 | Valuation framework | [valuation_summary.md](valuation_summary.md) | Documents an educational banking valuation framework without completed market valuation outputs | Framework complete; future extensions optional |
 | Forecast methodology | [docs/forecast_methodology.md](docs/forecast_methodology.md) | Documents forecast logic, assumptions, scenario design and limitations | Available for review |

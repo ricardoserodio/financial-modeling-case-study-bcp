@@ -1,8 +1,14 @@
 # Dashboard Structure
 
-This document defines the planned dashboard structure for the **Financial Modeling Case Study – Millennium bcp / Portuguese Listed Bank** project.
+This document provides the design reference for the Power BI dashboard in the **Financial Modeling Case Study – Millennium bcp / Portuguese Listed Bank** project.
 
 The dashboard is designed as an executive-style banking analytics report built from public financial data.
+
+The current recruiter-facing implementation is:
+
+`powerbi/millennium_bcp_banking_dashboard_v3_polished.pbix`
+
+The design elements below document the intended analytical structure. The current dashboard remains under final visual and data consistency validation.
 
 This project is for educational and portfolio purposes only.
 

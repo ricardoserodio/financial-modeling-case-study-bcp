@@ -120,14 +120,15 @@ Main file:
 
 ### 3. Power BI Dashboard
 
-The project includes Power BI dashboard files designed as portfolio-grade business intelligence deliverables.
+The project includes three Power BI dashboard iterations. The v3 dashboard is the current recruiter-facing version and remains under final visual and data consistency validation.
 
 Power BI files:
 
-- `powerbi/millennium_bcp_banking_dashboard_v1_clean.pbix`
-- `powerbi/millennium_bcp_banking_dashboard_v2.pbix`
+- Current version: `powerbi/millennium_bcp_banking_dashboard_v3_polished.pbix`
+- Earlier iteration: `powerbi/millennium_bcp_banking_dashboard_v2.pbix`
+- Historical baseline: `powerbi/millennium_bcp_banking_dashboard_v1_clean.pbix`
 
-The first version covers the historical banking dataset with pages such as:
+The v1 dashboard established the historical banking analytics baseline with pages such as:
 
 - Executive Overview
 - Liquidity & Funding
@@ -137,7 +138,7 @@ The first version covers the historical banking dataset with pages such as:
 - Capital
 - Data Quality
 
-The v2 dashboard adds a dedicated Forecast & Scenarios page, including:
+The v2 dashboard added a dedicated Forecast & Scenarios page, including:
 
 - Forecast Net Income by Scenario
 - ROE by Scenario
@@ -148,20 +149,24 @@ The v2 dashboard adds a dedicated Forecast & Scenarios page, including:
 - Period slicer
 - Forecast disclaimer
 
-The v2 dashboard also includes simple model dimension tables:
+The v2 dashboard also introduced simple model dimension tables:
 
 - DimScenario
 - DimPeriod
 
 These dimensions support scenario and period filtering across forecast visuals.
 
+The v3 dashboard is the polished continuation of the v2 analytical design and is the version intended for recruiter and portfolio review. Its visuals, labels and data consistency remain subject to final validation.
+
 Supporting Power BI documentation:
 
+- `powerbi/README.md`
+- `powerbi/dashboard_structure.md`
 - `powerbi/powerbi_v2_improvement_plan.md`
 - `powerbi/dax_measures_v2.md`
 - `powerbi/dashboard_v2_notes.md`
 
-The dashboard is intended as a portfolio-grade business intelligence deliverable and not as an investment recommendation tool.
+The dashboard is a recruiter-facing business intelligence deliverable under final validation and is not an investment recommendation tool.
 
 ---
 
@@ -382,7 +387,9 @@ financial-modeling-case-study-bcp/
 │   └── project_review_checklist.md
 │
 ├── powerbi/
-│   └── millennium_bcp_banking_dashboard_v1_clean.pbix
+│   ├── millennium_bcp_banking_dashboard_v3_polished.pbix
+│   ├── README.md
+│   └── dashboard_structure.md
 │
 ├── scripts/
 │   ├── build_forecast_financials.py

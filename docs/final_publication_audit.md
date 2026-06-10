@@ -14,7 +14,7 @@ Purpose: GitHub, LinkedIn, CV and international recruiter review
 | Forecast scenarios | Needs final review | Confirm 2026E–2028E are clearly labelled as illustrative scenario-based forecasts. |
 | Valuation summary | Needs final review | Must remain an illustrative framework, not investment advice. |
 | Reports EN/PT | Needs final polish | Ensure both reports are aligned and ready for PDF export. |
-| Power BI dashboard | Mostly ready | v3 polished exists; final visual and data consistency review still required. |
+| Power BI dashboard | Mostly ready | `powerbi/millennium_bcp_banking_dashboard_v3_polished.pbix` is the current version; final visual and data consistency review is still required. |
 | Publication safety | Mostly ready | Risk scan completed; no critical secrets or confidential-data issues identified. |
 
 ## 2. Forecast Horizon Decision
@@ -69,7 +69,7 @@ The scenarios are not predictions.
 - [ ] Valuation language is defensive and non-advisory.
 - [ ] EN and PT reports are aligned.
 - [ ] README clearly explains the project in under 60 seconds.
-- [ ] Power BI v3 uses final data.
+- [ ] Power BI v3 data inputs, visuals and labels are verified.
 - [ ] PDFs are generated from final cleaned reports.
 - [ ] LinkedIn post uses safe wording.
 

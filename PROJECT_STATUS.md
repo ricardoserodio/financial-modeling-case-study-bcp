@@ -126,7 +126,7 @@ The main data quality items currently documented are:
 - customer deposits vs customer funds terminology;
 - customer funds vs balance sheet customer resources terminology;
 - 2022A impairments and provisions definition consistency;
-- 2022A book value per share still pending;
+- 2022A book value per share retained as an optional valuation extension;
 - reexpressed comparative figures where applicable;
 - reported vs calculated ratio definitions;
 - phased-in vs fully implemented capital ratios.
@@ -155,19 +155,19 @@ These items remain visible as human-in-the-loop review points.
 
 ## Remaining Gaps
 
-The following areas remain pending:
+The following areas are retained as optional extensions or review-controlled components:
 
 | Area | Status |
-|---|---:|
-| 2022A book value per share | Pending |
-| Market data | Pending |
-| Peer comparison | Pending |
-| Valuation multiples | Pending |
-| Forecast assumptions | Pending |
-| Scenario analysis | Pending |
-| Power BI dashboard build | Pending |
-| SQL output examples | Pending |
-| Final investment memo | Pending |
+|---|---|
+| 2022A book value per share | Optional valuation extension |
+| Market data | Optional valuation extension |
+| Peer comparison | Optional benchmarking extension |
+| Valuation multiples | Illustrative framework only |
+| Forecast assumptions | Human review required |
+| Scenario analysis | Human review required |
+| Power BI dashboard build | Completed v3 dashboard available |
+| SQL output examples | Completed analytical outputs available |
+| Final investment memo | Completed as educational memo |
 
 ---
 

@@ -69,7 +69,7 @@ The model forecasts:
 - Other operating income
 - Operating income
 
-Fees and commissions are not forecast directly because the value is currently marked as pending in the dataset.
+Fees and commissions are not forecast directly in the current model because the simplified forecast structure uses other operating income as an aggregated non-interest income driver.
 
 Instead, the model uses:
 

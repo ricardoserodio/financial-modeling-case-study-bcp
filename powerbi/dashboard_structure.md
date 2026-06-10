@@ -261,7 +261,7 @@ Compare historical actuals with simplified forecast estimates.
 
 ### Analytical Questions
 
-- How do 2026E and 2027E compare with 2025A?
+- How do 2026E, 2027E and 2028E compare with 2025A?
 - Which assumptions drive the base scenario?
 - What changes in the downside scenario?
 - Which metrics are most sensitive to assumptions?

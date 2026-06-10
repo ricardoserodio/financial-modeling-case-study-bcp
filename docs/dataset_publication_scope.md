@@ -1,6 +1,6 @@
 ﻿# Dataset Publication Scope
 
-This document defines which datasets are part of the publication-ready analytical scope and which files are retained as templates, references or legacy planning material.
+This document defines which datasets are part of the core analytical scope under final validation and which files are retained as templates, references or legacy planning material.
 
 ## 1. Core Publication Datasets
 
@@ -20,7 +20,7 @@ The following files are considered part of the main analytical case study:
 
 ## 2. Template / Reference / Legacy Files
 
-The following files are retained for transparency, modelling structure or future extension. They should not be interpreted as final publication-ready datasets unless explicitly updated.
+The following files are retained for transparency, modelling structure or future extension. They should not be interpreted as final validated analytical datasets unless explicitly updated and validated.
 
 | File | Purpose | Status |
 |---|---|---|
@@ -44,7 +44,7 @@ These outputs are scenario-based and educational. They are not official projecti
 
 Forecast assumptions and forecast outputs may remain marked as `To Review`.
 
-This is intentional because forecast outputs require human review before any professional use. The purpose of the project is to demonstrate analytical workflow, scenario modelling, data quality controls and Power BI reporting — not to provide investment advice.
+This is intentional because forecast outputs require human review before any public promotional use. These outputs are not intended for investment, credit, regulatory or other decision-making use. The purpose of the project is to demonstrate analytical workflow, scenario modelling, data quality controls and Power BI reporting — not to provide investment advice.
 
 ## 5. Valuation and Market Data
 

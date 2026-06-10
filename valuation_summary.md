@@ -35,7 +35,7 @@ It does not constitute:
 
 The author is not affiliated with Millennium bcp for the purpose of this project.
 
-All valuation logic, assumptions and potential future outputs require human review before any professional use.
+All valuation logic, assumptions and potential future outputs require human review before any public promotional use and are not intended for investment, credit, regulatory or other decision-making use.
 
 ---
 
@@ -289,4 +289,4 @@ It does not constitute financial advice, investment advice, valuation advice, le
 
 The author is not affiliated with Millennium bcp for the purpose of this project.
 
-All figures, assumptions, interpretations and potential future valuation outputs require human review before publication or professional use.
+All figures, assumptions, interpretations and potential future valuation outputs require human review before public promotional use and are not intended for investment, credit, regulatory or other decision-making use.

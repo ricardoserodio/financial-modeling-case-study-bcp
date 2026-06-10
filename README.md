@@ -530,5 +530,5 @@ The core forecast horizon is:
 - 2027E
 - 2028E
 
-Forecast outputs are illustrative, scenario-based and require human review before any professional use. They are not official projections, investment recommendations or price targets.
+Forecast outputs are illustrative, scenario-based and require human review before any public promotional use. They are not intended for investment, credit, regulatory or other decision-making use and are not official projections, investment recommendations or price targets.
 

@@ -65,7 +65,7 @@ The scenarios are not predictions.
 - [ ] Historical values are source-mapped.
 - [ ] Forecast horizon is consistently described as 2026E–2028E.
 - [ ] Forecasts are clearly labelled as illustrative and scenario-based.
-- [ ] Forecast outputs remain marked as requiring human review before professional use.
+- [ ] Forecast outputs remain marked as requiring human review before public promotional use and as not intended for investment, credit, regulatory or other decision-making use.
 - [ ] Valuation language is defensive and non-advisory.
 - [ ] EN and PT reports are aligned.
 - [ ] README clearly explains the project in under 60 seconds.

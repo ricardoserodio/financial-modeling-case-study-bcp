@@ -498,3 +498,19 @@ GitHub:
 
 `https://github.com/ricardoserodio`
 
+## Dataset Publication Scope
+
+The publication-ready analytical datasets are defined in:
+
+`docs/dataset_publication_scope.md`
+
+Some template, reference and legacy files are intentionally retained for transparency, modelling structure and future extension. These files should not be interpreted as final analytical outputs unless explicitly marked as core datasets.
+
+The core forecast horizon is:
+
+- 2026E
+- 2027E
+- 2028E
+
+Forecast outputs are illustrative, scenario-based and require human review before any professional use. They are not official projections, investment recommendations or price targets.
+

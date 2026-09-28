@@ -1,26 +1,11 @@
-# Power BI Dashboard
+# Power BI v5
 
-This directory contains the Power BI reporting layer for the banking analytics case study.
+Current file: millennium_bcp_banking_dashboard_v5_validated.pbix.
 
-## Current Version
+Ten pages: Cover, H1 2026 Update, Executive Overview, Liquidity & Funding, Asset Quality, Profitability, Efficiency, Capital, Data Quality, Forecast & Scenarios. Annual pages retain 2022-2025 history. The H1 page compares H1 2025 with H1 2026. Data Quality summarises the historical observation register; the appendix provides all 182 rows.
 
-The current recruiter-facing dashboard is:
+Set the DataFolder parameter to your local data folder (trailing slash required), then Refresh. Ten CSV sources are used, with annual banking ratios unpivoted for visuals. H1 data are kept in separate tables so six-month income is not mixed with full-year income. DimPeriod and DimScenario support the original forecast filtering.
 
-`millennium_bcp_banking_dashboard_v3_polished.pbix`
+Forecasts contain H1 2026 actuals plus H2 estimates, then 2027/28 scenarios. ROE and ROA forecasts are closing-balance proxies; CET1 is an assumption. Refer to docs/forecast_methodology.md.
 
-This version is under final visual and data consistency validation.
-
-## Version History
-
-| Version | File | Role |
-|---|---|---|
-| v1 | `millennium_bcp_banking_dashboard_v1_clean.pbix` | Historical banking analytics baseline |
-| v2 | `millennium_bcp_banking_dashboard_v2.pbix` | Added forecast and scenario analysis |
-| v3 | `millennium_bcp_banking_dashboard_v3_polished.pbix` | Current polished portfolio version under final validation |
-
-Supporting design and implementation documentation is available in:
-
-- `dashboard_structure.md`
-- `dashboard_v2_notes.md`
-- `dax_measures_v2.md`
-- `powerbi_v2_improvement_plan.md`
+The save/reopen, data comparison and visual verification record is v5_validation.json. Earlier PBIX versions remain historical artifacts. Use the v5 report and its PDF preview for publication.

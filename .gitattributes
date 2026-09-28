@@ -1,0 +1,3 @@
+# Preserve document bytes when checking out on Windows or other platforms.
+*.pdf binary
+*.pbix binary

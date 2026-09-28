@@ -1,3 +1,5 @@
+> Migration 2026-09-28: CSV labels changed. Follow [metric migration](../docs/metric_migration_2026-09-28.md) before refresh. Existing PBIX/PDF outputs have not been refreshed. Forecast impairment filters must use `Net credit impairments`; historical `Impairments and provisions` is the sum of credit and other components.
+
 # Power BI Measures Plan ? Millennium bcp Case Study
 
 ## Purpose
@@ -56,7 +58,7 @@ Give a high-level view of the bank's historical performance from 2022A to 2025A.
 | Latest Operating Income | FinancialData | metric = Operating income |
 | Latest Total Assets | FinancialData | metric = Total assets |
 | Latest Customer Loans | FinancialData | metric = Customer loans |
-| Latest Customer Deposits / Funds | FinancialData | metric = Customer deposits |
+| Latest Deposits and Other Customer Resources / Funds | FinancialData | metric = Deposits and other customer resources |
 | Latest Equity | FinancialData | metric = Equity |
 
 ### Recommended Charts
@@ -66,7 +68,7 @@ Give a high-level view of the bank's historical performance from 2022A to 2025A.
 | Net income trend | FinancialData | period | value | metric = Net income |
 | Net interest income trend | FinancialData | period | value | metric = Net interest income |
 | Operating income vs operating costs | FinancialData | period | value | metric = Operating income / Operating costs |
-| Customer loans vs customer deposits/funds | FinancialData | period | value | metric = Customer loans / Customer deposits |
+| Customer loans vs deposits and other customer resources/funds | FinancialData | period | value | metric = Customer loans / Deposits and other customer resources |
 
 ### Suggested Interpretation
 
@@ -186,7 +188,7 @@ Analyse funding structure, customer resources and liquidity resilience.
 | Metric | Table | Field |
 |---|---|---|
 | Customer loans | FinancialData | metric = Customer loans |
-| Customer deposits / customer funds | FinancialData | metric = Customer deposits |
+| Deposits and other customer resources / customer funds | FinancialData | metric = Deposits and other customer resources |
 | Loan-to-deposit ratio | BankingRatios | ratio = Loan-to-deposit ratio |
 | Loan-to-balance-sheet-customer-resources ratio | BankingRatios | ratio = Loan-to-balance-sheet-customer-resources ratio |
 | LCR | BankingRatios | ratio = LCR |
@@ -196,7 +198,7 @@ Analyse funding structure, customer resources and liquidity resilience.
 
 | Visual | Axis | Values |
 |---|---|---|
-| Customer loans vs customer deposits/funds | period | value |
+| Customer loans vs deposits and other customer resources/funds | period | value |
 | Loan-to-deposit trend | period | value |
 | LCR trend | period | value |
 | NSFR trend | period | value |
@@ -205,7 +207,7 @@ Analyse funding structure, customer resources and liquidity resilience.
 
 - Loan-to-deposit ratio declined after 2022A.
 - LCR and NSFR improved materially from 2022A to 2025A.
-- Customer deposits vs customer funds terminology must remain visible as a data quality note.
+- Deposits and other customer resources vs customer funds terminology must remain visible as a data quality note.
 
 ---
 
@@ -263,7 +265,7 @@ Show transparency around source validation, review status and pending items.
 | Item | Status |
 |---|---|
 | 2022A impairments and provisions | Needs Review |
-| Customer deposits vs customer funds | Needs Review |
+| Deposits and other customer resources vs customer funds | Needs Review |
 | 2022A book value per share | Pending |
 | Valuation ratios | Pending |
 | Peer comparison | Pending |

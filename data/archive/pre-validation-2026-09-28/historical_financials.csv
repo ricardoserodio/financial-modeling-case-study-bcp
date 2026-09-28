@@ -1,0 +1,20 @@
+metric,category,2022A,2023A,2024A,2025A,unit,source_status,notes
+Net interest income,Income Statement,,,,,EUR million,Pending,To be extracted from official annual reports
+Fees and commissions,Income Statement,,,,,EUR million,Pending,To be extracted from official annual reports
+Other operating income,Income Statement,,,,,EUR million,Pending,To be extracted from official annual reports
+Operating income,Income Statement,,,,,EUR million,Pending,Also referred to as banking income or total operating income depending on source terminology
+Operating costs,Income Statement,,,,,EUR million,Pending,To be extracted from official annual reports
+Impairments and provisions,Income Statement,,,,,EUR million,Pending,Check whether figure includes loan impairments only or total impairments/provisions
+Profit before tax,Income Statement,,,,,EUR million,Pending,To be extracted from official annual reports
+Net income,Income Statement,,,,,EUR million,Pending,Consolidated net income attributable to shareholders where available
+Loans to customers,Balance Sheet,,,,,EUR million,Pending,Check whether loans are gross or net of impairments
+Customer deposits,Balance Sheet,,,,,EUR million,Pending,Use customer deposits consistently across years
+Total assets,Balance Sheet,,,,,EUR million,Pending,Consolidated total assets
+Equity,Balance Sheet,,,,,EUR million,Pending,Use total equity or equity attributable to shareholders consistently
+Risk-weighted assets,Balance Sheet / Capital,,,,,EUR million,Pending,Use if available for capital analysis
+Common Equity Tier 1 capital,Capital,,,,,EUR million,Pending,Use if available for CET1 validation
+Number of shares,Market / Per Share,,,,,million shares,Pending,Needed for EPS and book value per share if available
+Market capitalisation,Market Data,,,,,EUR million,Pending,Use dated public market data source
+Share price,Market Data,,,,,EUR,Pending,Use dated public market data source
+Dividends paid,Capital Return,,,,,EUR million,Pending,Use if applicable
+Dividend per share,Capital Return,,,,,EUR,Pending,Use if applicable

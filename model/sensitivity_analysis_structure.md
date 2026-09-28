@@ -1,3 +1,5 @@
+> Historical working note retained for provenance. The current H1 2026 release is described in the root README, reports and docs/forecast_methodology.md. Status labels below describe an earlier revision.
+
 # Sensitivity Analysis Structure
 
 This file documents the intended structure of the sensitivity analysis for the **Millennium bcp / Banco Comercial Português** financial modeling case study.

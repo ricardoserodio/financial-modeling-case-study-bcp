@@ -1,4 +1,4 @@
-﻿-- Financial Modeling Case Study – Data Quality Queries
+-- Financial Modeling Case Study – Data Quality Queries
 -- Purpose:
 -- SQL queries for reviewing validation status, missing values and source traceability.
 --
@@ -33,7 +33,7 @@ SELECT
     source_document,
     notes
 FROM financial_data
-WHERE validation_status <> 'Reviewed'
+WHERE validation_status NOT IN ('Source verified', 'Recalculated', 'Model checked', 'Scenario assumption')
 ORDER BY period, category, metric;
 
 
@@ -83,7 +83,7 @@ SELECT
     source_status,
     notes
 FROM banking_ratios
-WHERE source_status <> 'Reviewed'
+WHERE source_status NOT IN ('Source verified', 'Recalculated', 'Model checked', 'Scenario assumption')
 ORDER BY category, ratio;
 
 
@@ -92,15 +92,15 @@ ORDER BY category, ratio;
 -- ============================================================
 
 SELECT
-    dataset,
-    field,
+    item,
+    category,
     source_document,
-    source_section,
-    source_period,
+    source_section_or_page,
+    period,
     validation_status,
     notes
 FROM source_mapping
-ORDER BY dataset, field;
+ORDER BY category, item, period;
 
 
 -- ============================================================
@@ -108,16 +108,16 @@ ORDER BY dataset, field;
 -- ============================================================
 
 SELECT
-    dataset,
-    field,
+    item,
+    category,
     source_document,
-    source_section,
-    source_period,
+    source_section_or_page,
+    period,
     validation_status,
     notes
 FROM source_mapping
-WHERE validation_status <> 'Reviewed'
-ORDER BY dataset, field;
+WHERE validation_status NOT IN ('Source verified', 'Recalculated', 'Model checked', 'Scenario assumption')
+ORDER BY category, item, period;
 
 
 -- ============================================================
@@ -125,11 +125,11 @@ ORDER BY dataset, field;
 -- ============================================================
 
 SELECT
-    extraction_status,
+    entered_in_file,
     validation_status,
     COUNT(*) AS item_count
 FROM extraction_tracker
-GROUP BY extraction_status, validation_status
+GROUP BY entered_in_file, validation_status
 ORDER BY item_count DESC;
 
 
@@ -138,17 +138,17 @@ ORDER BY item_count DESC;
 -- ============================================================
 
 SELECT
-    item,
+    data_item,
     category,
     source_document,
     period,
-    extraction_status,
+    value_extracted,
     validation_status,
-    notes
+    review_notes
 FROM extraction_tracker
-WHERE extraction_status <> 'Completed'
-   OR validation_status <> 'Reviewed'
-ORDER BY period, category, item;
+WHERE value_extracted IS NULL
+   OR validation_status NOT IN ('Source verified', 'Recalculated', 'Model checked', 'Scenario assumption')
+ORDER BY period, category, data_item;
 
 
 -- ============================================================
@@ -163,7 +163,7 @@ SELECT
     validation_status,
     notes
 FROM forecast_financials
-WHERE validation_status <> 'Reviewed'
+WHERE validation_status NOT IN ('Source verified', 'Recalculated', 'Model checked', 'Scenario assumption')
 
 UNION ALL
 
@@ -175,7 +175,7 @@ SELECT
     validation_status,
     notes
 FROM forecast_ratios
-WHERE validation_status <> 'Reviewed'
+WHERE validation_status NOT IN ('Source verified', 'Recalculated', 'Model checked', 'Scenario assumption')
 
 UNION ALL
 
@@ -187,6 +187,6 @@ SELECT
     validation_status,
     notes
 FROM scenario_analysis
-WHERE validation_status <> 'Reviewed'
+WHERE validation_status NOT IN ('Source verified', 'Recalculated', 'Model checked', 'Scenario assumption')
 
 ORDER BY dataset, scenario, period, item;

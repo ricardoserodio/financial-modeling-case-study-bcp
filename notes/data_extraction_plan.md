@@ -1,3 +1,5 @@
+> Historical working note retained for provenance. The current H1 2026 release is described in the root README, reports and docs/forecast_methodology.md. Status labels below describe an earlier revision.
+
 # Data Extraction Plan
 
 This file defines the data extraction plan for the **Millennium bcp / Banco Comercial Português** financial modeling case study.

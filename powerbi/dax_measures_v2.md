@@ -1,4 +1,6 @@
-﻿# Power BI DAX Measures v2
+> Migration 2026-09-28: CSV labels changed. Follow [metric migration](../docs/metric_migration_2026-09-28.md) before refresh. Existing PBIX/PDF outputs have not been refreshed. Forecast impairment filters must use `Net credit impairments`; historical `Impairments and provisions` is the sum of credit and other components.
+
+# Power BI DAX Measures v2
 
 ## Purpose
 
@@ -60,12 +62,12 @@ If Power BI imported the CSV tables with different names, update the table names
         FinancialData[period] = "2025A"
     )
 
-### Customer Deposits 2025A
+### Deposits and Other Customer Resources 2025A
 
-    Customer Deposits 2025A =
+    Deposits and Other Customer Resources 2025A =
     CALCULATE(
         SUM(FinancialData[value]),
-        FinancialData[metric] = "Customer deposits",
+        FinancialData[metric] = "Deposits and other customer resources",
         FinancialData[period] = "2025A"
     )
 
@@ -191,12 +193,12 @@ If Power BI imported the CSV tables with different names, update the table names
         ForecastFinancials[line_item] = "Customer loans"
     )
 
-### Forecast Customer Deposits
+### Forecast Deposits and Other Customer Resources
 
-    Forecast Customer Deposits =
+    Forecast Deposits and Other Customer Resources =
     CALCULATE(
         SUM(ForecastFinancials[value]),
-        ForecastFinancials[line_item] = "Customer deposits"
+        ForecastFinancials[line_item] = "Deposits and other customer resources"
     )
 
 ### Forecast ROE

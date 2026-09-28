@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "historical_cells": 182,
+  "reported_cells": 176,
+  "recalculated_cells": 6,
+  "scenario_parameters": 72,
+  "forecast_cells_recomputed": 162,
+  "scenario_comparisons": 126,
+  "sql_statements": 36,
+  "tables": {
+    "financial_data": 52,
+    "banking_ratios": 18,
+    "interim_financials": 26,
+    "interim_ratios": 32,
+    "source_mapping": 182,
+    "extraction_tracker": 182,
+    "forecast_assumptions": 24,
+    "forecast_financials": 141,
+    "forecast_ratios": 72,
+    "scenario_analysis": 126
+  },
+  "h1_conversion": 0.5026205916318734,
+  "scope": "Data and calculation validation; issuer guidance and independent audit are not claimed."
+}

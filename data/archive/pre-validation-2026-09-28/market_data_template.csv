@@ -1,0 +1,18 @@
+item,category,date,value,unit,source,source_type,validation_status,notes
+Share price,Market Data,,,,EUR,Euronext / public market data,Market Data,Pending,Use closing share price at selected valuation date
+Market capitalisation,Market Data,,,,EUR million,Euronext / public market data,Market Data,Pending,Use same date as share price
+Number of shares,Market Data,,,,million shares,Annual report / market data,Annual Report / Market Data,Pending,Use shares outstanding or weighted average shares consistently
+Book value,Accounting Data,,,,EUR million,Annual report,Annual Report,Pending,Use equity attributable to shareholders where available
+Book value per share,Per Share Data,,,,EUR,Calculated,Calculated,Pending,Book value / number of shares
+Net income attributable to shareholders,Accounting Data,,,,EUR million,Annual report,Annual Report,Pending,Use consistent net income definition
+Earnings per share,Per Share Data,,,,EUR,Annual report / calculated,Annual Report / Calculated,Pending,Use reported EPS where available
+Dividend per share,Dividend Data,,,,EUR,Annual report / company disclosure,Annual Report / Company Disclosure,Pending,Use reported or proposed dividend per share
+Dividends paid,Dividend Data,,,,EUR million,Annual report,Annual Report,Pending,Use actual or proposed dividends consistently
+Price-to-book,Valuation Multiple,,,,x,Calculated,Calculated,Pending,Market capitalisation / book value
+Price-to-earnings,Valuation Multiple,,,,x,Calculated,Calculated,Pending,Market capitalisation / net income
+Dividend yield,Valuation Multiple,,,,%,Calculated,Calculated,Pending,Dividend per share / share price
+Payout ratio,Capital Return,,,,%,Calculated,Calculated,Pending,Dividends paid / net income
+Peer P/B multiple,Peer Comparison,,,,x,Public market data,Market Data,Pending,Use only if peer comparison is included
+Peer P/E multiple,Peer Comparison,,,,x,Public market data,Market Data,Pending,Use only if peer comparison is included
+Peer ROE,Peer Comparison,,,,%,Annual report / public data,Annual Report / Market Data,Pending,Use only if peer comparison is included
+Peer CET1 ratio,Peer Comparison,,,,%,Annual report / public data,Annual Report / Market Data,Pending,Use only if peer comparison is included

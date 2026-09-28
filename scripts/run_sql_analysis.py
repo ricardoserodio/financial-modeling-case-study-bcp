@@ -1,4 +1,4 @@
-﻿import sqlite3
+import sqlite3
 from pathlib import Path
 
 import pandas as pd
@@ -25,7 +25,9 @@ QUERIES = {
         UNION ALL
         SELECT 'forecast_ratios', COUNT(*) FROM forecast_ratios
         UNION ALL
-        SELECT 'scenario_analysis', COUNT(*) FROM scenario_analysis;
+        SELECT 'scenario_analysis', COUNT(*) FROM scenario_analysis
+        UNION ALL SELECT 'interim_financials', COUNT(*) FROM interim_financials
+        UNION ALL SELECT 'interim_ratios', COUNT(*) FROM interim_ratios;
     """,
 
     "banking_ratios_2025_snapshot": """
@@ -112,7 +114,7 @@ QUERIES = {
             validation_status,
             notes
         FROM forecast_financials
-        WHERE validation_status <> 'Reviewed'
+        WHERE validation_status NOT IN ('Source verified', 'Recalculated', 'Model checked', 'Scenario assumption')
 
         UNION ALL
 
@@ -126,7 +128,7 @@ QUERIES = {
             validation_status,
             notes
         FROM forecast_ratios
-        WHERE validation_status <> 'Reviewed'
+        WHERE validation_status NOT IN ('Source verified', 'Recalculated', 'Model checked', 'Scenario assumption')
 
         UNION ALL
 
@@ -140,7 +142,7 @@ QUERIES = {
             validation_status,
             notes
         FROM scenario_analysis
-        WHERE validation_status <> 'Reviewed'
+        WHERE validation_status NOT IN ('Source verified', 'Recalculated', 'Model checked', 'Scenario assumption')
 
         ORDER BY dataset, scenario, period, item;
     """,

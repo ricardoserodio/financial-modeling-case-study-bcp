@@ -1,4 +1,4 @@
-﻿import pandas as pd
+import pandas as pd
 from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
@@ -15,7 +15,7 @@ def get_forecast_value(forecast_df, scenario, line_item, period):
         & (forecast_df["period"] == period)
     ]
 
-    if rows.empty:
+    if len(rows) != 1:
         raise ValueError(
             f"Missing forecast value: scenario={scenario}, line_item={line_item}, period={period}"
         )
@@ -33,7 +33,7 @@ def get_forecast_value(forecast_df, scenario, line_item, period):
 def get_reported_2025_ratio(ratios_df, ratio):
     rows = ratios_df[ratios_df["ratio"] == ratio]
 
-    if rows.empty:
+    if len(rows) != 1:
         raise ValueError(f"Missing reported 2025A ratio: {ratio}")
 
     value = rows.iloc[0]["2025A"]
@@ -109,7 +109,7 @@ def main():
                 unit=unit,
                 calculation_method="Reported historical ratio from banking_ratios.csv",
                 source_or_basis="banking_ratios.csv",
-                validation_status="Reviewed",
+                validation_status=(ratios_df.loc[ratios_df["ratio"] == ratio, "source_status"].iloc[0] if pd.notna(ratios_df.loc[ratios_df["ratio"] == ratio, "source_status"].iloc[0]) else "Needs Review"),
                 notes="Reported 2025A ratio used as forecast base year",
             )
 
@@ -120,8 +120,8 @@ def main():
             operating_income = get_forecast_value(forecast_df, scenario, "Operating income", period)
             operating_costs = get_forecast_value(forecast_df, scenario, "Operating costs", period)
             customer_loans = get_forecast_value(forecast_df, scenario, "Customer loans", period)
-            customer_deposits = get_forecast_value(forecast_df, scenario, "Customer deposits", period)
-            impairments = get_forecast_value(forecast_df, scenario, "Impairments and provisions", period)
+            customer_deposits = get_forecast_value(forecast_df, scenario, "Deposits and other customer resources", period)
+            impairments = get_forecast_value(forecast_df, scenario, "Net credit impairments", period)
             cet1_value = get_forecast_value(forecast_df, scenario, "CET1 ratio assumption", period)
 
             notes = (
@@ -129,12 +129,12 @@ def main():
                 "investment advice or financial recommendation"
             )
 
-            append_ratio(rows, scenario, "ROE", "Profitability", period, (net_income / equity) * 100, "%", "Net income / equity", "forecast_financials.csv", "To Review", notes)
-            append_ratio(rows, scenario, "ROA", "Profitability", period, (net_income / total_assets) * 100, "%", "Net income / total assets", "forecast_financials.csv", "To Review", notes)
-            append_ratio(rows, scenario, "Cost-to-income ratio", "Efficiency", period, (operating_costs / operating_income) * 100, "%", "Operating costs / operating income", "forecast_financials.csv", "To Review", notes)
-            append_ratio(rows, scenario, "Loan-to-deposit ratio", "Liquidity", period, (customer_loans / customer_deposits) * 100, "%", "Customer loans / customer deposits", "forecast_financials.csv", "To Review", notes)
-            append_ratio(rows, scenario, "Cost of risk", "Asset Quality", period, (impairments / customer_loans) * 10000, "bps", "Impairments and provisions / customer loans", "forecast_financials.csv", "To Review", notes)
-            append_ratio(rows, scenario, "CET1 ratio assumption", "Capital", period, cet1_value, "%", "Direct scenario assumption", "forecast_assumptions.csv", "To Review", "Educational capital assumption only")
+            append_ratio(rows, scenario, "ROE", "Profitability", period, (net_income / equity) * 100, "%", "Net income / closing equity (proxy; not reported ROE)", "forecast_financials.csv", "Model checked", notes)
+            append_ratio(rows, scenario, "ROA", "Profitability", period, (net_income / total_assets) * 100, "%", "Net income / closing total assets (proxy; not reported ROA)", "forecast_financials.csv", "Model checked", notes)
+            append_ratio(rows, scenario, "Cost-to-income ratio", "Efficiency", period, (operating_costs / operating_income) * 100, "%", "Operating costs / operating income", "forecast_financials.csv", "Model checked", notes)
+            append_ratio(rows, scenario, "Loan-to-deposit ratio", "Liquidity", period, (customer_loans / customer_deposits) * 100, "%", "Net customer loans / deposits and other customer resources", "forecast_financials.csv", "Model checked", notes)
+            append_ratio(rows, scenario, "Cost of risk", "Asset Quality", period, (impairments / customer_loans) * 10000, "bps", "Net credit impairments / closing net customer loans (educational proxy)", "forecast_financials.csv", "Model checked", notes)
+            append_ratio(rows, scenario, "CET1 ratio assumption", "Capital", period, cet1_value, "%", "Direct scenario assumption", "forecast_assumptions.csv", "Scenario assumption", "Educational capital assumption only")
 
     output_df = pd.DataFrame(rows)
     output_df.to_csv(OUTPUT_PATH, index=False, encoding="utf-8-sig")

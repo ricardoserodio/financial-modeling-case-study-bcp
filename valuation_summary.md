@@ -1,8 +1,10 @@
-﻿# Valuation Summary – Millennium bcp / Portuguese Listed Bank
+> Historical reference / optional extension. This file is outside the September 2026 active validation scope. Current deliverables and evidence are listed in the root README and PROJECT_STATUS.md.
+
+# Valuation Summary â€“ Millennium bcp / Portuguese Listed Bank
 
 ## 1. Purpose
 
-This document presents an educational valuation framework for the Financial Modeling Case Study – Millennium bcp / Portuguese Listed Bank project.
+This document presents an educational valuation framework for the Financial Modeling Case Study â€“ Millennium bcp / Portuguese Listed Bank project.
 
 The purpose of this file is to explain how valuation could be approached in an educational banking analysis context, while avoiding unsupported market claims, target prices or investment recommendations.
 
@@ -13,7 +15,7 @@ This document is part of a public portfolio project focused on:
 - Financial data quality
 - Scenario analysis
 - SQL and Power BI reporting
-- Human-reviewed analytical workflows
+- Documented analytical review workflows
 
 This is not an investment recommendation.
 

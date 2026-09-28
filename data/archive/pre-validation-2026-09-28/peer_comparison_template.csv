@@ -1,0 +1,11 @@
+peer_name,country,business_type,market_data_date,market_cap_eur_m,share_price,price_to_book,price_to_earnings,roe,cet1_ratio,cost_to_income,npl_or_npe_ratio,dividend_yield,source,validation_status,notes
+Millennium bcp,Portugal,Listed commercial bank,,,,,,,,,,,,Official reports / public market data,Pending,Subject company
+CaixaBank,Spain,Listed commercial bank,,,,,,,,,,,,Annual report / public market data,Pending,Potential Iberian peer
+Banco Santander,Spain,Listed universal bank,,,,,,,,,,,,Annual report / public market data,Pending,Large Iberian / European peer
+BBVA,Spain,Listed universal bank,,,,,,,,,,,,Annual report / public market data,Pending,Large Iberian / European peer
+Bankinter,Spain,Listed commercial bank,,,,,,,,,,,,Annual report / public market data,Pending,Potential Iberian peer
+ING Group,Netherlands,Listed European bank,,,,,,,,,,,,Annual report / public market data,Pending,Potential European peer
+BNP Paribas,France,Listed European bank,,,,,,,,,,,,Annual report / public market data,Pending,Large European peer
+Crédit Agricole S.A.,France,Listed European bank,,,,,,,,,,,,Annual report / public market data,Pending,Large European peer
+Intesa Sanpaolo,Italy,Listed European bank,,,,,,,,,,,,Annual report / public market data,Pending,Potential European peer
+UniCredit,Italy,Listed European bank,,,,,,,,,,,,Annual report / public market data,Pending,Potential European peer

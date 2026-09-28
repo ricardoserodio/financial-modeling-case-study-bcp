@@ -1,3 +1,5 @@
+> Migration 2026-09-28: CSV labels changed. Follow [metric migration](../docs/metric_migration_2026-09-28.md) before refresh. Existing PBIX/PDF outputs have not been refreshed. Forecast impairment filters must use `Net credit impairments`; historical `Impairments and provisions` is the sum of credit and other components.
+
 # Power BI Dataset Notes ? Millennium bcp Case Study
 
 ## Purpose
@@ -46,7 +48,7 @@ Recommended visuals:
 - operating costs trend;
 - total assets trend;
 - customer loans trend;
-- customer deposits/customer funds trend;
+- deposits and other customer resources/customer funds trend;
 - equity trend.
 
 ---
@@ -259,7 +261,7 @@ The following items should remain visible in the dashboard or supporting documen
 
 | Item | Reason |
 |---|---|
-| Customer deposits vs customer funds | Terminology may differ across disclosures. |
+| Deposits and other customer resources vs customer funds | Terminology may differ across disclosures. |
 | 2022A impairments and provisions | Calculated from multiple impairment/provision components. |
 | 2022A book value per share | Still pending. |
 | Reexpressed comparative figures | Prior-year figures may be reexpressed in later reports. |

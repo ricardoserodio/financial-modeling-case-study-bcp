@@ -1,4 +1,6 @@
-﻿# Project Review Checklist
+> Historical working note retained for provenance. The current H1 2026 release is described in the root README, reports and docs/forecast_methodology.md. Status labels below describe an earlier revision.
+
+# Project Review Checklist
 
 ## Purpose
 

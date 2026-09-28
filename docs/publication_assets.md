@@ -1,122 +1,37 @@
-﻿# Publication Assets
+# Publication assets - draft for the validated H1 2026 update
 
-## Purpose
+## LinkedIn - Português
 
-This document contains public-facing descriptions for the Financial Modeling Case Study – Millennium bcp / Portuguese Listed Bank project.
+Atualizei o meu estudo de caso de análise bancária do Millennium bcp com os resultados do 1.º semestre de 2026.
 
-These texts can be adapted for GitHub, CV, LinkedIn and the professional portfolio website.
+O trabalho liga relatórios públicos a dados estruturados, cálculos em Python, consultas SQL e um dashboard em Power BI. Inclui o histórico anual de 2022 a 2025, a comparação semestral 2025/2026 e três cenários educativos para 2026-2028.
 
-All wording should remain clear that the project is educational, portfolio-based and uses public information only.
+Uma parte central foi a rastreabilidade: 182 valores históricos com indicação da fonte e da página, distinção entre valores reportados e calculados e um anexo completo de validação. As hipóteses dos cenários estão separadas dos dados históricos, com as limitações do modelo documentadas.
 
----
+Este projeto reúne áreas em que quero continuar a trabalhar: análise financeira, qualidade de dados e business intelligence.
 
-## Short GitHub Description
+Relatórios em português e inglês, dashboard e código:
+https://github.com/ricardoserodio/financial-modeling-case-study-bcp
 
-Public-source banking analytics case study combining financial modeling, Power BI, SQL, scenario analysis and an AI-assisted, human-reviewed data quality workflow.
+#PowerBI #Python #SQL #DataAnalytics #FinancialAnalysis
 
----
+## LinkedIn - English
 
-## Portfolio Website Description
+I have updated my Millennium bcp banking analytics case study with H1 2026 results.
 
-Built a public-source financial modeling and banking analytics case study focused on a Portuguese listed bank, using Millennium bcp as the reference case.
+The project connects public financial disclosures to structured datasets, Python calculations, SQL analysis and Power BI. It includes 2022-2025 annual history, comparable H1 2025/2026 results and three educational scenarios for 2026-2028.
 
-The project combines historical financial data, banking ratio analysis, forecast assumptions, scenario analysis, Power BI dashboarding, SQL analytical queries and a data quality review workflow.
+Traceability is central: 182 historical values linked to source documents and pages, clear separation of reported and calculated figures, and a complete validation appendix. Scenario assumptions and model limitations are documented separately from historical evidence.
 
-Forecast outputs are scenario-based educational estimates and are not official projections, investment advice or financial recommendations.
+This project brings together the areas I want to keep developing: financial analysis, data quality and business intelligence.
 
----
+English and Portuguese reports, dashboard and code:
+https://github.com/ricardoserodio/financial-modeling-case-study-bcp
 
-## CV Bullet – Short Version
+#PowerBI #Python #SQL #DataAnalytics #FinancialAnalysis
 
-Built a public-source banking analytics case study using Power BI, SQL, financial modeling, scenario analysis and an AI-assisted, human-reviewed data quality workflow.
+## Suggested attachment and repository description
 
----
+Attach the analytical PDF in the language of the post, or the H1 dashboard preview. Keep the complete appendix linked in the repository. Publish only after the final v5 file and preview have passed the recorded visual checks.
 
-## CV Bullet – Detailed Version
-
-Built a financial modeling case study on a listed Portuguese bank, including financial statement analysis, banking ratio analysis, forecast assumptions, scenario analysis, Power BI dashboarding, SQL analytical queries and source validation using only publicly available information.
-
----
-
-## LinkedIn Project Description
-
-I built a public-source banking analytics and financial modeling case study focused on a Portuguese listed bank, using Millennium bcp as the reference case.
-
-The project combines:
-
-- Financial statement analysis
-- Banking ratio analysis
-- Forecast assumptions
-- Scenario analysis
-- Power BI dashboarding
-- SQL analytical queries
-- Data quality review
-- AI-assisted, human-reviewed documentation and validation workflow
-
-The goal is to demonstrate practical skills in banking analytics, financial data quality, business intelligence and responsible AI-assisted finance workflows.
-
-This is an educational portfolio project only. It is not investment advice, financial advice, valuation advice or an official forecast.
-
----
-
-## LinkedIn Post Draft
-
-I have been working on a public-source banking analytics and financial modeling case study focused on a Portuguese listed bank, using Millennium bcp as the reference case.
-
-The project brings together several areas I want to continue developing professionally:
-
-- Financial statement analysis
-- Banking ratio analysis
-- Forecast assumptions
-- Scenario analysis
-- Power BI dashboarding
-- SQL analytical workflows
-- Financial data quality
-- AI-assisted, human-reviewed analysis
-
-One of the main goals was not only to build a model, but to create a controlled analytical workflow with source mapping, validation status, review notes and clear limitations.
-
-Forecast figures are treated as scenario-based educational estimates, not as official projections or investment recommendations.
-
-This project is part of my broader portfolio focused on banking analytics, financial data quality, business intelligence and responsible AI-assisted finance workflows.
-
----
-
-## Recruiter-Friendly Summary
-
-This project demonstrates the ability to structure public financial data, analyse banking performance, create forecast scenarios, build Power BI dashboards, write SQL analytical queries and apply data quality controls in a regulated-finance context.
-
-It is particularly relevant for roles in banking analytics, financial data quality, financial research, business intelligence, risk operations and finance transformation.
-
----
-
-## Skills Demonstrated
-
-- Banking analytics
-- Financial statement analysis
-- Banking ratio analysis
-- Financial modeling
-- Scenario analysis
-- Forecast assumptions
-- Power BI
-- SQL
-- Python
-- pandas
-- Data validation
-- Source mapping
-- Documentation
-- Financial data quality
-- Human-in-the-loop review
-- AI-assisted finance workflow
-
----
-
-## Public Disclaimer
-
-This project is for educational, analytical and portfolio purposes only.
-
-It does not constitute financial advice, investment advice, valuation advice, credit advice, legal advice or a recommendation to buy, sell or hold any financial instrument.
-
-All forecast figures are scenario-based estimates and should be interpreted as analytical modelling outputs, not as official projections.
-
-The project uses publicly available information only.
+Repository description: Public-source banking analytics with Python, SQL and Power BI: 2022-2025 history, H1 2026 update, documented scenarios and a complete source-validation appendix.

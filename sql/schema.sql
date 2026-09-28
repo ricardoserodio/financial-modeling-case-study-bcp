@@ -1,212 +1,152 @@
--- Financial Modeling Case Study – Millennium bcp / Portuguese Listed Bank
--- SQL Schema
---
--- Purpose:
--- This schema structures public financial data for banking analytics,
--- financial modeling, forecast assumptions, scenario analysis and
--- financial data quality validation.
---
--- This project is for educational and portfolio purposes only.
--- It does not constitute investment advice.
+-- CSV-aligned SQLite schema. Generated from current headers; reviewed 2026-09-28.
+-- Run only against a disposable/local case-study database.
 
--- ============================================================
--- 1. Financial Statements
--- ============================================================
-
-CREATE TABLE financial_statements (
-    id INTEGER PRIMARY KEY,
-    bank_name TEXT NOT NULL,
-    period TEXT NOT NULL,
-    metric TEXT NOT NULL,
-    category TEXT NOT NULL,
-    value REAL,
-    unit TEXT,
-    data_type TEXT NOT NULL,
-    source_document TEXT,
-    source_section_or_page TEXT,
-    validation_status TEXT,
-    notes TEXT
+DROP TABLE IF EXISTS "financial_data";
+CREATE TABLE "financial_data" (
+    "bank_name" TEXT,
+    "period" TEXT,
+    "metric" TEXT,
+    "category" TEXT,
+    "value" NUMERIC,
+    "unit" TEXT,
+    "data_type" TEXT,
+    "source_document" TEXT,
+    "source_section_or_page" TEXT,
+    "reported_or_calculated" TEXT,
+    "validation_status" TEXT,
+    "notes" TEXT
 );
 
--- Expected data_type values:
--- actual
--- forecast
--- calculated
--- estimated
-
--- ============================================================
--- 2. Banking Ratios
--- ============================================================
-
-CREATE TABLE banking_ratios (
-    id INTEGER PRIMARY KEY,
-    bank_name TEXT NOT NULL,
-    period TEXT NOT NULL,
-    ratio_name TEXT NOT NULL,
-    category TEXT NOT NULL,
-    value REAL,
-    unit TEXT,
-    formula TEXT,
-    reported_or_calculated TEXT,
-    source_document TEXT,
-    source_section_or_page TEXT,
-    validation_status TEXT,
-    notes TEXT
+DROP TABLE IF EXISTS "banking_ratios";
+CREATE TABLE "banking_ratios" (
+    "ratio" TEXT,
+    "category" TEXT,
+    "formula" TEXT,
+    "2022A" NUMERIC,
+    "2023A" NUMERIC,
+    "2024A" NUMERIC,
+    "2025A" NUMERIC,
+    "unit" TEXT,
+    "source_status" TEXT,
+    "notes" TEXT
 );
 
--- Expected reported_or_calculated values:
--- reported
--- calculated
--- estimated
-
--- ============================================================
--- 3. Source Mapping
--- ============================================================
-
-CREATE TABLE source_mapping (
-    id INTEGER PRIMARY KEY,
-    data_item TEXT NOT NULL,
-    category TEXT,
-    period TEXT,
-    value REAL,
-    unit TEXT,
-    source_document TEXT NOT NULL,
-    source_type TEXT,
-    source_section_or_page TEXT,
-    reported_or_calculated TEXT,
-    validation_status TEXT,
-    notes TEXT
+DROP TABLE IF EXISTS "source_mapping";
+CREATE TABLE "source_mapping" (
+    "item" TEXT,
+    "category" TEXT,
+    "period" TEXT,
+    "value" NUMERIC,
+    "unit" TEXT,
+    "source_document" TEXT,
+    "source_type" TEXT,
+    "source_section_or_page" TEXT,
+    "reported_or_calculated" TEXT,
+    "calculation_method" TEXT,
+    "validation_status" TEXT,
+    "notes" TEXT
 );
 
--- ============================================================
--- 4. Data Quality Checks
--- ============================================================
-
-CREATE TABLE data_quality_checks (
-    id INTEGER PRIMARY KEY,
-    check_name TEXT NOT NULL,
-    check_category TEXT NOT NULL,
-    related_table TEXT,
-    related_field TEXT,
-    period TEXT,
-    check_result TEXT,
-    severity TEXT,
-    validation_status TEXT,
-    review_notes TEXT
+DROP TABLE IF EXISTS "extraction_tracker";
+CREATE TABLE "extraction_tracker" (
+    "data_item" TEXT,
+    "category" TEXT,
+    "period" TEXT,
+    "source_document" TEXT,
+    "page_or_section" TEXT,
+    "value_extracted" NUMERIC,
+    "unit" TEXT,
+    "entered_in_file" TEXT,
+    "validation_status" TEXT,
+    "review_notes" TEXT
 );
 
--- Expected check_result values:
--- pass
--- warning
--- fail
--- pending
-
--- Expected severity values:
--- low
--- medium
--- high
-
--- ============================================================
--- 5. Forecast Assumptions
--- ============================================================
-
-CREATE TABLE forecast_assumptions (
-    id INTEGER PRIMARY KEY,
-    assumption_name TEXT NOT NULL,
-    category TEXT NOT NULL,
-    period TEXT,
-    scenario TEXT NOT NULL,
-    value REAL,
-    unit TEXT,
-    assumption_logic TEXT,
-    source_basis TEXT,
-    validation_status TEXT,
-    notes TEXT
+DROP TABLE IF EXISTS "forecast_assumptions";
+CREATE TABLE "forecast_assumptions" (
+    "scenario" TEXT,
+    "assumption_category" TEXT,
+    "assumption" TEXT,
+    "2026E" NUMERIC,
+    "2027E" NUMERIC,
+    "2028E" NUMERIC,
+    "unit" TEXT,
+    "rationale" TEXT,
+    "source_or_basis" TEXT,
+    "validation_status" TEXT,
+    "notes" TEXT
 );
 
--- Expected scenario values:
--- base
--- downside
--- upside
-
--- ============================================================
--- 6. Scenario Analysis
--- ============================================================
-
-CREATE TABLE scenario_analysis (
-    id INTEGER PRIMARY KEY,
-    bank_name TEXT NOT NULL,
-    period TEXT NOT NULL,
-    scenario TEXT NOT NULL,
-    metric TEXT NOT NULL,
-    category TEXT NOT NULL,
-    value REAL,
-    unit TEXT,
-    assumption_reference TEXT,
-    validation_status TEXT,
-    notes TEXT
+DROP TABLE IF EXISTS "forecast_financials";
+CREATE TABLE "forecast_financials" (
+    "scenario" TEXT,
+    "line_item" TEXT,
+    "period" TEXT,
+    "value" NUMERIC,
+    "unit" TEXT,
+    "calculation_method" TEXT,
+    "source_or_basis" TEXT,
+    "validation_status" TEXT,
+    "notes" TEXT
 );
 
--- ============================================================
--- 7. Market Data
--- ============================================================
-
-CREATE TABLE market_data (
-    id INTEGER PRIMARY KEY,
-    bank_name TEXT NOT NULL,
-    market_data_date TEXT NOT NULL,
-    metric TEXT NOT NULL,
-    value REAL,
-    unit TEXT,
-    source TEXT,
-    validation_status TEXT,
-    notes TEXT
+DROP TABLE IF EXISTS "forecast_ratios";
+CREATE TABLE "forecast_ratios" (
+    "scenario" TEXT,
+    "ratio" TEXT,
+    "category" TEXT,
+    "period" TEXT,
+    "value" NUMERIC,
+    "unit" TEXT,
+    "calculation_method" TEXT,
+    "source_or_basis" TEXT,
+    "validation_status" TEXT,
+    "notes" TEXT
 );
 
--- ============================================================
--- 8. Peer Comparison
--- ============================================================
-
-CREATE TABLE peer_comparison (
-    id INTEGER PRIMARY KEY,
-    peer_name TEXT NOT NULL,
-    country TEXT,
-    business_type TEXT,
-    market_data_date TEXT,
-    metric TEXT NOT NULL,
-    value REAL,
-    unit TEXT,
-    source TEXT,
-    validation_status TEXT,
-    notes TEXT
+DROP TABLE IF EXISTS "scenario_analysis";
+CREATE TABLE "scenario_analysis" (
+    "scenario" TEXT,
+    "period" TEXT,
+    "metric" TEXT,
+    "category" TEXT,
+    "value" NUMERIC,
+    "unit" TEXT,
+    "base_case_value" NUMERIC,
+    "variance_vs_base" NUMERIC,
+    "variance_vs_base_percent" NUMERIC,
+    "scenario_logic" TEXT,
+    "main_driver" TEXT,
+    "risk_level" TEXT,
+    "interpretation" TEXT,
+    "source_or_basis" TEXT,
+    "validation_status" TEXT,
+    "notes" TEXT
 );
 
--- ============================================================
--- 9. Suggested Period Convention
--- ============================================================
+DROP TABLE IF EXISTS "interim_financials";
+CREATE TABLE "interim_financials" (
+    "bank_name" TEXT,
+    "period" TEXT,
+    "metric" TEXT,
+    "category" TEXT,
+    "value" NUMERIC,
+    "unit" TEXT,
+    "data_type" TEXT,
+    "source_document" TEXT,
+    "source_section_or_page" TEXT,
+    "reported_or_calculated" TEXT,
+    "validation_status" TEXT,
+    "notes" TEXT
+);
 
--- Main model periods:
--- 2022A
--- 2023A
--- 2024A
--- 2025A
--- 2026E
--- 2027E
-
--- A = Actual published historical data
--- E = Estimate / forecast
-
--- ============================================================
--- 10. Suggested Validation Status Convention
--- ============================================================
-
--- Pending
--- Reviewed
--- Validated
--- Needs Review
--- Not Available
--- Calculated
-
--- ============================================================
--- End of schema
--- ============================================================
+DROP TABLE IF EXISTS "interim_ratios";
+CREATE TABLE "interim_ratios" (
+    "ratio" TEXT,
+    "category" TEXT,
+    "formula" TEXT,
+    "period" TEXT,
+    "value" NUMERIC,
+    "unit" TEXT,
+    "source_status" TEXT,
+    "notes" TEXT
+);

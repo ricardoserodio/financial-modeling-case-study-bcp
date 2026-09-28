@@ -1,4 +1,4 @@
-﻿-- Financial Modeling Case Study – Forecast Queries
+-- Financial Modeling Case Study – Forecast Queries
 -- Purpose:
 -- SQL queries for analysing forecast assumptions, forecast financials,
 -- forecast ratios and scenario analysis outputs.
@@ -63,7 +63,7 @@ WHERE line_item IN (
     'Operating income',
     'Operating costs',
     'Pre-provision operating profit',
-    'Impairments and provisions',
+    'Net credit impairments',
     'Net income'
 )
 ORDER BY scenario, period,
@@ -73,7 +73,7 @@ ORDER BY scenario, period,
         WHEN 'Operating income' THEN 3
         WHEN 'Operating costs' THEN 4
         WHEN 'Pre-provision operating profit' THEN 5
-        WHEN 'Impairments and provisions' THEN 6
+        WHEN 'Net credit impairments' THEN 6
         WHEN 'Net income' THEN 7
         ELSE 8
     END;
@@ -93,14 +93,14 @@ SELECT
 FROM forecast_financials
 WHERE line_item IN (
     'Customer loans',
-    'Customer deposits',
+    'Deposits and other customer resources',
     'Total assets',
     'Equity'
 )
 ORDER BY scenario, period,
     CASE line_item
         WHEN 'Customer loans' THEN 1
-        WHEN 'Customer deposits' THEN 2
+        WHEN 'Deposits and other customer resources' THEN 2
         WHEN 'Total assets' THEN 3
         WHEN 'Equity' THEN 4
         ELSE 5

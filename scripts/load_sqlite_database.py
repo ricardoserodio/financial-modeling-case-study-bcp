@@ -10,6 +10,8 @@ DB_PATH = DATA_DIR / "bcp_case_study.sqlite"
 
 
 CSV_TABLE_MAP = {
+    "interim_financials.csv": "interim_financials",
+    "interim_ratios.csv": "interim_ratios",
     "financial_data.csv": "financial_data",
     "banking_ratios.csv": "banking_ratios",
     "source_mapping.csv": "source_mapping",

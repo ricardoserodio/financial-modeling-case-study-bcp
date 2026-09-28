@@ -1,382 +1,94 @@
-# Caso de Estudo de Modelização Financeira  
-## Millennium bcp / Banco Português Cotado
-
-**Análise Bancária com Dados Públicos, Forecast por Cenários, Power BI, SQL e Revisão de Qualidade de Dados**
-
-Preparado por: **Ricardo Serôdio**  
-Portefólio: `https://ricardoserodio.com`  
-GitHub: `https://github.com/ricardoserodio`  
-
----
-
-## Âmbito do Relatório
-
-Este relatório apresenta um caso de estudo público de modelização financeira e análise bancária, utilizando o Millennium bcp como referência de análise.
-
-**Estado:** Caso de estudo de portefólio em validação final.
-
-O projecto combina análise de demonstrações financeiras, rácios bancários, pressupostos de forecast por cenários, dashboard em Power BI, queries SQL analíticas, revisão de qualidade de dados e um workflow assistido por IA com revisão humana.
-
----
-
-## Disclaimer Importante
-
-Este relatório é apenas para fins educativos, de portefólio e desenvolvimento profissional.
-
-Não constitui aconselhamento financeiro, recomendação de investimento, avaliação financeira, aconselhamento de crédito, aconselhamento legal ou recomendação de compra, venda ou detenção de qualquer instrumento financeiro.
-
-Todos os valores forecast são estimativas por cenário e devem ser interpretados como outputs analíticos de modelização, não como projecções oficiais.
-
----
-
-## 1. Sumário Executivo
-
-Este relatório apresenta um estudo de caso de modelação financeira e análise bancária baseado em informação pública, utilizando o Millennium bcp como referência de estudo.
-
-O objectivo é demonstrar um fluxo de trabalho analítico estruturado que combina dados financeiros históricos, análise de rácios bancários, pressupostos de forecast, análise de cenários, reporting em Power BI, consultas SQL analíticas e revisão de qualidade dos dados.
-
-Este relatório destina-se exclusivamente a fins educativos, de portefólio e desenvolvimento profissional. Não constitui aconselhamento financeiro, aconselhamento de investimento, aconselhamento de avaliação, aconselhamento de crédito, aconselhamento legal ou recomendação de compra, venda ou detenção de qualquer instrumento financeiro.
-
-## 2. Objectivo do Projecto
-
-O projecto pretende demonstrar capacidade para:
-
-- Estruturar dados financeiros públicos em datasets reutilizáveis
-- Analisar métricas de rentabilidade, eficiência, qualidade dos activos, liquidez e capital
-- Construir pressupostos de forecast por cenário
-- Gerar demonstrações financeiras e rácios forecast
-- Comparar cenários Base, Optimistic e Conservative
-- Criar outputs em Power BI
-- Construir uma camada analítica em SQL
-- Aplicar controlos de qualidade dos dados e revisão humana
-
-## 3. Âmbito da Análise
-
-O projecto cobre os seguintes períodos:
-
-- 2022A
-- 2023A
-- 2024A
-- 2025A
-- 2026E
-- 2027E
-- 2028E
-
-Os períodos históricos são baseados em informação pública estruturada.
-
-Os períodos forecast são estimativas educativas baseadas em cenários e requerem revisão humana final antes de promoção pública. Estes outputs não se destinam a decisões de investimento, crédito, regulatórias ou outras decisões de negócio.
-
-## 4. Fontes de Dados e Estrutura
-
-O projecto utiliza datasets CSV estruturados com base em informação pública disponível.
-
-Os principais datasets incluem:
-
-- `data/financial_data.csv`
-- `data/banking_ratios.csv`
-- `data/source_mapping.csv`
-- `data/extraction_tracker.csv`
-- `data/forecast_assumptions.csv`
-- `data/forecast_financials.csv`
-- `data/forecast_ratios.csv`
-- `data/scenario_analysis.csv`
-
-A estrutura dos dados suporta rastreabilidade, revisão do estado de validação e reutilização analítica em Python, Power BI e SQL.
-
-## 5. Análise Financeira Histórica
-
-O dataset financeiro histórico inclui métricas seleccionadas das demonstrações financeiras bancárias, incluindo:
-
-- Margem financeira
-- Produto bancário / proveitos operacionais
-- Custos operacionais
-- Imparidades e provisões
-- Resultado líquido
-- Crédito a clientes
-- Depósitos de clientes
-- Activos totais
-- Capital próprio
-
-Estas métricas constituem a base do modelo forecast e da análise de cenários.
-
-## 6. Análise de Rácios Bancários
-
-O dataset de rácios bancários inclui indicadores de rentabilidade, eficiência, qualidade dos activos, liquidez e capital.
-
-As principais categorias de rácios incluem:
-
-- Rentabilidade: ROE, ROA, margem financeira
-- Eficiência: cost-to-income ratio
-- Qualidade dos activos: custo do risco, rácio NPE, cobertura NPE
-- Liquidez: loan-to-deposit ratio, LCR, NSFR
-- Capital: rácios CET1 e total capital
-- Métricas por acção: EPS e valor contabilístico por acção
-- Rácios de valorização, quando disponíveis
-
-Para 2025A, são usados rácios reportados sempre que disponíveis. Isto evita sobrestimar a precisão quando cálculos simplificados podem não replicar totalmente metodologias de reporte de gestão, definições regulatórias ou metodologias com saldos médios.
-
-### Glossário de Rácios Bancários – Métricas Principais Utilizadas
-
-A tabela seguinte resume os principais rácios bancários utilizados neste relatório. As fórmulas apresentadas são fórmulas analíticas simplificadas e podem não replicar integralmente os cálculos oficiais, regulatórios ou internos de uma instituição bancária.
-
-| Rácio | Fórmula Simplificada | Significado |
-|---|---|---|
-| ROE | Resultado Líquido / Capital Próprio Médio | Mede a rentabilidade face à base de capital próprio. |
-| ROA | Resultado Líquido / Activo Total Médio | Mede a rentabilidade face ao activo total do banco. |
-| Margem Financeira / NIM | Margem Financeira / Activos Remunerados Médios | Mede a margem de intermediação financeira face aos activos geradores de juros. |
-| Cost-to-Income | Custos Operacionais / Produto Bancário | Mede a eficiência operacional. Um rácio mais baixo tende a indicar maior eficiência. |
-| Custo do Risco | Imparidades de Crédito / Crédito a Clientes Médio | Mede o custo das imparidades face à carteira de crédito. Normalmente expresso em pontos base. |
-| Rácio NPE | Exposições Não Produtivas / Exposições Totais | Mede a proporção de exposições classificadas como não produtivas. |
-| Loan-to-Deposit | Crédito a Clientes / Depósitos de Clientes | Mede a relação entre crédito concedido e depósitos de clientes. |
-| LCR | Activos Líquidos de Elevada Qualidade / Saídas Líquidas a 30 dias | Mede a resiliência de liquidez de curto prazo em cenário de stress. |
-| NSFR | Financiamento Estável Disponível / Financiamento Estável Necessário | Mede a estabilidade da estrutura de financiamento num horizonte de um ano. |
-| CET1 Ratio | Capital CET1 / Activos Ponderados pelo Risco | Mede o capital regulatório de maior qualidade face aos activos ponderados pelo risco. |
-| Total Capital Ratio | Fundos Próprios Totais / Activos Ponderados pelo Risco | Mede o capital regulatório total face aos activos ponderados pelo risco. |
-| EPS | Resultado Líquido Atribuível aos Accionistas / Número Médio de Acções | Mede o resultado atribuível a cada acção ordinária. |
-| Valor Contabilístico por Acção | Capital Próprio Atribuível / Número de Acções | Mede o valor contabilístico por acção. |
-| Price-to-Book | Capitalização Bolsista / Valor Contabilístico do Capital Próprio | Compara o valor de mercado com o valor contabilístico. |
-| Price-to-Earnings | Preço da Acção / Resultado por Acção | Compara o preço da acção com o resultado por acção. |
-
-Para uma explicação mais detalhada de cada rácio, incluindo notas de interpretação e limitações, consultar:
-
-`docs/banking_ratio_glossary.md`
-
-## 7. Metodologia de Forecast
-
-O forecast é construído a partir dos valores reais de 2025A e de pressupostos por cenário.
-
-O forecast cobre:
-
-- 2026E
-- 2027E
-- 2028E
-
-Os três cenários são:
-
-- Base
-- Optimistic
-- Conservative
-
-Os pressupostos de forecast incluem:
-
-- Crescimento da margem financeira
-- Crescimento de outros proveitos operacionais
-- Crescimento dos custos operacionais
-- Custo do risco
-- Crescimento do crédito a clientes
-- Crescimento dos depósitos de clientes
-- Pressuposto de rácio CET1
-
-Os outputs forecast são gerados através de scripts Python e requerem revisão humana final antes de promoção pública. Estes outputs não se destinam a decisões de investimento, crédito, regulatórias ou outras decisões de negócio.
-
-## 8. Tratamento do Ano Base
-
-O ano 2025A é tratado como o ano base do forecast.
-
-Os valores históricos das demonstrações financeiras de 2025A são retirados de `data/financial_data.csv`.
-
-Os rácios bancários históricos de 2025A são retirados de `data/banking_ratios.csv`.
-
-Os rácios reportados de 2025A são usados sempre que disponíveis, uma vez que os rácios bancários reportados podem depender de definições específicas, saldos médios, bases regulatórias ou abordagens de reporte de gestão.
-
-## 9. Forecast de Proveitos
-
-O modelo faz forecast de:
-
-- Margem financeira
-- Outros proveitos operacionais
-- Proveitos operacionais / produto bancário
-
-As comissões não são forecast directamente porque o valor está actualmente marcado como pendente no dataset.
-
-Em alternativa, o modelo utiliza:
-
-`Other operating income = Operating income - Net interest income`
-
-Esta abordagem evita sobrestimar a precisão quando a linha subjacente ainda não está totalmente validada.
-
-## 10. Forecast de Custos e Risco
-
-Os custos operacionais são projectados com base em pressupostos de crescimento por cenário.
-
-O modelo deriva:
-
-`Pre-provision operating profit = Operating income - Operating costs`
-
-As imparidades e provisões são estimadas utilizando um pressuposto de custo do risco aplicado ao crédito a clientes:
-
-`Impairments and provisions = Customer loans × Cost of risk / 10,000`
-
-O custo do risco é expresso em basis points.
-
-## 11. Forecast do Balanço
-
-O modelo faz forecast de:
-
-- Crédito a clientes
-- Depósitos de clientes
-- Activos totais
-- Capital próprio
-
-O crédito a clientes e os depósitos de clientes crescem com base em pressupostos por cenário.
-
-Os activos totais são estimados através de uma proxy simplificada baseada na média entre o crescimento do crédito a clientes e o crescimento dos depósitos de clientes.
-
-O capital próprio é estimado através de uma ponte simplificada de resultados retidos:
-
-`Equity = Prior year equity + 50% of estimated net income`
-
-Esta é uma simplificação educativa e não modela integralmente dividendos, recompras de acções, outro rendimento integral, deduções regulatórias ou activos ponderados pelo risco.
-
-## 12. Rácios Forecast
-
-Os rácios forecast incluem:
-
-- ROE
-- ROA
-- Cost-to-income ratio
-- Loan-to-deposit ratio
-- Custo do risco
-- Pressuposto de rácio CET1
-
-Para 2025A, são utilizados os rácios reportados presentes em `banking_ratios.csv`.
-
-Para 2026E–2028E, os rácios são calculados a partir dos outputs forecast ou retirados directamente dos pressupostos de forecast.
-
-## 13. Análise de Cenários
-
-A análise de cenários compara os casos Base, Optimistic e Conservative em várias métricas financeiras e rácios-chave.
-
-Para cada métrica, a análise inclui:
-
-- Valor do cenário
-- Valor do cenário Base
-- Variação absoluta face ao Base
-- Variação percentual face ao Base
-- Lógica do cenário
-- Principal driver
-- Nível de risco
-- Interpretação
-- Estado de validação
-
-Isto suporta uma visão estruturada de como os pressupostos afectam rentabilidade, eficiência, qualidade dos activos, liquidez e indicadores de capital.
-
-## 14. Dashboard Power BI
-
-O dashboard Power BI fornece uma camada visual para o projecto.
-
-As páginas do dashboard incluem:
-
-- Executive Overview
-- Liquidity & Funding
-- Asset Quality
-- Profitability
-- Efficiency
-- Capital
-- Data Quality
-
-O dashboard foi concebido como um output de business intelligence de portefólio e não deve ser interpretado como uma ferramenta de recomendação de investimento.
-
-## 15. Camada Analítica SQL
-
-A camada SQL demonstra como os datasets do projecto podem ser consultados num fluxo de trabalho analítico.
-
-Os ficheiros SQL incluem:
-
-- `sql/create_tables.sql`
-- `sql/banking_ratio_queries.sql`
-- `sql/data_quality_queries.sql`
-- `sql/forecast_queries.sql`
-- `sql/README.md`
-
-A camada SQL suporta:
-
-- Revisão de rácios históricos
-- Revisão de qualidade dos dados
-- Revisão de pressupostos de forecast
-- Revisão dos outputs forecast
-- Comparação de cenários
-- Fluxo de revisão humana
-
-## 16. Qualidade dos Dados e Revisão Humana
-
-O projecto inclui um fluxo de qualidade dos dados que cobre:
-
-- Estado de validação
-- Mapeamento de fontes
-- Tracking de extracção
-- Valores em falta
-- Classificação Reviewed vs requer revisão humana
-- Revisão de outputs forecast
-- Checklist final de publicação
-
-A validação pode ser executada com:
-
-`python data/validation_checks.py`
-
-Os outputs forecast requerem revisão humana final antes de promoção pública. Estes outputs não se destinam a decisões de investimento, crédito, regulatórias ou outras decisões de negócio.
-
-## 17. Workflow Assistido por IA e Revisto por Humanos
-
-Este projecto segue um workflow assistido por IA e revisto por humanos.
-
-Ferramentas de IA podem apoiar a estruturação da documentação, enquadramento analítico, geração de código, verificações de consistência e revisão da qualidade dos dados.
-
-No entanto, todos os valores financeiros, pressupostos, interpretações e outputs finais requerem revisão humana pelo autor antes da publicação.
-
-## 18. Principais Limitações
-
-Este projecto tem várias limitações:
-
-- Utiliza apenas informação pública.
-- É um modelo educativo simplificado.
-- Não replica metodologias internas de forecast bancário.
-- Não modela integralmente dinâmicas de capital regulatório.
-- Não modela detalhadamente activos ponderados pelo risco.
-- Não modela integralmente dividendos, recompras de acções ou OCI.
-- Não fornece aconselhamento de avaliação.
-- Não fornece recomendações de investimento.
-- Não deve ser interpretado como forecast oficial.
-
-## 19. Relevância Profissional
-
-Este estudo de caso demonstra competências práticas relevantes para:
-
-- Banking analytics
-- Qualidade de dados financeiros
-- Modelação financeira
-- Reporting em Power BI
-- Workflows analíticos em SQL
-- Análise de cenários
-- Interpretação financeira com consciência de risco
-- Workflows financeiros assistidos por IA de forma responsável
-
-O projecto foi desenhado para ser claro, adequado a recrutadores e alinhado com funções em financial data quality, banking analytics, financial research, risk operations, business intelligence e finance transformation.
-
-## Sumário de Validação de Fontes
-
-O projecto utiliza uma abordagem estruturada de validação de fontes para apoiar rastreabilidade e revisão da qualidade dos dados.
-
-| Área | Ficheiro / Camada | Função de Validação |
-|---|---|---|
-| Dados financeiros históricos | `data/financial_data.csv` | Armazena métricas financeiras estruturadas com base em fontes públicas |
-| Rácios bancários históricos | `data/banking_ratios.csv` | Armazena rácios bancários revistos para 2022A–2025A |
-| Rastreabilidade de fontes | `data/source_mapping.csv` | Mapeia métricas para documentos públicos e estado de validação |
-| Outputs forecast | CSVs gerados por Python | Produz estimativas por cenário para 2026E–2028E |
-| Analytics em SQL | `sql/` | Demonstra queries analíticas e controlos de qualidade dos dados |
-| Dashboard Power BI | `powerbi/` | Fornece reporting visual e análise de cenários |
-| Revisão humana | Documentação e notas de validação | Requerida antes de promoção pública. Estes outputs não se destinam a decisões de investimento, crédito, regulatórias ou outras decisões de negócio. |
-
-Este workflow apoia transparência, reprodutibilidade e comunicação analítica responsável.
-
-## 20. Disclaimer
-
-Este relatório destina-se exclusivamente a fins educativos, analíticos e de portefólio.
-
-Não constitui aconselhamento financeiro, aconselhamento de investimento, aconselhamento de avaliação, aconselhamento de crédito, aconselhamento legal ou recomendação de compra, venda ou detenção de qualquer instrumento financeiro.
-
-Todos os valores forecast são estimativas baseadas em cenários e devem ser interpretados como outputs de modelação analítica, não como projecções oficiais.
-
-O autor não está afiliado ao Millennium bcp para efeitos deste projecto. O projecto utiliza apenas informação pública.
-
-
+# Millennium bcp - Análise financeira e bancária
+
+O resultado líquido do Grupo atingiu 565,8 milhões de euros no primeiro semestre de 2026, mais 12,7% do que no período homólogo. O produto bancário aumentou 5,5% e os custos operacionais 5,4%, mantendo o rácio de eficiência próximo de 37%. A descida das outras imparidades e provisões ajudou o crescimento do resultado, enquanto as imparidades de crédito aumentaram.
+
+## Annual history
+
+| Metric | 2022A | 2023A | 2024A | 2025A |
+|---|---:|---:|---:|---:|
+| Net interest income | 2,149.8 | 2,825.7 | 2,830.9 | 2,898.1 |
+| Fees and commissions | 771.9 | 771.7 | 812.7 | 847.4 |
+| Operating income | 2,867.5 | 3,769.7 | 3,573.5 | 3,815.2 |
+| Operating costs | 1,073.0 | 1,162.6 | 1,306.1 | 1,415.1 |
+| Net income | 207.5 | 856.0 | 906.4 | 1,018.6 |
+| Customer loans | 56,198.0 | 55,218.0 | 56,850.0 | 61,240.0 |
+| Total assets | 89,861.0 | 94,371.0 | 102,144.0 | 109,333.0 |
+| Equity | 5,921.0 | 7,290.0 | 8,193.0 | 9,061.0 |
+| Net credit impairments | 300.6 | 240.0 | 183.3 | 199.5 |
+| Other impairments and provisions | 755.6 | 859.8 | 674.2 | 625.9 |
+| Impairments and provisions | 1,056.2 | 1,099.8 | 857.5 | 825.4 |
+| Deposits and other customer resources | 75,907.0 | 77,928.0 | 84,042.0 | 89,749.0 |
+| Total customer funds | 92,808.0 | 95,328.0 | 102,938.0 | 111,782.0 |
+
+## H1 2026 update
+
+| Metric | H1 2025 | H1 2026 | YoY calculated |
+|---|---:|---:|---:|
+| Net interest income | 1,444.1 | 1,493.8 | +3.4% |
+| Fees and commissions | 413.8 | 438.0 | +5.8% |
+| Operating income | 1,848.0 | 1,950.3 | +5.5% |
+| Operating costs | 683.5 | 720.2 | +5.4% |
+| Net credit impairments | 89.8 | 104.4 | +16.3% |
+| Other impairments and provisions | 280.6 | 188.5 | -32.8% |
+| Net income | 502.3 | 565.8 | +12.6% |
+| Customer loans | 58,839.0 | 63,836.0 | +8.5% |
+| Deposits and other customer resources | 85,950.0 | 93,249.0 | +8.5% |
+| Total assets | 105,466.0 | 114,800.0 | +8.9% |
+| Equity | 8,404.0 | 9,562.0 | +13.8% |
+
+Calculated from rounded amounts: net income 12.6%, versus the official reported 12.7%.
+
+## Scenario outcomes
+
+| Year | Scenario | Net income EUR m | ROE proxy % | C/I % | CET1 % |
+|---|---|---:|---:|---:|---:|
+| 2026E | Conservative | 1,049.9 | 10.98 | 38.10 | 14.8 |
+| 2026E | Base | 1,115.3 | 11.60 | 37.21 | 15.1 |
+| 2026E | Optimistic | 1,162.1 | 12.00 | 36.52 | 15.3 |
+| 2027E | Conservative | 922.8 | 9.65 | 40.53 | 14.6 |
+| 2027E | Base | 1,111.1 | 11.42 | 37.85 | 15.2 |
+| 2027E | Optimistic | 1,217.4 | 12.27 | 36.17 | 15.5 |
+| 2028E | Conservative | 875.2 | 9.15 | 42.05 | 14.5 |
+| 2028E | Base | 1,125.2 | 11.43 | 37.85 | 15.3 |
+| 2028E | Optimistic | 1,257.9 | 12.36 | 35.65 | 15.7 |
+
+Margem financeira, outros proveitos e custos evoluem pelos drivers de cada cenário. O crédito e os depósitos são projetados a partir de junho de 2026. Os ativos crescem à média das taxas de crédito e depósitos. A imparidade do 2S corresponde a crédito líquido projetado × custo do risco / 10 000 × 0,5.
+
+## Validation
+
+{
+  "status": "PASS",
+  "historical_cells": 182,
+  "reported_cells": 176,
+  "recalculated_cells": 6,
+  "scenario_parameters": 72,
+  "forecast_cells_recomputed": 162,
+  "scenario_comparisons": 126,
+  "sql_statements": 36,
+  "tables": {
+    "financial_data": 52,
+    "banking_ratios": 18,
+    "interim_financials": 26,
+    "interim_ratios": 32,
+    "source_mapping": 182,
+    "extraction_tracker": 182,
+    "forecast_assumptions": 24,
+    "forecast_financials": 141,
+    "forecast_ratios": 72,
+    "scenario_analysis": 126
+  },
+  "h1_conversion": 0.5026205916318734,
+  "scope": "Data and calculation validation; issuer guidance and independent audit are not claimed."
+}
+
+## Sources
+
+- [S1 - FY2022.pdf](https://ind.millenniumbcp.pt/pt/Institucional/investidores/Documents/ResultadosTrimestrais/2022/Resultados-Millenniumbcp-FY22-27022023.pdf)
+- [S2 - FY2024.pdf](https://ind.millenniumbcp.pt/pt/Institucional/investidores/Documents/ResultadosTrimestrais/2024/Resultados_Millenniumbcp_FY24_final_26022025.pdf)
+- [S3 - FY2025.pdf](https://ind.millenniumbcp.pt/pt/Institucional/investidores/Documents/ApresentacaoResultados/2025/Resultados_Millenniumbcp_FY25_f_25022026.pdf)
+- [S4 - RCBCP2025PT.pdf](https://ind.millenniumbcp.pt/pt/Institucional/investidores/Documents/RelatorioContas/2025/RCBCP2025PT.pdf)
+- [S5 - RABCP2024Vol1PT.pdf](https://ind.millenniumbcp.pt/pt/Institucional/investidores/Documents/RelatorioContas/2024/RABCP2024Vol1PT.pdf)
+- [S6 - Relatorio-Grupo-BCP-2022.pdf](https://ind.millenniumbcp.pt/pt/Institucional/investidores/Documents/RelatorioContas/2022/Relatorio-Grupo-BCP-2022.pdf)
+- [S7 - H12026.pdf](https://ind.millenniumbcp.pt/pt/Institucional/investidores/Documents/ApresentacaoResultados/2026/20260729_Resultados_Millennium_BCP_1S26.pdf)
+
+See [validation appendix](bcp_validation_appendix_2026-09-28.pdf) for the complete observation register.

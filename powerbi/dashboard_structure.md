@@ -1,3 +1,5 @@
+> Migration 2026-09-28: CSV labels changed. Follow [metric migration](../docs/metric_migration_2026-09-28.md) before refresh. Existing PBIX/PDF outputs have not been refreshed. Forecast impairment filters must use `Net credit impairments`; historical `Impairments and provisions` is the sum of credit and other components.
+
 # Dashboard Structure
 
 This document provides the design reference for the Power BI dashboard in the **Financial Modeling Case Study – Millennium bcp / Portuguese Listed Bank** project.
@@ -76,7 +78,7 @@ Provide a high-level overview of the most important banking KPIs.
 | CET1 ratio | Shows capital strength |
 | NPL ratio | Shows asset quality |
 | Customer loans | Shows lending activity |
-| Customer deposits | Shows funding base |
+| Deposits and other customer resources | Shows funding base |
 
 ### Suggested Commentary
 
@@ -209,7 +211,7 @@ Analyse capital strength, balance sheet structure and funding indicators.
 ### Suggested Visuals
 
 - CET1 ratio trend
-- Customer loans vs customer deposits chart
+- Customer loans vs deposits and other customer resources chart
 - Loan-to-deposit ratio trend
 - Equity and total assets chart
 - Capital KPI cards
@@ -221,7 +223,7 @@ Analyse capital strength, balance sheet structure and funding indicators.
 | CET1 ratio | Core capital strength indicator |
 | Total capital ratio | Broader capital adequacy measure, if available |
 | Customer loans | Lending activity |
-| Customer deposits | Stable customer funding base |
+| Deposits and other customer resources | Stable customer funding base |
 | Loan-to-deposit ratio | Relationship between lending and customer funding |
 | Equity | Accounting capital base |
 | Total assets | Balance sheet size |
@@ -230,7 +232,7 @@ Analyse capital strength, balance sheet structure and funding indicators.
 
 - Is the CET1 ratio stable?
 - Are loans and deposits growing consistently?
-- Is lending funded primarily by customer deposits?
+- Is lending funded primarily by deposits and other customer resources?
 - Is the capital position resilient across the analysed period?
 
 ### Suggested Commentary
@@ -263,7 +265,7 @@ Compare historical actuals with simplified forecast estimates.
 | Cost of risk forecast | Shows credit risk assumption |
 | CET1 forecast | Shows capital assumption |
 | Customer loans forecast | Shows lending growth assumption |
-| Customer deposits forecast | Shows funding growth assumption |
+| Deposits and other customer resources forecast | Shows funding growth assumption |
 
 ### Analytical Questions
 

@@ -1,4 +1,4 @@
-﻿import pandas as pd
+import pandas as pd
 from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
@@ -14,7 +14,7 @@ def get_value(df, filters, value_column="value"):
     for column, expected_value in filters.items():
         rows = rows[rows[column] == expected_value]
 
-    if rows.empty:
+    if len(rows) != 1:
         raise ValueError(f"Missing value for filters: {filters}")
 
     value = rows.iloc[0][value_column]
@@ -94,7 +94,7 @@ def add_row(
             "risk_level": scenario_risk_level(scenario),
             "interpretation": interpretation(metric, scenario, period, value, base_value, unit),
             "source_or_basis": source,
-            "validation_status": "To Review",
+            "validation_status": "Model checked",
             "notes": (
                 "Educational scenario analysis only; not an official projection, "
                 "investment advice or financial recommendation"
@@ -116,10 +116,10 @@ def main():
         ("Operating income", "Profitability", "EUR million"),
         ("Operating costs", "Efficiency", "EUR million"),
         ("Pre-provision operating profit", "Profitability", "EUR million"),
-        ("Impairments and provisions", "Asset Quality", "EUR million"),
+        ("Net credit impairments", "Asset Quality", "EUR million"),
         ("Net income", "Profitability", "EUR million"),
         ("Customer loans", "Balance Sheet", "EUR million"),
-        ("Customer deposits", "Balance Sheet", "EUR million"),
+        ("Deposits and other customer resources", "Balance Sheet", "EUR million"),
         ("Equity", "Capital", "EUR million"),
     ]
 

@@ -1,256 +1,50 @@
-﻿import pandas as pd
+"""2026 = reported H1 + modelled H2; 2027/28 = annual scenario growth."""
 from pathlib import Path
-
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
-
-FINANCIAL_DATA_PATH = PROJECT_ROOT / "data" / "financial_data.csv"
-ASSUMPTIONS_PATH = PROJECT_ROOT / "data" / "forecast_assumptions.csv"
-OUTPUT_PATH = PROJECT_ROOT / "data" / "forecast_financials.csv"
-
-
-def get_2025_value(financial_df: pd.DataFrame, metric: str) -> float:
-    rows = financial_df[
-        (financial_df["period"] == "2025A")
-        & (financial_df["metric"] == metric)
-    ]
-
-    if rows.empty:
-        raise ValueError(f"Missing 2025A value for metric: {metric}")
-
-    value = rows.iloc[0]["value"]
-
-    if pd.isna(value):
-        raise ValueError(f"2025A value is NaN for metric: {metric}")
-
-    return float(value)
-
-
-def get_assumption(
-    assumptions_df: pd.DataFrame,
-    scenario: str,
-    assumption: str,
-    period: str,
-) -> float:
-    rows = assumptions_df[
-        (assumptions_df["scenario"] == scenario)
-        & (assumptions_df["assumption"] == assumption)
-    ]
-
-    if rows.empty:
-        raise ValueError(
-            f"Missing assumption: scenario={scenario}, assumption={assumption}"
-        )
-
-    value = rows.iloc[0][period]
-
-    if pd.isna(value):
-        raise ValueError(
-            f"Missing value for assumption={assumption}, scenario={scenario}, period={period}"
-        )
-
-    return float(value)
-
-
-def grow(previous_value: float, growth_rate_percent: float) -> float:
-    return previous_value * (1 + growth_rate_percent / 100)
-
-
-def main() -> None:
-    financial_df = pd.read_csv(FINANCIAL_DATA_PATH)
-    assumptions_df = pd.read_csv(ASSUMPTIONS_PATH)
-
-    scenarios = ["Base", "Optimistic", "Conservative"]
-    forecast_periods = ["2026E", "2027E", "2028E"]
-
-    base_2025 = {
-        "Net interest income": get_2025_value(financial_df, "Net interest income"),
-        "Operating income": get_2025_value(financial_df, "Operating income"),
-        "Operating costs": get_2025_value(financial_df, "Operating costs"),
-        "Impairments and provisions": get_2025_value(financial_df, "Impairments and provisions"),
-        "Net income": get_2025_value(financial_df, "Net income"),
-        "Customer loans": get_2025_value(financial_df, "Customer loans"),
-        "Customer deposits": get_2025_value(financial_df, "Customer deposits"),
-        "Total assets": get_2025_value(financial_df, "Total assets"),
-        "Equity": get_2025_value(financial_df, "Equity"),
-    }
-
-    base_2025["Other operating income"] = (
-        base_2025["Operating income"] - base_2025["Net interest income"]
-    )
-
-    base_2025["Pre-provision operating profit"] = (
-        base_2025["Operating income"] - base_2025["Operating costs"]
-    )
-
-    profit_after_impairments_2025 = (
-        base_2025["Pre-provision operating profit"]
-        - base_2025["Impairments and provisions"]
-    )
-
-    if profit_after_impairments_2025 <= 0:
-        raise ValueError(
-            "Invalid 2025A profit bridge: profit after impairments is not positive."
-        )
-
-    net_income_conversion_ratio = (
-        base_2025["Net income"] / profit_after_impairments_2025
-    )
-
-    rows = []
-
-    for scenario in scenarios:
-        current = base_2025.copy()
-
-        for metric in [
-            "Net interest income",
-            "Other operating income",
-            "Operating income",
-            "Operating costs",
-            "Pre-provision operating profit",
-            "Customer loans",
-            "Customer deposits",
-            "Total assets",
-            "Equity",
-            "Impairments and provisions",
-            "Net income",
-        ]:
-            rows.append(
-                {
-                    "scenario": scenario,
-                    "line_item": metric,
-                    "period": "2025A",
-                    "value": round(current[metric], 1),
-                    "unit": "EUR million",
-                    "calculation_method": "Historical actual from financial_data.csv",
-                    "source_or_basis": "Public financial statements structured in project dataset",
-                    "validation_status": "Reviewed",
-                    "notes": "Historical actual used as forecast base year",
-                }
-            )
-
-        for period in forecast_periods:
-            nii_growth = get_assumption(
-                assumptions_df, scenario, "Net interest income growth", period
-            )
-
-            other_income_growth = get_assumption(
-                assumptions_df, scenario, "Other operating income growth", period
-            )
-
-            cost_growth = get_assumption(
-                assumptions_df, scenario, "Operating costs growth", period
-            )
-
-            cost_of_risk_bps = get_assumption(
-                assumptions_df, scenario, "Cost of risk", period
-            )
-
-            loans_growth = get_assumption(
-                assumptions_df, scenario, "Customer loans growth", period
-            )
-
-            deposits_growth = get_assumption(
-                assumptions_df, scenario, "Customer deposits growth", period
-            )
-
-            cet1_assumption = get_assumption(
-                assumptions_df, scenario, "CET1 ratio assumption", period
-            )
-
-            current["Net interest income"] = grow(
-                current["Net interest income"], nii_growth
-            )
-
-            current["Other operating income"] = grow(
-                current["Other operating income"], other_income_growth
-            )
-
-            current["Operating income"] = (
-                current["Net interest income"] + current["Other operating income"]
-            )
-
-            current["Operating costs"] = grow(
-                current["Operating costs"], cost_growth
-            )
-
-            current["Customer loans"] = grow(
-                current["Customer loans"], loans_growth
-            )
-
-            current["Customer deposits"] = grow(
-                current["Customer deposits"], deposits_growth
-            )
-
-            current["Total assets"] = grow(
-                current["Total assets"], (loans_growth + deposits_growth) / 2
-            )
-
-            current["Pre-provision operating profit"] = (
-                current["Operating income"] - current["Operating costs"]
-            )
-
-            current["Impairments and provisions"] = (
-                current["Customer loans"] * cost_of_risk_bps / 10000
-            )
-
-            current["Net income"] = (
-                current["Pre-provision operating profit"]
-                - current["Impairments and provisions"]
-            ) * net_income_conversion_ratio
-
-            current["Equity"] = current["Equity"] + (current["Net income"] * 0.5)
-
-            for metric in [
-                "Net interest income",
-                "Other operating income",
-                "Operating income",
-                "Operating costs",
-                "Pre-provision operating profit",
-                "Customer loans",
-                "Customer deposits",
-                "Total assets",
-                "Equity",
-                "Impairments and provisions",
-                "Net income",
-            ]:
-                rows.append(
-                    {
-                        "scenario": scenario,
-                        "line_item": metric,
-                        "period": period,
-                        "value": round(current[metric], 1),
-                        "unit": "EUR million",
-                        "calculation_method": "Scenario-based educational forecast model",
-                        "source_or_basis": "2025A actuals plus forecast_assumptions.csv",
-                        "validation_status": "To Review",
-                        "notes": (
-                            "Educational estimate only; not an official projection, "
-                            "investment advice or financial recommendation"
-                        ),
-                    }
-                )
-
-            rows.append(
-                {
-                    "scenario": scenario,
-                    "line_item": "CET1 ratio assumption",
-                    "period": period,
-                    "value": round(cet1_assumption, 2),
-                    "unit": "%",
-                    "calculation_method": "Direct scenario assumption",
-                    "source_or_basis": "forecast_assumptions.csv",
-                    "validation_status": "To Review",
-                    "notes": "Educational capital assumption only",
-                }
-            )
-
-    output_df = pd.DataFrame(rows)
-    output_df.to_csv(OUTPUT_PATH, index=False, encoding="utf-8-sig")
-
-    print(f"Created: {OUTPUT_PATH}")
-    print()
-    print(output_df.head(30).to_string(index=False))
-
-
-if __name__ == "__main__":
-    main()
+import pandas as pd
+PROJECT_ROOT=Path(__file__).resolve().parents[1]
+DATA=PROJECT_ROOT/'data'
+FLOW=['Net interest income','Other operating income','Operating income','Operating costs','Pre-provision operating profit','Net credit impairments','Net income']
+STOCK=['Customer loans','Deposits and other customer resources','Total assets','Equity']
+def get_value(df,metric,period):
+    rows=df[(df['period']==period)&(df['metric']==metric)]
+    if len(rows)!=1 or pd.isna(rows.iloc[0]['value']):raise ValueError(f'Expected one value: {period} {metric}')
+    return float(rows.iloc[0]['value'])
+def get_2025_value(df,metric):return get_value(df,metric,'2025A')
+def get_assumption(df,scenario,assumption,period):
+    rows=df[(df['scenario']==scenario)&(df['assumption']==assumption)]
+    if len(rows)!=1 or pd.isna(rows.iloc[0][period]):raise ValueError(f'Expected one assumption: {scenario} {assumption} {period}')
+    return float(rows.iloc[0][period])
+def base(df,period):
+    d={m:get_value(df,m,period) for m in FLOW+STOCK if m not in ('Other operating income','Pre-provision operating profit')}
+    d['Other operating income']=d['Operating income']-d['Net interest income']
+    d['Pre-provision operating profit']=d['Operating income']-d['Operating costs']
+    return d
+def main():
+    historical=pd.read_csv(DATA/'financial_data.csv');interim=pd.read_csv(DATA/'interim_financials.csv');assumptions=pd.read_csv(DATA/'forecast_assumptions.csv')
+    annual=base(historical,'2025A'); half=base(interim,'2026H1A')
+    conversion=half['Net income']/(half['Pre-provision operating profit']-half['Net credit impairments'])
+    if not 0<conversion<1:raise ValueError('Invalid H1 profit conversion bridge')
+    rows=[]
+    def append(scenario,period,metric,value,status,method):
+        rows.append(dict(scenario=scenario,line_item=metric,period=period,value=round(value,2 if metric=='CET1 ratio assumption' else 1),unit='%' if metric=='CET1 ratio assumption' else 'EUR million',calculation_method=method,source_or_basis='2026H1A results and forecast_assumptions.csv' if period!='2025A' else 'financial_data.csv',validation_status=status,notes='Scenario calculations checked; assumptions are illustrative, not issuer guidance. 2026 contains reported H1 and estimated H2.' if period!='2025A' else 'Annual historical reference; source vintage retained.'))
+    for scenario in ('Base','Optimistic','Conservative'):
+        for metric in FLOW+STOCK:append(scenario,'2025A',metric,annual[metric],'Recalculated' if metric in ('Other operating income','Pre-provision operating profit') else 'Source verified','Historical annual reference')
+        previous=half.copy()
+        for period in ('2026E','2027E','2028E'):
+            a=lambda name:get_assumption(assumptions,scenario,name,period)
+            current={}
+            for metric,driver in [('Net interest income','Net interest income growth'),('Other operating income','Other operating income growth'),('Operating costs','Operating costs growth'),('Customer loans','Customer loans growth'),('Deposits and other customer resources','Deposits and other customer resources growth')]:current[metric]=previous[metric]*(1+a(driver)/100)
+            current['Total assets']=previous['Total assets']*(1+(a('Customer loans growth')+a('Deposits and other customer resources growth'))/200)
+            current['Operating income']=current['Net interest income']+current['Other operating income']
+            current['Pre-provision operating profit']=current['Operating income']-current['Operating costs']
+            current['Net credit impairments']=current['Customer loans']*a('Cost of risk')/10000*(.5 if period=='2026E' else 1)
+            current['Net income']=(current['Pre-provision operating profit']-current['Net credit impairments'])*conversion
+            current['Equity']=previous['Equity']+current['Net income']*a('Earnings retention')/100
+            if period=='2026E':
+                for metric in FLOW:current[metric]+=half[metric]
+            for metric in FLOW+STOCK:append(scenario,period,metric,current[metric],'Model checked','Reported H1 flow + estimated H2 flow; closing stocks projected from June' if period=='2026E' else 'Annual scenario growth; H1 2026 profit conversion held constant')
+            append(scenario,period,'CET1 ratio assumption',a('CET1 ratio assumption'),'Scenario assumption','Direct assumption; no risk-weighted-assets model')
+            previous=current
+    pd.DataFrame(rows).to_csv(DATA/'forecast_financials.csv',index=False,encoding='utf-8-sig')
+    print(f'forecast_financials: {len(rows)} rows; H1 conversion {conversion:.9f}')
+if __name__=='__main__':main()

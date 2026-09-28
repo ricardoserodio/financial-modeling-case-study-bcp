@@ -1,4 +1,6 @@
-﻿# Power BI Dashboard v2 Notes
+> Migration 2026-09-28: CSV labels changed. Follow [metric migration](../docs/metric_migration_2026-09-28.md) before refresh. Existing PBIX/PDF outputs have not been refreshed. Forecast impairment filters must use `Net credit impairments`; historical `Impairments and provisions` is the sum of credit and other components.
+
+# Power BI Dashboard v2 Notes
 
 ## Purpose
 

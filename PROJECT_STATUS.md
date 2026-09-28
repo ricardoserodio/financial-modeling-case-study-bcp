@@ -1,13 +1,14 @@
 # Project status
 
-Updated and locally verified on 28 September 2026. Latest issuer operating results: H1 2026, released 29 July.
+Current report and scenario package: **29 September 2026**. Information cut-off: 28 September 2026; latest operating period H1 2026.
 
-- 182 historical observations reconciled: 176 source verified and six recalculated.
-- Three illustrative scenarios; 162 forecast cells and 126 scenario comparisons checked.
-- Ten SQLite tables and 36 SQL statements passed.
-- Power BI v5 saved, reopened and refreshed; all 909 model records matched the ten CSV sources.
-- All ten dashboard PDF pages and nineteen analytical report/appendix pages visually reviewed.
+- Complete English PDF: 40 pages, including nine preserved native historical Power BI views.
+- Current scenario package: `revisions/2026-09-29`.
+- 54 operating inputs; common 48% conversion reference; 81 financial cells independently recomputed.
+- 36 conversion and 27 retention sensitivity outputs cross-checked.
+- Earnings bridge and NPE coverage decomposition reconciled.
+- Historical register: 182 observations; supplementary register: 19 records including overlaps.
+- No projected CET1 or reported-basis ROE/ROA.
+- Original v5 PBIX and root-level legacy scenario files preserved, clearly marked as superseded for scenario interpretation.
 
-Evidence: `docs/validation_results.json`, `powerbi/v5_validation.json` and the complete validation appendix. This v5 release includes the PT/EN reports, dashboard and complete source appendix. LinkedIn copy remains a draft. The validation JSON records the local checks before publication; publication does not constitute independent certification.
-
-Validation is AI-assisted and source-based, not an independent audit or external human certification. Market valuation and peer comparison remain optional extensions outside the active scope.
+The revised PDF has been visually reviewed. Arithmetic validation is not independent audit assurance. LinkedIn profile work is separate from this repository; no new feed post is created by this release.

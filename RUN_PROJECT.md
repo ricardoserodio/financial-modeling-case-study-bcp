@@ -1,4 +1,23 @@
-# Reproduce the BCP case study
+# Reproduce the current case study
+
+## Current analytical revision - 29 September 2026
+
+From the repository root, with Python 3.10 or later:
+
+```shell
+python revisions/2026-09-29/reproduce_model.py
+```
+
+The revised model uses only the Python standard library. Input snapshots are in `revisions/2026-09-29/inputs/data`; generated CSVs and source records are in `revisions/2026-09-29/data`; checks are in `revisions/2026-09-29/checks.json`.
+
+The reproduction checks 81 financial cells, 36 conversion sensitivities, 27 retention sensitivities, the net-income bridge and NPE coverage arithmetic. See [revisions/2026-09-29/METHODOLOGY.md](revisions/2026-09-29/METHODOLOGY.md) for assumptions and limitations.
+
+The [current PDF](reports/bcp_complete_case_study_en_2026-09-29.pdf) contains the revised calculations and nine native historical Power BI pages. The old PBIX forecast page is not included and has not been refreshed to the new model.
+
+## Previous v5 pipeline - historical reproduction only
+
+The following commands rebuild the **superseded v5 scenario model**, not the current report. Use them only to reproduce that edition and the historical SQL/Power BI pipeline.
+
 
 Use Python 3.10+ in a local virtual environment. From the repository root:
 

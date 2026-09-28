@@ -1,0 +1,19 @@
+﻿scenario,period,ratio,value,unit
+Conservative,2026E,Cost-to-income ratio,38.104,%
+Conservative,2026E,Loan-to-deposit ratio,68.458,%
+Conservative,2027E,Cost-to-income ratio,40.532,%
+Conservative,2027E,Loan-to-deposit ratio,68.458,%
+Conservative,2028E,Cost-to-income ratio,42.051,%
+Conservative,2028E,Loan-to-deposit ratio,68.458,%
+Base,2026E,Cost-to-income ratio,37.210,%
+Base,2026E,Loan-to-deposit ratio,68.792,%
+Base,2027E,Cost-to-income ratio,37.852,%
+Base,2027E,Loan-to-deposit ratio,68.792,%
+Base,2028E,Cost-to-income ratio,37.852,%
+Base,2028E,Loan-to-deposit ratio,68.792,%
+Optimistic,2026E,Cost-to-income ratio,36.522,%
+Optimistic,2026E,Loan-to-deposit ratio,68.788,%
+Optimistic,2027E,Cost-to-income ratio,36.171,%
+Optimistic,2027E,Loan-to-deposit ratio,68.788,%
+Optimistic,2028E,Cost-to-income ratio,35.649,%
+Optimistic,2028E,Loan-to-deposit ratio,68.788,%

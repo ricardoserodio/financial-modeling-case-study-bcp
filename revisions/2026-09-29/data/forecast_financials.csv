@@ -1,0 +1,82 @@
+﻿scenario,line_item,period,value,unit,conversion_factor,validation_status
+Conservative,Net interest income,2026E,2942.8,EUR million,0.48,Model checked
+Conservative,Other operating income,2026E,913.0,EUR million,0.48,Model checked
+Conservative,Operating income,2026E,3855.8,EUR million,0.48,Model checked
+Conservative,Operating costs,2026E,1469.2,EUR million,0.48,Model checked
+Conservative,Pre-provision operating profit,2026E,2386.6,EUR million,0.48,Model checked
+Conservative,Net credit impairments,2026E,297.8,EUR million,0.48,Model checked
+Conservative,Net income,2026E,1028.1,EUR million,0.48,Model checked
+Conservative,Customer loans,2026E,64474.4,EUR million,0.48,Model checked
+Conservative,Deposits and other customer resources,2026E,94181.5,EUR million,0.48,Model checked
+Conservative,Net interest income,2027E,2883.9,EUR million,0.48,Model checked
+Conservative,Other operating income,2027E,922.1,EUR million,0.48,Model checked
+Conservative,Operating income,2027E,3806.1,EUR million,0.48,Model checked
+Conservative,Operating costs,2027E,1542.7,EUR million,0.48,Model checked
+Conservative,Pre-provision operating profit,2027E,2263.4,EUR million,0.48,Model checked
+Conservative,Net credit impairments,2027E,427.5,EUR million,0.48,Model checked
+Conservative,Net income,2027E,881.2,EUR million,0.48,Model checked
+Conservative,Customer loans,2027E,65763.8,EUR million,0.48,Model checked
+Conservative,Deposits and other customer resources,2027E,96065.1,EUR million,0.48,Model checked
+Conservative,Net interest income,2028E,2883.9,EUR million,0.48,Model checked
+Conservative,Other operating income,2028E,931.4,EUR million,0.48,Model checked
+Conservative,Operating income,2028E,3815.3,EUR million,0.48,Model checked
+Conservative,Operating costs,2028E,1604.4,EUR million,0.48,Model checked
+Conservative,Pre-provision operating profit,2028E,2210.9,EUR million,0.48,Model checked
+Conservative,Net credit impairments,2028E,469.6,EUR million,0.48,Model checked
+Conservative,Net income,2028E,835.8,EUR million,0.48,Model checked
+Conservative,Customer loans,2028E,67079.1,EUR million,0.48,Model checked
+Conservative,Deposits and other customer resources,2028E,97986.4,EUR million,0.48,Model checked
+Base,Net interest income,2026E,2987.6,EUR million,0.48,Model checked
+Base,Other operating income,2026E,922.1,EUR million,0.48,Model checked
+Base,Operating income,2026E,3909.7,EUR million,0.48,Model checked
+Base,Operating costs,2026E,1454.8,EUR million,0.48,Model checked
+Base,Pre-provision operating profit,2026E,2454.9,EUR million,0.48,Model checked
+Base,Net credit impairments,2026E,235.9,EUR million,0.48,Model checked
+Base,Net income,2026E,1090.6,EUR million,0.48,Model checked
+Base,Customer loans,2026E,65751.1,EUR million,0.48,Model checked
+Base,Deposits and other customer resources,2026E,95580.2,EUR million,0.48,Model checked
+Base,Net interest income,2027E,3047.4,EUR million,0.48,Model checked
+Base,Other operating income,2027E,949.8,EUR million,0.48,Model checked
+Base,Operating income,2027E,3997.1,EUR million,0.48,Model checked
+Base,Operating costs,2027E,1513.0,EUR million,0.48,Model checked
+Base,Pre-provision operating profit,2027E,2484.1,EUR million,0.48,Model checked
+Base,Net credit impairments,2027E,273.5,EUR million,0.48,Model checked
+Base,Net income,2027E,1061.1,EUR million,0.48,Model checked
+Base,Customer loans,2027E,68381.1,EUR million,0.48,Model checked
+Base,Deposits and other customer resources,2027E,99403.4,EUR million,0.48,Model checked
+Base,Net interest income,2028E,3138.8,EUR million,0.48,Model checked
+Base,Other operating income,2028E,978.3,EUR million,0.48,Model checked
+Base,Operating income,2028E,4117.1,EUR million,0.48,Model checked
+Base,Operating costs,2028E,1558.4,EUR million,0.48,Model checked
+Base,Pre-provision operating profit,2028E,2558.7,EUR million,0.48,Model checked
+Base,Net credit impairments,2028E,320.0,EUR million,0.48,Model checked
+Base,Net income,2028E,1074.6,EUR million,0.48,Model checked
+Base,Customer loans,2028E,71116.4,EUR million,0.48,Model checked
+Base,Deposits and other customer resources,2028E,103379.6,EUR million,0.48,Model checked
+Optimistic,Net interest income,2026E,3032.4,EUR million,0.48,Model checked
+Optimistic,Other operating income,2026E,931.3,EUR million,0.48,Model checked
+Optimistic,Operating income,2026E,3963.7,EUR million,0.48,Model checked
+Optimistic,Operating costs,2026E,1447.6,EUR million,0.48,Model checked
+Optimistic,Pre-provision operating profit,2026E,2516.1,EUR million,0.48,Model checked
+Optimistic,Net credit impairments,2026E,204.0,EUR million,0.48,Model checked
+Optimistic,Net income,2026E,1135.3,EUR million,0.48,Model checked
+Optimistic,Customer loans,2026E,66389.4,EUR million,0.48,Model checked
+Optimistic,Deposits and other customer resources,2026E,96512.7,EUR million,0.48,Model checked
+Optimistic,Net interest income,2027E,3153.7,EUR million,0.48,Model checked
+Optimistic,Other operating income,2027E,968.5,EUR million,0.48,Model checked
+Optimistic,Operating income,2027E,4122.2,EUR million,0.48,Model checked
+Optimistic,Operating costs,2027E,1491.0,EUR million,0.48,Model checked
+Optimistic,Pre-provision operating profit,2027E,2631.2,EUR million,0.48,Model checked
+Optimistic,Net credit impairments,2027E,209.1,EUR million,0.48,Model checked
+Optimistic,Net income,2027E,1162.6,EUR million,0.48,Model checked
+Optimistic,Customer loans,2027E,69708.9,EUR million,0.48,Model checked
+Optimistic,Deposits and other customer resources,2027E,101338.4,EUR million,0.48,Model checked
+Optimistic,Net interest income,2028E,3279.9,EUR million,0.48,Model checked
+Optimistic,Other operating income,2028E,1007.3,EUR million,0.48,Model checked
+Optimistic,Operating income,2028E,4287.1,EUR million,0.48,Model checked
+Optimistic,Operating costs,2028E,1528.3,EUR million,0.48,Model checked
+Optimistic,Pre-provision operating profit,2028E,2758.8,EUR million,0.48,Model checked
+Optimistic,Net credit impairments,2028E,256.2,EUR million,0.48,Model checked
+Optimistic,Net income,2028E,1201.3,EUR million,0.48,Model checked
+Optimistic,Customer loans,2028E,73194.4,EUR million,0.48,Model checked
+Optimistic,Deposits and other customer resources,2028E,106405.3,EUR million,0.48,Model checked

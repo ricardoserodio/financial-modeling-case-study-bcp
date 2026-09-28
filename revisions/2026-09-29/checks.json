@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "revision_date": "2026-09-29",
+  "information_cutoff": "2026-09-28",
+  "operating_inputs": 54,
+  "reference_conversion_factor": 0.48,
+  "independently_recomputed_forecast_cells": 81,
+  "conversion_sensitivity_cells": 36,
+  "retention_sensitivity_cells": 27,
+  "historical_core_observations": 182,
+  "supplemental_source_records_including_overlaps": 19,
+  "profit_bridge_reconciled": true,
+  "cet1_projection": false,
+  "roe_roa_projection": false
+}

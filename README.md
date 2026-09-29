@@ -9,6 +9,8 @@ Public financial disclosures transformed into a traceable dataset, Python calcul
 | Deliverable | Link |
 |---|---|
 | Complete English case study - 40 pages | [Current PDF](reports/bcp_complete_case_study_en_2026-09-29.pdf) |
+| Estudo completo em português - 38 páginas | [PDF atual](reports/bcp_complete_case_study_pt_2026-09-29.pdf) |
+| Guia dos 18 rácios em português - revisão atual | [PDF](reports/bcp_analysis_and_ratios_guide_pt_2026-09-29.pdf) |
 | Revised scenario model and input snapshots | [Calculation package](revisions/2026-09-29) |
 | Current assumptions, sensitivity and limitations | [Methodology](revisions/2026-09-29/METHODOLOGY.md) |
 | Revised scenario outcomes | [CSV](revisions/2026-09-29/data/forecast_financials.csv) |

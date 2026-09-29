@@ -1,0 +1,87 @@
+{
+  "status": "PASS",
+  "verified_at": "2026-09-29T16:11:42.594803+01:00",
+  "tables": [
+    {
+      "table": "financial_data",
+      "rows": 52,
+      "status": "MATCH"
+    },
+    {
+      "table": "banking_ratios",
+      "rows": 72,
+      "status": "MATCH"
+    },
+    {
+      "table": "source_mapping",
+      "rows": 182,
+      "status": "MATCH"
+    },
+    {
+      "table": "extraction_tracker",
+      "rows": 182,
+      "status": "MATCH"
+    },
+    {
+      "table": "forecast_assumptions",
+      "rows": 18,
+      "status": "MATCH"
+    },
+    {
+      "table": "forecast_financials",
+      "rows": 81,
+      "status": "MATCH"
+    },
+    {
+      "table": "forecast_ratios",
+      "rows": 18,
+      "status": "MATCH"
+    },
+    {
+      "table": "scenario_analysis",
+      "rows": 81,
+      "status": "MATCH"
+    },
+    {
+      "table": "interim_financials",
+      "rows": 26,
+      "status": "MATCH"
+    },
+    {
+      "table": "interim_ratios",
+      "rows": 32,
+      "status": "MATCH"
+    },
+    {
+      "table": "revision_dashboard",
+      "rows": 108,
+      "status": "MATCH"
+    }
+  ],
+  "model_rows_compared": 852,
+  "scope": "All fields and rows compared; banking ratios unpivoted; blank and category/data_type case normalization.",
+  "saved_pbix_sha256": "4e6c39faec07fda4e5be3e79b4f06ec35f9c44be397bba5ebcc4e9d13723303d",
+  "native_pdf_sha256": "064a99ce09d69b55e2ebfc2a65f2ddef92990bebc7aebc6d1d9ef65a3db0fb8e",
+  "native_pdf_pages": 10,
+  "saved_model_reopened": true,
+  "ui_checks": [
+    "2027 period filter updates all scenario charts",
+    "Base scenario filter updates all five charts",
+    "filters cleared and opening page Cover saved"
+  ],
+  "visual_review": "All 10 native PDF pages inspected; historical values visible and revised scenario charts rendered.",
+  "csv_sha256": {
+    "financial_data.csv": "df00fcb340e12de332d753b12bbde4a0fbc8b6b237ca7fb731ff5feec8c96472",
+    "banking_ratios.csv": "5c0a4031d25cb1bf3913ede15fcf26d6386caf543378c48988f242ace53b36d7",
+    "source_mapping.csv": "6b93cd605f28f62bd31dad417a7ce00a1c656113c4596ca700d27ecde20eee1e",
+    "extraction_tracker.csv": "bd251808710dd73a4a41a8ef78ab4aeb63e82cb516f0cf9eafeb8bdb7550d914",
+    "forecast_assumptions.csv": "5f286125b4d5af530101eb9d3793555c865f4d9ddb96a889e58f2d81ca3acc6e",
+    "forecast_financials.csv": "87d997c5f43043067bba5940042af51775654af3fe342d993183aed5ff329884",
+    "forecast_ratios.csv": "830dd722b1b244e79d2a144db2181afb7d5d87da5fd5948b69c2d724ca5e326b",
+    "scenario_analysis.csv": "15ae0db59998793e0d8972224f35df23870d04a37e53c49c666e7a76bd972b37",
+    "interim_financials.csv": "c3c4030ded302778c2c32b2896453ec646832237dd12f32a7e03d9bc53f89b87",
+    "interim_ratios.csv": "d478bdd0b0114c97ad5db77d2c4797e3afb4fea5b69801884d2c476dabb05a95",
+    "revision_dashboard.csv": "46a4ecac775f5e005923979f3d8fc0b1525095718ff3559e1cd067801e4df59e"
+  },
+  "packaged_at": "2026-09-29T15:18:57.206501+00:00"
+}

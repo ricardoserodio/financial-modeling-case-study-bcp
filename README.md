@@ -11,6 +11,9 @@ Public financial disclosures transformed into a traceable dataset, Python calcul
 | Complete English case study - 40 pages | [Current PDF](reports/bcp_complete_case_study_en_2026-09-29.pdf) |
 | Estudo completo em português - 38 páginas | [PDF atual](reports/bcp_complete_case_study_pt_2026-09-29.pdf) |
 | Guia dos 18 rácios em português - revisão atual | [PDF](reports/bcp_analysis_and_ratios_guide_pt_2026-09-29.pdf) |
+| Refreshed Power BI v6 | [PBIX](powerbi/millennium_bcp_banking_dashboard_v6_revised.pbix) |
+| Native v6 dashboard export - 10 pages | [PDF](reports/millennium_bcp_banking_dashboard_v6_revised.pdf) |
+| Power BI setup and verification | [Instructions](powerbi/V6_README.md) · [Checks](powerbi/v6_validation.json) |
 | Revised scenario model and input snapshots | [Calculation package](revisions/2026-09-29) |
 | Current assumptions, sensitivity and limitations | [Methodology](revisions/2026-09-29/METHODOLOGY.md) |
 | Revised scenario outcomes | [CSV](revisions/2026-09-29/data/forecast_financials.csv) |
@@ -39,7 +42,9 @@ From December 2025 to June 2026, NPE stock declined from EUR 1,503m to EUR 1,442
 
 ## Historical Power BI project and previous edition
 
-The complete current PDF includes nine original historical/H1 2026 Power BI pages and replaces its former forecast page with revised report charts. The PBIX has **not** been refreshed to the revised scenario model. Its Forecast & Scenarios page and root-level `data/forecast_*` / `data/scenario_analysis.csv` are **legacy v5 outputs**, superseded by `revisions/2026-09-29/data` for scenario interpretation.
+The **current Power BI v6 is refreshed** to the revised scenario model. Its 11 CSV sources (852 imported rows across analytical and supporting tables) were compared with the saved, reopened model. Both slicers were tested and all ten native PDF pages were visually reviewed. Use `powerbi/v6-data` for v6 refreshes; see the setup instructions above.
+
+The complete analytical PDFs retain nine original historical/H1 2026 Power BI pages and revised report scenario charts; the separate ten-page v6 export contains the newly refreshed native visuals. The archived v5 PBIX and root-level `data/forecast_*` / `data/scenario_analysis.csv` remain **legacy v5 outputs**, superseded by `revisions/2026-09-29/data` for scenario interpretation.
 
 | Previous-edition resource | Link |
 |---|---|

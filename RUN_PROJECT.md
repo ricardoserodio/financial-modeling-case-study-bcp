@@ -12,7 +12,7 @@ The revised model uses only the Python standard library. Input snapshots are in 
 
 The reproduction checks 81 financial cells, 36 conversion sensitivities, 27 retention sensitivities, the net-income bridge and NPE coverage arithmetic. See [revisions/2026-09-29/METHODOLOGY.md](revisions/2026-09-29/METHODOLOGY.md) for assumptions and limitations.
 
-The [current PDF](reports/bcp_complete_case_study_en_2026-09-29.pdf) contains the revised calculations and nine native historical Power BI pages. The old PBIX forecast page is not included and has not been refreshed to the new model.
+The [current PDF](reports/bcp_complete_case_study_en_2026-09-29.pdf) contains the revised calculations and nine native historical Power BI pages. The old v5 forecast page is not included. The separately published [Power BI v6](powerbi/millennium_bcp_banking_dashboard_v6_revised.pbix) is refreshed to the new model; use [the v6 setup instructions](powerbi/V6_README.md) and its dedicated CSV folder.
 
 ## Previous v5 pipeline - historical reproduction only
 

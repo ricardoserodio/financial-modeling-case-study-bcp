@@ -1,0 +1,19 @@
+﻿scenario,ratio,category,period,value,unit,calculation_method,source_or_basis,validation_status,notes
+Conservative,Cost-to-income ratio,,2026E,38.104,%,,,Model checked,29 Sep revision; 48% conversion; no CET1 or ROE/ROA projection; separate retention sensitivity.
+Conservative,Loan-to-deposit ratio,,2026E,68.458,%,,,Model checked,29 Sep revision; 48% conversion; no CET1 or ROE/ROA projection; separate retention sensitivity.
+Conservative,Cost-to-income ratio,,2027E,40.532,%,,,Model checked,29 Sep revision; 48% conversion; no CET1 or ROE/ROA projection; separate retention sensitivity.
+Conservative,Loan-to-deposit ratio,,2027E,68.458,%,,,Model checked,29 Sep revision; 48% conversion; no CET1 or ROE/ROA projection; separate retention sensitivity.
+Conservative,Cost-to-income ratio,,2028E,42.051,%,,,Model checked,29 Sep revision; 48% conversion; no CET1 or ROE/ROA projection; separate retention sensitivity.
+Conservative,Loan-to-deposit ratio,,2028E,68.458,%,,,Model checked,29 Sep revision; 48% conversion; no CET1 or ROE/ROA projection; separate retention sensitivity.
+Base,Cost-to-income ratio,,2026E,37.210,%,,,Model checked,29 Sep revision; 48% conversion; no CET1 or ROE/ROA projection; separate retention sensitivity.
+Base,Loan-to-deposit ratio,,2026E,68.792,%,,,Model checked,29 Sep revision; 48% conversion; no CET1 or ROE/ROA projection; separate retention sensitivity.
+Base,Cost-to-income ratio,,2027E,37.852,%,,,Model checked,29 Sep revision; 48% conversion; no CET1 or ROE/ROA projection; separate retention sensitivity.
+Base,Loan-to-deposit ratio,,2027E,68.792,%,,,Model checked,29 Sep revision; 48% conversion; no CET1 or ROE/ROA projection; separate retention sensitivity.
+Base,Cost-to-income ratio,,2028E,37.852,%,,,Model checked,29 Sep revision; 48% conversion; no CET1 or ROE/ROA projection; separate retention sensitivity.
+Base,Loan-to-deposit ratio,,2028E,68.792,%,,,Model checked,29 Sep revision; 48% conversion; no CET1 or ROE/ROA projection; separate retention sensitivity.
+Optimistic,Cost-to-income ratio,,2026E,36.522,%,,,Model checked,29 Sep revision; 48% conversion; no CET1 or ROE/ROA projection; separate retention sensitivity.
+Optimistic,Loan-to-deposit ratio,,2026E,68.788,%,,,Model checked,29 Sep revision; 48% conversion; no CET1 or ROE/ROA projection; separate retention sensitivity.
+Optimistic,Cost-to-income ratio,,2027E,36.171,%,,,Model checked,29 Sep revision; 48% conversion; no CET1 or ROE/ROA projection; separate retention sensitivity.
+Optimistic,Loan-to-deposit ratio,,2027E,68.788,%,,,Model checked,29 Sep revision; 48% conversion; no CET1 or ROE/ROA projection; separate retention sensitivity.
+Optimistic,Cost-to-income ratio,,2028E,35.649,%,,,Model checked,29 Sep revision; 48% conversion; no CET1 or ROE/ROA projection; separate retention sensitivity.
+Optimistic,Loan-to-deposit ratio,,2028E,68.788,%,,,Model checked,29 Sep revision; 48% conversion; no CET1 or ROE/ROA projection; separate retention sensitivity.

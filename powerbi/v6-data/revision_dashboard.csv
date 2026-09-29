@@ -1,0 +1,109 @@
+﻿scenario,period,metric,value,unit
+Conservative,2026E,Net interest income,2942.8,EUR million
+Conservative,2026E,Other operating income,913.0,EUR million
+Conservative,2026E,Operating income,3855.8,EUR million
+Conservative,2026E,Operating costs,1469.2,EUR million
+Conservative,2026E,Pre-provision operating profit,2386.6,EUR million
+Conservative,2026E,Net credit impairments,297.8,EUR million
+Conservative,2026E,Net income,1028.1,EUR million
+Conservative,2026E,Customer loans,64474.4,EUR million
+Conservative,2026E,Deposits and other customer resources,94181.5,EUR million
+Conservative,2027E,Net interest income,2883.9,EUR million
+Conservative,2027E,Other operating income,922.1,EUR million
+Conservative,2027E,Operating income,3806.1,EUR million
+Conservative,2027E,Operating costs,1542.7,EUR million
+Conservative,2027E,Pre-provision operating profit,2263.4,EUR million
+Conservative,2027E,Net credit impairments,427.5,EUR million
+Conservative,2027E,Net income,881.2,EUR million
+Conservative,2027E,Customer loans,65763.8,EUR million
+Conservative,2027E,Deposits and other customer resources,96065.1,EUR million
+Conservative,2028E,Net interest income,2883.9,EUR million
+Conservative,2028E,Other operating income,931.4,EUR million
+Conservative,2028E,Operating income,3815.3,EUR million
+Conservative,2028E,Operating costs,1604.4,EUR million
+Conservative,2028E,Pre-provision operating profit,2210.9,EUR million
+Conservative,2028E,Net credit impairments,469.6,EUR million
+Conservative,2028E,Net income,835.8,EUR million
+Conservative,2028E,Customer loans,67079.1,EUR million
+Conservative,2028E,Deposits and other customer resources,97986.4,EUR million
+Base,2026E,Net interest income,2987.6,EUR million
+Base,2026E,Other operating income,922.1,EUR million
+Base,2026E,Operating income,3909.7,EUR million
+Base,2026E,Operating costs,1454.8,EUR million
+Base,2026E,Pre-provision operating profit,2454.9,EUR million
+Base,2026E,Net credit impairments,235.9,EUR million
+Base,2026E,Net income,1090.6,EUR million
+Base,2026E,Customer loans,65751.1,EUR million
+Base,2026E,Deposits and other customer resources,95580.2,EUR million
+Base,2027E,Net interest income,3047.4,EUR million
+Base,2027E,Other operating income,949.8,EUR million
+Base,2027E,Operating income,3997.1,EUR million
+Base,2027E,Operating costs,1513.0,EUR million
+Base,2027E,Pre-provision operating profit,2484.1,EUR million
+Base,2027E,Net credit impairments,273.5,EUR million
+Base,2027E,Net income,1061.1,EUR million
+Base,2027E,Customer loans,68381.1,EUR million
+Base,2027E,Deposits and other customer resources,99403.4,EUR million
+Base,2028E,Net interest income,3138.8,EUR million
+Base,2028E,Other operating income,978.3,EUR million
+Base,2028E,Operating income,4117.1,EUR million
+Base,2028E,Operating costs,1558.4,EUR million
+Base,2028E,Pre-provision operating profit,2558.7,EUR million
+Base,2028E,Net credit impairments,320.0,EUR million
+Base,2028E,Net income,1074.6,EUR million
+Base,2028E,Customer loans,71116.4,EUR million
+Base,2028E,Deposits and other customer resources,103379.6,EUR million
+Optimistic,2026E,Net interest income,3032.4,EUR million
+Optimistic,2026E,Other operating income,931.3,EUR million
+Optimistic,2026E,Operating income,3963.7,EUR million
+Optimistic,2026E,Operating costs,1447.6,EUR million
+Optimistic,2026E,Pre-provision operating profit,2516.1,EUR million
+Optimistic,2026E,Net credit impairments,204.0,EUR million
+Optimistic,2026E,Net income,1135.3,EUR million
+Optimistic,2026E,Customer loans,66389.4,EUR million
+Optimistic,2026E,Deposits and other customer resources,96512.7,EUR million
+Optimistic,2027E,Net interest income,3153.7,EUR million
+Optimistic,2027E,Other operating income,968.5,EUR million
+Optimistic,2027E,Operating income,4122.2,EUR million
+Optimistic,2027E,Operating costs,1491.0,EUR million
+Optimistic,2027E,Pre-provision operating profit,2631.2,EUR million
+Optimistic,2027E,Net credit impairments,209.1,EUR million
+Optimistic,2027E,Net income,1162.6,EUR million
+Optimistic,2027E,Customer loans,69708.9,EUR million
+Optimistic,2027E,Deposits and other customer resources,101338.4,EUR million
+Optimistic,2028E,Net interest income,3279.9,EUR million
+Optimistic,2028E,Other operating income,1007.3,EUR million
+Optimistic,2028E,Operating income,4287.1,EUR million
+Optimistic,2028E,Operating costs,1528.3,EUR million
+Optimistic,2028E,Pre-provision operating profit,2758.8,EUR million
+Optimistic,2028E,Net credit impairments,256.2,EUR million
+Optimistic,2028E,Net income,1201.3,EUR million
+Optimistic,2028E,Customer loans,73194.4,EUR million
+Optimistic,2028E,Deposits and other customer resources,106405.3,EUR million
+Conservative,2026E,Cost-to-income ratio,38.104,%
+Conservative,2026E,Loan-to-deposit ratio,68.458,%
+Conservative,2027E,Cost-to-income ratio,40.532,%
+Conservative,2027E,Loan-to-deposit ratio,68.458,%
+Conservative,2028E,Cost-to-income ratio,42.051,%
+Conservative,2028E,Loan-to-deposit ratio,68.458,%
+Base,2026E,Cost-to-income ratio,37.210,%
+Base,2026E,Loan-to-deposit ratio,68.792,%
+Base,2027E,Cost-to-income ratio,37.852,%
+Base,2027E,Loan-to-deposit ratio,68.792,%
+Base,2028E,Cost-to-income ratio,37.852,%
+Base,2028E,Loan-to-deposit ratio,68.792,%
+Optimistic,2026E,Cost-to-income ratio,36.522,%
+Optimistic,2026E,Loan-to-deposit ratio,68.788,%
+Optimistic,2027E,Cost-to-income ratio,36.171,%
+Optimistic,2027E,Loan-to-deposit ratio,68.788,%
+Optimistic,2028E,Cost-to-income ratio,35.649,%
+Optimistic,2028E,Loan-to-deposit ratio,68.788,%
+Base,2026E,Cost of risk assumption,40,bps
+Base,2027E,Cost of risk assumption,40,bps
+Base,2028E,Cost of risk assumption,45,bps
+Optimistic,2026E,Cost of risk assumption,30,bps
+Optimistic,2027E,Cost of risk assumption,30,bps
+Optimistic,2028E,Cost of risk assumption,35,bps
+Conservative,2026E,Cost of risk assumption,60,bps
+Conservative,2027E,Cost of risk assumption,65,bps
+Conservative,2028E,Cost of risk assumption,70,bps
